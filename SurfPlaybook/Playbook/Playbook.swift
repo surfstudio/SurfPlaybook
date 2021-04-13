@@ -11,6 +11,7 @@ public final class Playbook {
     public init() {}
 
     public func sum(a: Int, b: Int) -> Int {
+        print(L10n.Main.title)
         return a + b
     }
 

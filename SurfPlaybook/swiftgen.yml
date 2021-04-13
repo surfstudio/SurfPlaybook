@@ -1,0 +1,28 @@
+xcassets:
+  - inputs: 
+      - Resources/Images/Assets.xcassets
+      - Resources/Colors/Colors.xcassets
+    outputs:
+      - templateName: swift4
+        output: Resources/Images/Assets.swift
+        params:
+          enumName: Resources
+          publicAccess: false
+
+fonts:
+  inputs:
+    - Resources/Fonts
+  outputs:
+    - templateName: swift4
+      output: Resources/Fonts/Fonts.swift
+      params:
+        publicAccess: false
+
+strings:
+  inputs:
+    - Resources/Strings/Localizable.strings
+  outputs:
+    - templateName: structured-swift4
+      output: Resources/Strings/Strings.swift
+      params:
+        publicAccess: true
