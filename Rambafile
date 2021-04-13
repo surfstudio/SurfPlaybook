@@ -7,13 +7,13 @@ xcodeproj_path: SurfPlaybook.xcodeproj
 
 ### Code generation settings section
 # The main project target name
-project_targets: [SurfPlaybookEmaple]
+project_targets: [SurfPlaybookExample]
 
 # The file path for new modules
-project_file_path: SurfPlaybook/Example/SurfPlaybookEmaple/Flows
+project_file_path: Example/SurfPlaybookExample/Flows
 
 # The Xcode group path to new modules
-project_group_path: SurfPlaybookExample/Flows
+project_group_path: Example/SurfPlaybookExample/Flows
 
 ### Tests generation settings section
 # The tests target name

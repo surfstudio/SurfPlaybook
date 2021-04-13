@@ -8,7 +8,7 @@ init:
 	-bundle install --path .bundle
 	-bundle exec pod repo update
 	-bundle exec pod install
-	# -bundle exec generamba template install
+	-bundle exec generamba template install
 
 build:
 	bundle exec fastlane build clean:true
@@ -24,10 +24,10 @@ coordinator:
 	bundle exec generamba gen $(modName) surf_mvp_coordinator
 
 screen:
-	bundle exec generamba gen $(modName) surf_mvp_coordinatable_module --module_path 'SurfPlaybook/Example/SurfPlaybookEmaple/Flows/$(flowName)'
+	bundle exec generamba gen $(modName) surf_mvp_coordinatable_module --module_path 'Example/SurfPlaybookExample/Flows/$(flowName)'
 
 alert:
-	bundle exec generamba gen $(modName) surf_mvp_coordinatable_alert --module_path 'SurfPlaybook/Example/SurfPlaybookEmaple/Flows/$(flowName)'
+	bundle exec generamba gen $(modName) surf_mvp_coordinatable_alert --module_path 'Example/SurfPlaybookExample/Flows/$(flowName)'
 
 # COLORS
 GREEN  := $(shell tput -Txterm setaf 2)
