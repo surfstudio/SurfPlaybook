@@ -11,12 +11,14 @@
 		90C8B3A42625C55600851B00 /* SurfPlaybookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C8B3A32625C55600851B00 /* SurfPlaybookTests.swift */; };
 		90C8B3A62625C55600851B00 /* SurfPlaybook.h in Headers */ = {isa = PBXBuildFile; fileRef = 90C8B3982625C55500851B00 /* SurfPlaybook.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		90C8B3FE2625C6B700851B00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C8B3FD2625C6B700851B00 /* AppDelegate.swift */; };
-		90C8B4002625C6B700851B00 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C8B3FF2625C6B700851B00 /* SceneDelegate.swift */; };
 		90C8B4022625C6B700851B00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C8B4012625C6B700851B00 /* ViewController.swift */; };
 		90C8B4052625C6B700851B00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90C8B4032625C6B700851B00 /* Main.storyboard */; };
 		90C8B4072625C6B800851B00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90C8B4062625C6B800851B00 /* Assets.xcassets */; };
 		90C8B40A2625C6B800851B00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90C8B4082625C6B800851B00 /* LaunchScreen.storyboard */; };
 		90C8B4152625C6B800851B00 /* SurfPlaybookExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C8B4142625C6B800851B00 /* SurfPlaybookExampleTests.swift */; };
+		90C8B43A2625C74C00851B00 /* Playbook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C8B4392625C74C00851B00 /* Playbook.swift */; };
+		90C8B4482625EA4200851B00 /* SurfPlaybook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C8B3952625C55500851B00 /* SurfPlaybook.framework */; };
+		90C8B4492625EA4200851B00 /* SurfPlaybook.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 90C8B3952625C55500851B00 /* SurfPlaybook.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +36,28 @@
 			remoteGlobalIDString = 90C8B3FA2625C6B700851B00;
 			remoteInfo = SurfPlaybookExample;
 		};
+		90C8B44A2625EA4200851B00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90C8B38C2625C55500851B00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 90C8B3942625C55500851B00;
+			remoteInfo = SurfPlaybook;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		90C8B44C2625EA4200851B00 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				90C8B4492625EA4200851B00 /* SurfPlaybook.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		90C8B3952625C55500851B00 /* SurfPlaybook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SurfPlaybook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,7 +68,6 @@
 		90C8B3A52625C55600851B00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90C8B3FB2625C6B700851B00 /* SurfPlaybookExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SurfPlaybookExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90C8B3FD2625C6B700851B00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		90C8B3FF2625C6B700851B00 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		90C8B4012625C6B700851B00 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		90C8B4042625C6B700851B00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		90C8B4062625C6B800851B00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -54,6 +76,7 @@
 		90C8B4102625C6B800851B00 /* SurfPlaybookExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SurfPlaybookExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		90C8B4142625C6B800851B00 /* SurfPlaybookExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfPlaybookExampleTests.swift; sourceTree = "<group>"; };
 		90C8B4162625C6B800851B00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90C8B4392625C74C00851B00 /* Playbook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playbook.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90C8B4482625EA4200851B00 /* SurfPlaybook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +120,7 @@
 				90C8B3A22625C55600851B00 /* SurfPlaybookTests */,
 				90C8B3B72625C63500851B00 /* Example */,
 				90C8B3962625C55500851B00 /* Products */,
+				90C8B4472625EA4200851B00 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,6 +138,7 @@
 		90C8B3972625C55500851B00 /* SurfPlaybook */ = {
 			isa = PBXGroup;
 			children = (
+				90C8B4382625C73F00851B00 /* Playbook */,
 				90C8B3982625C55500851B00 /* SurfPlaybook.h */,
 				90C8B3992625C55500851B00 /* Info.plist */,
 			);
@@ -141,7 +167,6 @@
 			isa = PBXGroup;
 			children = (
 				90C8B3FD2625C6B700851B00 /* AppDelegate.swift */,
-				90C8B3FF2625C6B700851B00 /* SceneDelegate.swift */,
 				90C8B4012625C6B700851B00 /* ViewController.swift */,
 				90C8B4032625C6B700851B00 /* Main.storyboard */,
 				90C8B4062625C6B800851B00 /* Assets.xcassets */,
@@ -158,6 +183,21 @@
 				90C8B4162625C6B800851B00 /* Info.plist */,
 			);
 			path = SurfPlaybookExampleTests;
+			sourceTree = "<group>";
+		};
+		90C8B4382625C73F00851B00 /* Playbook */ = {
+			isa = PBXGroup;
+			children = (
+				90C8B4392625C74C00851B00 /* Playbook.swift */,
+			);
+			path = Playbook;
+			sourceTree = "<group>";
+		};
+		90C8B4472625EA4200851B00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,10 +257,12 @@
 				90C8B3F72625C6B700851B00 /* Sources */,
 				90C8B3F82625C6B700851B00 /* Frameworks */,
 				90C8B3F92625C6B700851B00 /* Resources */,
+				90C8B44C2625EA4200851B00 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				90C8B44B2625EA4200851B00 /* PBXTargetDependency */,
 			);
 			name = SurfPlaybookExample;
 			productName = SurfPlaybookExample;
@@ -257,6 +299,7 @@
 				TargetAttributes = {
 					90C8B3942625C55500851B00 = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 					90C8B39D2625C55600851B00 = {
 						CreatedOnToolsVersion = 12.3;
@@ -330,6 +373,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90C8B43A2625C74C00851B00 /* Playbook.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,7 +391,6 @@
 			files = (
 				90C8B4022625C6B700851B00 /* ViewController.swift in Sources */,
 				90C8B3FE2625C6B700851B00 /* AppDelegate.swift in Sources */,
-				90C8B4002625C6B700851B00 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,6 +414,11 @@
 			isa = PBXTargetDependency;
 			target = 90C8B3FA2625C6B700851B00 /* SurfPlaybookExample */;
 			targetProxy = 90C8B4112625C6B800851B00 /* PBXContainerItemProxy */;
+		};
+		90C8B44B2625EA4200851B00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 90C8B3942625C55500851B00 /* SurfPlaybook */;
+			targetProxy = 90C8B44A2625EA4200851B00 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -519,6 +567,7 @@
 		90C8B3AA2625C55600851B00 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = EFAAG9GXN4;
@@ -536,6 +585,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.surfstudio.playbook.SurfPlaybook;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -544,6 +594,7 @@
 		90C8B3AB2625C55600851B00 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = EFAAG9GXN4;
@@ -569,6 +620,7 @@
 		90C8B3AD2625C55600851B00 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EFAAG9GXN4;
 				INFOPLIST_FILE = SurfPlaybookTests/Info.plist;
@@ -587,6 +639,7 @@
 		90C8B3AE2625C55600851B00 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EFAAG9GXN4;
 				INFOPLIST_FILE = SurfPlaybookTests/Info.plist;
@@ -610,7 +663,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EFAAG9GXN4;
 				INFOPLIST_FILE = "$(SRCROOT)/Example/SurfPlaybookExample/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -630,7 +683,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EFAAG9GXN4;
 				INFOPLIST_FILE = "$(SRCROOT)/Example/SurfPlaybookExample/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -649,7 +702,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EFAAG9GXN4;
-				INFOPLIST_FILE = SurfPlaybookExampleTests/Info.plist;
+				INFOPLIST_FILE = Example/SurfPlaybookExampleTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -671,7 +724,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EFAAG9GXN4;
-				INFOPLIST_FILE = SurfPlaybookExampleTests/Info.plist;
+				INFOPLIST_FILE = Example/SurfPlaybookExampleTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
