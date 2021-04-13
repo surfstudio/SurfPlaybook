@@ -6,6 +6,8 @@ init:
 	fi
 	-bundle update
 	-bundle install --path .bundle
+	-bundle exec pod repo update
+	-bundle exec pod install
 	# -bundle exec generamba template install
 
 build:
