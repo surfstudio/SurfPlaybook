@@ -17,7 +17,17 @@ example_build:
 	cd Example
 	bundle exec fastlane example_build clean:true
 
+pod:
+	bundle exec pod install
 
+coordinator:
+	bundle exec generamba gen $(modName) surf_mvp_coordinator
+
+screen:
+	bundle exec generamba gen $(modName) surf_mvp_coordinatable_module --module_path 'SurfPlaybook/Example/SurfPlaybookEmaple/Flows/$(flowName)'
+
+alert:
+	bundle exec generamba gen $(modName) surf_mvp_coordinatable_alert --module_path 'SurfPlaybook/Example/SurfPlaybookEmaple/Flows/$(flowName)'
 
 # COLORS
 GREEN  := $(shell tput -Txterm setaf 2)
