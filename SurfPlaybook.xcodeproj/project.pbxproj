@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		540FA6455ACF653CAE397B82 /* TabBarViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66504BE2B7675AC648B3F3DE /* TabBarViewInput.swift */; };
+		65D89AB731B15EEA1318BA39 /* TabBarModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83341D881ED3F494E99C18D /* TabBarModuleInput.swift */; };
+		87A98871C1AED1D915A4903C /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD850BE3FCC7764BD1A2FB5 /* TabBarCoordinator.swift */; };
 		905509C22625FA1800FD86A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 905509C12625FA1800FD86A4 /* Assets.xcassets */; };
 		905509C72625FA7800FD86A4 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 905509C62625FA7800FD86A4 /* Colors.xcassets */; };
 		905509D42625FB4A00FD86A4 /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 905509CB2625FB4A00FD86A4 /* SF-Pro-Text-Semibold.otf */; };
@@ -96,8 +99,15 @@
 		90DE38CE2628900A003D3DD5 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE38CD2628900A003D3DD5 /* UIApplication.swift */; };
 		93578423C0F9E6B45DF34472 /* Pods_SurfPlaybookTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17A9FF310115EC4E63B82CA2 /* Pods_SurfPlaybookTests.framework */; };
 		959D6F1F6AC03D990EF54A89 /* Pods_SurfPlaybookExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E1C3827D8C9AB6DF9042487 /* Pods_SurfPlaybookExampleTests.framework */; };
+		997063C6027BA770196E29BF /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4C45498CCE35BA3E4CE456 /* TabBarViewController.swift */; };
 		A0342EA67275D6E42DAF0D48 /* Pods_SurfPlaybook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E49CE830032A6C005B119B /* Pods_SurfPlaybook.framework */; };
+		B586A4B857C7EFDC079B7348 /* TabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 776165D5F4A6B80765588459 /* TabBarViewController.xib */; };
 		B77C7F879C24B65721D0380F /* Pods_SurfPlaybookExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA400EF9624EB1AF748BF6FF /* Pods_SurfPlaybookExample.framework */; };
+		C72706581D7A7DD90747E8CE /* TabBarModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A6D02EDA848F65C849A1A8 /* TabBarModuleConfigurator.swift */; };
+		CAB5C1EF2751FECB9B76E48D /* TabBarCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E968596FC5AC7991E779E8 /* TabBarCoordinatorOutput.swift */; };
+		DC5EAC240A563DBBD43E2FB7 /* TabBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EC341F0E6DCB99D511CD9D /* TabBarPresenter.swift */; };
+		E967DB1F0E6D5DCC5B596277 /* TabBarViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C5181C49971B240FB2F33F /* TabBarViewOutput.swift */; };
+		F93A5250FD3FE7F3556EE75D /* TabBarModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09E0626D80EDF223D85CDF9 /* TabBarModuleOutput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,11 +153,17 @@
 		184866DF937D7EB7B132140B /* TestModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TestModuleInput.swift; sourceTree = "<group>"; };
 		19EB776E4BAFEF5D693F8E79 /* TestModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TestModuleOutput.swift; sourceTree = "<group>"; };
 		1F6577F8323DDEEFC3EEF0BA /* Pods-SurfPlaybookExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfPlaybookExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-SurfPlaybookExampleTests/Pods-SurfPlaybookExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		23C5181C49971B240FB2F33F /* TabBarViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarViewOutput.swift; sourceTree = "<group>"; };
 		26374BF0CC1BB972A368A0C0 /* Pods-SurfPlaybookExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfPlaybookExample.release.xcconfig"; path = "Target Support Files/Pods-SurfPlaybookExample/Pods-SurfPlaybookExample.release.xcconfig"; sourceTree = "<group>"; };
+		35A6D02EDA848F65C849A1A8 /* TabBarModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarModuleConfigurator.swift; sourceTree = "<group>"; };
+		38E968596FC5AC7991E779E8 /* TabBarCoordinatorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarCoordinatorOutput.swift; sourceTree = "<group>"; };
 		3DA1B43C8308BD766BA3BB24 /* TestViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TestViewOutput.swift; sourceTree = "<group>"; };
 		434C08785D7D3E4083E4D336 /* Pods-SurfPlaybook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfPlaybook.release.xcconfig"; path = "Target Support Files/Pods-SurfPlaybook/Pods-SurfPlaybook.release.xcconfig"; sourceTree = "<group>"; };
 		554A42256E201219A4E825C1 /* TestViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
+		65EC341F0E6DCB99D511CD9D /* TabBarPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarPresenter.swift; sourceTree = "<group>"; };
+		66504BE2B7675AC648B3F3DE /* TabBarViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarViewInput.swift; sourceTree = "<group>"; };
 		72FF1D5473D7B0698639D1FF /* Pods-SurfPlaybookTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfPlaybookTests.debug.xcconfig"; path = "Target Support Files/Pods-SurfPlaybookTests/Pods-SurfPlaybookTests.debug.xcconfig"; sourceTree = "<group>"; };
+		776165D5F4A6B80765588459 /* TabBarViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = TabBarViewController.xib; sourceTree = "<group>"; };
 		78C095B579FF0F80C95311D4 /* TestViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		7AEED6A070D36D4025FBB8B6 /* TestModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TestModuleConfigurator.swift; sourceTree = "<group>"; };
 		7E1C3827D8C9AB6DF9042487 /* Pods_SurfPlaybookExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SurfPlaybookExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -237,11 +253,15 @@
 		90DE38C526288FAF003D3DD5 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 		90DE38CD2628900A003D3DD5 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		9882C30875DBD575EBF1FD96 /* TestViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TestViewInput.swift; sourceTree = "<group>"; };
+		9B4C45498CCE35BA3E4CE456 /* TabBarViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		A09E0626D80EDF223D85CDF9 /* TabBarModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarModuleOutput.swift; sourceTree = "<group>"; };
 		A0A859F877A9CBBBDE9BE8E5 /* TestPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TestPresenter.swift; sourceTree = "<group>"; };
 		BA400EF9624EB1AF748BF6FF /* Pods_SurfPlaybookExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SurfPlaybookExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C83341D881ED3F494E99C18D /* TabBarModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarModuleInput.swift; sourceTree = "<group>"; };
 		D1E49CE830032A6C005B119B /* Pods_SurfPlaybook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SurfPlaybook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9F55F8F65B17F435DA0FED8 /* Pods-SurfPlaybookExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfPlaybookExample.debug.xcconfig"; path = "Target Support Files/Pods-SurfPlaybookExample/Pods-SurfPlaybookExample.debug.xcconfig"; sourceTree = "<group>"; };
 		EBAEC40B66E0378F8A47AEDD /* Pods-SurfPlaybook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfPlaybook.debug.xcconfig"; path = "Target Support Files/Pods-SurfPlaybook/Pods-SurfPlaybook.debug.xcconfig"; sourceTree = "<group>"; };
+		EDD850BE3FCC7764BD1A2FB5 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
 		F0541148B8B054D7594A2489 /* Pods-SurfPlaybookExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfPlaybookExampleTests.release.xcconfig"; path = "Target Support Files/Pods-SurfPlaybookExampleTests/Pods-SurfPlaybookExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -309,6 +329,28 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		1B0C64E4663BF341F1A7ED98 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				65EC341F0E6DCB99D511CD9D /* TabBarPresenter.swift */,
+				C83341D881ED3F494E99C18D /* TabBarModuleInput.swift */,
+				A09E0626D80EDF223D85CDF9 /* TabBarModuleOutput.swift */,
+			);
+			name = Presenter;
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		3F0D2C2C412BEF6AD84F6BEC /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				4C4BC7544AABD29E2574477C /* Configurator */,
+				1B0C64E4663BF341F1A7ED98 /* Presenter */,
+				909C61C5A1F7F4ECCFE1D0D4 /* View */,
+			);
+			name = TabBar;
+			path = TabBar;
+			sourceTree = "<group>";
+		};
 		484A8B2B75FA37DF6A250BCC /* Test */ = {
 			isa = PBXGroup;
 			children = (
@@ -319,11 +361,21 @@
 			path = Test;
 			sourceTree = "<group>";
 		};
+		4C4BC7544AABD29E2574477C /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				35A6D02EDA848F65C849A1A8 /* TabBarModuleConfigurator.swift */,
+			);
+			name = Configurator;
+			path = Configurator;
+			sourceTree = "<group>";
+		};
 		557C63F6D628AE9177DCDED4 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
 				90DE380B26285E4A003D3DD5 /* Common */,
 				95A18F92051B6BC59166CB6D /* Test */,
+				B25F35C0D82C8853DD44727A /* TabBar */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -399,6 +451,18 @@
 				905509F12625FCAE00FD86A4 /* Localizable.strings */,
 			);
 			path = Strings;
+			sourceTree = "<group>";
+		};
+		909C61C5A1F7F4ECCFE1D0D4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9B4C45498CCE35BA3E4CE456 /* TabBarViewController.swift */,
+				776165D5F4A6B80765588459 /* TabBarViewController.xib */,
+				66504BE2B7675AC648B3F3DE /* TabBarViewInput.swift */,
+				23C5181C49971B240FB2F33F /* TabBarViewOutput.swift */,
+			);
+			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		90C8B38B2625C55500851B00 = {
@@ -761,6 +825,16 @@
 			path = Test;
 			sourceTree = "<group>";
 		};
+		B25F35C0D82C8853DD44727A /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				EDD850BE3FCC7764BD1A2FB5 /* TabBarCoordinator.swift */,
+				38E968596FC5AC7991E779E8 /* TabBarCoordinatorOutput.swift */,
+				3F0D2C2C412BEF6AD84F6BEC /* TabBar */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -922,6 +996,7 @@
 				905509D42625FB4A00FD86A4 /* SF-Pro-Text-Semibold.otf in Resources */,
 				905509C22625FA1800FD86A4 /* Assets.xcassets in Resources */,
 				905509C72625FA7800FD86A4 /* Colors.xcassets in Resources */,
+				B586A4B857C7EFDC079B7348 /* TabBarViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1177,6 +1252,15 @@
 				90DE382026285ED4003D3DD5 /* OptionSelectorHandler.swift in Sources */,
 				90DE385B26286575003D3DD5 /* CommonButtonStyle.swift in Sources */,
 				90DE383726285EF2003D3DD5 /* OptionSelectorViewInput.swift in Sources */,
+				87A98871C1AED1D915A4903C /* TabBarCoordinator.swift in Sources */,
+				CAB5C1EF2751FECB9B76E48D /* TabBarCoordinatorOutput.swift in Sources */,
+				C72706581D7A7DD90747E8CE /* TabBarModuleConfigurator.swift in Sources */,
+				DC5EAC240A563DBBD43E2FB7 /* TabBarPresenter.swift in Sources */,
+				65D89AB731B15EEA1318BA39 /* TabBarModuleInput.swift in Sources */,
+				F93A5250FD3FE7F3556EE75D /* TabBarModuleOutput.swift in Sources */,
+				997063C6027BA770196E29BF /* TabBarViewController.swift in Sources */,
+				540FA6455ACF653CAE397B82 /* TabBarViewInput.swift in Sources */,
+				E967DB1F0E6D5DCC5B596277 /* TabBarViewOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
