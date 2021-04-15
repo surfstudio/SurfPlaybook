@@ -87,6 +87,13 @@
 		90DE388326286BF3003D3DD5 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE388226286BF3003D3DD5 /* UIView.swift */; };
 		90DE388826286C12003D3DD5 /* PlaybookChapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE388726286C12003D3DD5 /* PlaybookChapter.swift */; };
 		90DE389026286C3B003D3DD5 /* Playbook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE388F26286C3B003D3DD5 /* Playbook.swift */; };
+		90DE389F26288DBF003D3DD5 /* DeepLinkOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE389E26288DBF003D3DD5 /* DeepLinkOption.swift */; };
+		90DE38A826288E0B003D3DD5 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE38A726288E0B003D3DD5 /* BaseCoordinator.swift */; };
+		90DE38B626288E46003D3DD5 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE38B526288E46003D3DD5 /* Coordinator.swift */; };
+		90DE38BB26288F21003D3DD5 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE38BA26288F21003D3DD5 /* Presentable.swift */; };
+		90DE38C026288F57003D3DD5 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE38BF26288F57003D3DD5 /* Router.swift */; };
+		90DE38C626288FAF003D3DD5 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE38C526288FAF003D3DD5 /* MainRouter.swift */; };
+		90DE38CE2628900A003D3DD5 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE38CD2628900A003D3DD5 /* UIApplication.swift */; };
 		93578423C0F9E6B45DF34472 /* Pods_SurfPlaybookTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17A9FF310115EC4E63B82CA2 /* Pods_SurfPlaybookTests.framework */; };
 		959D6F1F6AC03D990EF54A89 /* Pods_SurfPlaybookExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E1C3827D8C9AB6DF9042487 /* Pods_SurfPlaybookExampleTests.framework */; };
 		A0342EA67275D6E42DAF0D48 /* Pods_SurfPlaybook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E49CE830032A6C005B119B /* Pods_SurfPlaybook.framework */; };
@@ -222,6 +229,13 @@
 		90DE388226286BF3003D3DD5 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		90DE388726286C12003D3DD5 /* PlaybookChapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybookChapter.swift; sourceTree = "<group>"; };
 		90DE388F26286C3B003D3DD5 /* Playbook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playbook.swift; sourceTree = "<group>"; };
+		90DE389E26288DBF003D3DD5 /* DeepLinkOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkOption.swift; sourceTree = "<group>"; };
+		90DE38A726288E0B003D3DD5 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		90DE38B526288E46003D3DD5 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		90DE38BA26288F21003D3DD5 /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		90DE38BF26288F57003D3DD5 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		90DE38C526288FAF003D3DD5 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		90DE38CD2628900A003D3DD5 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		9882C30875DBD575EBF1FD96 /* TestViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TestViewInput.swift; sourceTree = "<group>"; };
 		A0A859F877A9CBBBDE9BE8E5 /* TestPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TestPresenter.swift; sourceTree = "<group>"; };
 		BA400EF9624EB1AF748BF6FF /* Pods_SurfPlaybookExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SurfPlaybookExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -541,9 +555,13 @@
 		90DE37ED26285D1C003D3DD5 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				90DE38A626288DFE003D3DD5 /* BaseClasses */,
 				90DE37EE26285D23003D3DD5 /* Extensions */,
 				90DE383E26285F64003D3DD5 /* Helpers */,
+				90DE389D26288DAF003D3DD5 /* Models */,
+				90DE38B126288E28003D3DD5 /* Protocols */,
 				90DE3844262863B8003D3DD5 /* Reusable */,
+				90DE38C426288F9E003D3DD5 /* Routers */,
 				90DE3853262864B6003D3DD5 /* Styles */,
 			);
 			path = Library;
@@ -565,6 +583,7 @@
 				90DE384E2628644A003D3DD5 /* UIImage.swift */,
 				90DE388226286BF3003D3DD5 /* UIView.swift */,
 				90DE37F526285D75003D3DD5 /* UIViewController.swift */,
+				90DE38CD2628900A003D3DD5 /* UIApplication.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -698,6 +717,40 @@
 				90DE386B26286939003D3DD5 /* LabelStyle.swift */,
 			);
 			path = UILabel;
+			sourceTree = "<group>";
+		};
+		90DE389D26288DAF003D3DD5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				90DE389E26288DBF003D3DD5 /* DeepLinkOption.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		90DE38A626288DFE003D3DD5 /* BaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+				90DE38A726288E0B003D3DD5 /* BaseCoordinator.swift */,
+			);
+			path = BaseClasses;
+			sourceTree = "<group>";
+		};
+		90DE38B126288E28003D3DD5 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				90DE38B526288E46003D3DD5 /* Coordinator.swift */,
+				90DE38BA26288F21003D3DD5 /* Presentable.swift */,
+				90DE38BF26288F57003D3DD5 /* Router.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		90DE38C426288F9E003D3DD5 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				90DE38C526288FAF003D3DD5 /* MainRouter.swift */,
+			);
+			path = Routers;
 			sourceTree = "<group>";
 		};
 		95A18F92051B6BC59166CB6D /* Test */ = {
@@ -1078,6 +1131,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90DE38CE2628900A003D3DD5 /* UIApplication.swift in Sources */,
+				90DE38C026288F57003D3DD5 /* Router.swift in Sources */,
 				90DE37F626285D75003D3DD5 /* UIViewController.swift in Sources */,
 				90DE384026285F6F003D3DD5 /* Closures.swift in Sources */,
 				90DE386C26286939003D3DD5 /* LabelStyle.swift in Sources */,
@@ -1098,16 +1153,21 @@
 				90DE37BC2628564A003D3DD5 /* TestPresenter.swift in Sources */,
 				90DE37E62628566D003D3DD5 /* TestViewOutput.swift in Sources */,
 				90DE3856262864D1003D3DD5 /* CommonButton+Styles.swift in Sources */,
+				90DE38B626288E46003D3DD5 /* Coordinator.swift in Sources */,
 				90550A0A2625FE5700FD86A4 /* Strings.swift in Sources */,
 				90DE3871262869DC003D3DD5 /* StringAttributes.swift in Sources */,
 				90DE382E26285EE8003D3DD5 /* OptionSelectorModuleOutput.swift in Sources */,
 				90DE37FD26285DCC003D3DD5 /* UIKitPageViewModel.swift in Sources */,
 				90DE382126285ED4003D3DD5 /* OptionSelectorModel.swift in Sources */,
 				90DE389026286C3B003D3DD5 /* Playbook.swift in Sources */,
+				90DE38BB26288F21003D3DD5 /* Presentable.swift in Sources */,
 				90DE384F2628644A003D3DD5 /* UIImage.swift in Sources */,
 				90DE382F26285EE8003D3DD5 /* OptionSelectorPresenter.swift in Sources */,
+				90DE389F26288DBF003D3DD5 /* DeepLinkOption.swift in Sources */,
+				90DE38A826288E0B003D3DD5 /* BaseCoordinator.swift in Sources */,
 				90DE388826286C12003D3DD5 /* PlaybookChapter.swift in Sources */,
 				90DE383826285EF2003D3DD5 /* OptionSelectorViewOutput.swift in Sources */,
+				90DE38C626288FAF003D3DD5 /* MainRouter.swift in Sources */,
 				90DE382626285EDF003D3DD5 /* OptionSelectorModuleConfigurator.swift in Sources */,
 				90DE37C32628564D003D3DD5 /* TestModuleInput.swift in Sources */,
 				90550A002625FDE500FD86A4 /* Assets.swift in Sources */,
