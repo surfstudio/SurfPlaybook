@@ -6,4 +6,8 @@
   Copyright © 2021 Surf. All rights reserved.
 */
 
-"Main.title" = "Заголовок";
+// MARK: - Common
+
+// Titles
+"Common.Titles.cancel" = "Отмена";
+"Common.Titles.done" = "Готово";

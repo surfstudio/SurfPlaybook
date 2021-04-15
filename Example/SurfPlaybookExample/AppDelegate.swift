@@ -23,7 +23,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = UIViewController()
         window?.makeKeyAndVisible()
-        Playbook().start(from: self.window)
+        Playbook.shared.start(from: self.window)
         return true
     }
 
