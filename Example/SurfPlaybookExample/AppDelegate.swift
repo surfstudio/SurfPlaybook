@@ -10,10 +10,20 @@ import UIKit
 import SurfPlaybook
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+final class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        print("sum == \(Playbook().sum(a: 2, b: 3))")
+    // MARK: - Properties
+
+    var window: UIWindow?
+
+    // MARK: - UIApplicationDelegate
+
+    func application(_ application: UIApplication,
+                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = UIViewController()
+        window?.makeKeyAndVisible()
+        Playbook().start(from: self.window)
         return true
     }
 
