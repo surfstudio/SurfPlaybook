@@ -16,4 +16,15 @@ enum Colors {
         static let separator = UIColor.gray
         static let textMain = UIColor.black
     }
+    enum NavigationBar {
+        public static let text = UIColor.black
+        public static let tint = UIColor.gray
+        public static let background = UIColor.white
+    }
+    public enum TabBar {
+        public static let itemTint = UIColor.gray
+        public static let selectedItemTint = UIColor.red
+        public static let background = UIColor.white
+        public static let separator = UIColor.black.withAlphaComponent(0.06)
+    }
 }

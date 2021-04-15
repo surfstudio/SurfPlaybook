@@ -7,4 +7,5 @@
 //
 
 protocol TabBarModuleInput: class {
+    func selectTab(_ tab: PlaybookTab)
 }

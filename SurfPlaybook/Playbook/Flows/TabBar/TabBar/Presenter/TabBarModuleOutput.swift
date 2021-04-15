@@ -7,4 +7,8 @@
 //
 
 protocol TabBarModuleOutput: class {
+    var onMainFlowSelect: TabSelectClosure? { get set }
+    var onUIKitFlowSelect: TabSelectClosure? { get set }
+    var onFlowsFlowSelect: TabSelectClosure? { get set }
+    var onSettingsFlowSelect: TabSelectClosure? { get set }
 }

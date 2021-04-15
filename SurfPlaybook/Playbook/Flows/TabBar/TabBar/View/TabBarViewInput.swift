@@ -7,6 +7,5 @@
 //
 
 protocol TabBarViewInput: class {
-    /// Method for setup initial state of view
-    func setupInitialState()
+    func selectTab(_ tab: PlaybookTab)
 }

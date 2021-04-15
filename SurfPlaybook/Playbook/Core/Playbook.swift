@@ -33,11 +33,14 @@ public final class Playbook {
     private(set) var uiKitPages: [PlaybookUIKitPage] = []
     private(set) var flowCoordinators: [PlaybookFlowCoordinator] = []
 
+    // MARK: - Private Properties
+
+    private let coordinator = PlaybookCoordinator()
+
     // MARK: - Public Methods
 
     public func start(from window: UIWindow?) {
-        let (view, _) = TestModuleConfigurator().configure()
-        window?.rootViewController = view
+        coordinator.start()
     }
 
     @discardableResult

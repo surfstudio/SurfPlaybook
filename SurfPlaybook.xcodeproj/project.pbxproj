@@ -53,14 +53,6 @@
 		90DE379226284F7C003D3DD5 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE379126284F7C003D3DD5 /* Fonts.swift */; };
 		90DE379726284F86003D3DD5 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE379626284F86003D3DD5 /* Assets.swift */; };
 		90DE37A226284F8F003D3DD5 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE37A126284F8F003D3DD5 /* Strings.swift */; };
-		90DE37B526285647003D3DD5 /* TestModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEED6A070D36D4025FBB8B6 /* TestModuleConfigurator.swift */; };
-		90DE37BC2628564A003D3DD5 /* TestPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A859F877A9CBBBDE9BE8E5 /* TestPresenter.swift */; };
-		90DE37C32628564D003D3DD5 /* TestModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184866DF937D7EB7B132140B /* TestModuleInput.swift */; };
-		90DE37CA26285652003D3DD5 /* TestModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EB776E4BAFEF5D693F8E79 /* TestModuleOutput.swift */; };
-		90DE37D126285655003D3DD5 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C095B579FF0F80C95311D4 /* TestViewController.swift */; };
-		90DE37D826285658003D3DD5 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 554A42256E201219A4E825C1 /* TestViewController.xib */; };
-		90DE37DF2628566A003D3DD5 /* TestViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9882C30875DBD575EBF1FD96 /* TestViewInput.swift */; };
-		90DE37E62628566D003D3DD5 /* TestViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA1B43C8308BD766BA3BB24 /* TestViewOutput.swift */; };
 		90DE37F026285D31003D3DD5 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE37EF26285D31003D3DD5 /* NSObject.swift */; };
 		90DE37F626285D75003D3DD5 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE37F526285D75003D3DD5 /* UIViewController.swift */; };
 		90DE37FD26285DCC003D3DD5 /* UIKitPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE37FC26285DCC003D3DD5 /* UIKitPageViewModel.swift */; };
@@ -97,14 +89,16 @@
 		90DE38C026288F57003D3DD5 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE38BF26288F57003D3DD5 /* Router.swift */; };
 		90DE38C626288FAF003D3DD5 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE38C526288FAF003D3DD5 /* MainRouter.swift */; };
 		90DE38CE2628900A003D3DD5 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE38CD2628900A003D3DD5 /* UIApplication.swift */; };
+		90DE38DF26289466003D3DD5 /* PlaybookCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE38DE26289466003D3DD5 /* PlaybookCoordinator.swift */; };
+		90DE38EA2628978B003D3DD5 /* PlaybookTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE38E92628978B003D3DD5 /* PlaybookTab.swift */; };
+		90DE38EF2628981F003D3DD5 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE38EE2628981F003D3DD5 /* BaseNavigationController.swift */; };
+		90DE38F4262898A6003D3DD5 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE38F3262898A6003D3DD5 /* String.swift */; };
 		93578423C0F9E6B45DF34472 /* Pods_SurfPlaybookTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17A9FF310115EC4E63B82CA2 /* Pods_SurfPlaybookTests.framework */; };
 		959D6F1F6AC03D990EF54A89 /* Pods_SurfPlaybookExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E1C3827D8C9AB6DF9042487 /* Pods_SurfPlaybookExampleTests.framework */; };
 		997063C6027BA770196E29BF /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4C45498CCE35BA3E4CE456 /* TabBarViewController.swift */; };
 		A0342EA67275D6E42DAF0D48 /* Pods_SurfPlaybook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E49CE830032A6C005B119B /* Pods_SurfPlaybook.framework */; };
-		B586A4B857C7EFDC079B7348 /* TabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 776165D5F4A6B80765588459 /* TabBarViewController.xib */; };
 		B77C7F879C24B65721D0380F /* Pods_SurfPlaybookExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA400EF9624EB1AF748BF6FF /* Pods_SurfPlaybookExample.framework */; };
 		C72706581D7A7DD90747E8CE /* TabBarModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A6D02EDA848F65C849A1A8 /* TabBarModuleConfigurator.swift */; };
-		CAB5C1EF2751FECB9B76E48D /* TabBarCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E968596FC5AC7991E779E8 /* TabBarCoordinatorOutput.swift */; };
 		DC5EAC240A563DBBD43E2FB7 /* TabBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EC341F0E6DCB99D511CD9D /* TabBarPresenter.swift */; };
 		E967DB1F0E6D5DCC5B596277 /* TabBarViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C5181C49971B240FB2F33F /* TabBarViewOutput.swift */; };
 		F93A5250FD3FE7F3556EE75D /* TabBarModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09E0626D80EDF223D85CDF9 /* TabBarModuleOutput.swift */; };
@@ -150,22 +144,14 @@
 
 /* Begin PBXFileReference section */
 		17A9FF310115EC4E63B82CA2 /* Pods_SurfPlaybookTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SurfPlaybookTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		184866DF937D7EB7B132140B /* TestModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TestModuleInput.swift; sourceTree = "<group>"; };
-		19EB776E4BAFEF5D693F8E79 /* TestModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TestModuleOutput.swift; sourceTree = "<group>"; };
 		1F6577F8323DDEEFC3EEF0BA /* Pods-SurfPlaybookExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfPlaybookExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-SurfPlaybookExampleTests/Pods-SurfPlaybookExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		23C5181C49971B240FB2F33F /* TabBarViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarViewOutput.swift; sourceTree = "<group>"; };
 		26374BF0CC1BB972A368A0C0 /* Pods-SurfPlaybookExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfPlaybookExample.release.xcconfig"; path = "Target Support Files/Pods-SurfPlaybookExample/Pods-SurfPlaybookExample.release.xcconfig"; sourceTree = "<group>"; };
 		35A6D02EDA848F65C849A1A8 /* TabBarModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarModuleConfigurator.swift; sourceTree = "<group>"; };
-		38E968596FC5AC7991E779E8 /* TabBarCoordinatorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarCoordinatorOutput.swift; sourceTree = "<group>"; };
-		3DA1B43C8308BD766BA3BB24 /* TestViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TestViewOutput.swift; sourceTree = "<group>"; };
 		434C08785D7D3E4083E4D336 /* Pods-SurfPlaybook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfPlaybook.release.xcconfig"; path = "Target Support Files/Pods-SurfPlaybook/Pods-SurfPlaybook.release.xcconfig"; sourceTree = "<group>"; };
-		554A42256E201219A4E825C1 /* TestViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
 		65EC341F0E6DCB99D511CD9D /* TabBarPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarPresenter.swift; sourceTree = "<group>"; };
 		66504BE2B7675AC648B3F3DE /* TabBarViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarViewInput.swift; sourceTree = "<group>"; };
 		72FF1D5473D7B0698639D1FF /* Pods-SurfPlaybookTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfPlaybookTests.debug.xcconfig"; path = "Target Support Files/Pods-SurfPlaybookTests/Pods-SurfPlaybookTests.debug.xcconfig"; sourceTree = "<group>"; };
-		776165D5F4A6B80765588459 /* TabBarViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = TabBarViewController.xib; sourceTree = "<group>"; };
-		78C095B579FF0F80C95311D4 /* TestViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
-		7AEED6A070D36D4025FBB8B6 /* TestModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TestModuleConfigurator.swift; sourceTree = "<group>"; };
 		7E1C3827D8C9AB6DF9042487 /* Pods_SurfPlaybookExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SurfPlaybookExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A83D42FB73C46FF751152BF /* Pods-SurfPlaybookTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfPlaybookTests.release.xcconfig"; path = "Target Support Files/Pods-SurfPlaybookTests/Pods-SurfPlaybookTests.release.xcconfig"; sourceTree = "<group>"; };
 		905509C12625FA1800FD86A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -252,10 +238,12 @@
 		90DE38BF26288F57003D3DD5 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		90DE38C526288FAF003D3DD5 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 		90DE38CD2628900A003D3DD5 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
-		9882C30875DBD575EBF1FD96 /* TestViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TestViewInput.swift; sourceTree = "<group>"; };
+		90DE38DE26289466003D3DD5 /* PlaybookCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybookCoordinator.swift; sourceTree = "<group>"; };
+		90DE38E92628978B003D3DD5 /* PlaybookTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybookTab.swift; sourceTree = "<group>"; };
+		90DE38EE2628981F003D3DD5 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		90DE38F3262898A6003D3DD5 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		9B4C45498CCE35BA3E4CE456 /* TabBarViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		A09E0626D80EDF223D85CDF9 /* TabBarModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarModuleOutput.swift; sourceTree = "<group>"; };
-		A0A859F877A9CBBBDE9BE8E5 /* TestPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TestPresenter.swift; sourceTree = "<group>"; };
 		BA400EF9624EB1AF748BF6FF /* Pods_SurfPlaybookExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SurfPlaybookExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C83341D881ED3F494E99C18D /* TabBarModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarModuleInput.swift; sourceTree = "<group>"; };
 		D1E49CE830032A6C005B119B /* Pods_SurfPlaybook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SurfPlaybook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -318,17 +306,6 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		12EFA777FB6319CE70671FC0 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				78C095B579FF0F80C95311D4 /* TestViewController.swift */,
-				554A42256E201219A4E825C1 /* TestViewController.xib */,
-				9882C30875DBD575EBF1FD96 /* TestViewInput.swift */,
-				3DA1B43C8308BD766BA3BB24 /* TestViewOutput.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		1B0C64E4663BF341F1A7ED98 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -336,7 +313,6 @@
 				C83341D881ED3F494E99C18D /* TabBarModuleInput.swift */,
 				A09E0626D80EDF223D85CDF9 /* TabBarModuleOutput.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -347,18 +323,7 @@
 				1B0C64E4663BF341F1A7ED98 /* Presenter */,
 				909C61C5A1F7F4ECCFE1D0D4 /* View */,
 			);
-			name = TabBar;
 			path = TabBar;
-			sourceTree = "<group>";
-		};
-		484A8B2B75FA37DF6A250BCC /* Test */ = {
-			isa = PBXGroup;
-			children = (
-				5B0BA1BFC6CA408B8C3E1B1B /* Configurator */,
-				728AD9E71157500BF6403C4A /* Presenter */,
-				12EFA777FB6319CE70671FC0 /* View */,
-			);
-			path = Test;
 			sourceTree = "<group>";
 		};
 		4C4BC7544AABD29E2574477C /* Configurator */ = {
@@ -366,36 +331,17 @@
 			children = (
 				35A6D02EDA848F65C849A1A8 /* TabBarModuleConfigurator.swift */,
 			);
-			name = Configurator;
 			path = Configurator;
 			sourceTree = "<group>";
 		};
 		557C63F6D628AE9177DCDED4 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				90DE38DE26289466003D3DD5 /* PlaybookCoordinator.swift */,
 				90DE380B26285E4A003D3DD5 /* Common */,
-				95A18F92051B6BC59166CB6D /* Test */,
 				B25F35C0D82C8853DD44727A /* TabBar */,
 			);
 			path = Flows;
-			sourceTree = "<group>";
-		};
-		5B0BA1BFC6CA408B8C3E1B1B /* Configurator */ = {
-			isa = PBXGroup;
-			children = (
-				7AEED6A070D36D4025FBB8B6 /* TestModuleConfigurator.swift */,
-			);
-			path = Configurator;
-			sourceTree = "<group>";
-		};
-		728AD9E71157500BF6403C4A /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				A0A859F877A9CBBBDE9BE8E5 /* TestPresenter.swift */,
-				184866DF937D7EB7B132140B /* TestModuleInput.swift */,
-				19EB776E4BAFEF5D693F8E79 /* TestModuleOutput.swift */,
-			);
-			path = Presenter;
 			sourceTree = "<group>";
 		};
 		905509BC2625F9BF00FD86A4 /* Resources */ = {
@@ -457,11 +403,9 @@
 			isa = PBXGroup;
 			children = (
 				9B4C45498CCE35BA3E4CE456 /* TabBarViewController.swift */,
-				776165D5F4A6B80765588459 /* TabBarViewController.xib */,
 				66504BE2B7675AC648B3F3DE /* TabBarViewInput.swift */,
 				23C5181C49971B240FB2F33F /* TabBarViewOutput.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -637,6 +581,7 @@
 				90DE37F426285D68003D3DD5 /* UIKit */,
 				90DE38622628689A003D3DD5 /* Array.swift */,
 				90DE37EF26285D31003D3DD5 /* NSObject.swift */,
+				90DE38F3262898A6003D3DD5 /* String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -795,6 +740,7 @@
 			isa = PBXGroup;
 			children = (
 				90DE38A726288E0B003D3DD5 /* BaseCoordinator.swift */,
+				90DE38EE2628981F003D3DD5 /* BaseNavigationController.swift */,
 			);
 			path = BaseClasses;
 			sourceTree = "<group>";
@@ -817,19 +763,11 @@
 			path = Routers;
 			sourceTree = "<group>";
 		};
-		95A18F92051B6BC59166CB6D /* Test */ = {
-			isa = PBXGroup;
-			children = (
-				484A8B2B75FA37DF6A250BCC /* Test */,
-			);
-			path = Test;
-			sourceTree = "<group>";
-		};
 		B25F35C0D82C8853DD44727A /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
 				EDD850BE3FCC7764BD1A2FB5 /* TabBarCoordinator.swift */,
-				38E968596FC5AC7991E779E8 /* TabBarCoordinatorOutput.swift */,
+				90DE38E92628978B003D3DD5 /* PlaybookTab.swift */,
 				3F0D2C2C412BEF6AD84F6BEC /* TabBar */,
 			);
 			path = TabBar;
@@ -986,7 +924,6 @@
 				905509F22625FCAE00FD86A4 /* Localizable.strings in Resources */,
 				905509D52625FB4A00FD86A4 /* SF-Pro-Text-Medium.otf in Resources */,
 				905509D72625FB4A00FD86A4 /* SF-Pro-Text-Heavy.otf in Resources */,
-				90DE37D826285658003D3DD5 /* TestViewController.xib in Resources */,
 				905509DA2625FB4A00FD86A4 /* SF-Pro-Display-Bold.otf in Resources */,
 				905509D92625FB4A00FD86A4 /* SF-Pro-Display-Regular.otf in Resources */,
 				905509D62625FB4A00FD86A4 /* SF-Pro-Display-Heavy.otf in Resources */,
@@ -996,7 +933,6 @@
 				905509D42625FB4A00FD86A4 /* SF-Pro-Text-Semibold.otf in Resources */,
 				905509C22625FA1800FD86A4 /* Assets.xcassets in Resources */,
 				905509C72625FA7800FD86A4 /* Colors.xcassets in Resources */,
-				B586A4B857C7EFDC079B7348 /* TabBarViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1211,22 +1147,18 @@
 				90DE37F626285D75003D3DD5 /* UIViewController.swift in Sources */,
 				90DE384026285F6F003D3DD5 /* Closures.swift in Sources */,
 				90DE386C26286939003D3DD5 /* LabelStyle.swift in Sources */,
-				90DE37D126285655003D3DD5 /* TestViewController.swift in Sources */,
 				905509FB2625FDDA00FD86A4 /* Fonts.swift in Sources */,
 				90DE381F26285ED4003D3DD5 /* OptionSelectorConfig.swift in Sources */,
 				90DE380726285DF7003D3DD5 /* PlaybookFlowCoordinator.swift in Sources */,
 				90DE38632628689A003D3DD5 /* Array.swift in Sources */,
+				90DE38EA2628978B003D3DD5 /* PlaybookTab.swift in Sources */,
 				90DE3847262863CB003D3DD5 /* CommonButton.swift in Sources */,
-				90DE37DF2628566A003D3DD5 /* TestViewInput.swift in Sources */,
 				90DE383926285EF2003D3DD5 /* OptionSelectorViewController.swift in Sources */,
 				90DE382D26285EE8003D3DD5 /* OptionSelectorModuleInput.swift in Sources */,
 				90DE387E26286BCE003D3DD5 /* PlaybookPage.swift in Sources */,
-				90DE37CA26285652003D3DD5 /* TestModuleOutput.swift in Sources */,
 				90550A052625FE0000FD86A4 /* Colors.swift in Sources */,
+				90DE38DF26289466003D3DD5 /* PlaybookCoordinator.swift in Sources */,
 				90DE380226285DE7003D3DD5 /* PlaybookUIKitPage.swift in Sources */,
-				90DE37B526285647003D3DD5 /* TestModuleConfigurator.swift in Sources */,
-				90DE37BC2628564A003D3DD5 /* TestPresenter.swift in Sources */,
-				90DE37E62628566D003D3DD5 /* TestViewOutput.swift in Sources */,
 				90DE3856262864D1003D3DD5 /* CommonButton+Styles.swift in Sources */,
 				90DE38B626288E46003D3DD5 /* Coordinator.swift in Sources */,
 				90550A0A2625FE5700FD86A4 /* Strings.swift in Sources */,
@@ -1244,7 +1176,6 @@
 				90DE383826285EF2003D3DD5 /* OptionSelectorViewOutput.swift in Sources */,
 				90DE38C626288FAF003D3DD5 /* MainRouter.swift in Sources */,
 				90DE382626285EDF003D3DD5 /* OptionSelectorModuleConfigurator.swift in Sources */,
-				90DE37C32628564D003D3DD5 /* TestModuleInput.swift in Sources */,
 				90550A002625FDE500FD86A4 /* Assets.swift in Sources */,
 				90DE388326286BF3003D3DD5 /* UIView.swift in Sources */,
 				90DE37F026285D31003D3DD5 /* NSObject.swift in Sources */,
@@ -1253,13 +1184,14 @@
 				90DE385B26286575003D3DD5 /* CommonButtonStyle.swift in Sources */,
 				90DE383726285EF2003D3DD5 /* OptionSelectorViewInput.swift in Sources */,
 				87A98871C1AED1D915A4903C /* TabBarCoordinator.swift in Sources */,
-				CAB5C1EF2751FECB9B76E48D /* TabBarCoordinatorOutput.swift in Sources */,
 				C72706581D7A7DD90747E8CE /* TabBarModuleConfigurator.swift in Sources */,
 				DC5EAC240A563DBBD43E2FB7 /* TabBarPresenter.swift in Sources */,
 				65D89AB731B15EEA1318BA39 /* TabBarModuleInput.swift in Sources */,
 				F93A5250FD3FE7F3556EE75D /* TabBarModuleOutput.swift in Sources */,
 				997063C6027BA770196E29BF /* TabBarViewController.swift in Sources */,
 				540FA6455ACF653CAE397B82 /* TabBarViewInput.swift in Sources */,
+				90DE38F4262898A6003D3DD5 /* String.swift in Sources */,
+				90DE38EF2628981F003D3DD5 /* BaseNavigationController.swift in Sources */,
 				E967DB1F0E6D5DCC5B596277 /* TabBarViewOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

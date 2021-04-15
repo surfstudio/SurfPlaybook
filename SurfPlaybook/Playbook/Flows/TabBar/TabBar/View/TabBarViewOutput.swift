@@ -7,6 +7,10 @@
 //
 
 protocol TabBarViewOutput {
-    /// Notify presenter that view is ready
-    func viewLoaded()
+    /// Пользователь выбрал другой таб
+    ///
+    /// - Parameter tab: таб, который выбрал пользователь
+    /// - Parameter isInitial: true, если в navigationController'е таба отсутствуют экраны (стек пуст)
+    /// - Parameter isStackEmpty: true, если в текущий момент отображается рутовый контроллер таба
+    func selectTab(with tab: PlaybookTab, isInitial: Bool, isStackEmpty: Bool)
 }

@@ -6,9 +6,7 @@
 //  Copyright © 2021 Surf. All rights reserved.
 //
 
-final class TabBarCoordinator: BaseCoordinator, TabBarCoordinatorOutput {
-
-    // MARK: - TabBarCoordinatorOutput
+final class TabBarCoordinator: BaseCoordinator {
 
     // MARK: - Private Properties
 
@@ -33,6 +31,8 @@ final class TabBarCoordinator: BaseCoordinator, TabBarCoordinatorOutput {
 private extension TabBarCoordinator {
 
     func showModule() {
+        let (view, _, _) = TabBarModuleConfigurator().configure()
+        router.setRootModule(view)
     }
 
 }
