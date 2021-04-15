@@ -1,0 +1,28 @@
+xcassets:
+  - inputs: 
+      - Example/SurfPlaybookExample/Resources/Images/Assets.xcassets
+      - Example/SurfPlaybookExample/Resources/Colors/Colors.xcassets
+    outputs:
+      - templateName: swift4
+        output: Example/SurfPlaybookExample/Resources/Images/Assets.swift
+        params:
+          enumName: Resources
+          publicAccess: false
+
+fonts:
+  inputs:
+    - Example/SurfPlaybookExample/Resources/Fonts
+  outputs:
+    - templateName: swift4
+      output: Example/SurfPlaybookExample/Resources/Fonts/Fonts.swift
+      params:
+        publicAccess: false
+
+strings:
+  inputs:
+    - Example/SurfPlaybookExample/Resources/Strings/Localizable.strings
+  outputs:
+    - templateName: structured-swift4
+      output: Example/SurfPlaybookExample/Resources/Strings/Strings.swift
+      params:
+        publicAccess: true

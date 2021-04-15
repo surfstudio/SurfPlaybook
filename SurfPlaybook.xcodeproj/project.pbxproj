@@ -35,6 +35,22 @@
 		90C8B43A2625C74C00851B00 /* Playbook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C8B4392625C74C00851B00 /* Playbook.swift */; };
 		90C8B4482625EA4200851B00 /* SurfPlaybook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C8B3952625C55500851B00 /* SurfPlaybook.framework */; };
 		90C8B4492625EA4200851B00 /* SurfPlaybook.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 90C8B3952625C55500851B00 /* SurfPlaybook.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		90DE376926284E5F003D3DD5 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90DE376826284E5F003D3DD5 /* Colors.xcassets */; };
+		90DE377626284EDA003D3DD5 /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 90DE376D26284EDA003D3DD5 /* SF-Pro-Display-Regular.otf */; };
+		90DE377726284EDA003D3DD5 /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 90DE376E26284EDA003D3DD5 /* SF-Pro-Text-Semibold.otf */; };
+		90DE377826284EDA003D3DD5 /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 90DE376F26284EDA003D3DD5 /* SF-Pro-Text-Regular.otf */; };
+		90DE377926284EDA003D3DD5 /* SF-Pro-Display-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 90DE377026284EDA003D3DD5 /* SF-Pro-Display-Heavy.otf */; };
+		90DE377A26284EDB003D3DD5 /* SF-Pro-Text-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 90DE377126284EDA003D3DD5 /* SF-Pro-Text-Bold.otf */; };
+		90DE377B26284EDB003D3DD5 /* SF-Pro-Text-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 90DE377226284EDA003D3DD5 /* SF-Pro-Text-Heavy.otf */; };
+		90DE377C26284EDB003D3DD5 /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 90DE377326284EDA003D3DD5 /* SF-Pro-Display-Bold.otf */; };
+		90DE377D26284EDB003D3DD5 /* SF-Pro-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 90DE377426284EDA003D3DD5 /* SF-Pro-Text-Medium.otf */; };
+		90DE377E26284EDB003D3DD5 /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 90DE377526284EDA003D3DD5 /* SF-Pro-Display-Semibold.otf */; };
+		90DE378326284EEB003D3DD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90DE378226284EEB003D3DD5 /* Assets.xcassets */; };
+		90DE378826284F23003D3DD5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 90DE378726284F23003D3DD5 /* Localizable.strings */; };
+		90DE378D26284F6E003D3DD5 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE378C26284F6E003D3DD5 /* Colors.swift */; };
+		90DE379226284F7C003D3DD5 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE379126284F7C003D3DD5 /* Fonts.swift */; };
+		90DE379726284F86003D3DD5 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE379626284F86003D3DD5 /* Assets.swift */; };
+		90DE37A226284F8F003D3DD5 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE37A126284F8F003D3DD5 /* Strings.swift */; };
 		93578423C0F9E6B45DF34472 /* Pods_SurfPlaybookTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17A9FF310115EC4E63B82CA2 /* Pods_SurfPlaybookTests.framework */; };
 		959D6F1F6AC03D990EF54A89 /* Pods_SurfPlaybookExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E1C3827D8C9AB6DF9042487 /* Pods_SurfPlaybookExampleTests.framework */; };
 		A0342EA67275D6E42DAF0D48 /* Pods_SurfPlaybook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E49CE830032A6C005B119B /* Pods_SurfPlaybook.framework */; };
@@ -120,6 +136,22 @@
 		90C8B4142625C6B800851B00 /* SurfPlaybookExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfPlaybookExampleTests.swift; sourceTree = "<group>"; };
 		90C8B4162625C6B800851B00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90C8B4392625C74C00851B00 /* Playbook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playbook.swift; sourceTree = "<group>"; };
+		90DE376826284E5F003D3DD5 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		90DE376D26284EDA003D3DD5 /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
+		90DE376E26284EDA003D3DD5 /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
+		90DE376F26284EDA003D3DD5 /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
+		90DE377026284EDA003D3DD5 /* SF-Pro-Display-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Heavy.otf"; sourceTree = "<group>"; };
+		90DE377126284EDA003D3DD5 /* SF-Pro-Text-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Bold.otf"; sourceTree = "<group>"; };
+		90DE377226284EDA003D3DD5 /* SF-Pro-Text-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Heavy.otf"; sourceTree = "<group>"; };
+		90DE377326284EDA003D3DD5 /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
+		90DE377426284EDA003D3DD5 /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; };
+		90DE377526284EDA003D3DD5 /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
+		90DE378226284EEB003D3DD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		90DE378726284F23003D3DD5 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		90DE378C26284F6E003D3DD5 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		90DE379126284F7C003D3DD5 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		90DE379626284F86003D3DD5 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		90DE37A126284F8F003D3DD5 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		BA400EF9624EB1AF748BF6FF /* Pods_SurfPlaybookExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SurfPlaybookExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1E49CE830032A6C005B119B /* Pods_SurfPlaybook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SurfPlaybook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9F55F8F65B17F435DA0FED8 /* Pods-SurfPlaybookExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfPlaybookExample.debug.xcconfig"; path = "Target Support Files/Pods-SurfPlaybookExample/Pods-SurfPlaybookExample.debug.xcconfig"; sourceTree = "<group>"; };
@@ -184,8 +216,8 @@
 			isa = PBXGroup;
 			children = (
 				905509BD2625F9CB00FD86A4 /* Colors */,
-				905509BE2625F9D100FD86A4 /* Images */,
 				905509BF2625F9DD00FD86A4 /* Fonts */,
+				905509BE2625F9D100FD86A4 /* Images */,
 				905509C02625F9E700FD86A4 /* Strings */,
 			);
 			path = Resources;
@@ -290,6 +322,7 @@
 		90C8B3FC2625C6B700851B00 /* SurfPlaybookExample */ = {
 			isa = PBXGroup;
 			children = (
+				90DE376326284E22003D3DD5 /* Resources */,
 				90C8B3FD2625C6B700851B00 /* AppDelegate.swift */,
 				90C8B4012625C6B700851B00 /* ViewController.swift */,
 				90C8B4032625C6B700851B00 /* Main.storyboard */,
@@ -326,6 +359,61 @@
 				17A9FF310115EC4E63B82CA2 /* Pods_SurfPlaybookTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		90DE376326284E22003D3DD5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				90DE376726284E48003D3DD5 /* Colors */,
+				90DE376626284E43003D3DD5 /* Fonts */,
+				90DE376526284E3E003D3DD5 /* Images */,
+				90DE376426284E33003D3DD5 /* Strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		90DE376426284E33003D3DD5 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				90DE37A126284F8F003D3DD5 /* Strings.swift */,
+				90DE378726284F23003D3DD5 /* Localizable.strings */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		90DE376526284E3E003D3DD5 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				90DE379626284F86003D3DD5 /* Assets.swift */,
+				90DE378226284EEB003D3DD5 /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		90DE376626284E43003D3DD5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				90DE379126284F7C003D3DD5 /* Fonts.swift */,
+				90DE377326284EDA003D3DD5 /* SF-Pro-Display-Bold.otf */,
+				90DE377026284EDA003D3DD5 /* SF-Pro-Display-Heavy.otf */,
+				90DE376D26284EDA003D3DD5 /* SF-Pro-Display-Regular.otf */,
+				90DE377526284EDA003D3DD5 /* SF-Pro-Display-Semibold.otf */,
+				90DE377126284EDA003D3DD5 /* SF-Pro-Text-Bold.otf */,
+				90DE377226284EDA003D3DD5 /* SF-Pro-Text-Heavy.otf */,
+				90DE377426284EDA003D3DD5 /* SF-Pro-Text-Medium.otf */,
+				90DE376F26284EDA003D3DD5 /* SF-Pro-Text-Regular.otf */,
+				90DE376E26284EDA003D3DD5 /* SF-Pro-Text-Semibold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		90DE376726284E48003D3DD5 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				90DE376826284E5F003D3DD5 /* Colors.xcassets */,
+				90DE378C26284F6E003D3DD5 /* Colors.swift */,
+			);
+			path = Colors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -387,6 +475,7 @@
 			buildConfigurationList = 90C8B4222625C6B800851B00 /* Build configuration list for PBXNativeTarget "SurfPlaybookExample" */;
 			buildPhases = (
 				2DDA20A7DCF98722B55EC2C2 /* [CP] Check Pods Manifest.lock */,
+				90DE376226284E02003D3DD5 /* SwiftGen */,
 				905509972625F0C200FD86A4 /* Swiftlint */,
 				90C8B3F72625C6B700851B00 /* Sources */,
 				90C8B3F82625C6B700851B00 /* Frameworks */,
@@ -500,9 +589,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90DE377E26284EDB003D3DD5 /* SF-Pro-Display-Semibold.otf in Resources */,
+				90DE377726284EDA003D3DD5 /* SF-Pro-Text-Semibold.otf in Resources */,
 				90C8B40A2625C6B800851B00 /* LaunchScreen.storyboard in Resources */,
+				90DE376926284E5F003D3DD5 /* Colors.xcassets in Resources */,
+				90DE378326284EEB003D3DD5 /* Assets.xcassets in Resources */,
+				90DE377926284EDA003D3DD5 /* SF-Pro-Display-Heavy.otf in Resources */,
 				90C8B4072625C6B800851B00 /* Assets.xcassets in Resources */,
+				90DE377626284EDA003D3DD5 /* SF-Pro-Display-Regular.otf in Resources */,
 				90C8B4052625C6B700851B00 /* Main.storyboard in Resources */,
+				90DE377B26284EDB003D3DD5 /* SF-Pro-Text-Heavy.otf in Resources */,
+				90DE378826284F23003D3DD5 /* Localizable.strings in Resources */,
+				90DE377D26284EDB003D3DD5 /* SF-Pro-Text-Medium.otf in Resources */,
+				90DE377826284EDA003D3DD5 /* SF-Pro-Text-Regular.otf in Resources */,
+				90DE377A26284EDB003D3DD5 /* SF-Pro-Text-Bold.otf in Resources */,
+				90DE377C26284EDB003D3DD5 /* SF-Pro-Display-Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,7 +691,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "Pods/SwiftGen/bin/swiftgen config run --config SurfPlaybook/swiftgen.yml\n";
+			shellScript = "Pods/SwiftGen/bin/swiftgen config run --config swiftgen.yml\n";
+		};
+		90DE376226284E02003D3DD5 /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "Pods/SwiftGen/bin/swiftgen config run --config swiftgen_example.yml\n";
 		};
 		995162A689291AA23ABCECD2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -685,7 +804,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90DE379226284F7C003D3DD5 /* Fonts.swift in Sources */,
 				90C8B4022625C6B700851B00 /* ViewController.swift in Sources */,
+				90DE378D26284F6E003D3DD5 /* Colors.swift in Sources */,
+				90DE379726284F86003D3DD5 /* Assets.swift in Sources */,
+				90DE37A226284F8F003D3DD5 /* Strings.swift in Sources */,
 				90C8B3FE2625C6B700851B00 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
