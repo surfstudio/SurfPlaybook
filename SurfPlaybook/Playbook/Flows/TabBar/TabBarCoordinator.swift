@@ -11,6 +11,7 @@ final class TabBarCoordinator: BaseCoordinator {
     // MARK: - Private Properties
 
     private let router: Router
+    private weak var tabBarInput: TabBarModuleInput?
 
     // MARK: - Initialization
 
@@ -21,7 +22,7 @@ final class TabBarCoordinator: BaseCoordinator {
     // MARK: - Coordinator
 
     override func start(with deepLinkOption: DeepLinkOption?) {
-        showModule()
+        showTabBar()
     }
 
 }
@@ -30,9 +31,77 @@ final class TabBarCoordinator: BaseCoordinator {
 
 private extension TabBarCoordinator {
 
-    func showModule() {
-        let (view, _, _) = TabBarModuleConfigurator().configure()
+    func showTabBar() {
+        let (view, output, input) = TabBarModuleConfigurator().configure()
+        tabBarInput = input
+
+        output.onMainFlowSelect = { [weak self] isInitial, isChanging, isStackEmpty in
+            self?.runMainFlow(isInitial: isInitial,
+                              isChanging: isChanging,
+                              isStackEmpty: isStackEmpty)
+        }
+        output.onUIKitFlowSelect = { [weak self] isInitial, isChanging, isStackEmpty in
+            self?.runUIKitFlow(isInitial: isInitial,
+                               isChanging: isChanging,
+                               isStackEmpty: isStackEmpty)
+        }
+        output.onFlowsFlowSelect = { [weak self] isInitial, isChanging, isStackEmpty in
+            self?.runFlowsFlow(isInitial: isInitial,
+                               isChanging: isChanging,
+                               isStackEmpty: isStackEmpty)
+        }
+        output.onSettingsFlowSelect = { [weak self] isInitial, isChanging, isStackEmpty in
+            self?.runSettingsFlow(isInitial: isInitial,
+                                  isChanging: isChanging,
+                                  isStackEmpty: isStackEmpty)
+        }
+
         router.setRootModule(view)
+        tabBarInput?.selectTab(.main)
     }
+
+    func runMainFlow(isInitial: Bool,
+                     isChanging: Bool,
+                     isStackEmpty: Bool) {
+        guard isInitial else {
+            return
+        }
+        let coordinator = MainCoordinator(router: router)
+        addDependency(coordinator)
+        coordinator.start()
+    }
+
+    func runUIKitFlow(isInitial: Bool,
+                      isChanging: Bool,
+                      isStackEmpty: Bool) {
+         guard isInitial else {
+             return
+         }
+         let coordinator = UIKitCoordinator(router: router)
+         addDependency(coordinator)
+         coordinator.start()
+     }
+
+    func runFlowsFlow(isInitial: Bool,
+                      isChanging: Bool,
+                      isStackEmpty: Bool) {
+         guard isInitial else {
+             return
+         }
+         let coordinator = FlowsCoordinator(router: router)
+         addDependency(coordinator)
+         coordinator.start()
+     }
+
+    func runSettingsFlow(isInitial: Bool,
+                         isChanging: Bool,
+                         isStackEmpty: Bool) {
+         guard isInitial else {
+             return
+         }
+         let coordinator = SettingsCoordinator(router: router)
+         addDependency(coordinator)
+         coordinator.start()
+     }
 
 }
