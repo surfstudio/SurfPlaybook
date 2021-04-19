@@ -26,6 +26,8 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 
         Playbook.shared
             .add(uiKitPage: ColorsUIKitPage())
+        Playbook.shared
+            .add(flowCoordinator: TestFlowCoordinator())
 
         Playbook.shared.start(from: self.window)
         return true

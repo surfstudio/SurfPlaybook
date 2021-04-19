@@ -10,9 +10,17 @@ import UIKit
 
 final class FlowsViewController: UIViewController {
 
+    // MARK: - IBOutlets
+
+    @IBOutlet private weak var tableView: UITableView!
+
     // MARK: - Properties
 
     var output: FlowsViewOutput?
+
+    // MARK: - Private Properties
+
+    private var adapter: FlowsAdapter?
 
     // MARK: - UIViewController
 
@@ -27,7 +35,28 @@ final class FlowsViewController: UIViewController {
 
 extension FlowsViewController: FlowsViewInput {
 
-    func setupInitialState() {
+    func setupInitialState(flowCoordinators: [PlaybookFlowCoordinator]) {
+        configureAppearance()
+        adapter?.fill(with: flowCoordinators)
+    }
+
+}
+
+// MARK: - Appearance
+
+private extension FlowsViewController {
+
+    func configureAppearance() {
+        navigationItem.title = "Flows"
+        tableView.apply(style: .default)
+        configureAdapter()
+    }
+
+    func configureAdapter() {
+        adapter = FlowsAdapter(tableView: tableView)
+        adapter?.onSelectFlowCoordinator = { [weak self] id in
+            self?.output?.selectFlowCoordinator(id: id)
+        }
     }
 
 }

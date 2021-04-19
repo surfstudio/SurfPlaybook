@@ -5,11 +5,13 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FlowsViewController" customModule="SurfPlaybook" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="YoG-3U-UdY" id="BQw-As-DmS"/>
                 <outlet property="view" destination="iN0-l3-epB" id="Q3p-Ee-1CD"/>
             </connections>
         </placeholder>
@@ -18,20 +20,25 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flows" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gXV-Rq-VSl">
-                    <rect key="frame" x="138" y="273.5" width="44" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YoG-3U-UdY">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="i1W-4n-ehu"/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="gXV-Rq-VSl" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="MRl-VE-sUM"/>
-                <constraint firstItem="gXV-Rq-VSl" firstAttribute="centerY" secondItem="i1W-4n-ehu" secondAttribute="centerY" id="eXt-WZ-uaF"/>
+                <constraint firstItem="YoG-3U-UdY" firstAttribute="leading" secondItem="i1W-4n-ehu" secondAttribute="leading" id="0pa-jm-NnM"/>
+                <constraint firstItem="i1W-4n-ehu" firstAttribute="trailing" secondItem="YoG-3U-UdY" secondAttribute="trailing" id="4he-XK-kL7"/>
+                <constraint firstItem="i1W-4n-ehu" firstAttribute="bottom" secondItem="YoG-3U-UdY" secondAttribute="bottom" id="SW8-Av-Jht"/>
+                <constraint firstItem="YoG-3U-UdY" firstAttribute="top" secondItem="i1W-4n-ehu" secondAttribute="top" id="i46-8X-MnR"/>
             </constraints>
             <point key="canvasLocation" x="141" y="154"/>
         </view>
     </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

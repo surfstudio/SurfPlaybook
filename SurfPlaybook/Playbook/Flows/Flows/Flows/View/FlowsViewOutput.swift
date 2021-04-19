@@ -7,6 +7,6 @@
 //
 
 protocol FlowsViewOutput {
-    /// Notify presenter that view is ready
     func viewLoaded()
+    func selectFlowCoordinator(id: String)
 }

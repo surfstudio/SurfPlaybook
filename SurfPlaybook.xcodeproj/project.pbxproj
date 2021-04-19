@@ -142,6 +142,14 @@
 		90F3DC6B262DD9D700220B28 /* UIKitPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3DC3B262DD75800220B28 /* UIKitPageCell.swift */; };
 		90F3DC72262DD9DC00220B28 /* UIKitPageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F3DC3C262DD75800220B28 /* UIKitPageCell.xib */; };
 		90F3DC7C262DD9E000220B28 /* UIKitPageCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3DC45262DD76400220B28 /* UIKitPageCellModel.swift */; };
+		90F3DC82262DE11F00220B28 /* FlowsAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3DC81262DE11F00220B28 /* FlowsAdapter.swift */; };
+		90F3DC8E262DE29400220B28 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3DC8C262DE29400220B28 /* TestViewController.swift */; };
+		90F3DC8F262DE29400220B28 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F3DC8D262DE29400220B28 /* TestViewController.xib */; };
+		90F3DC98262DE2F800220B28 /* TestFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3DC97262DE2F800220B28 /* TestFlowCoordinator.swift */; };
+		90F3DCA1262DE34600220B28 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3DCA0262DE34600220B28 /* MainRouter.swift */; };
+		90F3DCA7262DE37000220B28 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3DCA6262DE37000220B28 /* Presentable.swift */; };
+		90F3DCAF262DE37800220B28 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3DCAE262DE37800220B28 /* Router.swift */; };
+		90F3DCB4262DE3A200220B28 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3DCB3262DE3A200220B28 /* UIApplication.swift */; };
 		93578423C0F9E6B45DF34472 /* Pods_SurfPlaybookTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17A9FF310115EC4E63B82CA2 /* Pods_SurfPlaybookTests.framework */; };
 		959D6F1F6AC03D990EF54A89 /* Pods_SurfPlaybookExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E1C3827D8C9AB6DF9042487 /* Pods_SurfPlaybookExampleTests.framework */; };
 		997063C6027BA770196E29BF /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4C45498CCE35BA3E4CE456 /* TabBarViewController.swift */; };
@@ -376,6 +384,14 @@
 		90F3DC59262DD97300220B28 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		90F3DC61262DD97C00220B28 /* UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
 		90F3DC66262DD99E00220B28 /* NSObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
+		90F3DC81262DE11F00220B28 /* FlowsAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowsAdapter.swift; sourceTree = "<group>"; };
+		90F3DC8C262DE29400220B28 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		90F3DC8D262DE29400220B28 /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
+		90F3DC97262DE2F800220B28 /* TestFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFlowCoordinator.swift; sourceTree = "<group>"; };
+		90F3DCA0262DE34600220B28 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		90F3DCA6262DE37000220B28 /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		90F3DCAE262DE37800220B28 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		90F3DCB3262DE3A200220B28 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		96C8E302CF69F22A10D4823A /* MainViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainViewOutput.swift; sourceTree = "<group>"; };
 		9B4C45498CCE35BA3E4CE456 /* TabBarViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		A09E0626D80EDF223D85CDF9 /* TabBarModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarModuleOutput.swift; sourceTree = "<group>"; };
@@ -771,6 +787,7 @@
 		90C8B3FC2625C6B700851B00 /* SurfPlaybookExample */ = {
 			isa = PBXGroup;
 			children = (
+				90F3DC89262DE26300220B28 /* Flows */,
 				90F3DC1F262DD36400220B28 /* Playbook */,
 				90F3DC56262DD95200220B28 /* Library */,
 				90DE376326284E22003D3DD5 /* Resources */,
@@ -1184,6 +1201,7 @@
 		90F3DC1F262DD36400220B28 /* Playbook */ = {
 			isa = PBXGroup;
 			children = (
+				90F3DC96262DE2E100220B28 /* FlowCoordinators */,
 				90F3DC20262DD36A00220B28 /* UIKitChapters */,
 			);
 			path = Playbook;
@@ -1228,6 +1246,8 @@
 			isa = PBXGroup;
 			children = (
 				90F3DC57262DD95900220B28 /* Extensions */,
+				90F3DCA5262DE36200220B28 /* Protocols */,
+				90F3DC9F262DE33800220B28 /* Routers */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -1244,10 +1264,69 @@
 		90F3DC58262DD96400220B28 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				90F3DCB3262DE3A200220B28 /* UIApplication.swift */,
 				90F3DC59262DD97300220B28 /* UITableView.swift */,
 				90F3DC61262DD97C00220B28 /* UITableViewCell.swift */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		90F3DC80262DE11000220B28 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				90F3DC81262DE11F00220B28 /* FlowsAdapter.swift */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		90F3DC89262DE26300220B28 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				90F3DC8A262DE27800220B28 /* Common */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		90F3DC8A262DE27800220B28 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				90F3DC8B262DE27D00220B28 /* TestViewController */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		90F3DC8B262DE27D00220B28 /* TestViewController */ = {
+			isa = PBXGroup;
+			children = (
+				90F3DC8C262DE29400220B28 /* TestViewController.swift */,
+				90F3DC8D262DE29400220B28 /* TestViewController.xib */,
+			);
+			path = TestViewController;
+			sourceTree = "<group>";
+		};
+		90F3DC96262DE2E100220B28 /* FlowCoordinators */ = {
+			isa = PBXGroup;
+			children = (
+				90F3DC97262DE2F800220B28 /* TestFlowCoordinator.swift */,
+			);
+			path = FlowCoordinators;
+			sourceTree = "<group>";
+		};
+		90F3DC9F262DE33800220B28 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				90F3DCA0262DE34600220B28 /* MainRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		90F3DCA5262DE36200220B28 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				90F3DCA6262DE37000220B28 /* Presentable.swift */,
+				90F3DCAE262DE37800220B28 /* Router.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		A2BB8665E3B354B654F52E0F /* Main */ = {
@@ -1274,6 +1353,7 @@
 		B1158A2C169C30775F19A85C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				90F3DC80262DE11000220B28 /* Adapter */,
 				D4753B38BEA02907D28E6B39 /* FlowsViewController.swift */,
 				147832FEC741A136D7707F15 /* FlowsViewController.xib */,
 				58F0F35A2DF42AA653381DF2 /* FlowsViewInput.swift */,
@@ -1541,6 +1621,7 @@
 				90C8B4072625C6B800851B00 /* Assets.xcassets in Resources */,
 				90DE377626284EDA003D3DD5 /* SF-Pro-Display-Regular.otf in Resources */,
 				90C8B4052625C6B700851B00 /* Main.storyboard in Resources */,
+				90F3DC8F262DE29400220B28 /* TestViewController.xib in Resources */,
 				90DE377B26284EDB003D3DD5 /* SF-Pro-Text-Heavy.otf in Resources */,
 				90DE378826284F23003D3DD5 /* Localizable.strings in Resources */,
 				90DE377D26284EDB003D3DD5 /* SF-Pro-Text-Medium.otf in Resources */,
@@ -1729,6 +1810,7 @@
 			files = (
 				90DE38CE2628900A003D3DD5 /* UIApplication.swift in Sources */,
 				90DE38C026288F57003D3DD5 /* Router.swift in Sources */,
+				90F3DC82262DE11F00220B28 /* FlowsAdapter.swift in Sources */,
 				90DE37F626285D75003D3DD5 /* UIViewController.swift in Sources */,
 				90DE384026285F6F003D3DD5 /* Closures.swift in Sources */,
 				90DE386C26286939003D3DD5 /* LabelStyle.swift in Sources */,
@@ -1854,12 +1936,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90F3DCB4262DE3A200220B28 /* UIApplication.swift in Sources */,
+				90F3DC98262DE2F800220B28 /* TestFlowCoordinator.swift in Sources */,
+				90F3DCA7262DE37000220B28 /* Presentable.swift in Sources */,
 				90F3DC62262DD97C00220B28 /* UITableViewCell.swift in Sources */,
 				90DE379226284F7C003D3DD5 /* Fonts.swift in Sources */,
 				90C8B4022625C6B700851B00 /* ViewController.swift in Sources */,
 				90F3DC7C262DD9E000220B28 /* UIKitPageCellModel.swift in Sources */,
+				90F3DCA1262DE34600220B28 /* MainRouter.swift in Sources */,
 				90DE378D26284F6E003D3DD5 /* Colors.swift in Sources */,
+				90F3DC8E262DE29400220B28 /* TestViewController.swift in Sources */,
 				90F3DC2C262DD42400220B28 /* ColorsUIKitPage.swift in Sources */,
+				90F3DCAF262DE37800220B28 /* Router.swift in Sources */,
 				90DE379726284F86003D3DD5 /* Assets.swift in Sources */,
 				90F3DC6B262DD9D700220B28 /* UIKitPageCell.swift in Sources */,
 				90F3DC5A262DD97300220B28 /* UITableView.swift in Sources */,

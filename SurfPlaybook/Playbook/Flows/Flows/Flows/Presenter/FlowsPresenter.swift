@@ -14,6 +14,16 @@ final class FlowsPresenter: FlowsModuleOutput {
 
     weak var view: FlowsViewInput?
 
+    // MARK: - Private Properties
+
+    private let flowCoordinators: [PlaybookFlowCoordinator]
+
+    // MARK: - Initialization
+
+    init() {
+        self.flowCoordinators = Playbook.shared.flowCoordinators
+    }
+
 }
 
 // MARK: - FlowsModuleInput
@@ -26,7 +36,14 @@ extension FlowsPresenter: FlowsModuleInput {
 extension FlowsPresenter: FlowsViewOutput {
 
     func viewLoaded() {
-        view?.setupInitialState()
+        view?.setupInitialState(flowCoordinators: flowCoordinators)
+    }
+
+    func selectFlowCoordinator(id: String) {
+        guard let coordinator = flowCoordinators.first(where: { $0.id == id }) else {
+            return
+        }
+        coordinator.start()
     }
 
 }

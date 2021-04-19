@@ -7,6 +7,5 @@
 //
 
 protocol FlowsViewInput: class {
-    /// Method for setup initial state of view
-    func setupInitialState()
+    func setupInitialState(flowCoordinators: [PlaybookFlowCoordinator])
 }
