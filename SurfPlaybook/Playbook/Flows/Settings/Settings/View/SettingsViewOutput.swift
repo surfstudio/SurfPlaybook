@@ -7,6 +7,6 @@
 //
 
 protocol SettingsViewOutput {
-    /// Notify presenter that view is ready
     func viewLoaded()
+    func toggleSetting(for block: SettingsBlock)
 }

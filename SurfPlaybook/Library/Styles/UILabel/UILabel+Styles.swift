@@ -18,6 +18,7 @@ extension UILabel {
 
 enum LabelStyleType {
     case textRegular17BlackCenter
+    case textRegular16Black
     case displayRegular21BlackCenter
 
     var style: LabelStyle {
@@ -27,6 +28,11 @@ enum LabelStyleType {
                          textColor: Colors.Main.textMain,
                          lineHeight: 22,
                          kern: -0.41)
+        case .textRegular16Black:
+            return .init(font: FontFamily.SFProText.regular.font(size: 16),
+                         textColor: Colors.Main.textMain,
+                         lineHeight: 20,
+                         kern: -0.32)
         case .displayRegular21BlackCenter:
             return .init(font: FontFamily.SFProDisplay.regular.font(size: 21),
                          textColor: Colors.Main.textMain,

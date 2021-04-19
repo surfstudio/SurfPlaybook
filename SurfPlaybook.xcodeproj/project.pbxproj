@@ -112,6 +112,21 @@
 		90DE38EA2628978B003D3DD5 /* PlaybookTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE38E92628978B003D3DD5 /* PlaybookTab.swift */; };
 		90DE38EF2628981F003D3DD5 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE38EE2628981F003D3DD5 /* BaseNavigationController.swift */; };
 		90DE38F4262898A6003D3DD5 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE38F3262898A6003D3DD5 /* String.swift */; };
+		90F3DBA9262DAC4A00220B28 /* RadioButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3DBA7262DAC4A00220B28 /* RadioButtonCell.swift */; };
+		90F3DBAA262DAC4A00220B28 /* RadioButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F3DBA8262DAC4A00220B28 /* RadioButtonCell.xib */; };
+		90F3DBB0262DAD0F00220B28 /* DesignConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3DBAF262DAD0F00220B28 /* DesignConstants.swift */; };
+		90F3DBB8262DAD5400220B28 /* RadioButtonCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3DBB7262DAD5400220B28 /* RadioButtonCellModel.swift */; };
+		90F3DBBF262DAF5700220B28 /* PlaybookNotificationServiceInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3DBBE262DAF5700220B28 /* PlaybookNotificationServiceInterface.swift */; };
+		90F3DBC7262DAF6200220B28 /* PlaybookNotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3DBC6262DAF6200220B28 /* PlaybookNotificationService.swift */; };
+		90F3DBCC262DAF6A00220B28 /* PlaybookNotificationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3DBCB262DAF6A00220B28 /* PlaybookNotificationType.swift */; };
+		90F3DBD2262DAFA200220B28 /* PlaybookStorageInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3DBD1262DAFA200220B28 /* PlaybookStorageInterface.swift */; };
+		90F3DBDA262DAFAA00220B28 /* PlaybookUserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3DBD9262DAFAA00220B28 /* PlaybookUserDefaultsService.swift */; };
+		90F3DBE0262DB00A00220B28 /* PlaybookSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3DBDF262DB00A00220B28 /* PlaybookSettings.swift */; };
+		90F3DBEA262DB07A00220B28 /* SettingsBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3DBE9262DB07A00220B28 /* SettingsBlock.swift */; };
+		90F3DBEF262DB09800220B28 /* SettingsAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3DBEE262DB09800220B28 /* SettingsAdapter.swift */; };
+		90F3DBF5262DB2DE00220B28 /* UITableView+Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3DBF4262DB2DE00220B28 /* UITableView+Styles.swift */; };
+		90F3DBFA262DB41B00220B28 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3DBF9262DB41B00220B28 /* UITableView.swift */; };
+		90F3DBFF262DB45100220B28 /* UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3DBFE262DB45100220B28 /* UITableViewCell.swift */; };
 		93578423C0F9E6B45DF34472 /* Pods_SurfPlaybookTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17A9FF310115EC4E63B82CA2 /* Pods_SurfPlaybookTests.framework */; };
 		959D6F1F6AC03D990EF54A89 /* Pods_SurfPlaybookExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E1C3827D8C9AB6DF9042487 /* Pods_SurfPlaybookExampleTests.framework */; };
 		997063C6027BA770196E29BF /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4C45498CCE35BA3E4CE456 /* TabBarViewController.swift */; };
@@ -308,6 +323,21 @@
 		90DE38E92628978B003D3DD5 /* PlaybookTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybookTab.swift; sourceTree = "<group>"; };
 		90DE38EE2628981F003D3DD5 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		90DE38F3262898A6003D3DD5 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		90F3DBA7262DAC4A00220B28 /* RadioButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonCell.swift; sourceTree = "<group>"; };
+		90F3DBA8262DAC4A00220B28 /* RadioButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RadioButtonCell.xib; sourceTree = "<group>"; };
+		90F3DBAF262DAD0F00220B28 /* DesignConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignConstants.swift; sourceTree = "<group>"; };
+		90F3DBB7262DAD5400220B28 /* RadioButtonCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonCellModel.swift; sourceTree = "<group>"; };
+		90F3DBBE262DAF5700220B28 /* PlaybookNotificationServiceInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybookNotificationServiceInterface.swift; sourceTree = "<group>"; };
+		90F3DBC6262DAF6200220B28 /* PlaybookNotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybookNotificationService.swift; sourceTree = "<group>"; };
+		90F3DBCB262DAF6A00220B28 /* PlaybookNotificationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybookNotificationType.swift; sourceTree = "<group>"; };
+		90F3DBD1262DAFA200220B28 /* PlaybookStorageInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybookStorageInterface.swift; sourceTree = "<group>"; };
+		90F3DBD9262DAFAA00220B28 /* PlaybookUserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybookUserDefaultsService.swift; sourceTree = "<group>"; };
+		90F3DBDF262DB00A00220B28 /* PlaybookSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybookSettings.swift; sourceTree = "<group>"; };
+		90F3DBE9262DB07A00220B28 /* SettingsBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsBlock.swift; sourceTree = "<group>"; };
+		90F3DBEE262DB09800220B28 /* SettingsAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsAdapter.swift; sourceTree = "<group>"; };
+		90F3DBF4262DB2DE00220B28 /* UITableView+Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Styles.swift"; sourceTree = "<group>"; };
+		90F3DBF9262DB41B00220B28 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		90F3DBFE262DB45100220B28 /* UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
 		96C8E302CF69F22A10D4823A /* MainViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainViewOutput.swift; sourceTree = "<group>"; };
 		9B4C45498CCE35BA3E4CE456 /* TabBarViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		A09E0626D80EDF223D85CDF9 /* TabBarModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarModuleOutput.swift; sourceTree = "<group>"; };
@@ -403,7 +433,6 @@
 				3C4E9B0F83D1D0AC66496851 /* UIKitModuleInput.swift */,
 				F025D4FE8B00F32F96B772BA /* UIKitModuleOutput.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -414,7 +443,6 @@
 				1DB7798A0FADA3A7F488AB7B /* Presenter */,
 				89A91FCB11186AB2D42CA98C /* View */,
 			);
-			name = UIKit;
 			path = UIKit;
 			sourceTree = "<group>";
 		};
@@ -487,7 +515,6 @@
 				AD21D363F78EE0AE2BC04AEC /* FlowsModuleInput.swift */,
 				B962A68A169668586197369F /* FlowsModuleOutput.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -498,7 +525,6 @@
 				5691A4388BBD1443E6838E44 /* Presenter */,
 				B1158A2C169C30775F19A85C /* View */,
 			);
-			name = Flows;
 			path = Flows;
 			sourceTree = "<group>";
 		};
@@ -519,7 +545,6 @@
 				AC6678856A823C2270226804 /* Presenter */,
 				B9DDCF9D1D0C4F84071BA433 /* View */,
 			);
-			name = Settings;
 			path = Settings;
 			sourceTree = "<group>";
 		};
@@ -531,7 +556,6 @@
 				3F10AB6125FCDE59573B3A11 /* UIKitViewInput.swift */,
 				7379B961B001E682B19D2417 /* UIKitViewOutput.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -595,7 +619,6 @@
 			children = (
 				2EB7110238C2000942BD3D05 /* SettingsModuleConfigurator.swift */,
 			);
-			name = Configurator;
 			path = Configurator;
 			sourceTree = "<group>";
 		};
@@ -635,9 +658,10 @@
 		90C8B3972625C55500851B00 /* SurfPlaybook */ = {
 			isa = PBXGroup;
 			children = (
-				90DE37ED26285D1C003D3DD5 /* Library */,
 				90C8B4382625C73F00851B00 /* Playbook */,
+				90DE37ED26285D1C003D3DD5 /* Library */,
 				905509BC2625F9BF00FD86A4 /* Resources */,
+				90F3DBBC262DAF3500220B28 /* Services */,
 				90C8B3982625C55500851B00 /* SurfPlaybook.h */,
 				90C8B3992625C55500851B00 /* Info.plist */,
 			);
@@ -764,6 +788,7 @@
 			isa = PBXGroup;
 			children = (
 				90DE38A626288DFE003D3DD5 /* BaseClasses */,
+				90F3DBAE262DACF500220B28 /* Constants */,
 				90DE37EE26285D23003D3DD5 /* Extensions */,
 				90DE383E26285F64003D3DD5 /* Helpers */,
 				90DE389D26288DAF003D3DD5 /* Models */,
@@ -789,10 +814,12 @@
 		90DE37F426285D68003D3DD5 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				90DE38CD2628900A003D3DD5 /* UIApplication.swift */,
 				90DE384E2628644A003D3DD5 /* UIImage.swift */,
+				90F3DBF9262DB41B00220B28 /* UITableView.swift */,
+				90F3DBFE262DB45100220B28 /* UITableViewCell.swift */,
 				90DE388226286BF3003D3DD5 /* UIView.swift */,
 				90DE37F526285D75003D3DD5 /* UIViewController.swift */,
-				90DE38CD2628900A003D3DD5 /* UIApplication.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -888,6 +915,7 @@
 		90DE3844262863B8003D3DD5 /* Reusable */ = {
 			isa = PBXGroup;
 			children = (
+				90F3DBA5262DA88700220B28 /* Cells */,
 				90DE3845262863C2003D3DD5 /* CommonButton */,
 			);
 			path = Reusable;
@@ -904,8 +932,9 @@
 		90DE3853262864B6003D3DD5 /* Styles */ = {
 			isa = PBXGroup;
 			children = (
-				90DE386A26286912003D3DD5 /* UILabel */,
 				90DE3854262864BD003D3DD5 /* CommonButton */,
+				90DE386A26286912003D3DD5 /* UILabel */,
+				90F3DBF3262DB2B700220B28 /* UITableView */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -963,6 +992,92 @@
 			path = Routers;
 			sourceTree = "<group>";
 		};
+		90F3DBA5262DA88700220B28 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				90F3DBA6262DABE700220B28 /* RadioButtonCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		90F3DBA6262DABE700220B28 /* RadioButtonCell */ = {
+			isa = PBXGroup;
+			children = (
+				90F3DBA7262DAC4A00220B28 /* RadioButtonCell.swift */,
+				90F3DBA8262DAC4A00220B28 /* RadioButtonCell.xib */,
+				90F3DBB7262DAD5400220B28 /* RadioButtonCellModel.swift */,
+			);
+			path = RadioButtonCell;
+			sourceTree = "<group>";
+		};
+		90F3DBAE262DACF500220B28 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				90F3DBAF262DAD0F00220B28 /* DesignConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		90F3DBBC262DAF3500220B28 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				90F3DBBD262DAF4900220B28 /* PlaybookNotificationService */,
+				90F3DBD0262DAF9700220B28 /* PlaybookUserDefaultsService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		90F3DBBD262DAF4900220B28 /* PlaybookNotificationService */ = {
+			isa = PBXGroup;
+			children = (
+				90F3DBBE262DAF5700220B28 /* PlaybookNotificationServiceInterface.swift */,
+				90F3DBC6262DAF6200220B28 /* PlaybookNotificationService.swift */,
+				90F3DBCB262DAF6A00220B28 /* PlaybookNotificationType.swift */,
+			);
+			path = PlaybookNotificationService;
+			sourceTree = "<group>";
+		};
+		90F3DBD0262DAF9700220B28 /* PlaybookUserDefaultsService */ = {
+			isa = PBXGroup;
+			children = (
+				90F3DBD1262DAFA200220B28 /* PlaybookStorageInterface.swift */,
+				90F3DBD9262DAFAA00220B28 /* PlaybookUserDefaultsService.swift */,
+			);
+			path = PlaybookUserDefaultsService;
+			sourceTree = "<group>";
+		};
+		90F3DBDE262DAFFA00220B28 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				90F3DBDF262DB00A00220B28 /* PlaybookSettings.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		90F3DBE7262DB06600220B28 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				90F3DBEE262DB09800220B28 /* SettingsAdapter.swift */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		90F3DBE8262DB06B00220B28 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				90F3DBE9262DB07A00220B28 /* SettingsBlock.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		90F3DBF3262DB2B700220B28 /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				90F3DBF4262DB2DE00220B28 /* UITableView+Styles.swift */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
 		A2BB8665E3B354B654F52E0F /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -970,18 +1085,17 @@
 				EA8C83A90E2B897CBBC0E9D2 /* Presenter */,
 				FB53192A00D67CF5104D7879 /* View */,
 			);
-			name = Main;
 			path = Main;
 			sourceTree = "<group>";
 		};
 		AC6678856A823C2270226804 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				90F3DBDE262DAFFA00220B28 /* Support */,
 				A37C6B203F9BC12C97A4DA4C /* SettingsPresenter.swift */,
 				D179BBB1B51D8593020ACD64 /* SettingsModuleInput.swift */,
 				294EF8E657216DA4EE28E1B4 /* SettingsModuleOutput.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -993,7 +1107,6 @@
 				58F0F35A2DF42AA653381DF2 /* FlowsViewInput.swift */,
 				3EB0B9FA579566A13722D4B8 /* FlowsViewOutput.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -1002,7 +1115,6 @@
 			children = (
 				70C1D6A32605CA48D732C2B8 /* FlowsModuleConfigurator.swift */,
 			);
-			name = Configurator;
 			path = Configurator;
 			sourceTree = "<group>";
 		};
@@ -1019,12 +1131,13 @@
 		B9DDCF9D1D0C4F84071BA433 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				90F3DBE7262DB06600220B28 /* Adapter */,
+				90F3DBE8262DB06B00220B28 /* Models */,
 				B15E03553E65B4C229FA27E6 /* SettingsViewController.swift */,
 				66EA5A8FEE95BA6078FCC2CA /* SettingsViewController.xib */,
 				2AAD3FBB9E65DEFEFCED9A88 /* SettingsViewInput.swift */,
 				0E5B1DAA5702C6729CD8B2EB /* SettingsViewOutput.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -1033,7 +1146,6 @@
 			children = (
 				7037AC3765B97E37D55539D3 /* UIKitModuleConfigurator.swift */,
 			);
-			name = Configurator;
 			path = Configurator;
 			sourceTree = "<group>";
 		};
@@ -1042,7 +1154,6 @@
 			children = (
 				1FB3D2177E67E8E60C0169E8 /* MainModuleConfigurator.swift */,
 			);
-			name = Configurator;
 			path = Configurator;
 			sourceTree = "<group>";
 		};
@@ -1053,7 +1164,6 @@
 				D21ACEEDD94E93DEB325A6E3 /* MainModuleInput.swift */,
 				CC59CF316071B9FA15D726A5 /* MainModuleOutput.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -1065,7 +1175,6 @@
 				EC63A97477AED6C015819F33 /* MainViewInput.swift */,
 				96C8E302CF69F22A10D4823A /* MainViewOutput.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -1231,6 +1340,7 @@
 				905509C72625FA7800FD86A4 /* Colors.xcassets in Resources */,
 				C2807FC1A3A4556206898C2A /* FlowsViewController.xib in Resources */,
 				0A36BCE076D7062E2C9BDE77 /* MainViewController.xib in Resources */,
+				90F3DBAA262DAC4A00220B28 /* RadioButtonCell.xib in Resources */,
 				51F198AA23895CAE2D39D241 /* SettingsViewController.xib in Resources */,
 				8CB5F55CA26F7051233EE675 /* UIKitViewController.xib in Resources */,
 			);
@@ -1448,11 +1558,13 @@
 				90DE384026285F6F003D3DD5 /* Closures.swift in Sources */,
 				90DE386C26286939003D3DD5 /* LabelStyle.swift in Sources */,
 				905509FB2625FDDA00FD86A4 /* Fonts.swift in Sources */,
+				90F3DBD2262DAFA200220B28 /* PlaybookStorageInterface.swift in Sources */,
 				90DE381F26285ED4003D3DD5 /* OptionSelectorConfig.swift in Sources */,
 				90DE380726285DF7003D3DD5 /* PlaybookFlowCoordinator.swift in Sources */,
 				90DE38632628689A003D3DD5 /* Array.swift in Sources */,
 				90DE38EA2628978B003D3DD5 /* PlaybookTab.swift in Sources */,
 				90DE3847262863CB003D3DD5 /* CommonButton.swift in Sources */,
+				90F3DBA9262DAC4A00220B28 /* RadioButtonCell.swift in Sources */,
 				90DE383926285EF2003D3DD5 /* OptionSelectorViewController.swift in Sources */,
 				90DE382D26285EE8003D3DD5 /* OptionSelectorModuleInput.swift in Sources */,
 				90DE387E26286BCE003D3DD5 /* PlaybookPage.swift in Sources */,
@@ -1465,6 +1577,7 @@
 				90DE3871262869DC003D3DD5 /* StringAttributes.swift in Sources */,
 				90DE382E26285EE8003D3DD5 /* OptionSelectorModuleOutput.swift in Sources */,
 				90DE37FD26285DCC003D3DD5 /* UIKitPageViewModel.swift in Sources */,
+				90F3DBFF262DB45100220B28 /* UITableViewCell.swift in Sources */,
 				90DE382126285ED4003D3DD5 /* OptionSelectorModel.swift in Sources */,
 				90DE389026286C3B003D3DD5 /* Playbook.swift in Sources */,
 				90DE38BB26288F21003D3DD5 /* Presentable.swift in Sources */,
@@ -1475,17 +1588,23 @@
 				90DE388826286C12003D3DD5 /* PlaybookChapter.swift in Sources */,
 				90DE383826285EF2003D3DD5 /* OptionSelectorViewOutput.swift in Sources */,
 				90DE38C626288FAF003D3DD5 /* MainRouter.swift in Sources */,
+				90F3DBE0262DB00A00220B28 /* PlaybookSettings.swift in Sources */,
 				90DE382626285EDF003D3DD5 /* OptionSelectorModuleConfigurator.swift in Sources */,
+				90F3DBFA262DB41B00220B28 /* UITableView.swift in Sources */,
 				90550A002625FDE500FD86A4 /* Assets.swift in Sources */,
+				90F3DBEF262DB09800220B28 /* SettingsAdapter.swift in Sources */,
 				90DE388326286BF3003D3DD5 /* UIView.swift in Sources */,
 				90DE37F026285D31003D3DD5 /* NSObject.swift in Sources */,
+				90F3DBCC262DAF6A00220B28 /* PlaybookNotificationType.swift in Sources */,
 				90DE387626286A20003D3DD5 /* UILabel+Styles.swift in Sources */,
 				90DE382026285ED4003D3DD5 /* OptionSelectorHandler.swift in Sources */,
+				90F3DBDA262DAFAA00220B28 /* PlaybookUserDefaultsService.swift in Sources */,
 				90DE385B26286575003D3DD5 /* CommonButtonStyle.swift in Sources */,
 				90DE383726285EF2003D3DD5 /* OptionSelectorViewInput.swift in Sources */,
 				87A98871C1AED1D915A4903C /* TabBarCoordinator.swift in Sources */,
 				C72706581D7A7DD90747E8CE /* TabBarModuleConfigurator.swift in Sources */,
 				DC5EAC240A563DBBD43E2FB7 /* TabBarPresenter.swift in Sources */,
+				90F3DBEA262DB07A00220B28 /* SettingsBlock.swift in Sources */,
 				65D89AB731B15EEA1318BA39 /* TabBarModuleInput.swift in Sources */,
 				F93A5250FD3FE7F3556EE75D /* TabBarModuleOutput.swift in Sources */,
 				997063C6027BA770196E29BF /* TabBarViewController.swift in Sources */,
@@ -1496,6 +1615,7 @@
 				BCE2B41BF677F3FD8E29BEC6 /* FlowsCoordinator.swift in Sources */,
 				89B7B9813706DC401591A44B /* FlowsCoordinatorOutput.swift in Sources */,
 				B100B57D9A4297C11DAE8E44 /* MainCoordinator.swift in Sources */,
+				90F3DBBF262DAF5700220B28 /* PlaybookNotificationServiceInterface.swift in Sources */,
 				A3124A87EB5C51F89FF10B22 /* MainCoordinatorOutput.swift in Sources */,
 				5024C2ABC870FDD1AE3D5537 /* SettingsCoordinator.swift in Sources */,
 				5FF8BE9D540FA30F50E4A428 /* SettingsCoordinatorOutput.swift in Sources */,
@@ -1506,6 +1626,7 @@
 				FDAD464EC2B8F2440B7339CA /* FlowsModuleInput.swift in Sources */,
 				DA39EF818C6B184A8DF79C22 /* FlowsModuleOutput.swift in Sources */,
 				F248E58E6F8B8F644355626B /* FlowsViewController.swift in Sources */,
+				90F3DBB0262DAD0F00220B28 /* DesignConstants.swift in Sources */,
 				AEBFE69398EE260AD5D6FBC3 /* FlowsViewInput.swift in Sources */,
 				00C42B09001B2A7B716D5FE8 /* FlowsViewOutput.swift in Sources */,
 				BBA88C798F060062D88E430F /* MainModuleConfigurator.swift in Sources */,
@@ -1522,6 +1643,8 @@
 				D51F39CE6ACE4D756CC4B84B /* SettingsViewController.swift in Sources */,
 				DB25481993B20257C020DD9B /* SettingsViewInput.swift in Sources */,
 				401408F72C380D923BBA48E7 /* SettingsViewOutput.swift in Sources */,
+				90F3DBC7262DAF6200220B28 /* PlaybookNotificationService.swift in Sources */,
+				90F3DBF5262DB2DE00220B28 /* UITableView+Styles.swift in Sources */,
 				CEE18E4D33304CC52114A260 /* UIKitModuleConfigurator.swift in Sources */,
 				EDD887EF816508F8BB52E217 /* UIKitPresenter.swift in Sources */,
 				7CD71DF5C372E9CC68F1808A /* UIKitModuleInput.swift in Sources */,
@@ -1529,6 +1652,7 @@
 				0D0CA1EFCBDB154204797243 /* UIKitViewController.swift in Sources */,
 				78C0FC8C1945DE2D8149FD83 /* UIKitViewInput.swift in Sources */,
 				6B84EACD1E796B8AD3A5A1F7 /* UIKitViewOutput.swift in Sources */,
+				90F3DBB8262DAD5400220B28 /* RadioButtonCellModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

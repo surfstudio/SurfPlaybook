@@ -7,6 +7,6 @@
 //
 
 protocol SettingsViewInput: class {
-    /// Method for setup initial state of view
-    func setupInitialState()
+    func setupInitialState(blocks: [SettingsBlock])
+    func updateSetting(for block: SettingsBlock)
 }

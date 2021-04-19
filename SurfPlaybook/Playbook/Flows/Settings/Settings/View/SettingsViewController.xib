@@ -5,11 +5,13 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingsViewController" customModule="SurfPlaybook" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="ltv-qp-IPe" id="yHy-06-J1V"/>
                 <outlet property="view" destination="iN0-l3-epB" id="Q3p-Ee-1CD"/>
             </connections>
         </placeholder>
@@ -18,20 +20,25 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SeA-fS-3YO">
-                    <rect key="frame" x="128.5" y="273.5" width="63" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ltv-qp-IPe">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="c7j-mf-uZl"/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="SeA-fS-3YO" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="VpQ-3h-QUt"/>
-                <constraint firstItem="SeA-fS-3YO" firstAttribute="centerY" secondItem="c7j-mf-uZl" secondAttribute="centerY" id="szG-0c-aj3"/>
+                <constraint firstItem="c7j-mf-uZl" firstAttribute="trailing" secondItem="ltv-qp-IPe" secondAttribute="trailing" id="3T8-fV-la5"/>
+                <constraint firstItem="ltv-qp-IPe" firstAttribute="leading" secondItem="c7j-mf-uZl" secondAttribute="leading" id="H31-RK-d5h"/>
+                <constraint firstItem="c7j-mf-uZl" firstAttribute="bottom" secondItem="ltv-qp-IPe" secondAttribute="bottom" id="XLa-AS-rue"/>
+                <constraint firstItem="ltv-qp-IPe" firstAttribute="top" secondItem="c7j-mf-uZl" secondAttribute="top" id="ioJ-7R-spK"/>
             </constraints>
             <point key="canvasLocation" x="140.625" y="153.16901408450704"/>
         </view>
     </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

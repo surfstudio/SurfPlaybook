@@ -15,6 +15,8 @@ enum Colors {
         static let transparent = UIColor.clear
         static let separator = UIColor.gray
         static let textMain = UIColor.black
+        static let background = UIColor.white
+        static let press = UIColor.gray
     }
     enum NavigationBar {
         public static let text = UIColor.black

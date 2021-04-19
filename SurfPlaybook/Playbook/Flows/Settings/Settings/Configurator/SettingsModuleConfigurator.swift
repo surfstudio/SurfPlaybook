@@ -8,11 +8,17 @@
 
 import UIKit
 
+typealias SettingsModuleComponents = (
+    view: UIViewController,
+    output: SettingsModuleOutput
+)
+
 final class SettingsModuleConfigurator {
 
-    func configure() -> (UIViewController, SettingsModuleOutput) {
+    func configure() -> SettingsModuleComponents {
         let view = UIViewController.instantiate(ofType: SettingsViewController.self)
-        let presenter = SettingsPresenter()
+        let presenter = SettingsPresenter(storage: PlaybookUserDefaultsService(),
+                                          notificationService: PlaybookNotificationService())
 
         presenter.view = view
         view.output = presenter

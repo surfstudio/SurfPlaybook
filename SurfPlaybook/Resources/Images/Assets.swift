@@ -24,6 +24,8 @@ internal enum Resources {
   internal enum Assets {
     internal enum Icons {
       internal static let backArrow = ImageAsset(name: "Icons/backArrow")
+      internal static let radioOff = ImageAsset(name: "Icons/radioOff")
+      internal static let radioOn = ImageAsset(name: "Icons/radioOn")
     }
     internal enum TabBar {
       internal static let flows = ImageAsset(name: "TabBar/flows")
