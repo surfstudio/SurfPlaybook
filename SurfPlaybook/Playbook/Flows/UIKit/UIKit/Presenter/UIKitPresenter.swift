@@ -10,9 +10,21 @@ final class UIKitPresenter: UIKitModuleOutput {
 
     // MARK: - UIKitModuleOutput
 
+    var onPageOpen: Closure<PlaybookUIKitPage>?
+
     // MARK: - Properties
 
     weak var view: UIKitViewInput?
+
+    // MARK: - Private Properties
+
+    private let pages: [PlaybookUIKitPage]
+
+    // MARK: - Initialization
+
+    init() {
+        self.pages = Playbook.shared.uiKitPages
+    }
 
 }
 
@@ -26,7 +38,14 @@ extension UIKitPresenter: UIKitModuleInput {
 extension UIKitPresenter: UIKitViewOutput {
 
     func viewLoaded() {
-        view?.setupInitialState()
+        view?.setupInitialState(pages: pages)
+    }
+
+    func selectPage(id: String) {
+        guard let page = pages.first(where: { $0.id == id }) else {
+            return
+        }
+        onPageOpen?(page)
     }
 
 }

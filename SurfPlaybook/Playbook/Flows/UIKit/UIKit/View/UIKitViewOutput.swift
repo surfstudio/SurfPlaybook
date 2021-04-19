@@ -7,6 +7,6 @@
 //
 
 protocol UIKitViewOutput {
-    /// Notify presenter that view is ready
     func viewLoaded()
+    func selectPage(id: String)
 }

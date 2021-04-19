@@ -7,4 +7,5 @@
 //
 
 protocol UIKitModuleOutput: class {
+    var onPageOpen: Closure<PlaybookUIKitPage>? { get set }
 }

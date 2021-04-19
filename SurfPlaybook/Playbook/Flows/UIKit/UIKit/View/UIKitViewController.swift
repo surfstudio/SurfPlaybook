@@ -10,9 +10,17 @@ import UIKit
 
 final class UIKitViewController: UIViewController {
 
+    // MARK: - IBOutlets
+
+    @IBOutlet private weak var tableView: UITableView!
+
     // MARK: - Properties
 
     var output: UIKitViewOutput?
+
+    // MARK: - Private Properties
+
+    private var adapter: UIKitAdapter?
 
     // MARK: - UIViewController
 
@@ -27,7 +35,36 @@ final class UIKitViewController: UIViewController {
 
 extension UIKitViewController: UIKitViewInput {
 
-    func setupInitialState() {
+    func setupInitialState(pages: [PlaybookUIKitPage]) {
+        configureAppearance()
+        adapter?.update(with: pages)
+    }
+
+}
+
+// MARK: - Appearance
+
+private extension UIKitViewController {
+
+    func configureAppearance() {
+        configureNavigationBar()
+        configureTableView()
+        configureAdapter()
+    }
+
+    func configureNavigationBar() {
+        navigationItem.title = "UIKit"
+    }
+
+    func configureTableView() {
+        tableView.apply(style: .default)
+    }
+
+    func configureAdapter() {
+        adapter = UIKitAdapter(tableView: tableView)
+        adapter?.onPageSelect = { [weak self] id in
+            self?.output?.selectPage(id: id)
+        }
     }
 
 }

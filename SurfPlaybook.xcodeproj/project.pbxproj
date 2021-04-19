@@ -127,6 +127,11 @@
 		90F3DBF5262DB2DE00220B28 /* UITableView+Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3DBF4262DB2DE00220B28 /* UITableView+Styles.swift */; };
 		90F3DBFA262DB41B00220B28 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3DBF9262DB41B00220B28 /* UITableView.swift */; };
 		90F3DBFF262DB45100220B28 /* UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3DBFE262DB45100220B28 /* UITableViewCell.swift */; };
+		90F3DC0C262DCE1400220B28 /* MenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3DC0A262DCE1400220B28 /* MenuItemCell.swift */; };
+		90F3DC0D262DCE1400220B28 /* MenuItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F3DC0B262DCE1400220B28 /* MenuItemCell.xib */; };
+		90F3DC15262DCE4800220B28 /* MenuItemCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3DC14262DCE4800220B28 /* MenuItemCellModel.swift */; };
+		90F3DC1B262DD12400220B28 /* UIKitAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3DC1A262DD12400220B28 /* UIKitAdapter.swift */; };
+		90F3DC2C262DD42400220B28 /* ColorsUIKitPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3DC21262DD38100220B28 /* ColorsUIKitPage.swift */; };
 		93578423C0F9E6B45DF34472 /* Pods_SurfPlaybookTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17A9FF310115EC4E63B82CA2 /* Pods_SurfPlaybookTests.framework */; };
 		959D6F1F6AC03D990EF54A89 /* Pods_SurfPlaybookExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E1C3827D8C9AB6DF9042487 /* Pods_SurfPlaybookExampleTests.framework */; };
 		997063C6027BA770196E29BF /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4C45498CCE35BA3E4CE456 /* TabBarViewController.swift */; };
@@ -338,6 +343,11 @@
 		90F3DBF4262DB2DE00220B28 /* UITableView+Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Styles.swift"; sourceTree = "<group>"; };
 		90F3DBF9262DB41B00220B28 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		90F3DBFE262DB45100220B28 /* UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
+		90F3DC0A262DCE1400220B28 /* MenuItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemCell.swift; sourceTree = "<group>"; };
+		90F3DC0B262DCE1400220B28 /* MenuItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuItemCell.xib; sourceTree = "<group>"; };
+		90F3DC14262DCE4800220B28 /* MenuItemCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemCellModel.swift; sourceTree = "<group>"; };
+		90F3DC1A262DD12400220B28 /* UIKitAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitAdapter.swift; sourceTree = "<group>"; };
+		90F3DC21262DD38100220B28 /* ColorsUIKitPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsUIKitPage.swift; sourceTree = "<group>"; };
 		96C8E302CF69F22A10D4823A /* MainViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainViewOutput.swift; sourceTree = "<group>"; };
 		9B4C45498CCE35BA3E4CE456 /* TabBarViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		A09E0626D80EDF223D85CDF9 /* TabBarModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarModuleOutput.swift; sourceTree = "<group>"; };
@@ -551,6 +561,7 @@
 		89A91FCB11186AB2D42CA98C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				90F3DC19262DD11800220B28 /* Adapter */,
 				33BD57C277A6FC9653035D8A /* UIKitViewController.swift */,
 				72118F3CFDAB7E3B36E0C746 /* UIKitViewController.xib */,
 				3F10AB6125FCDE59573B3A11 /* UIKitViewInput.swift */,
@@ -689,6 +700,7 @@
 		90C8B3FC2625C6B700851B00 /* SurfPlaybookExample */ = {
 			isa = PBXGroup;
 			children = (
+				90F3DC1F262DD36400220B28 /* Playbook */,
 				90DE376326284E22003D3DD5 /* Resources */,
 				90C8B3FD2625C6B700851B00 /* AppDelegate.swift */,
 				90C8B4012625C6B700851B00 /* ViewController.swift */,
@@ -995,6 +1007,7 @@
 		90F3DBA5262DA88700220B28 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				90F3DC09262DCDF500220B28 /* MenuItemCell */,
 				90F3DBA6262DABE700220B28 /* RadioButtonCell */,
 			);
 			path = Cells;
@@ -1076,6 +1089,40 @@
 				90F3DBF4262DB2DE00220B28 /* UITableView+Styles.swift */,
 			);
 			path = UITableView;
+			sourceTree = "<group>";
+		};
+		90F3DC09262DCDF500220B28 /* MenuItemCell */ = {
+			isa = PBXGroup;
+			children = (
+				90F3DC0A262DCE1400220B28 /* MenuItemCell.swift */,
+				90F3DC0B262DCE1400220B28 /* MenuItemCell.xib */,
+				90F3DC14262DCE4800220B28 /* MenuItemCellModel.swift */,
+			);
+			path = MenuItemCell;
+			sourceTree = "<group>";
+		};
+		90F3DC19262DD11800220B28 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				90F3DC1A262DD12400220B28 /* UIKitAdapter.swift */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		90F3DC1F262DD36400220B28 /* Playbook */ = {
+			isa = PBXGroup;
+			children = (
+				90F3DC20262DD36A00220B28 /* UIKitChapters */,
+			);
+			path = Playbook;
+			sourceTree = "<group>";
+		};
+		90F3DC20262DD36A00220B28 /* UIKitChapters */ = {
+			isa = PBXGroup;
+			children = (
+				90F3DC21262DD38100220B28 /* ColorsUIKitPage.swift */,
+			);
+			path = UIKitChapters;
 			sourceTree = "<group>";
 		};
 		A2BB8665E3B354B654F52E0F /* Main */ = {
@@ -1330,6 +1377,7 @@
 				905509D52625FB4A00FD86A4 /* SF-Pro-Text-Medium.otf in Resources */,
 				905509D72625FB4A00FD86A4 /* SF-Pro-Text-Heavy.otf in Resources */,
 				905509DA2625FB4A00FD86A4 /* SF-Pro-Display-Bold.otf in Resources */,
+				90F3DC0D262DCE1400220B28 /* MenuItemCell.xib in Resources */,
 				905509D92625FB4A00FD86A4 /* SF-Pro-Display-Regular.otf in Resources */,
 				905509D62625FB4A00FD86A4 /* SF-Pro-Display-Heavy.otf in Resources */,
 				905509D82625FB4A00FD86A4 /* SF-Pro-Display-Semibold.otf in Resources */,
@@ -1562,6 +1610,7 @@
 				90DE381F26285ED4003D3DD5 /* OptionSelectorConfig.swift in Sources */,
 				90DE380726285DF7003D3DD5 /* PlaybookFlowCoordinator.swift in Sources */,
 				90DE38632628689A003D3DD5 /* Array.swift in Sources */,
+				90F3DC15262DCE4800220B28 /* MenuItemCellModel.swift in Sources */,
 				90DE38EA2628978B003D3DD5 /* PlaybookTab.swift in Sources */,
 				90DE3847262863CB003D3DD5 /* CommonButton.swift in Sources */,
 				90F3DBA9262DAC4A00220B28 /* RadioButtonCell.swift in Sources */,
@@ -1591,6 +1640,7 @@
 				90F3DBE0262DB00A00220B28 /* PlaybookSettings.swift in Sources */,
 				90DE382626285EDF003D3DD5 /* OptionSelectorModuleConfigurator.swift in Sources */,
 				90F3DBFA262DB41B00220B28 /* UITableView.swift in Sources */,
+				90F3DC0C262DCE1400220B28 /* MenuItemCell.swift in Sources */,
 				90550A002625FDE500FD86A4 /* Assets.swift in Sources */,
 				90F3DBEF262DB09800220B28 /* SettingsAdapter.swift in Sources */,
 				90DE388326286BF3003D3DD5 /* UIView.swift in Sources */,
@@ -1626,6 +1676,7 @@
 				FDAD464EC2B8F2440B7339CA /* FlowsModuleInput.swift in Sources */,
 				DA39EF818C6B184A8DF79C22 /* FlowsModuleOutput.swift in Sources */,
 				F248E58E6F8B8F644355626B /* FlowsViewController.swift in Sources */,
+				90F3DC1B262DD12400220B28 /* UIKitAdapter.swift in Sources */,
 				90F3DBB0262DAD0F00220B28 /* DesignConstants.swift in Sources */,
 				AEBFE69398EE260AD5D6FBC3 /* FlowsViewInput.swift in Sources */,
 				00C42B09001B2A7B716D5FE8 /* FlowsViewOutput.swift in Sources */,
@@ -1671,6 +1722,7 @@
 				90DE379226284F7C003D3DD5 /* Fonts.swift in Sources */,
 				90C8B4022625C6B700851B00 /* ViewController.swift in Sources */,
 				90DE378D26284F6E003D3DD5 /* Colors.swift in Sources */,
+				90F3DC2C262DD42400220B28 /* ColorsUIKitPage.swift in Sources */,
 				90DE379726284F86003D3DD5 /* Assets.swift in Sources */,
 				90DE37A226284F8F003D3DD5 /* Strings.swift in Sources */,
 				90C8B3FE2625C6B700851B00 /* AppDelegate.swift in Sources */,
