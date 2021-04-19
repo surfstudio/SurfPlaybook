@@ -33,11 +33,16 @@ final class UIKitCoordinator: BaseCoordinator, UIKitCoordinatorOutput {
 private extension UIKitCoordinator {
 
     func showKit() {
-        let (view, _) = UIKitModuleConfigurator().configure()
-//        output.onPageOpen = { [weak self] page in
-//            self?.showKitPage(page: page)
-//        }
+        let (view, output) = UIKitModuleConfigurator().configure()
+        output.onPageOpen = { [weak self] page in
+            self?.showKitPage(page: page)
+        }
         router.setNavigationControllerRootModule(view, animated: false, hideBar: false)
+    }
+
+    func showKitPage(page: PlaybookUIKitPage) {
+        let (view, _) = UIKitPageModuleConfigurator().configure(page: page)
+        router.push(view)
     }
 
 }

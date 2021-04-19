@@ -11,9 +11,12 @@
 		00C42B09001B2A7B716D5FE8 /* FlowsViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB0B9FA579566A13722D4B8 /* FlowsViewOutput.swift */; };
 		0A36BCE076D7062E2C9BDE77 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C60C70A0AF89D83BB71E9A7 /* MainViewController.xib */; };
 		0D0CA1EFCBDB154204797243 /* UIKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BD57C277A6FC9653035D8A /* UIKitViewController.swift */; };
+		186091743F39D8D035CDD1FC /* UIKitPagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D044ED4A9E7C83BD88A268 /* UIKitPagePresenter.swift */; };
 		1D39B94CBE656846D1B569B5 /* FlowsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AD20CC27AC821D2831076B /* FlowsPresenter.swift */; };
+		1E391AF5442B1D4230C81E39 /* UIKitPageModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA16E9822FC7674D8245AAE7 /* UIKitPageModuleInput.swift */; };
 		210EF141B41B92B5759155BB /* SettingsModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294EF8E657216DA4EE28E1B4 /* SettingsModuleOutput.swift */; };
 		2769ACE073DED1D3C3354806 /* MainViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC63A97477AED6C015819F33 /* MainViewInput.swift */; };
+		293C0787D36217A4C056E79E /* UIKitPageModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8179F5709D1A022B385B1C /* UIKitPageModuleOutput.swift */; };
 		401408F72C380D923BBA48E7 /* SettingsViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5B1DAA5702C6729CD8B2EB /* SettingsViewOutput.swift */; };
 		5024C2ABC870FDD1AE3D5537 /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8606933B01B477E7FB8100 /* SettingsCoordinator.swift */; };
 		51F198AA23895CAE2D39D241 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66EA5A8FEE95BA6078FCC2CA /* SettingsViewController.xib */; };
@@ -132,9 +135,17 @@
 		90F3DC15262DCE4800220B28 /* MenuItemCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3DC14262DCE4800220B28 /* MenuItemCellModel.swift */; };
 		90F3DC1B262DD12400220B28 /* UIKitAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3DC1A262DD12400220B28 /* UIKitAdapter.swift */; };
 		90F3DC2C262DD42400220B28 /* ColorsUIKitPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3DC21262DD38100220B28 /* ColorsUIKitPage.swift */; };
+		90F3DC35262DD5D200220B28 /* UIKitPageAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3DC34262DD5D200220B28 /* UIKitPageAdapter.swift */; };
+		90F3DC5A262DD97300220B28 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3DC59262DD97300220B28 /* UITableView.swift */; };
+		90F3DC62262DD97C00220B28 /* UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3DC61262DD97C00220B28 /* UITableViewCell.swift */; };
+		90F3DC67262DD99E00220B28 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3DC66262DD99E00220B28 /* NSObject.swift */; };
+		90F3DC6B262DD9D700220B28 /* UIKitPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3DC3B262DD75800220B28 /* UIKitPageCell.swift */; };
+		90F3DC72262DD9DC00220B28 /* UIKitPageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F3DC3C262DD75800220B28 /* UIKitPageCell.xib */; };
+		90F3DC7C262DD9E000220B28 /* UIKitPageCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3DC45262DD76400220B28 /* UIKitPageCellModel.swift */; };
 		93578423C0F9E6B45DF34472 /* Pods_SurfPlaybookTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17A9FF310115EC4E63B82CA2 /* Pods_SurfPlaybookTests.framework */; };
 		959D6F1F6AC03D990EF54A89 /* Pods_SurfPlaybookExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E1C3827D8C9AB6DF9042487 /* Pods_SurfPlaybookExampleTests.framework */; };
 		997063C6027BA770196E29BF /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4C45498CCE35BA3E4CE456 /* TabBarViewController.swift */; };
+		999117355B83ADA07531CF5D /* UIKitPageViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22888AD081D0FAC6B6E8137E /* UIKitPageViewOutput.swift */; };
 		9B8ED3E24BE12A6AF338B201 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AC98D605FB125DAEC92F9A /* MainViewController.swift */; };
 		9E6264B7E566023973766BC6 /* FlowsModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C1D6A32605CA48D732C2B8 /* FlowsModuleConfigurator.swift */; };
 		A0342EA67275D6E42DAF0D48 /* Pods_SurfPlaybook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E49CE830032A6C005B119B /* Pods_SurfPlaybook.framework */; };
@@ -144,15 +155,19 @@
 		B77C7F879C24B65721D0380F /* Pods_SurfPlaybookExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA400EF9624EB1AF748BF6FF /* Pods_SurfPlaybookExample.framework */; };
 		BBA88C798F060062D88E430F /* MainModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB3D2177E67E8E60C0169E8 /* MainModuleConfigurator.swift */; };
 		BCE2B41BF677F3FD8E29BEC6 /* FlowsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8712EC469DEFBDADC3AFB20 /* FlowsCoordinator.swift */; };
+		BEFD0C06AAE7B2AA9A57F92A /* UIKitPageModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443D7016DA00F1F0F46E9A8E /* UIKitPageModuleConfigurator.swift */; };
 		C24EA422F76226B72CE28EBF /* UIKitCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1269B3E6F1E0E8046620C664 /* UIKitCoordinatorOutput.swift */; };
 		C2807FC1A3A4556206898C2A /* FlowsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 147832FEC741A136D7707F15 /* FlowsViewController.xib */; };
 		C72706581D7A7DD90747E8CE /* TabBarModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A6D02EDA848F65C849A1A8 /* TabBarModuleConfigurator.swift */; };
 		CEE18E4D33304CC52114A260 /* UIKitModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7037AC3765B97E37D55539D3 /* UIKitModuleConfigurator.swift */; };
 		D51F39CE6ACE4D756CC4B84B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15E03553E65B4C229FA27E6 /* SettingsViewController.swift */; };
+		D5B0EE92AC454A1A4290228C /* UIKitPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F309FD675598D53DA2CFEB /* UIKitPageViewController.swift */; };
 		DA39EF818C6B184A8DF79C22 /* FlowsModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B962A68A169668586197369F /* FlowsModuleOutput.swift */; };
+		DAF58B7F70E96B7465147E05 /* UIKitPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0855D5D8296A0888A1488D64 /* UIKitPageViewController.xib */; };
 		DB25481993B20257C020DD9B /* SettingsViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAD3FBB9E65DEFEFCED9A88 /* SettingsViewInput.swift */; };
 		DC5EAC240A563DBBD43E2FB7 /* TabBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EC341F0E6DCB99D511CD9D /* TabBarPresenter.swift */; };
 		E098CA8846D0696767AD9A90 /* MainModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21ACEEDD94E93DEB325A6E3 /* MainModuleInput.swift */; };
+		E2C4E467F519084B35E5A458 /* UIKitPageViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5031B883011E51F2D94E445D /* UIKitPageViewInput.swift */; };
 		E967DB1F0E6D5DCC5B596277 /* TabBarViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C5181C49971B240FB2F33F /* TabBarViewOutput.swift */; };
 		EDD887EF816508F8BB52E217 /* UIKitPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B888DE54369A25A1442F9F /* UIKitPresenter.swift */; };
 		EFCE2837F22A70744A951988 /* MainModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC59CF316071B9FA15D726A5 /* MainModuleOutput.swift */; };
@@ -203,6 +218,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0855D5D8296A0888A1488D64 /* UIKitPageViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = UIKitPageViewController.xib; sourceTree = "<group>"; };
 		0C60C70A0AF89D83BB71E9A7 /* MainViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		0E5B1DAA5702C6729CD8B2EB /* SettingsViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsViewOutput.swift; sourceTree = "<group>"; };
 		1269B3E6F1E0E8046620C664 /* UIKitCoordinatorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIKitCoordinatorOutput.swift; sourceTree = "<group>"; };
@@ -210,12 +226,14 @@
 		17A9FF310115EC4E63B82CA2 /* Pods_SurfPlaybookTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SurfPlaybookTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F6577F8323DDEEFC3EEF0BA /* Pods-SurfPlaybookExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfPlaybookExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-SurfPlaybookExampleTests/Pods-SurfPlaybookExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1FB3D2177E67E8E60C0169E8 /* MainModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainModuleConfigurator.swift; sourceTree = "<group>"; };
+		22888AD081D0FAC6B6E8137E /* UIKitPageViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIKitPageViewOutput.swift; sourceTree = "<group>"; };
 		23C5181C49971B240FB2F33F /* TabBarViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarViewOutput.swift; sourceTree = "<group>"; };
 		26374BF0CC1BB972A368A0C0 /* Pods-SurfPlaybookExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfPlaybookExample.release.xcconfig"; path = "Target Support Files/Pods-SurfPlaybookExample/Pods-SurfPlaybookExample.release.xcconfig"; sourceTree = "<group>"; };
 		26B412B2ADC2DC334A7B5A75 /* UIKitCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIKitCoordinator.swift; sourceTree = "<group>"; };
 		27B888DE54369A25A1442F9F /* UIKitPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIKitPresenter.swift; sourceTree = "<group>"; };
 		294EF8E657216DA4EE28E1B4 /* SettingsModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsModuleOutput.swift; sourceTree = "<group>"; };
 		2AAD3FBB9E65DEFEFCED9A88 /* SettingsViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsViewInput.swift; sourceTree = "<group>"; };
+		2C8179F5709D1A022B385B1C /* UIKitPageModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIKitPageModuleOutput.swift; sourceTree = "<group>"; };
 		2EB7110238C2000942BD3D05 /* SettingsModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsModuleConfigurator.swift; sourceTree = "<group>"; };
 		33BD57C277A6FC9653035D8A /* UIKitViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIKitViewController.swift; sourceTree = "<group>"; };
 		35A6D02EDA848F65C849A1A8 /* TabBarModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarModuleConfigurator.swift; sourceTree = "<group>"; };
@@ -223,9 +241,11 @@
 		3EB0B9FA579566A13722D4B8 /* FlowsViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlowsViewOutput.swift; sourceTree = "<group>"; };
 		3F10AB6125FCDE59573B3A11 /* UIKitViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIKitViewInput.swift; sourceTree = "<group>"; };
 		434C08785D7D3E4083E4D336 /* Pods-SurfPlaybook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfPlaybook.release.xcconfig"; path = "Target Support Files/Pods-SurfPlaybook/Pods-SurfPlaybook.release.xcconfig"; sourceTree = "<group>"; };
+		443D7016DA00F1F0F46E9A8E /* UIKitPageModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIKitPageModuleConfigurator.swift; sourceTree = "<group>"; };
 		48EA7D2C848914D73AA5C01A /* MainCoordinatorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainCoordinatorOutput.swift; sourceTree = "<group>"; };
 		4B09A4FCC75EDE050789E467 /* FlowsCoordinatorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlowsCoordinatorOutput.swift; sourceTree = "<group>"; };
 		4B8606933B01B477E7FB8100 /* SettingsCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
+		5031B883011E51F2D94E445D /* UIKitPageViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIKitPageViewInput.swift; sourceTree = "<group>"; };
 		52AC98D605FB125DAEC92F9A /* MainViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		58F0F35A2DF42AA653381DF2 /* FlowsViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlowsViewInput.swift; sourceTree = "<group>"; };
 		65EC341F0E6DCB99D511CD9D /* TabBarPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarPresenter.swift; sourceTree = "<group>"; };
@@ -234,6 +254,7 @@
 		68AD20CC27AC821D2831076B /* FlowsPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlowsPresenter.swift; sourceTree = "<group>"; };
 		7037AC3765B97E37D55539D3 /* UIKitModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIKitModuleConfigurator.swift; sourceTree = "<group>"; };
 		70C1D6A32605CA48D732C2B8 /* FlowsModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlowsModuleConfigurator.swift; sourceTree = "<group>"; };
+		70D044ED4A9E7C83BD88A268 /* UIKitPagePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIKitPagePresenter.swift; sourceTree = "<group>"; };
 		72118F3CFDAB7E3B36E0C746 /* UIKitViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = UIKitViewController.xib; sourceTree = "<group>"; };
 		72FF1D5473D7B0698639D1FF /* Pods-SurfPlaybookTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfPlaybookTests.debug.xcconfig"; path = "Target Support Files/Pods-SurfPlaybookTests/Pods-SurfPlaybookTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7379B961B001E682B19D2417 /* UIKitViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIKitViewOutput.swift; sourceTree = "<group>"; };
@@ -348,6 +369,13 @@
 		90F3DC14262DCE4800220B28 /* MenuItemCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemCellModel.swift; sourceTree = "<group>"; };
 		90F3DC1A262DD12400220B28 /* UIKitAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitAdapter.swift; sourceTree = "<group>"; };
 		90F3DC21262DD38100220B28 /* ColorsUIKitPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsUIKitPage.swift; sourceTree = "<group>"; };
+		90F3DC34262DD5D200220B28 /* UIKitPageAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitPageAdapter.swift; sourceTree = "<group>"; };
+		90F3DC3B262DD75800220B28 /* UIKitPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitPageCell.swift; sourceTree = "<group>"; };
+		90F3DC3C262DD75800220B28 /* UIKitPageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIKitPageCell.xib; sourceTree = "<group>"; };
+		90F3DC45262DD76400220B28 /* UIKitPageCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitPageCellModel.swift; sourceTree = "<group>"; };
+		90F3DC59262DD97300220B28 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		90F3DC61262DD97C00220B28 /* UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
+		90F3DC66262DD99E00220B28 /* NSObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
 		96C8E302CF69F22A10D4823A /* MainViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainViewOutput.swift; sourceTree = "<group>"; };
 		9B4C45498CCE35BA3E4CE456 /* TabBarViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		A09E0626D80EDF223D85CDF9 /* TabBarModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarModuleOutput.swift; sourceTree = "<group>"; };
@@ -365,6 +393,8 @@
 		D21ACEEDD94E93DEB325A6E3 /* MainModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainModuleInput.swift; sourceTree = "<group>"; };
 		D4753B38BEA02907D28E6B39 /* FlowsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlowsViewController.swift; sourceTree = "<group>"; };
 		D9F55F8F65B17F435DA0FED8 /* Pods-SurfPlaybookExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfPlaybookExample.debug.xcconfig"; path = "Target Support Files/Pods-SurfPlaybookExample/Pods-SurfPlaybookExample.debug.xcconfig"; sourceTree = "<group>"; };
+		DA16E9822FC7674D8245AAE7 /* UIKitPageModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIKitPageModuleInput.swift; sourceTree = "<group>"; };
+		E8F309FD675598D53DA2CFEB /* UIKitPageViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIKitPageViewController.swift; sourceTree = "<group>"; };
 		EBAEC40B66E0378F8A47AEDD /* Pods-SurfPlaybook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfPlaybook.debug.xcconfig"; path = "Target Support Files/Pods-SurfPlaybook/Pods-SurfPlaybook.debug.xcconfig"; sourceTree = "<group>"; };
 		EC63A97477AED6C015819F33 /* MainViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainViewInput.swift; sourceTree = "<group>"; };
 		EDD850BE3FCC7764BD1A2FB5 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
@@ -446,6 +476,24 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		1FB4322D6BA7C57F0BDA0F9F /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				443D7016DA00F1F0F46E9A8E /* UIKitPageModuleConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		21F5D641CDF069700F0C87C5 /* UIKitPage */ = {
+			isa = PBXGroup;
+			children = (
+				1FB4322D6BA7C57F0BDA0F9F /* Configurator */,
+				2800E22E9576EC6A6754597A /* Presenter */,
+				885702CEC7F993C68DC27529 /* View */,
+			);
+			path = UIKitPage;
+			sourceTree = "<group>";
+		};
 		25D0073C84B1180555F091AE /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -454,6 +502,16 @@
 				89A91FCB11186AB2D42CA98C /* View */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		2800E22E9576EC6A6754597A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				70D044ED4A9E7C83BD88A268 /* UIKitPagePresenter.swift */,
+				DA16E9822FC7674D8245AAE7 /* UIKitPageModuleInput.swift */,
+				2C8179F5709D1A022B385B1C /* UIKitPageModuleOutput.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		2A85D74F3BBEE995D580694E /* Main */ = {
@@ -472,6 +530,7 @@
 				26B412B2ADC2DC334A7B5A75 /* UIKitCoordinator.swift */,
 				1269B3E6F1E0E8046620C664 /* UIKitCoordinatorOutput.swift */,
 				25D0073C84B1180555F091AE /* UIKit */,
+				21F5D641CDF069700F0C87C5 /* UIKitPage */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -556,6 +615,18 @@
 				B9DDCF9D1D0C4F84071BA433 /* View */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		885702CEC7F993C68DC27529 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				90F3DC33262DD5C400220B28 /* Adapter */,
+				E8F309FD675598D53DA2CFEB /* UIKitPageViewController.swift */,
+				0855D5D8296A0888A1488D64 /* UIKitPageViewController.xib */,
+				5031B883011E51F2D94E445D /* UIKitPageViewInput.swift */,
+				22888AD081D0FAC6B6E8137E /* UIKitPageViewOutput.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		89A91FCB11186AB2D42CA98C /* View */ = {
@@ -701,6 +772,7 @@
 			isa = PBXGroup;
 			children = (
 				90F3DC1F262DD36400220B28 /* Playbook */,
+				90F3DC56262DD95200220B28 /* Library */,
 				90DE376326284E22003D3DD5 /* Resources */,
 				90C8B3FD2625C6B700851B00 /* AppDelegate.swift */,
 				90C8B4012625C6B700851B00 /* ViewController.swift */,
@@ -1120,9 +1192,62 @@
 		90F3DC20262DD36A00220B28 /* UIKitChapters */ = {
 			isa = PBXGroup;
 			children = (
+				90F3DC39262DD74100220B28 /* Support */,
 				90F3DC21262DD38100220B28 /* ColorsUIKitPage.swift */,
 			);
 			path = UIKitChapters;
+			sourceTree = "<group>";
+		};
+		90F3DC33262DD5C400220B28 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				90F3DC34262DD5D200220B28 /* UIKitPageAdapter.swift */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		90F3DC39262DD74100220B28 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				90F3DC3A262DD74C00220B28 /* UIKitPageCell */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		90F3DC3A262DD74C00220B28 /* UIKitPageCell */ = {
+			isa = PBXGroup;
+			children = (
+				90F3DC3B262DD75800220B28 /* UIKitPageCell.swift */,
+				90F3DC3C262DD75800220B28 /* UIKitPageCell.xib */,
+				90F3DC45262DD76400220B28 /* UIKitPageCellModel.swift */,
+			);
+			path = UIKitPageCell;
+			sourceTree = "<group>";
+		};
+		90F3DC56262DD95200220B28 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				90F3DC57262DD95900220B28 /* Extensions */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		90F3DC57262DD95900220B28 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				90F3DC58262DD96400220B28 /* UIKit */,
+				90F3DC66262DD99E00220B28 /* NSObject.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		90F3DC58262DD96400220B28 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				90F3DC59262DD97300220B28 /* UITableView.swift */,
+				90F3DC61262DD97C00220B28 /* UITableViewCell.swift */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 		A2BB8665E3B354B654F52E0F /* Main */ = {
@@ -1391,6 +1516,7 @@
 				90F3DBAA262DAC4A00220B28 /* RadioButtonCell.xib in Resources */,
 				51F198AA23895CAE2D39D241 /* SettingsViewController.xib in Resources */,
 				8CB5F55CA26F7051233EE675 /* UIKitViewController.xib in Resources */,
+				DAF58B7F70E96B7465147E05 /* UIKitPageViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1410,6 +1536,7 @@
 				90C8B40A2625C6B800851B00 /* LaunchScreen.storyboard in Resources */,
 				90DE376926284E5F003D3DD5 /* Colors.xcassets in Resources */,
 				90DE378326284EEB003D3DD5 /* Assets.xcassets in Resources */,
+				90F3DC72262DD9DC00220B28 /* UIKitPageCell.xib in Resources */,
 				90DE377926284EDA003D3DD5 /* SF-Pro-Display-Heavy.otf in Resources */,
 				90C8B4072625C6B800851B00 /* Assets.xcassets in Resources */,
 				90DE377626284EDA003D3DD5 /* SF-Pro-Display-Regular.otf in Resources */,
@@ -1637,6 +1764,7 @@
 				90DE388826286C12003D3DD5 /* PlaybookChapter.swift in Sources */,
 				90DE383826285EF2003D3DD5 /* OptionSelectorViewOutput.swift in Sources */,
 				90DE38C626288FAF003D3DD5 /* MainRouter.swift in Sources */,
+				90F3DC35262DD5D200220B28 /* UIKitPageAdapter.swift in Sources */,
 				90F3DBE0262DB00A00220B28 /* PlaybookSettings.swift in Sources */,
 				90DE382626285EDF003D3DD5 /* OptionSelectorModuleConfigurator.swift in Sources */,
 				90F3DBFA262DB41B00220B28 /* UITableView.swift in Sources */,
@@ -1704,6 +1832,13 @@
 				78C0FC8C1945DE2D8149FD83 /* UIKitViewInput.swift in Sources */,
 				6B84EACD1E796B8AD3A5A1F7 /* UIKitViewOutput.swift in Sources */,
 				90F3DBB8262DAD5400220B28 /* RadioButtonCellModel.swift in Sources */,
+				BEFD0C06AAE7B2AA9A57F92A /* UIKitPageModuleConfigurator.swift in Sources */,
+				186091743F39D8D035CDD1FC /* UIKitPagePresenter.swift in Sources */,
+				1E391AF5442B1D4230C81E39 /* UIKitPageModuleInput.swift in Sources */,
+				293C0787D36217A4C056E79E /* UIKitPageModuleOutput.swift in Sources */,
+				D5B0EE92AC454A1A4290228C /* UIKitPageViewController.swift in Sources */,
+				E2C4E467F519084B35E5A458 /* UIKitPageViewInput.swift in Sources */,
+				999117355B83ADA07531CF5D /* UIKitPageViewOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1719,11 +1854,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90F3DC62262DD97C00220B28 /* UITableViewCell.swift in Sources */,
 				90DE379226284F7C003D3DD5 /* Fonts.swift in Sources */,
 				90C8B4022625C6B700851B00 /* ViewController.swift in Sources */,
+				90F3DC7C262DD9E000220B28 /* UIKitPageCellModel.swift in Sources */,
 				90DE378D26284F6E003D3DD5 /* Colors.swift in Sources */,
 				90F3DC2C262DD42400220B28 /* ColorsUIKitPage.swift in Sources */,
 				90DE379726284F86003D3DD5 /* Assets.swift in Sources */,
+				90F3DC6B262DD9D700220B28 /* UIKitPageCell.swift in Sources */,
+				90F3DC5A262DD97300220B28 /* UITableView.swift in Sources */,
+				90F3DC67262DD99E00220B28 /* NSObject.swift in Sources */,
 				90DE37A226284F8F003D3DD5 /* Strings.swift in Sources */,
 				90C8B3FE2625C6B700851B00 /* AppDelegate.swift in Sources */,
 			);

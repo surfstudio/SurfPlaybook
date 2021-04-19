@@ -25,16 +25,44 @@ final class ColorsUIKitPage: PlaybookUIKitPage {
 
 }
 
-final class ColorsUIKitPageViewModel: UIKitPageViewModel {
+final class ColorsUIKitPageViewModel: NSObject, UIKitPageViewModel, UITableViewDataSource {
+
+    // MARK: - Nested Types
+
+    typealias ColorsData = (title: String, color: UIColor, textColor: UIColor?)
 
     // MARK: - Private Properties
 
     private weak var tableView: UITableView?
+    private let colors: [ColorsData] = [
+        ("белый", UIColor.white, nil),
+        ("черный", UIColor.black, UIColor.white),
+        ("розовый", UIColor.systemPink, nil)
+    ]
 
     // MARK: - UIKitPageViewModel
 
     func setup(with tableView: UITableView) {
         self.tableView = tableView
+        tableView.registerNib(UIKitPageCell.self)
+        tableView.dataSource = self
+    }
+
+    // MARK: - UITableViewDataSource
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return colors.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(UIKitPageCell.self, indexPath: indexPath) else {
+            return UITableViewCell()
+        }
+        let colorData = colors[indexPath.row]
+        cell.configure(with: .init(text: colorData.title,
+                                   textColor: colorData.textColor,
+                                   backgroundColor: colorData.color))
+        return cell
     }
 
 }
