@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchBar" customModule="SurfPlaybook" customModuleProvider="target">
+            <connections>
+                <outlet property="cancelButton" destination="BMx-R8-JKo" id="Jff-76-uXo"/>
+                <outlet property="clearButton" destination="0kc-ih-x9n" id="ToJ-Tv-Ync"/>
+                <outlet property="clearButtonWidthConstraint" destination="U8R-yR-ld5" id="flK-KK-hsf"/>
+                <outlet property="containerRightConstraint" destination="stN-pX-wqE" id="QHb-1g-hGK"/>
+                <outlet property="containerView" destination="oKl-Yo-Nhv" id="Kip-bM-WgH"/>
+                <outlet property="searchIconImageView" destination="w0F-XS-Ym7" id="ORv-Zv-rEu"/>
+                <outlet property="textField" destination="ZD3-ML-FrN" id="pKx-ra-4Vl"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="36"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMx-R8-JKo" customClass="CommonButton" customModule="SurfPlaybook" customModuleProvider="target">
+                    <rect key="frame" x="316" y="0.0" width="104" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="104" id="TNu-Eg-1Y7"/>
+                    </constraints>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" systemColor="linkColor"/>
+                    </state>
+                    <connections>
+                        <action selector="cancel:" destination="-1" eventType="touchUpInside" id="CK2-L8-SM3"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oKl-Yo-Nhv">
+                    <rect key="frame" x="4" y="0.0" width="312" height="36"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="w0F-XS-Ym7">
+                            <rect key="frame" x="12" y="10" width="16" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="16" id="7NN-ai-wzg"/>
+                                <constraint firstAttribute="height" constant="16" id="KrO-eO-T65"/>
+                            </constraints>
+                        </imageView>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZD3-ML-FrN" customClass="SearchTextField" customModule="SurfPlaybook" customModuleProvider="target">
+                            <rect key="frame" x="38" y="0.0" width="234" height="36"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kc-ih-x9n" customClass="CommonButton" customModule="SurfPlaybook" customModuleProvider="target">
+                            <rect key="frame" x="272" y="0.0" width="40" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="U8R-yR-ld5"/>
+                            </constraints>
+                            <state key="normal">
+                                <color key="titleColor" systemColor="linkColor"/>
+                            </state>
+                            <connections>
+                                <action selector="clear:" destination="-1" eventType="touchUpInside" id="2Y8-wy-eaO"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemGray3Color"/>
+                    <constraints>
+                        <constraint firstItem="0kc-ih-x9n" firstAttribute="top" secondItem="oKl-Yo-Nhv" secondAttribute="top" id="A6H-TG-Ndv"/>
+                        <constraint firstItem="ZD3-ML-FrN" firstAttribute="top" secondItem="oKl-Yo-Nhv" secondAttribute="top" id="Ahd-FS-Rav"/>
+                        <constraint firstItem="w0F-XS-Ym7" firstAttribute="leading" secondItem="oKl-Yo-Nhv" secondAttribute="leading" constant="12" id="H9G-Ag-6Jl"/>
+                        <constraint firstItem="w0F-XS-Ym7" firstAttribute="centerY" secondItem="oKl-Yo-Nhv" secondAttribute="centerY" id="VgQ-hd-DOe"/>
+                        <constraint firstItem="ZD3-ML-FrN" firstAttribute="leading" secondItem="w0F-XS-Ym7" secondAttribute="trailing" constant="10" id="WHC-KV-0NQ"/>
+                        <constraint firstAttribute="bottom" secondItem="0kc-ih-x9n" secondAttribute="bottom" id="c3W-G8-i4O"/>
+                        <constraint firstAttribute="bottom" secondItem="ZD3-ML-FrN" secondAttribute="bottom" id="gNb-VS-tHa"/>
+                        <constraint firstItem="0kc-ih-x9n" firstAttribute="leading" secondItem="ZD3-ML-FrN" secondAttribute="trailing" id="wMF-ig-9gm"/>
+                        <constraint firstAttribute="trailing" secondItem="0kc-ih-x9n" secondAttribute="trailing" id="zR7-1L-e3w"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="oKl-Yo-Nhv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="50f-qB-Rfz"/>
+                <constraint firstItem="BMx-R8-JKo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="VLq-Z1-egv"/>
+                <constraint firstItem="BMx-R8-JKo" firstAttribute="leading" secondItem="oKl-Yo-Nhv" secondAttribute="trailing" id="YcS-21-qtY"/>
+                <constraint firstItem="oKl-Yo-Nhv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="4" id="acT-67-t74"/>
+                <constraint firstAttribute="bottom" secondItem="BMx-R8-JKo" secondAttribute="bottom" id="csv-T1-4yJ"/>
+                <constraint firstAttribute="bottom" secondItem="oKl-Yo-Nhv" secondAttribute="bottom" id="neh-46-fpC"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="oKl-Yo-Nhv" secondAttribute="trailing" constant="4" id="stN-pX-wqE"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-196.875" y="-175.35211267605635"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

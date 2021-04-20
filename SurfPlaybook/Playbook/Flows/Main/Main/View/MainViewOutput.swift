@@ -7,6 +7,7 @@
 //
 
 protocol MainViewOutput {
-    /// Notify presenter that view is ready
     func viewLoaded()
+    func showPage(_ model: PageModel)
+    func filter(by text: String)
 }

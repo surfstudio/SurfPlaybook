@@ -9,7 +9,7 @@
 import UIKit
 
 /// Общий стиль для кнопки класса CommonButton
-final class CommonButtonStyle {
+final class CommonButtonStyle: AbstractButtonStyle {
 
     // MARK: - Private Properties
 
@@ -45,7 +45,7 @@ final class CommonButtonStyle {
         self.contentInsets = contentInsets
     }
 
-    // MARK: - Methods
+    // MARK: - AbstractButtonStyle
 
     func apply(for view: CommonButton) {
         view.titleLabel?.font = titleFont

@@ -5,11 +5,16 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="SurfPlaybook" customModuleProvider="target">
             <connections>
+                <outlet property="container" destination="R4j-ua-NHR" id="CtP-m8-hnb"/>
+                <outlet property="containerViewTopConstraint" destination="NzS-bF-Ud9" id="6nw-ot-8H0"/>
+                <outlet property="searchBar" destination="pgT-zq-eQK" id="IJ9-pG-Um4"/>
+                <outlet property="tableView" destination="qRb-5S-KYc" id="v2g-73-OtK"/>
                 <outlet property="view" destination="iN0-l3-epB" id="Q3p-Ee-1CD"/>
             </connections>
         </placeholder>
@@ -18,20 +23,47 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcN-fO-X3h">
-                    <rect key="frame" x="141.5" y="273.5" width="37" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R4j-ua-NHR">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qRb-5S-KYc">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="qRb-5S-KYc" secondAttribute="bottom" id="E6M-bT-2pQ"/>
+                        <constraint firstItem="qRb-5S-KYc" firstAttribute="top" secondItem="R4j-ua-NHR" secondAttribute="top" id="JRm-jD-QIb"/>
+                        <constraint firstAttribute="trailing" secondItem="qRb-5S-KYc" secondAttribute="trailing" id="M6j-Jp-8xm"/>
+                        <constraint firstItem="qRb-5S-KYc" firstAttribute="leading" secondItem="R4j-ua-NHR" secondAttribute="leading" id="TaF-4Y-DSE"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pgT-zq-eQK" customClass="SearchBar" customModule="SurfPlaybook" customModuleProvider="target">
+                    <rect key="frame" x="8" y="4" width="304" height="36"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="Frx-Bp-r7O"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="afJ-NM-anC"/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="lcN-fO-X3h" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="GnK-si-AIZ"/>
-                <constraint firstItem="lcN-fO-X3h" firstAttribute="centerY" secondItem="afJ-NM-anC" secondAttribute="centerY" id="gRY-K2-PeR"/>
+                <constraint firstItem="afJ-NM-anC" firstAttribute="trailing" secondItem="pgT-zq-eQK" secondAttribute="trailing" constant="8" id="AYB-Gr-wnV"/>
+                <constraint firstItem="pgT-zq-eQK" firstAttribute="top" secondItem="afJ-NM-anC" secondAttribute="top" constant="4" id="LWR-SF-4d4"/>
+                <constraint firstItem="R4j-ua-NHR" firstAttribute="top" secondItem="afJ-NM-anC" secondAttribute="top" id="NzS-bF-Ud9"/>
+                <constraint firstItem="afJ-NM-anC" firstAttribute="bottom" secondItem="R4j-ua-NHR" secondAttribute="bottom" id="OKc-Bn-FLV"/>
+                <constraint firstItem="pgT-zq-eQK" firstAttribute="leading" secondItem="afJ-NM-anC" secondAttribute="leading" constant="8" id="U2r-5S-JNE"/>
+                <constraint firstItem="R4j-ua-NHR" firstAttribute="leading" secondItem="afJ-NM-anC" secondAttribute="leading" id="fPB-7G-oAg"/>
+                <constraint firstItem="afJ-NM-anC" firstAttribute="trailing" secondItem="R4j-ua-NHR" secondAttribute="trailing" id="ivO-NV-GUL"/>
             </constraints>
-            <point key="canvasLocation" x="141" y="154"/>
+            <point key="canvasLocation" x="140.625" y="153.16901408450704"/>
         </view>
     </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

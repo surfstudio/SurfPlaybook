@@ -17,16 +17,26 @@ enum Colors {
         static let textMain = UIColor.black
         static let background = UIColor.white
         static let press = UIColor.gray
+        static let shadow = UIColor.black.withAlphaComponent(0.1)
     }
     enum NavigationBar {
         public static let text = UIColor.black
         public static let tint = UIColor.gray
         public static let background = UIColor.white
     }
-    public enum TabBar {
+    enum TabBar {
         public static let itemTint = UIColor.gray
         public static let selectedItemTint = UIColor.red
         public static let background = UIColor.white
         public static let separator = UIColor.black.withAlphaComponent(0.06)
+    }
+    enum TextField {
+        public static let background = UIColor.white
+        public static let container = UIColor.lightGray
+        public static let text = UIColor.black
+        public static let placeholder = UIColor.gray
+        public static let button = UIColor.green
+        public static let tint = UIColor.green
+        public static let hint = UIColor.green
     }
 }

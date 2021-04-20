@@ -15,4 +15,11 @@ extension UIViewController {
         return .init(nibName: ofType.className, bundle: Bundle(for: ofType))
     }
 
+    /// Вызов метода приводит к закрытию клавиатуры,
+    /// если на экране есть открытая клавиатура
+    func closeKeyboard() {
+        view.endEditing(true)
+        navigationController?.navigationBar.endEditing(true)
+    }
+
 }

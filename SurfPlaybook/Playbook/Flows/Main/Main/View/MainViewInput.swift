@@ -7,6 +7,12 @@
 //
 
 protocol MainViewInput: class {
-    /// Method for setup initial state of view
-    func setupInitialState()
+    func setupInitialState(with models: [ChapterModel])
+    func fill(with models: [ChapterModel])
+    func setup(state: MainViewInputState)
+}
+
+enum MainViewInputState {
+    case normal
+    case empty(text: String)
 }
