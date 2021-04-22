@@ -24,7 +24,7 @@ public struct PlaybookPage {
         view.layoutIfNeeded()
         return view.snapshot()
     }
-    var presets: [(preset: OptionSelectorModel, config: (() -> UIView))] = []
+    public var presets: [(preset: OptionSelectorModel, config: (() -> UIView))] = []
 
     // MARK: - Public Initialization
 

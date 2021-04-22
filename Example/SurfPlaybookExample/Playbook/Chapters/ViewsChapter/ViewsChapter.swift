@@ -15,6 +15,7 @@ final class ViewsChapter {
         let chapter = PlaybookChapter(name: "Views", pages: [])
         chapter
             .add(page: plainLabel)
+            .add(page: plainButton)
         return chapter
     }
 

@@ -12,7 +12,7 @@ enum Colors {
     enum Main {
         static let active = UIColor.green
         static let gray = UIColor.gray
-        static let transparent = UIColor.clear
+        static let transparent = UIColor.black.withAlphaComponent(0.5)
         static let separator = UIColor.gray
         static let textMain = UIColor.black
         static let background = UIColor.white

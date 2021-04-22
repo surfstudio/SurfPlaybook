@@ -30,7 +30,8 @@ enum LabelStyleType {
             return .init(font: FontFamily.SFProText.regular.font(size: 17),
                          textColor: Colors.Main.textMain,
                          lineHeight: 22,
-                         kern: -0.41)
+                         kern: -0.41,
+                         alignment: .center)
         case .textRegular16Black:
             return .init(font: FontFamily.SFProText.regular.font(size: 16),
                          textColor: Colors.Main.textMain,
@@ -51,7 +52,8 @@ enum LabelStyleType {
             return .init(font: FontFamily.SFProDisplay.regular.font(size: 21),
                          textColor: Colors.Main.textMain,
                          lineHeight: 28,
-                         kern: 0.7)
+                         kern: 0.7,
+                         alignment: .center)
         case .displayHeavy24Black:
             return .init(font: FontFamily.SFProDisplay.heavy.font(size: 24),
                          textColor: Colors.Main.textMain,

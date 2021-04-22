@@ -8,6 +8,6 @@
 
 /// Абстрактный протокол для всех возможных вариантов выбора внутри модуля OptionSelector.
 /// Обязательное условие - объект должен иметь строковое представление, которое будет отображаться в UI.
-protocol OptionSelectorModel {
+public protocol OptionSelectorModel {
     var title: String { get }
 }

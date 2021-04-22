@@ -46,6 +46,7 @@
 		903600BD263177D200265BB1 /* ViewsChapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903600BC263177D200265BB1 /* ViewsChapter.swift */; };
 		903600C92631797C00265BB1 /* TableViewCellSnapshotContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903600C82631797C00265BB1 /* TableViewCellSnapshotContainer.swift */; };
 		903600D1263179BD00265BB1 /* ViewSnapshotContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903600D0263179BD00265BB1 /* ViewSnapshotContainer.swift */; };
+		903600EB2631971D00265BB1 /* ViewsButtonPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903600EA2631971D00265BB1 /* ViewsButtonPage.swift */; };
 		905509C22625FA1800FD86A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 905509C12625FA1800FD86A4 /* Assets.xcassets */; };
 		905509C72625FA7800FD86A4 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 905509C62625FA7800FD86A4 /* Colors.xcassets */; };
 		905509D42625FB4A00FD86A4 /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 905509CB2625FB4A00FD86A4 /* SF-Pro-Text-Semibold.otf */; };
@@ -308,6 +309,7 @@
 		903600BC263177D200265BB1 /* ViewsChapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewsChapter.swift; sourceTree = "<group>"; };
 		903600C82631797C00265BB1 /* TableViewCellSnapshotContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellSnapshotContainer.swift; sourceTree = "<group>"; };
 		903600D0263179BD00265BB1 /* ViewSnapshotContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSnapshotContainer.swift; sourceTree = "<group>"; };
+		903600EA2631971D00265BB1 /* ViewsButtonPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewsButtonPage.swift; sourceTree = "<group>"; };
 		905509C12625FA1800FD86A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		905509C62625FA7800FD86A4 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		905509CB2625FB4A00FD86A4 /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
@@ -527,7 +529,6 @@
 				CF5060C7AA116164997BCA7A /* Presenter */,
 				A6821C2E1A7903E583BBC1ED /* View */,
 			);
-			name = Page;
 			path = Page;
 			sourceTree = "<group>";
 		};
@@ -748,7 +749,7 @@
 		903600BB263177C200265BB1 /* Chapters */ = {
 			isa = PBXGroup;
 			children = (
-				903600BC263177D200265BB1 /* ViewsChapter.swift */,
+				903600E8263196FE00265BB1 /* ViewsChapter */,
 			);
 			path = Chapters;
 			sourceTree = "<group>";
@@ -760,6 +761,23 @@
 				903600D0263179BD00265BB1 /* ViewSnapshotContainer.swift */,
 			);
 			path = Reusable;
+			sourceTree = "<group>";
+		};
+		903600E8263196FE00265BB1 /* ViewsChapter */ = {
+			isa = PBXGroup;
+			children = (
+				903600E92631970C00265BB1 /* Pages */,
+				903600BC263177D200265BB1 /* ViewsChapter.swift */,
+			);
+			path = ViewsChapter;
+			sourceTree = "<group>";
+		};
+		903600E92631970C00265BB1 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				903600EA2631971D00265BB1 /* ViewsButtonPage.swift */,
+			);
+			path = Pages;
 			sourceTree = "<group>";
 		};
 		905509BC2625F9BF00FD86A4 /* Resources */ = {
@@ -1493,7 +1511,6 @@
 				2748A19BB0865493E50BA3AB /* PageViewInput.swift */,
 				7B0E6453EA00F00222B7424E /* PageViewOutput.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -1558,7 +1575,6 @@
 				9752C78AA1B2DBB903255B28 /* PageModuleInput.swift */,
 				39D69A2918862769602DC2EB /* PageModuleOutput.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -1575,7 +1591,6 @@
 			children = (
 				F4726E4C715ADDEABC128AB2 /* PageModuleConfigurator.swift */,
 			);
-			name = Configurator;
 			path = Configurator;
 			sourceTree = "<group>";
 		};
@@ -2140,6 +2155,7 @@
 				90F3DCB4262DE3A200220B28 /* UIApplication.swift in Sources */,
 				90F3DC98262DE2F800220B28 /* TestFlowCoordinator.swift in Sources */,
 				90F3DCA7262DE37000220B28 /* Presentable.swift in Sources */,
+				903600EB2631971D00265BB1 /* ViewsButtonPage.swift in Sources */,
 				90F3DC62262DD97C00220B28 /* UITableViewCell.swift in Sources */,
 				90DE379226284F7C003D3DD5 /* Fonts.swift in Sources */,
 				90C8B4022625C6B700851B00 /* ViewController.swift in Sources */,
