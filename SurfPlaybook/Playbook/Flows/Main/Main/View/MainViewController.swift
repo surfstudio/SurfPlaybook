@@ -15,6 +15,7 @@ final class MainViewController: UIViewController {
     @IBOutlet private weak var container: UIView!
     @IBOutlet private weak var tableView: UITableView!
     @IBOutlet private weak var searchBar: SearchBar!
+    @IBOutlet private weak var emptyStateLabel: UILabel!
 
     // MARK: - NSLayoutConstraints
 
@@ -57,7 +58,16 @@ extension MainViewController: MainViewInput {
     }
 
     func setup(state: MainViewInputState) {
-        // TODO: доделать
+        switch state {
+        case .normal:
+            emptyStateLabel.isHidden = true
+            tableView.isHidden = false
+        case .empty(let text):
+            emptyStateLabel.isHidden = false
+            tableView.isHidden = true
+            emptyStateLabel.text = text
+            emptyStateLabel.apply(style: .textRegular14GrayCenter)
+        }
     }
 
 }
@@ -71,6 +81,7 @@ private extension MainViewController {
         configureNavigationBar()
         configureAdapter()
         configureSearchBar()
+        setup(state: .normal)
     }
 
     func configureNavigationBar() {

@@ -25,6 +25,8 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
 
         Playbook.shared
+            .add(chapter: ViewsChapter().build())
+        Playbook.shared
             .add(uiKitPage: ColorsUIKitPage())
         Playbook.shared
             .add(flowCoordinator: TestFlowCoordinator())
