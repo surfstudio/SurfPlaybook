@@ -18,6 +18,10 @@ enum Colors {
         static let background = UIColor.white
         static let press = UIColor.gray
     }
+    enum Buttons {
+        static let background = UIColor.purple
+        static let text = UIColor.white
+    }
     enum NavigationBar {
         public static let text = UIColor.black
         public static let tint = UIColor.gray

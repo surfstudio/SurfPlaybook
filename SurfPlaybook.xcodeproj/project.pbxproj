@@ -55,6 +55,11 @@
 		903601072631AA4700265BB1 /* UIViewController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903601062631AA4700265BB1 /* UIViewController+NavigationBar.swift */; };
 		903601192631ACB800265BB1 /* AuthFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903601182631ACB800265BB1 /* AuthFlowCoordinator.swift */; };
 		903601222631AD0A00265BB1 /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903601212631AD0A00265BB1 /* Closures.swift */; };
+		9036012B2631C1E200265BB1 /* CommonButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9036012A2631C1E200265BB1 /* CommonButton.swift */; };
+		903601302631C21900265BB1 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9036012F2631C21900265BB1 /* UIImage.swift */; };
+		903601382631C24F00265BB1 /* CommonButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903601372631C24F00265BB1 /* CommonButtonStyle.swift */; };
+		903601402631C25900265BB1 /* CommonButton+Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9036013F2631C25900265BB1 /* CommonButton+Styles.swift */; };
+		903601462631C2A900265BB1 /* UITextField+Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903601452631C2A900265BB1 /* UITextField+Styles.swift */; };
 		905509C22625FA1800FD86A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 905509C12625FA1800FD86A4 /* Assets.xcassets */; };
 		905509C72625FA7800FD86A4 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 905509C62625FA7800FD86A4 /* Colors.xcassets */; };
 		905509D42625FB4A00FD86A4 /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 905509CB2625FB4A00FD86A4 /* SF-Pro-Text-Semibold.otf */; };
@@ -334,6 +339,11 @@
 		903601062631AA4700265BB1 /* UIViewController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+NavigationBar.swift"; sourceTree = "<group>"; };
 		903601182631ACB800265BB1 /* AuthFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFlowCoordinator.swift; sourceTree = "<group>"; };
 		903601212631AD0A00265BB1 /* Closures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closures.swift; sourceTree = "<group>"; };
+		9036012A2631C1E200265BB1 /* CommonButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonButton.swift; sourceTree = "<group>"; };
+		9036012F2631C21900265BB1 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		903601372631C24F00265BB1 /* CommonButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonButtonStyle.swift; sourceTree = "<group>"; };
+		9036013F2631C25900265BB1 /* CommonButton+Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CommonButton+Styles.swift"; sourceTree = "<group>"; };
+		903601452631C2A900265BB1 /* UITextField+Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Styles.swift"; sourceTree = "<group>"; };
 		905509C12625FA1800FD86A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		905509C62625FA7800FD86A4 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		905509CB2625FB4A00FD86A4 /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
@@ -794,6 +804,7 @@
 		903600C72631796B00265BB1 /* Reusable */ = {
 			isa = PBXGroup;
 			children = (
+				903601292631C1D300265BB1 /* CommonButton */,
 				903600C82631797C00265BB1 /* TableViewCellSnapshotContainer.swift */,
 				903600D0263179BD00265BB1 /* ViewSnapshotContainer.swift */,
 			);
@@ -831,6 +842,48 @@
 				903601212631AD0A00265BB1 /* Closures.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		903601292631C1D300265BB1 /* CommonButton */ = {
+			isa = PBXGroup;
+			children = (
+				9036012A2631C1E200265BB1 /* CommonButton.swift */,
+			);
+			path = CommonButton;
+			sourceTree = "<group>";
+		};
+		903601342631C22D00265BB1 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				903601352631C23300265BB1 /* CommonButton */,
+				903601442631C29900265BB1 /* UITextField */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		903601352631C23300265BB1 /* CommonButton */ = {
+			isa = PBXGroup;
+			children = (
+				903601362631C24700265BB1 /* Styles */,
+				9036013F2631C25900265BB1 /* CommonButton+Styles.swift */,
+			);
+			path = CommonButton;
+			sourceTree = "<group>";
+		};
+		903601362631C24700265BB1 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				903601372631C24F00265BB1 /* CommonButtonStyle.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		903601442631C29900265BB1 /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				903601452631C2A900265BB1 /* UITextField+Styles.swift */,
+			);
+			path = UITextField;
 			sourceTree = "<group>";
 		};
 		905509BC2625F9BF00FD86A4 /* Resources */ = {
@@ -1431,6 +1484,7 @@
 				90F3DCA5262DE36200220B28 /* Protocols */,
 				903600C72631796B00265BB1 /* Reusable */,
 				90F3DC9F262DE33800220B28 /* Routers */,
+				903601342631C22D00265BB1 /* Styles */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -1449,6 +1503,7 @@
 			isa = PBXGroup;
 			children = (
 				90F3DCB3262DE3A200220B28 /* UIApplication.swift */,
+				9036012F2631C21900265BB1 /* UIImage.swift */,
 				90F3DC59262DD97300220B28 /* UITableView.swift */,
 				90F3DC61262DD97C00220B28 /* UITableViewCell.swift */,
 				903601062631AA4700265BB1 /* UIViewController+NavigationBar.swift */,
@@ -2261,8 +2316,10 @@
 				90DE379726284F86003D3DD5 /* Assets.swift in Sources */,
 				903601072631AA4700265BB1 /* UIViewController+NavigationBar.swift in Sources */,
 				90F3DC6B262DD9D700220B28 /* UIKitPageCell.swift in Sources */,
+				9036012B2631C1E200265BB1 /* CommonButton.swift in Sources */,
 				90F3DC5A262DD97300220B28 /* UITableView.swift in Sources */,
 				90F3DC67262DD99E00220B28 /* NSObject.swift in Sources */,
+				903601382631C24F00265BB1 /* CommonButtonStyle.swift in Sources */,
 				90DE37A226284F8F003D3DD5 /* Strings.swift in Sources */,
 				90C8B3FE2625C6B700851B00 /* AppDelegate.swift in Sources */,
 				F951A6EFAF09E0F93D91C9A4 /* AuthModuleConfigurator.swift in Sources */,
@@ -2272,6 +2329,9 @@
 				FFA3BB7075EC541E4C601E7F /* AuthViewController.swift in Sources */,
 				34A950A08DBA87764925E08D /* AuthViewInput.swift in Sources */,
 				903601222631AD0A00265BB1 /* Closures.swift in Sources */,
+				903601402631C25900265BB1 /* CommonButton+Styles.swift in Sources */,
+				903601462631C2A900265BB1 /* UITextField+Styles.swift in Sources */,
+				903601302631C21900265BB1 /* UIImage.swift in Sources */,
 				A265E2CBCB5810207133A038 /* AuthViewOutput.swift in Sources */,
 				903601192631ACB800265BB1 /* AuthFlowCoordinator.swift in Sources */,
 			);
