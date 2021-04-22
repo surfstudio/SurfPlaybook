@@ -15,9 +15,13 @@
 		1D39B94CBE656846D1B569B5 /* FlowsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AD20CC27AC821D2831076B /* FlowsPresenter.swift */; };
 		1E391AF5442B1D4230C81E39 /* UIKitPageModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA16E9822FC7674D8245AAE7 /* UIKitPageModuleInput.swift */; };
 		210EF141B41B92B5759155BB /* SettingsModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294EF8E657216DA4EE28E1B4 /* SettingsModuleOutput.swift */; };
+		2401B856420F980A03BF37EB /* PageModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4726E4C715ADDEABC128AB2 /* PageModuleConfigurator.swift */; };
 		2769ACE073DED1D3C3354806 /* MainViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC63A97477AED6C015819F33 /* MainViewInput.swift */; };
+		28744AF4964D6A3923892642 /* PageModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9752C78AA1B2DBB903255B28 /* PageModuleInput.swift */; };
 		293C0787D36217A4C056E79E /* UIKitPageModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8179F5709D1A022B385B1C /* UIKitPageModuleOutput.swift */; };
 		401408F72C380D923BBA48E7 /* SettingsViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5B1DAA5702C6729CD8B2EB /* SettingsViewOutput.swift */; };
+		411726BF8647871F2C8A181B /* PageViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2748A19BB0865493E50BA3AB /* PageViewInput.swift */; };
+		4C36D27B1CD073BD1E444334 /* PageViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0E6453EA00F00222B7424E /* PageViewOutput.swift */; };
 		5024C2ABC870FDD1AE3D5537 /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8606933B01B477E7FB8100 /* SettingsCoordinator.swift */; };
 		51F198AA23895CAE2D39D241 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66EA5A8FEE95BA6078FCC2CA /* SettingsViewController.xib */; };
 		540FA6455ACF653CAE397B82 /* TabBarViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66504BE2B7675AC648B3F3DE /* TabBarViewInput.swift */; };
@@ -27,6 +31,7 @@
 		640C0AEB5DB3581775216399 /* SettingsModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB7110238C2000942BD3D05 /* SettingsModuleConfigurator.swift */; };
 		65D89AB731B15EEA1318BA39 /* TabBarModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83341D881ED3F494E99C18D /* TabBarModuleInput.swift */; };
 		6B84EACD1E796B8AD3A5A1F7 /* UIKitViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7379B961B001E682B19D2417 /* UIKitViewOutput.swift */; };
+		71C9AB03605848DD54C689B5 /* PageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57323B320E0F6F36AB8B775D /* PageViewController.xib */; };
 		78C0FC8C1945DE2D8149FD83 /* UIKitViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F10AB6125FCDE59573B3A11 /* UIKitViewInput.swift */; };
 		7CD71DF5C372E9CC68F1808A /* UIKitModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4E9B0F83D1D0AC66496851 /* UIKitModuleInput.swift */; };
 		87A98871C1AED1D915A4903C /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD850BE3FCC7764BD1A2FB5 /* TabBarCoordinator.swift */; };
@@ -182,6 +187,7 @@
 		BEFD0C06AAE7B2AA9A57F92A /* UIKitPageModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443D7016DA00F1F0F46E9A8E /* UIKitPageModuleConfigurator.swift */; };
 		C24EA422F76226B72CE28EBF /* UIKitCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1269B3E6F1E0E8046620C664 /* UIKitCoordinatorOutput.swift */; };
 		C2807FC1A3A4556206898C2A /* FlowsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 147832FEC741A136D7707F15 /* FlowsViewController.xib */; };
+		C60FBA26574297963262D110 /* PagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53879FE48BFED98DD87726C4 /* PagePresenter.swift */; };
 		C72706581D7A7DD90747E8CE /* TabBarModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A6D02EDA848F65C849A1A8 /* TabBarModuleConfigurator.swift */; };
 		CEE18E4D33304CC52114A260 /* UIKitModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7037AC3765B97E37D55539D3 /* UIKitModuleConfigurator.swift */; };
 		D51F39CE6ACE4D756CC4B84B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15E03553E65B4C229FA27E6 /* SettingsViewController.swift */; };
@@ -193,12 +199,14 @@
 		E098CA8846D0696767AD9A90 /* MainModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21ACEEDD94E93DEB325A6E3 /* MainModuleInput.swift */; };
 		E2C4E467F519084B35E5A458 /* UIKitPageViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5031B883011E51F2D94E445D /* UIKitPageViewInput.swift */; };
 		E967DB1F0E6D5DCC5B596277 /* TabBarViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C5181C49971B240FB2F33F /* TabBarViewOutput.swift */; };
+		ED5F6AC4E8551B1A5FA2711C /* PageModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D69A2918862769602DC2EB /* PageModuleOutput.swift */; };
 		EDD887EF816508F8BB52E217 /* UIKitPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B888DE54369A25A1442F9F /* UIKitPresenter.swift */; };
 		EFCE2837F22A70744A951988 /* MainModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC59CF316071B9FA15D726A5 /* MainModuleOutput.swift */; };
 		F03812BB287167B236A9563A /* MainViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C8E302CF69F22A10D4823A /* MainViewOutput.swift */; };
 		F1FAC808554C56D99A521330 /* UIKitModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F025D4FE8B00F32F96B772BA /* UIKitModuleOutput.swift */; };
 		F248E58E6F8B8F644355626B /* FlowsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4753B38BEA02907D28E6B39 /* FlowsViewController.swift */; };
 		F3DD970081466339A7B27094 /* UIKitCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B412B2ADC2DC334A7B5A75 /* UIKitCoordinator.swift */; };
+		F4578E9572F2E39E7DDA930A /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CABA18E205ED54F931E9E66 /* PageViewController.swift */; };
 		F93A5250FD3FE7F3556EE75D /* TabBarModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09E0626D80EDF223D85CDF9 /* TabBarModuleOutput.swift */; };
 		FDAD464EC2B8F2440B7339CA /* FlowsModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21D363F78EE0AE2BC04AEC /* FlowsModuleInput.swift */; };
 /* End PBXBuildFile section */
@@ -254,6 +262,7 @@
 		23C5181C49971B240FB2F33F /* TabBarViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarViewOutput.swift; sourceTree = "<group>"; };
 		26374BF0CC1BB972A368A0C0 /* Pods-SurfPlaybookExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfPlaybookExample.release.xcconfig"; path = "Target Support Files/Pods-SurfPlaybookExample/Pods-SurfPlaybookExample.release.xcconfig"; sourceTree = "<group>"; };
 		26B412B2ADC2DC334A7B5A75 /* UIKitCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIKitCoordinator.swift; sourceTree = "<group>"; };
+		2748A19BB0865493E50BA3AB /* PageViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PageViewInput.swift; sourceTree = "<group>"; };
 		27B888DE54369A25A1442F9F /* UIKitPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIKitPresenter.swift; sourceTree = "<group>"; };
 		294EF8E657216DA4EE28E1B4 /* SettingsModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsModuleOutput.swift; sourceTree = "<group>"; };
 		2AAD3FBB9E65DEFEFCED9A88 /* SettingsViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsViewInput.swift; sourceTree = "<group>"; };
@@ -261,6 +270,7 @@
 		2EB7110238C2000942BD3D05 /* SettingsModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsModuleConfigurator.swift; sourceTree = "<group>"; };
 		33BD57C277A6FC9653035D8A /* UIKitViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIKitViewController.swift; sourceTree = "<group>"; };
 		35A6D02EDA848F65C849A1A8 /* TabBarModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarModuleConfigurator.swift; sourceTree = "<group>"; };
+		39D69A2918862769602DC2EB /* PageModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PageModuleOutput.swift; sourceTree = "<group>"; };
 		3C4E9B0F83D1D0AC66496851 /* UIKitModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIKitModuleInput.swift; sourceTree = "<group>"; };
 		3EB0B9FA579566A13722D4B8 /* FlowsViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlowsViewOutput.swift; sourceTree = "<group>"; };
 		3F10AB6125FCDE59573B3A11 /* UIKitViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIKitViewInput.swift; sourceTree = "<group>"; };
@@ -271,7 +281,10 @@
 		4B8606933B01B477E7FB8100 /* SettingsCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
 		5031B883011E51F2D94E445D /* UIKitPageViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIKitPageViewInput.swift; sourceTree = "<group>"; };
 		52AC98D605FB125DAEC92F9A /* MainViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		53879FE48BFED98DD87726C4 /* PagePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PagePresenter.swift; sourceTree = "<group>"; };
+		57323B320E0F6F36AB8B775D /* PageViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PageViewController.xib; sourceTree = "<group>"; };
 		58F0F35A2DF42AA653381DF2 /* FlowsViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlowsViewInput.swift; sourceTree = "<group>"; };
+		5CABA18E205ED54F931E9E66 /* PageViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		65EC341F0E6DCB99D511CD9D /* TabBarPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarPresenter.swift; sourceTree = "<group>"; };
 		66504BE2B7675AC648B3F3DE /* TabBarViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarViewInput.swift; sourceTree = "<group>"; };
 		66EA5A8FEE95BA6078FCC2CA /* SettingsViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
@@ -282,6 +295,7 @@
 		72118F3CFDAB7E3B36E0C746 /* UIKitViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = UIKitViewController.xib; sourceTree = "<group>"; };
 		72FF1D5473D7B0698639D1FF /* Pods-SurfPlaybookTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfPlaybookTests.debug.xcconfig"; path = "Target Support Files/Pods-SurfPlaybookTests/Pods-SurfPlaybookTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7379B961B001E682B19D2417 /* UIKitViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIKitViewOutput.swift; sourceTree = "<group>"; };
+		7B0E6453EA00F00222B7424E /* PageViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PageViewOutput.swift; sourceTree = "<group>"; };
 		7E1C3827D8C9AB6DF9042487 /* Pods_SurfPlaybookExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SurfPlaybookExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A83D42FB73C46FF751152BF /* Pods-SurfPlaybookTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfPlaybookTests.release.xcconfig"; path = "Target Support Files/Pods-SurfPlaybookTests/Pods-SurfPlaybookTests.release.xcconfig"; sourceTree = "<group>"; };
 		8E21E94407AB048F4588B3FD /* MainCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
@@ -425,6 +439,7 @@
 		90F3DCD2262DF31500220B28 /* UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
 		90F3DCDA262DF54C00220B28 /* MainAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAdapter.swift; sourceTree = "<group>"; };
 		96C8E302CF69F22A10D4823A /* MainViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainViewOutput.swift; sourceTree = "<group>"; };
+		9752C78AA1B2DBB903255B28 /* PageModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PageModuleInput.swift; sourceTree = "<group>"; };
 		9B4C45498CCE35BA3E4CE456 /* TabBarViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		A09E0626D80EDF223D85CDF9 /* TabBarModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarModuleOutput.swift; sourceTree = "<group>"; };
 		A298E82A12DE72AFF1934264 /* MainPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
@@ -448,6 +463,7 @@
 		EDD850BE3FCC7764BD1A2FB5 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
 		F025D4FE8B00F32F96B772BA /* UIKitModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIKitModuleOutput.swift; sourceTree = "<group>"; };
 		F0541148B8B054D7594A2489 /* Pods-SurfPlaybookExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfPlaybookExampleTests.release.xcconfig"; path = "Target Support Files/Pods-SurfPlaybookExampleTests/Pods-SurfPlaybookExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		F4726E4C715ADDEABC128AB2 /* PageModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PageModuleConfigurator.swift; sourceTree = "<group>"; };
 		F8AA8CD10DE18F1BA5AE5C1E /* SettingsCoordinatorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsCoordinatorOutput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -502,6 +518,17 @@
 				8A83D42FB73C46FF751152BF /* Pods-SurfPlaybookTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		0BC08F4E61DA424922411EF8 /* Page */ = {
+			isa = PBXGroup;
+			children = (
+				DE49887C342FBCA5B8992E35 /* Configurator */,
+				CF5060C7AA116164997BCA7A /* Presenter */,
+				A6821C2E1A7903E583BBC1ED /* View */,
+			);
+			name = Page;
+			path = Page;
 			sourceTree = "<group>";
 		};
 		1B0C64E4663BF341F1A7ED98 /* Presenter */ = {
@@ -568,6 +595,7 @@
 				8E21E94407AB048F4588B3FD /* MainCoordinator.swift */,
 				48EA7D2C848914D73AA5C01A /* MainCoordinatorOutput.swift */,
 				A2BB8665E3B354B654F52E0F /* Main */,
+				0BC08F4E61DA424922411EF8 /* Page */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -1457,6 +1485,18 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
+		A6821C2E1A7903E583BBC1ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5CABA18E205ED54F931E9E66 /* PageViewController.swift */,
+				57323B320E0F6F36AB8B775D /* PageViewController.xib */,
+				2748A19BB0865493E50BA3AB /* PageViewInput.swift */,
+				7B0E6453EA00F00222B7424E /* PageViewOutput.swift */,
+			);
+			name = View;
+			path = View;
+			sourceTree = "<group>";
+		};
 		AC6678856A823C2270226804 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -1511,11 +1551,31 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		CF5060C7AA116164997BCA7A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				53879FE48BFED98DD87726C4 /* PagePresenter.swift */,
+				9752C78AA1B2DBB903255B28 /* PageModuleInput.swift */,
+				39D69A2918862769602DC2EB /* PageModuleOutput.swift */,
+			);
+			name = Presenter;
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		D4F9A5D11403C313F2911CDA /* Configurator */ = {
 			isa = PBXGroup;
 			children = (
 				7037AC3765B97E37D55539D3 /* UIKitModuleConfigurator.swift */,
 			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		DE49887C342FBCA5B8992E35 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				F4726E4C715ADDEABC128AB2 /* PageModuleConfigurator.swift */,
+			);
+			name = Configurator;
 			path = Configurator;
 			sourceTree = "<group>";
 		};
@@ -1720,6 +1780,7 @@
 				51F198AA23895CAE2D39D241 /* SettingsViewController.xib in Resources */,
 				8CB5F55CA26F7051233EE675 /* UIKitViewController.xib in Resources */,
 				DAF58B7F70E96B7465147E05 /* UIKitPageViewController.xib in Resources */,
+				71C9AB03605848DD54C689B5 /* PageViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2054,6 +2115,13 @@
 				90F3DCC6262DEB8900220B28 /* PageCollectionViewCell.swift in Sources */,
 				E2C4E467F519084B35E5A458 /* UIKitPageViewInput.swift in Sources */,
 				999117355B83ADA07531CF5D /* UIKitPageViewOutput.swift in Sources */,
+				2401B856420F980A03BF37EB /* PageModuleConfigurator.swift in Sources */,
+				C60FBA26574297963262D110 /* PagePresenter.swift in Sources */,
+				28744AF4964D6A3923892642 /* PageModuleInput.swift in Sources */,
+				ED5F6AC4E8551B1A5FA2711C /* PageModuleOutput.swift in Sources */,
+				F4578E9572F2E39E7DDA930A /* PageViewController.swift in Sources */,
+				411726BF8647871F2C8A181B /* PageViewInput.swift in Sources */,
+				4C36D27B1CD073BD1E444334 /* PageViewOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -19,11 +19,14 @@ struct NavigationBarItemModel {
 /// Доступные стили для кнопок в навбаре
 public enum NavigationBarItemStyle {
     case search
+    case sort
 
     public var image: UIImage {
         switch self {
         case .search:
             return Resources.Assets.Icons.bigSearch.image
+        case .sort:
+            return Resources.Assets.Icons.sort.image
         }
     }
 }

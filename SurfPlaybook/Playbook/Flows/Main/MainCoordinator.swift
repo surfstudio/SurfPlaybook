@@ -33,11 +33,27 @@ final class MainCoordinator: BaseCoordinator, MainCoordinatorOutput {
 private extension MainCoordinator {
 
     func showPlaybook() {
-        let (view, _) = MainModuleConfigurator().configure()
-//        output.onPageShow = { [weak self] page in
-//            self?.showPlaybookPage(page)
-//        }
+        let (view, output) = MainModuleConfigurator().configure()
+        output.onPageShow = { [weak self] page in
+            self?.showPlaybookPage(page)
+        }
         router.setNavigationControllerRootModule(view, animated: false, hideBar: false)
+    }
+
+    func showPlaybookPage(_ page: PlaybookPage) {
+        let (view, output, input) = PageModuleConfigurator().configure(with: page)
+        output.onPresetsOpen = { [weak self, weak input] config in
+            self?.showOptionSelector(config: config, handler: input)
+        }
+        router.push(view)
+    }
+
+    func showOptionSelector(config: OptionSelectorConfig, handler: OptionSelectorHandler?) {
+        let (view, output) = OptionSelectorModuleConfigurator().configure(with: config, handler: handler)
+        output.onClose = { [weak self] in
+            self?.router.dismissModule()
+        }
+        router.present(view)
     }
 
 }
