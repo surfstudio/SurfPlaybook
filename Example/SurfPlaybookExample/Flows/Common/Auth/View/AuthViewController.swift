@@ -51,6 +51,9 @@ private extension AuthViewController {
         passwordTextField.apply(style: .password)
         authButton.apply(style: .main)
         authButton.setTitle("Войти", for: .normal)
+
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(tapOnView))
+        view.addGestureRecognizer(gesture)
     }
 
 }
@@ -65,6 +68,11 @@ private extension AuthViewController {
     }
 
     @IBAction func authorize(_ sender: Any) {
+        view.endEditing(true)
+    }
+
+    @objc
+    func tapOnView() {
         view.endEditing(true)
     }
 
