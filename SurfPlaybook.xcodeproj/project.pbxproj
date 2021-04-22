@@ -47,6 +47,9 @@
 		903600C92631797C00265BB1 /* TableViewCellSnapshotContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903600C82631797C00265BB1 /* TableViewCellSnapshotContainer.swift */; };
 		903600D1263179BD00265BB1 /* ViewSnapshotContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903600D0263179BD00265BB1 /* ViewSnapshotContainer.swift */; };
 		903600EB2631971D00265BB1 /* ViewsButtonPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903600EA2631971D00265BB1 /* ViewsButtonPage.swift */; };
+		903600F72631A96200265BB1 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903600F62631A96200265BB1 /* BaseNavigationController.swift */; };
+		903600FF2631A98200265BB1 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903600FE2631A98200265BB1 /* String.swift */; };
+		903601072631AA4700265BB1 /* UIViewController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903601062631AA4700265BB1 /* UIViewController+NavigationBar.swift */; };
 		905509C22625FA1800FD86A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 905509C12625FA1800FD86A4 /* Assets.xcassets */; };
 		905509C72625FA7800FD86A4 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 905509C62625FA7800FD86A4 /* Colors.xcassets */; };
 		905509D42625FB4A00FD86A4 /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 905509CB2625FB4A00FD86A4 /* SF-Pro-Text-Semibold.otf */; };
@@ -310,6 +313,9 @@
 		903600C82631797C00265BB1 /* TableViewCellSnapshotContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellSnapshotContainer.swift; sourceTree = "<group>"; };
 		903600D0263179BD00265BB1 /* ViewSnapshotContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSnapshotContainer.swift; sourceTree = "<group>"; };
 		903600EA2631971D00265BB1 /* ViewsButtonPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewsButtonPage.swift; sourceTree = "<group>"; };
+		903600F62631A96200265BB1 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		903600FE2631A98200265BB1 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		903601062631AA4700265BB1 /* UIViewController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+NavigationBar.swift"; sourceTree = "<group>"; };
 		905509C12625FA1800FD86A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		905509C62625FA7800FD86A4 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		905509CB2625FB4A00FD86A4 /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
@@ -778,6 +784,14 @@
 				903600EA2631971D00265BB1 /* ViewsButtonPage.swift */,
 			);
 			path = Pages;
+			sourceTree = "<group>";
+		};
+		903600F52631A91B00265BB1 /* Base Classes */ = {
+			isa = PBXGroup;
+			children = (
+				903600F62631A96200265BB1 /* BaseNavigationController.swift */,
+			);
+			path = "Base Classes";
 			sourceTree = "<group>";
 		};
 		905509BC2625F9BF00FD86A4 /* Resources */ = {
@@ -1372,6 +1386,7 @@
 		90F3DC56262DD95200220B28 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				903600F52631A91B00265BB1 /* Base Classes */,
 				90F3DC57262DD95900220B28 /* Extensions */,
 				90F3DCA5262DE36200220B28 /* Protocols */,
 				903600C72631796B00265BB1 /* Reusable */,
@@ -1385,6 +1400,7 @@
 			children = (
 				90F3DC58262DD96400220B28 /* UIKit */,
 				90F3DC66262DD99E00220B28 /* NSObject.swift */,
+				903600FE2631A98200265BB1 /* String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1395,6 +1411,7 @@
 				90F3DCB3262DE3A200220B28 /* UIApplication.swift */,
 				90F3DC59262DD97300220B28 /* UITableView.swift */,
 				90F3DC61262DD97C00220B28 /* UITableViewCell.swift */,
+				903601062631AA4700265BB1 /* UIViewController+NavigationBar.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -2152,6 +2169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				903600F72631A96200265BB1 /* BaseNavigationController.swift in Sources */,
 				90F3DCB4262DE3A200220B28 /* UIApplication.swift in Sources */,
 				90F3DC98262DE2F800220B28 /* TestFlowCoordinator.swift in Sources */,
 				90F3DCA7262DE37000220B28 /* Presentable.swift in Sources */,
@@ -2161,6 +2179,7 @@
 				90C8B4022625C6B700851B00 /* ViewController.swift in Sources */,
 				90F3DC7C262DD9E000220B28 /* UIKitPageCellModel.swift in Sources */,
 				90F3DCA1262DE34600220B28 /* MainRouter.swift in Sources */,
+				903600FF2631A98200265BB1 /* String.swift in Sources */,
 				90DE378D26284F6E003D3DD5 /* Colors.swift in Sources */,
 				903600C92631797C00265BB1 /* TableViewCellSnapshotContainer.swift in Sources */,
 				90F3DC8E262DE29400220B28 /* TestViewController.swift in Sources */,
@@ -2169,6 +2188,7 @@
 				90F3DCAF262DE37800220B28 /* Router.swift in Sources */,
 				903600D1263179BD00265BB1 /* ViewSnapshotContainer.swift in Sources */,
 				90DE379726284F86003D3DD5 /* Assets.swift in Sources */,
+				903601072631AA4700265BB1 /* UIViewController+NavigationBar.swift in Sources */,
 				90F3DC6B262DD9D700220B28 /* UIKitPageCell.swift in Sources */,
 				90F3DC5A262DD97300220B28 /* UITableView.swift in Sources */,
 				90F3DC67262DD99E00220B28 /* NSObject.swift in Sources */,

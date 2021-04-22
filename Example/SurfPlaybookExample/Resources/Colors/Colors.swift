@@ -18,4 +18,18 @@ enum Colors {
         static let background = UIColor.white
         static let press = UIColor.gray
     }
+    enum NavigationBar {
+        public static let text = UIColor.black
+        public static let tint = UIColor.gray
+        public static let background = UIColor.white
+    }
+    enum TextField {
+        public static let background = UIColor.white
+        public static let container = UIColor.lightGray
+        public static let text = UIColor.black
+        public static let placeholder = UIColor.gray
+        public static let button = UIColor.green
+        public static let tint = UIColor.green
+        public static let hint = UIColor.green
+    }
 }
