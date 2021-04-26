@@ -25,7 +25,7 @@ final class TitleTableViewCell: UITableViewCell {
 
     func configure(with title: String) {
         titleLabel.text = title
-        titleLabel.apply(style: .displayRegular20Black)
+        titleLabel.apply(style: .displayHeavy20Black)
     }
 
 }

@@ -47,8 +47,13 @@ extension ListViewController: ListViewInput {
 private extension ListViewController {
 
     func configureAppearance() {
+        configureNavigationBar()
         configureTableView()
         configureAdapter()
+    }
+
+    func configureNavigationBar() {
+        navigationItem.title = "Список"
     }
 
     func configureTableView() {
