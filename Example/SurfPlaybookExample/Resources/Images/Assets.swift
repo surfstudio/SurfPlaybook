@@ -25,8 +25,8 @@ internal enum Resources {
     internal enum Icons {
       internal static let backArrow = ImageAsset(name: "Icons/backArrow")
       internal static let cross = ImageAsset(name: "Icons/cross")
+      internal static let rightArrow = ImageAsset(name: "Icons/rightArrow")
     }
-    internal static let logo = ImageAsset(name: "logo")
   }
   internal enum Colors {
     internal static let black = ColorAsset(name: "black")

@@ -1,14 +1,14 @@
 //
-//  TestFlowCoordinator.swift
+//  ListFlowCoordinator.swift
 //  SurfPlaybookExample
 //
-//  Created by Александр Чаусов on 19.04.2021.
+//  Created by Александр Чаусов on 26.04.2021.
 //  Copyright © 2021 Surf. All rights reserved.
 //
 
 import SurfPlaybook
 
-final class TestFlowCoordinator: PlaybookFlowCoordinator {
+final class ListFlowCoordinator: PlaybookFlowCoordinator {
 
     // MARK: - Private Properties
 
@@ -17,15 +17,15 @@ final class TestFlowCoordinator: PlaybookFlowCoordinator {
     // MARK: - PlaybookFlowCoordinator
 
     var id: String {
-        return "TestFlowCoordinator"
+        return "ListFlowCoordinator"
     }
 
     var name: String {
-        return "Тестовый экран"
+        return "Список"
     }
 
     func start() {
-        let view = TestViewController()
+        let (view, _) = ListModuleConfigurator().configure()
         router.push(view)
     }
 

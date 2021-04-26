@@ -7,6 +7,5 @@
 //
 
 protocol ListViewInput: class {
-    /// Method for setup initial state of view
-    func setupInitialState()
+    func setupInitialState(with data: [ListAdapter.ListData])
 }
