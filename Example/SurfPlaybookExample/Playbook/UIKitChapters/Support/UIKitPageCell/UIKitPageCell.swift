@@ -25,7 +25,7 @@ final class UIKitPageCell: UITableViewCell {
 
     func configure(with model: UIKitPageCellModel) {
         titleLabel.text = model.text
-        titleLabel.textColor = model.textColor ?? Colors.Main.textMain
+        titleLabel.textColor = model.textColor ?? Colors.Text.main
         backgroundColor = model.backgroundColor ?? Colors.Main.background
     }
 

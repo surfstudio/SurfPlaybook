@@ -21,15 +21,23 @@ enum UITextFieldStyleType {
     case password
 
     func apply(for field: UITextField) {
+        field.backgroundColor = Colors.TextField.background
+        field.textColor = Colors.TextField.text
+        field.tintColor = Colors.TextField.tint
+        let placeholder: String
+
         switch self {
         case .email:
-            field.placeholder = "Email"
+            placeholder = "Email"
             field.keyboardType = .emailAddress
-            field.borderStyle = .line
+            field.borderStyle = .roundedRect
         case .password:
-            field.placeholder = "Пароль"
+            placeholder = "Пароль"
             field.isSecureTextEntry = true
-            field.borderStyle = .line
+            field.borderStyle = .roundedRect
         }
+
+        let attributes: [NSAttributedString.Key: Any] = [.foregroundColor: Colors.TextField.placeholder]
+        field.attributedPlaceholder = NSAttributedString(string: placeholder, attributes: attributes)
     }
 }

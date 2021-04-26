@@ -36,6 +36,7 @@ private extension TitleTableViewCell {
 
     func configureAppearance() {
         selectionStyle = .none
+        contentView.backgroundColor = Colors.Main.background
         titleLabel.numberOfLines = 0
     }
 

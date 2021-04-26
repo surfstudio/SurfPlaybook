@@ -29,7 +29,20 @@ internal enum Resources {
     }
   }
   internal enum Colors {
-    internal static let black = ColorAsset(name: "black")
+    internal enum Buttons {
+      internal static let background = ColorAsset(name: "Buttons/background")
+      internal static let text = ColorAsset(name: "Buttons/text")
+    }
+    internal enum Main {
+      internal static let active = ColorAsset(name: "Main/active")
+      internal static let background = ColorAsset(name: "Main/background")
+      internal static let pressedBackground = ColorAsset(name: "Main/pressedBackground")
+      internal static let separator = ColorAsset(name: "Main/separator")
+    }
+    internal enum Text {
+      internal static let main = ColorAsset(name: "Text/main")
+      internal static let second = ColorAsset(name: "Text/second")
+    }
   }
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name

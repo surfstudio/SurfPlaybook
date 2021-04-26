@@ -57,6 +57,7 @@ private extension ListViewController {
     }
 
     func configureTableView() {
+        tableView.backgroundColor = Colors.Main.background
         tableView.contentInsetAdjustmentBehavior = .never
         tableView.keyboardDismissMode = .onDrag
         tableView.separatorStyle = .none

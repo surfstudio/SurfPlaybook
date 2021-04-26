@@ -185,8 +185,6 @@
 		90F3DC72262DD9DC00220B28 /* UIKitPageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F3DC3C262DD75800220B28 /* UIKitPageCell.xib */; };
 		90F3DC7C262DD9E000220B28 /* UIKitPageCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3DC45262DD76400220B28 /* UIKitPageCellModel.swift */; };
 		90F3DC82262DE11F00220B28 /* FlowsAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3DC81262DE11F00220B28 /* FlowsAdapter.swift */; };
-		90F3DC8E262DE29400220B28 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3DC8C262DE29400220B28 /* TestViewController.swift */; };
-		90F3DC8F262DE29400220B28 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F3DC8D262DE29400220B28 /* TestViewController.xib */; };
 		90F3DCA1262DE34600220B28 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3DCA0262DE34600220B28 /* MainRouter.swift */; };
 		90F3DCA7262DE37000220B28 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3DCA6262DE37000220B28 /* Presentable.swift */; };
 		90F3DCAF262DE37800220B28 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3DCAE262DE37800220B28 /* Router.swift */; };
@@ -490,8 +488,6 @@
 		90F3DC61262DD97C00220B28 /* UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
 		90F3DC66262DD99E00220B28 /* NSObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
 		90F3DC81262DE11F00220B28 /* FlowsAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowsAdapter.swift; sourceTree = "<group>"; };
-		90F3DC8C262DE29400220B28 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
-		90F3DC8D262DE29400220B28 /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
 		90F3DCA0262DE34600220B28 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 		90F3DCA6262DE37000220B28 /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
 		90F3DCAE262DE37800220B28 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
@@ -1634,18 +1630,8 @@
 			children = (
 				B6FD15B860843F371B7BB567 /* Auth */,
 				7F3468B92091317C10B7A495 /* List */,
-				90F3DC8B262DE27D00220B28 /* TestViewController */,
 			);
 			path = Common;
-			sourceTree = "<group>";
-		};
-		90F3DC8B262DE27D00220B28 /* TestViewController */ = {
-			isa = PBXGroup;
-			children = (
-				90F3DC8C262DE29400220B28 /* TestViewController.swift */,
-				90F3DC8D262DE29400220B28 /* TestViewController.xib */,
-			);
-			path = TestViewController;
 			sourceTree = "<group>";
 		};
 		90F3DC96262DE2E100220B28 /* FlowCoordinators */ = {
@@ -2086,7 +2072,6 @@
 				90DE377626284EDA003D3DD5 /* SF-Pro-Display-Regular.otf in Resources */,
 				9028FCA82636DA68003257B5 /* ListTableViewCell.xib in Resources */,
 				90C8B4052625C6B700851B00 /* Main.storyboard in Resources */,
-				90F3DC8F262DE29400220B28 /* TestViewController.xib in Resources */,
 				90DE377B26284EDB003D3DD5 /* SF-Pro-Text-Heavy.otf in Resources */,
 				90DE378826284F23003D3DD5 /* Localizable.strings in Resources */,
 				90DE377D26284EDB003D3DD5 /* SF-Pro-Text-Medium.otf in Resources */,
@@ -2435,7 +2420,6 @@
 				903600FF2631A98200265BB1 /* String.swift in Sources */,
 				90DE378D26284F6E003D3DD5 /* Colors.swift in Sources */,
 				903600C92631797C00265BB1 /* TableViewCellSnapshotContainer.swift in Sources */,
-				90F3DC8E262DE29400220B28 /* TestViewController.swift in Sources */,
 				90F3DC2C262DD42400220B28 /* ColorsUIKitPage.swift in Sources */,
 				903600BD263177D200265BB1 /* ViewsChapter.swift in Sources */,
 				90F3DCAF262DE37800220B28 /* Router.swift in Sources */,

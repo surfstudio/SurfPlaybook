@@ -10,30 +10,28 @@ import UIKit
 
 enum Colors {
     enum Main {
-        static let active = UIColor.green
-        static let gray = UIColor.gray
-        static let transparent = UIColor.clear
-        static let separator = UIColor.gray
-        static let textMain = UIColor.black
-        static let background = UIColor.white
-        static let press = UIColor.gray
+        static let active = Resources.Colors.Main.active.color
+        static let separator = Resources.Colors.Main.separator.color
+        static let background = Resources.Colors.Main.background.color
+        static let pressedBackground = Resources.Colors.Main.pressedBackground.color
+    }
+    enum Text {
+        static let main = Resources.Colors.Text.main.color
+        static let second = Resources.Colors.Text.second.color
     }
     enum Buttons {
-        static let background = UIColor.purple
-        static let text = UIColor.white
+        static let background = Resources.Colors.Buttons.background.color
+        static let text = Resources.Colors.Buttons.text.color
     }
     enum NavigationBar {
-        public static let text = UIColor.black
-        public static let tint = UIColor.gray
-        public static let background = UIColor.white
+        public static let text = Resources.Colors.Text.main.color
+        public static let tint = Resources.Colors.Main.active.color
+        public static let background = Resources.Colors.Main.background.color
     }
     enum TextField {
-        public static let background = UIColor.white
-        public static let container = UIColor.lightGray
-        public static let text = UIColor.black
-        public static let placeholder = UIColor.gray
-        public static let button = UIColor.green
-        public static let tint = UIColor.green
-        public static let hint = UIColor.green
+        public static let background = Resources.Colors.Main.background.color
+        public static let text = Resources.Colors.Text.main.color
+        public static let placeholder = Resources.Colors.Text.second.color
+        public static let tint = Resources.Colors.Main.active.color
     }
 }

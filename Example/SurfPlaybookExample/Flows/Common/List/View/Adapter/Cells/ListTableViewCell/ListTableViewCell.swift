@@ -26,7 +26,7 @@ final class ListTableViewCell: UITableViewCell {
     override func setHighlighted(_ highlighted: Bool, animated: Bool) {
         super.setHighlighted(highlighted, animated: animated)
         UIView.animate(withDuration: 0.25) {
-            self.contentView.backgroundColor = highlighted ? Colors.Main.press : Colors.Main.background
+            self.contentView.backgroundColor = highlighted ? Colors.Main.pressedBackground : Colors.Main.background
         }
     }
 

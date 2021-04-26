@@ -45,6 +45,7 @@ private extension AuthViewController {
 
     func configureAppearance() {
         navigationItem.title = "Вход"
+        view.backgroundColor = Colors.Main.background
         addRightBarButton(.init(style: .close, selector: #selector(closeView)))
 
         emailTextField.apply(style: .email)
