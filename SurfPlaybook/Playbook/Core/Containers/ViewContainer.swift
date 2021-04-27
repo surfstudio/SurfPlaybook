@@ -1,14 +1,14 @@
 //
-//  ViewSnapshotContainer.swift
-//  SurfPlaybookExample
+//  ViewContainer.swift
+//  SurfPlaybook
 //
-//  Created by Александр Чаусов on 22.04.2021.
+//  Created by Александр Чаусов on 27.04.2021.
 //  Copyright © 2021 Surf. All rights reserved.
 //
 
 import UIKit
 
-final class ViewSnapshotContainer<View: UIView>: UIView {
+public class ViewContainer<View: UIView>: UIView {
 
     // MARK: - Private Properties
 
@@ -16,7 +16,15 @@ final class ViewSnapshotContainer<View: UIView>: UIView {
 
     // MARK: - Initialization
 
-    init(_ view: View, width: CGFloat?, height: CGFloat?) {
+    /// Создание контейнера для обычных UIView внутри плейбука.
+    ///
+    /// - Parameters:
+    ///   - view: экземпляр UIView или его наследник, который требуется поместить в контейнер
+    ///   - width: Предполагаемая ширины view,
+    ///     при передаче nil - view будет растягиваться под размер собственного контента.
+    ///   - height: Предполагаемая высота view,
+    ///     при передаче nil - view будет растягиваться под размер собственного контента.
+    public init(_ view: View, width: CGFloat?, height: CGFloat?) {
         self.view = view
         super.init(frame: .zero)
         backgroundColor = Colors.Main.background

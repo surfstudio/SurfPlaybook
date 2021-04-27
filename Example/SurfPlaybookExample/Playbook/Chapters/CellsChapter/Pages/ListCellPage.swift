@@ -50,7 +50,7 @@ private final class ListCellFactory {
 
     func generate(for preset: ListCellFactoryPreset) -> (() -> UIView) {
         return { () -> UIView in
-            let container = TableViewCellSnapshotContainer<ListTableViewCell>(width: Constants.cellWidth) { (cell, _) in
+            let container = TableViewCellContainer<ListTableViewCell>(width: Constants.cellWidth) { (cell, _) in
                 switch preset {
                 case .title:
                     cell.configure(with: .init(title: "Заголовок", subtitle: nil, showArrow: false))

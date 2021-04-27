@@ -27,7 +27,7 @@ private extension CellsChapter {
 
     var titleCell: PlaybookPage {
         return PlaybookPage(name: "TitleTableViewCell", description: nil) { () -> UIView in
-            let container = TableViewCellSnapshotContainer<TitleTableViewCell>(width: Constants.cellWidth) { (cell, _) in
+            let container = TableViewCellContainer<TitleTableViewCell>(width: Constants.cellWidth) { (cell, _) in
                 cell.configure(with: "Заголовок")
             }
             return container

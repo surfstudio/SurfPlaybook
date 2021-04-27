@@ -30,7 +30,7 @@ private extension ControlsChapter {
             let button = CommonButton()
             button.setTitle("Войти", for: .normal)
             button.apply(style: .main)
-            let container = ViewSnapshotContainer(button, width: Constants.width, height: 40)
+            let container = ViewContainer(button, width: Constants.width, height: 40)
             return container
         }
     }

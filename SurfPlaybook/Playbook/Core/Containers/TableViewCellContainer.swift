@@ -1,29 +1,29 @@
 //
-//  TableViewCellSnapshotContainer.swift
-//  SurfPlaybookExample
+//  TableViewCellContainer.swift
+//  SurfPlaybook
 //
-//  Created by Александр Чаусов on 22.04.2021.
+//  Created by Александр Чаусов on 27.04.2021.
 //  Copyright © 2021 Surf. All rights reserved.
 //
 
 import UIKit
 
-final class TableViewCellSnapshotContainer<Cell: UITableViewCell>: UIView, UITableViewDataSource, UITableViewDelegate {
+public class TableViewCellContainer<Cell: UITableViewCell>: UIView, UITableViewDataSource, UITableViewDelegate {
 
     // MARK: - Nested Types
 
-    typealias CellConfigurator = (_ cell: Cell, _ tableView: UITableView) -> Void
-    typealias HeightResolver = (_ width: CGFloat) -> (CGFloat)
+    public typealias CellConfigurator = (_ cell: Cell, _ tableView: UITableView) -> Void
+    public typealias HeightResolver = (_ width: CGFloat) -> (CGFloat)
 
     // MARK: - Private Properties
 
-    private let tableView = SnapshotTableView()
+    private let tableView = PlaybookTableView()
     private let configureCell: (Cell, UITableView) -> Void
-    private let heightForWidth: ((CGFloat) -> CGFloat)?
+    private let heightResolver: ((CGFloat) -> CGFloat)?
 
     // MARK: - Initialization
 
-    /// Создание контейнера для снепшот-тестов ячеек.
+    /// Создание контейнера для ячеек внутри плейбука.
     ///
     /// - Parameters:
     ///   - width: Ширина ячейки
@@ -33,11 +33,12 @@ final class TableViewCellSnapshotContainer<Cell: UITableViewCell>: UIView, UITab
     ///     позволяет расчитать и вернуть высоту ячейки.
     ///     В случае передачи `nil` используется `UITableView.automaticDimension`.
     ///     По-умолчанию равно `nil`.
-    init(width: CGFloat, configureCell: @escaping CellConfigurator, heightForWidth: HeightResolver? = nil) {
+    public init(width: CGFloat, configureCell: @escaping CellConfigurator, heightResolver: HeightResolver? = nil) {
         self.configureCell = configureCell
-        self.heightForWidth = heightForWidth
+        self.heightResolver = heightResolver
         super.init(frame: .zero)
 
+        tableView.backgroundColor = Colors.Main.background
         tableView.separatorStyle = .none
         tableView.contentInset = .zero
         tableView.tableFooterView = UIView()
@@ -65,11 +66,11 @@ final class TableViewCellSnapshotContainer<Cell: UITableViewCell>: UIView, UITab
 
     // MARK: - UITableViewDataSource
 
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
 
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(Cell.self, indexPath: indexPath) else {
             return UITableViewCell()
         }
@@ -79,14 +80,14 @@ final class TableViewCellSnapshotContainer<Cell: UITableViewCell>: UIView, UITab
 
     // MARK: - UITableViewDelegate
 
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return heightForWidth?(frame.width) ?? UITableView.automaticDimension
+    public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return heightResolver?(frame.width) ?? UITableView.automaticDimension
     }
 
 }
 
-/// Наследник `UITableView` для снепшот тестов. Автоматически изменяет свой размер под contentSize.
-final class SnapshotTableView: UITableView {
+/// Наследник `UITableView` для плейбука. Автоматически изменяет свой размер под contentSize.
+private final class PlaybookTableView: UITableView {
 
     override var contentSize: CGSize {
         didSet {

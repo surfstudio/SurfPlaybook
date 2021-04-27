@@ -53,7 +53,7 @@ private final class UITextFieldFactory {
         return { () -> UIView in
             let textField = UITextField()
             textField.apply(style: preset.style)
-            let container = ViewSnapshotContainer(textField, width: Constants.width, height: 40)
+            let container = ViewContainer(textField, width: Constants.width, height: 40)
             return container
         }
     }

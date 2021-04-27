@@ -55,6 +55,8 @@
 		9022F3CE26381F28008839A0 /* UITextFieldPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9022F3CD26381F28008839A0 /* UITextFieldPage.swift */; };
 		9022F3DD263820B7008839A0 /* CellsChapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9022F3DC263820B7008839A0 /* CellsChapter.swift */; };
 		9022F3E626382170008839A0 /* ListCellPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9022F3E526382170008839A0 /* ListCellPage.swift */; };
+		9022F41226387ECD008839A0 /* TableViewCellContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9022F41126387ECD008839A0 /* TableViewCellContainer.swift */; };
+		9022F41726387F9E008839A0 /* ViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9022F41626387F9E008839A0 /* ViewContainer.swift */; };
 		9028FC9D2636D9AF003257B5 /* ListAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9028FC9C2636D9AF003257B5 /* ListAdapter.swift */; };
 		9028FCA72636DA68003257B5 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9028FCA52636DA68003257B5 /* ListTableViewCell.swift */; };
 		9028FCA82636DA68003257B5 /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9028FCA62636DA68003257B5 /* ListTableViewCell.xib */; };
@@ -64,8 +66,6 @@
 		9028FCC22636DF5F003257B5 /* LabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9028FCC12636DF5F003257B5 /* LabelStyle.swift */; };
 		9028FCC72636DF90003257B5 /* StringAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9028FCC62636DF90003257B5 /* StringAttributes.swift */; };
 		9028FCCC2636DFA3003257B5 /* UILabel+Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9028FCCB2636DFA3003257B5 /* UILabel+Styles.swift */; };
-		903600C92631797C00265BB1 /* TableViewCellSnapshotContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903600C82631797C00265BB1 /* TableViewCellSnapshotContainer.swift */; };
-		903600D1263179BD00265BB1 /* ViewSnapshotContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903600D0263179BD00265BB1 /* ViewSnapshotContainer.swift */; };
 		903600F72631A96200265BB1 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903600F62631A96200265BB1 /* BaseNavigationController.swift */; };
 		903600FF2631A98200265BB1 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903600FE2631A98200265BB1 /* String.swift */; };
 		903601072631AA4700265BB1 /* UIViewController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903601062631AA4700265BB1 /* UIViewController+NavigationBar.swift */; };
@@ -335,6 +335,8 @@
 		9022F3CD26381F28008839A0 /* UITextFieldPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldPage.swift; sourceTree = "<group>"; };
 		9022F3DC263820B7008839A0 /* CellsChapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellsChapter.swift; sourceTree = "<group>"; };
 		9022F3E526382170008839A0 /* ListCellPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCellPage.swift; sourceTree = "<group>"; };
+		9022F41126387ECD008839A0 /* TableViewCellContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellContainer.swift; sourceTree = "<group>"; };
+		9022F41626387F9E008839A0 /* ViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewContainer.swift; sourceTree = "<group>"; };
 		9028FC9C2636D9AF003257B5 /* ListAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAdapter.swift; sourceTree = "<group>"; };
 		9028FCA52636DA68003257B5 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		9028FCA62636DA68003257B5 /* ListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
@@ -344,8 +346,6 @@
 		9028FCC12636DF5F003257B5 /* LabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelStyle.swift; sourceTree = "<group>"; };
 		9028FCC62636DF90003257B5 /* StringAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringAttributes.swift; sourceTree = "<group>"; };
 		9028FCCB2636DFA3003257B5 /* UILabel+Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Styles.swift"; sourceTree = "<group>"; };
-		903600C82631797C00265BB1 /* TableViewCellSnapshotContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellSnapshotContainer.swift; sourceTree = "<group>"; };
-		903600D0263179BD00265BB1 /* ViewSnapshotContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSnapshotContainer.swift; sourceTree = "<group>"; };
 		903600F62631A96200265BB1 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		903600FE2631A98200265BB1 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		903601062631AA4700265BB1 /* UIViewController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+NavigationBar.swift"; sourceTree = "<group>"; };
@@ -841,6 +841,15 @@
 			path = Pages;
 			sourceTree = "<group>";
 		};
+		9022F41026387EAC008839A0 /* Containers */ = {
+			isa = PBXGroup;
+			children = (
+				9022F41126387ECD008839A0 /* TableViewCellContainer.swift */,
+				9022F41626387F9E008839A0 /* ViewContainer.swift */,
+			);
+			path = Containers;
+			sourceTree = "<group>";
+		};
 		9028FC9B2636D99F003257B5 /* Adapter */ = {
 			isa = PBXGroup;
 			children = (
@@ -900,8 +909,6 @@
 			isa = PBXGroup;
 			children = (
 				903601292631C1D300265BB1 /* CommonButton */,
-				903600C82631797C00265BB1 /* TableViewCellSnapshotContainer.swift */,
-				903600D0263179BD00265BB1 /* ViewSnapshotContainer.swift */,
 			);
 			path = Reusable;
 			sourceTree = "<group>";
@@ -1202,6 +1209,7 @@
 		90DE37FA26285DA5003D3DD5 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				9022F41026387EAC008839A0 /* Containers */,
 				90DE37FB26285DB8003D3DD5 /* Protocols */,
 				90DE388F26286C3B003D3DD5 /* Playbook.swift */,
 				90DE388726286C12003D3DD5 /* PlaybookChapter.swift */,
@@ -2233,6 +2241,7 @@
 				90090888262F3F140075559A /* UIViewController+NavigationBar.swift in Sources */,
 				90DE382626285EDF003D3DD5 /* OptionSelectorModuleConfigurator.swift in Sources */,
 				90F3DBFA262DB41B00220B28 /* UITableView.swift in Sources */,
+				9022F41226387ECD008839A0 /* TableViewCellContainer.swift in Sources */,
 				90F3DC0C262DCE1400220B28 /* MenuItemCell.swift in Sources */,
 				90550A002625FDE500FD86A4 /* Assets.swift in Sources */,
 				90F3DBEF262DB09800220B28 /* SettingsAdapter.swift in Sources */,
@@ -2305,6 +2314,7 @@
 				BEFD0C06AAE7B2AA9A57F92A /* UIKitPageModuleConfigurator.swift in Sources */,
 				186091743F39D8D035CDD1FC /* UIKitPagePresenter.swift in Sources */,
 				1E391AF5442B1D4230C81E39 /* UIKitPageModuleInput.swift in Sources */,
+				9022F41726387F9E008839A0 /* ViewContainer.swift in Sources */,
 				293C0787D36217A4C056E79E /* UIKitPageModuleOutput.swift in Sources */,
 				D5B0EE92AC454A1A4290228C /* UIKitPageViewController.swift in Sources */,
 				90F3DCC6262DEB8900220B28 /* PageCollectionViewCell.swift in Sources */,
@@ -2345,13 +2355,11 @@
 				90F3DCA1262DE34600220B28 /* MainRouter.swift in Sources */,
 				903600FF2631A98200265BB1 /* String.swift in Sources */,
 				90DE378D26284F6E003D3DD5 /* Colors.swift in Sources */,
-				903600C92631797C00265BB1 /* TableViewCellSnapshotContainer.swift in Sources */,
 				9022F3E626382170008839A0 /* ListCellPage.swift in Sources */,
 				90F3DC2C262DD42400220B28 /* ColorsUIKitPage.swift in Sources */,
 				90F3DCAF262DE37800220B28 /* Router.swift in Sources */,
 				9028FCA72636DA68003257B5 /* ListTableViewCell.swift in Sources */,
 				9028FCC22636DF5F003257B5 /* LabelStyle.swift in Sources */,
-				903600D1263179BD00265BB1 /* ViewSnapshotContainer.swift in Sources */,
 				90DE379726284F86003D3DD5 /* Assets.swift in Sources */,
 				903601072631AA4700265BB1 /* UIViewController+NavigationBar.swift in Sources */,
 				90F3DC6B262DD9D700220B28 /* UIKitPageCell.swift in Sources */,
