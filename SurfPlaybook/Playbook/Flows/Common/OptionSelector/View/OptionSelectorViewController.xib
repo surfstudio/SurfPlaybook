@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OptionSelectorViewController" customModule="SurfPlaybook" customModuleProvider="target">
             <connections>
+                <outlet property="bottomView" destination="bO1-xW-efC" id="Hqp-GQ-bmD"/>
                 <outlet property="cancelButton" destination="UGh-uO-9aC" id="TCx-aL-Q9k"/>
                 <outlet property="containerView" destination="iqS-Z5-IHG" id="4bX-8V-a8d"/>
                 <outlet property="doneButton" destination="R91-iI-wDK" id="Oak-gL-uVW"/>
@@ -69,7 +70,7 @@
                                     </constraints>
                                 </view>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="bottom" secondItem="vQo-vV-eHR" secondAttribute="bottom" id="2oS-R0-P5O"/>
                                 <constraint firstAttribute="bottom" secondItem="R91-iI-wDK" secondAttribute="bottom" id="46k-fi-ECK"/>

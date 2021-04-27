@@ -24,6 +24,7 @@ final class OptionSelectorViewController: UIViewController {
     @IBOutlet private weak var doneButton: CommonButton!
     @IBOutlet private weak var separatorView: UIView!
     @IBOutlet private weak var pickerView: UIPickerView!
+    @IBOutlet private weak var bottomView: UIView!
 
     // MARK: - Properties
 
@@ -62,6 +63,9 @@ private extension OptionSelectorViewController {
 
     func configureAppearance(with title: String) {
         view.backgroundColor = Colors.Main.translucent
+        containerView.backgroundColor = Colors.Main.background
+        bottomView.backgroundColor = Colors.Main.background
+
         configureFakeNavBar(with: title)
         configureButtons()
         configurePickerView()
