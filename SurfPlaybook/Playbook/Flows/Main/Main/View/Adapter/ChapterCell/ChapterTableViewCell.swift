@@ -55,11 +55,13 @@ private extension ChapterTableViewCell {
 
     func configureAppearance() {
         selectionStyle = .none
+        contentView.backgroundColor = Colors.Main.background
         configureCollectionView()
         configureCollectionViewLayout()
     }
 
     func configureCollectionView() {
+        collectionView.backgroundColor = Colors.Main.background
         collectionView.decelerationRate = .fast
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.delegate = self

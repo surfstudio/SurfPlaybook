@@ -77,10 +77,13 @@ extension MainViewController: MainViewInput {
 private extension MainViewController {
 
     func configureAppearance() {
-        tableView.apply(style: .default)
         configureNavigationBar()
         configureAdapter()
         configureSearchBar()
+
+        view.backgroundColor = Colors.Main.background
+        container.backgroundColor = Colors.Main.background
+        tableView.apply(style: .default)
         setup(state: .normal)
     }
 

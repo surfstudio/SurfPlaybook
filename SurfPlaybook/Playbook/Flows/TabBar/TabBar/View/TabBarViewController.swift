@@ -10,6 +10,12 @@ import UIKit
 
 final class TabBarViewController: UITabBarController {
 
+    // MARK: - Constants
+
+    private enum Constants {
+        static let titleFont = UIFont.systemFont(ofSize: 10, weight: .medium)
+    }
+
     // MARK: - Properties
 
     var output: TabBarViewOutput?
@@ -23,6 +29,12 @@ final class TabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.delegate = self
+        configureAppearance()
+    }
+
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        configureAppearance()
     }
 
 }
@@ -64,6 +76,46 @@ extension TabBarViewController: UITabBarControllerDelegate {
         let navigationController = viewController as? UINavigationController
         let isInitial = navigationController?.viewControllers.isEmpty ?? true
         output?.selectTab(with: tab, isInitial: isInitial, isStackEmpty: isSelectableStackEmpty)
+    }
+
+}
+
+// MARK: - Appearance
+
+private extension TabBarViewController {
+
+    func configureAppearance() {
+        let backgroundImage = UIImage(color: Colors.TabBar.background)
+        let shadowImage = UIImage(color: Colors.TabBar.separator,
+                                  size: CGSize(width: 1,
+                                               height: 1.0 / UIScreen.main.scale))
+
+        let normalTitleAttributes: [NSAttributedString.Key: Any] = [
+            NSAttributedString.Key.font: Constants.titleFont,
+            NSAttributedString.Key.foregroundColor: Colors.TabBar.itemTint
+        ]
+        let selectedTitleAttributes: [NSAttributedString.Key: Any] = [
+            NSAttributedString.Key.font: Constants.titleFont,
+            NSAttributedString.Key.foregroundColor: Colors.TabBar.selectedItemTint
+        ]
+
+        if #available(iOS 13, *) {
+            let appearance = tabBar.standardAppearance.copy()
+            appearance.backgroundImage = backgroundImage
+            appearance.shadowImage = shadowImage
+            appearance.stackedLayoutAppearance.normal.iconColor = Colors.TabBar.itemTint
+            appearance.stackedLayoutAppearance.selected.iconColor = Colors.TabBar.selectedItemTint
+            appearance.stackedLayoutAppearance.normal.titleTextAttributes = normalTitleAttributes
+            appearance.stackedLayoutAppearance.selected.titleTextAttributes = selectedTitleAttributes
+            tabBar.standardAppearance = appearance
+        } else {
+            tabBar.backgroundImage = backgroundImage
+            tabBar.shadowImage = shadowImage
+            tabBar.tintColor = Colors.TabBar.selectedItemTint
+            tabBar.unselectedItemTintColor = Colors.TabBar.itemTint
+            UITabBarItem.appearance().setTitleTextAttributes(normalTitleAttributes, for: .normal)
+            UITabBarItem.appearance().setTitleTextAttributes(selectedTitleAttributes, for: .selected)
+        }
     }
 
 }

@@ -34,7 +34,7 @@ final class PageCollectionViewCell: UICollectionViewCell {
         titleLabel.text = model.name
         titleLabel.apply(style: .textRegular14Black)
 
-        guard let image = model.image else {
+        guard let image = model.playbookPage.snapshot else {
             snapshotImageView.image = nil
             return
         }
@@ -58,12 +58,13 @@ private extension PageCollectionViewCell {
 
     func configureAppearance() {
         contentView.clipsToBounds = false
+        contentView.backgroundColor = Colors.Main.background
         clipsToBounds = false
-        contentView.backgroundColor = .clear
         backgroundColor = .clear
 
         snapshotImageView.contentMode = .scaleAspectFit
         containerView.layer.cornerRadius = 12
+        containerView.backgroundColor = Colors.Main.background
     }
 
     func configureShadow() {

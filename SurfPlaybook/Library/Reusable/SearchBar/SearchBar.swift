@@ -120,6 +120,7 @@ final class SearchBar: UIView {
 private extension SearchBar {
 
     func configureAppearance() {
+        containerView.superview?.backgroundColor = Colors.Main.background
         configureContainerView()
         configureSearchIcon()
         configureTextField()
