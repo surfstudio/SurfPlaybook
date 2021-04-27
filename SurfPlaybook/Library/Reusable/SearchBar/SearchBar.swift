@@ -56,7 +56,7 @@ final class SearchBar: UIView {
     }
     var placeholder: String? {
         didSet {
-            let color = Colors.TextField.placeholder
+            let color = Colors.SearchBar.placeholder
             textField.attributedPlaceholder = placeholder?.with(attributes: [.font(Constants.font),
                                                                              .foregroundColor(color)])
         }
@@ -66,7 +66,7 @@ final class SearchBar: UIView {
             textField.returnKeyType = returnKeyType
         }
     }
-    var containerBackgroundColor: UIColor = Colors.TextField.container {
+    var containerBackgroundColor: UIColor = Colors.SearchBar.container {
         didSet {
             containerView.backgroundColor = containerBackgroundColor
         }
@@ -136,15 +136,15 @@ private extension SearchBar {
 
     func configureSearchIcon() {
         searchIconImageView.contentMode = .scaleAspectFit
-        let image = Resources.Assets.Icons.search.image.mask(with: Colors.TextField.button)
+        let image = Resources.Assets.Icons.search.image.mask(with: Colors.Main.active)
         searchIconImageView.image = image
     }
 
     func configureTextField() {
         textField.borderStyle = .none
         textField.font = Constants.font
-        textField.textColor = Colors.TextField.text
-        textField.tintColor = Colors.TextField.tint
+        textField.textColor = Colors.SearchBar.text
+        textField.tintColor = Colors.SearchBar.tint
         textField.autocorrectionType = .no
         textField.returnKeyType = returnKeyType
         textField.addTarget(self,

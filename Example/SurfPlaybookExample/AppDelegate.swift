@@ -32,9 +32,45 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         Playbook.shared
             .add(flowCoordinator: AuthFlowCoordinator())
             .add(flowCoordinator: ListFlowCoordinator())
+        configurePlaybookColors()
 
         Playbook.shared.start(from: self.window)
         return true
+    }
+
+}
+
+// MARK: - Pirvate Methods
+
+private extension AppDelegate {
+
+    func configurePlaybookColors() {
+        var config = ColorsConfig.shared
+
+        config.main.active = Colors.Main.active
+        config.main.background = Colors.Main.background
+        config.main.press = Colors.Main.pressedBackground
+        config.main.coloredBackground = Colors.Main.pressedBackground
+        config.main.translucent = Colors.Main.pressedBackground.withAlphaComponent(0.5)
+        config.main.separator = Colors.Main.separator
+
+        config.text.active = Colors.Main.active
+        config.text.main = Colors.Text.main
+        config.text.second = Colors.Text.second
+
+        config.navigationBar.text = Colors.NavigationBar.text
+        config.navigationBar.tint = Colors.NavigationBar.tint
+        config.navigationBar.background = Colors.NavigationBar.background
+
+        config.tabBar.selectedItemTint = Colors.Main.active
+        config.tabBar.background = Colors.Main.background
+
+        config.searchBar.container = Colors.Main.pressedBackground
+        config.searchBar.text = Colors.TextField.text
+        config.searchBar.placeholder = Colors.TextField.placeholder
+        config.searchBar.tint = Colors.TextField.tint
+
+        ColorsConfig.shared = config
     }
 
 }
