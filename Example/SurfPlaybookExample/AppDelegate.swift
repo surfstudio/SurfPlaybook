@@ -25,7 +25,8 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
 
         Playbook.shared
-            .add(chapter: ViewsChapter().build())
+            .add(chapter: ControlsChapter().build())
+            .add(chapter: CellsChapter().build())
         Playbook.shared
             .add(uiKitPage: ColorsUIKitPage())
         Playbook.shared
