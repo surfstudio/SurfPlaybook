@@ -26,6 +26,7 @@ internal enum Resources {
       internal static let backArrow = ImageAsset(name: "Icons/backArrow")
       internal static let bigSearch = ImageAsset(name: "Icons/bigSearch")
       internal static let clear = ImageAsset(name: "Icons/clear")
+      internal static let fire = ImageAsset(name: "Icons/fire")
       internal static let radioOff = ImageAsset(name: "Icons/radioOff")
       internal static let radioOn = ImageAsset(name: "Icons/radioOn")
       internal static let rightArrow = ImageAsset(name: "Icons/rightArrow")

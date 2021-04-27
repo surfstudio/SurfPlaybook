@@ -15,6 +15,7 @@ final class PageCollectionViewCell: UICollectionViewCell {
     @IBOutlet private weak var containerView: UIView!
     @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var snapshotImageView: UIImageView!
+    @IBOutlet private weak var includePresetsImageView: UIImageView!
 
     // MARK: - UICollectionView
 
@@ -33,6 +34,7 @@ final class PageCollectionViewCell: UICollectionViewCell {
     func configure(with model: PageModel) {
         titleLabel.text = model.name
         titleLabel.apply(style: .textRegular14Black)
+        includePresetsImageView.isHidden = model.playbookPage.presets.count <= 1
 
         guard let image = model.playbookPage.snapshot else {
             snapshotImageView.image = nil
@@ -65,6 +67,9 @@ private extension PageCollectionViewCell {
         snapshotImageView.contentMode = .scaleAspectFit
         containerView.layer.cornerRadius = 12
         containerView.backgroundColor = Colors.Main.background
+
+        includePresetsImageView.contentMode = .scaleAspectFit
+        includePresetsImageView.image = Resources.Assets.Icons.fire.image
     }
 
     func configureShadow() {

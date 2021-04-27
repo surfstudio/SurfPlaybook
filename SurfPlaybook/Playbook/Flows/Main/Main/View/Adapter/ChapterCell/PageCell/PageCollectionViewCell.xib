@@ -33,14 +33,23 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dbR-hn-aZN">
+                                <rect key="frame" x="132" y="8" width="12" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="12" id="Cq4-u5-dBf"/>
+                                    <constraint firstAttribute="height" constant="12" id="e5l-1F-dQO"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="YDl-ad-hY4" secondAttribute="trailing" constant="16" id="B2t-il-NLD"/>
                             <constraint firstAttribute="bottom" secondItem="YDl-ad-hY4" secondAttribute="bottom" constant="16" id="HFh-vn-8iN"/>
+                            <constraint firstAttribute="trailing" secondItem="dbR-hn-aZN" secondAttribute="trailing" constant="8" id="OBj-Rw-Mmc"/>
                             <constraint firstItem="YDl-ad-hY4" firstAttribute="leading" secondItem="8Ma-qd-ngh" secondAttribute="leading" constant="16" id="SuK-0m-sTq"/>
                             <constraint firstItem="7KR-tE-HxG" firstAttribute="top" secondItem="8Ma-qd-ngh" secondAttribute="top" id="cSh-Sg-KUy"/>
                             <constraint firstAttribute="trailing" secondItem="7KR-tE-HxG" secondAttribute="trailing" id="sGo-r9-heS"/>
+                            <constraint firstItem="dbR-hn-aZN" firstAttribute="top" secondItem="8Ma-qd-ngh" secondAttribute="top" constant="8" id="xa7-RT-BaR"/>
                             <constraint firstItem="7KR-tE-HxG" firstAttribute="leading" secondItem="8Ma-qd-ngh" secondAttribute="leading" id="ycC-vx-On0"/>
                         </constraints>
                     </view>
@@ -55,6 +64,7 @@
             </constraints>
             <connections>
                 <outlet property="containerView" destination="8Ma-qd-ngh" id="0mt-Xi-EQD"/>
+                <outlet property="includePresetsImageView" destination="dbR-hn-aZN" id="kc8-Ze-DSD"/>
                 <outlet property="snapshotImageView" destination="7KR-tE-HxG" id="stp-bl-zK9"/>
                 <outlet property="titleLabel" destination="YDl-ad-hY4" id="oqR-xJ-Q1K"/>
             </connections>
