@@ -19,6 +19,7 @@ final class MainPresenter: MainModuleOutput {
     // MARK: - Private Properties
 
     private let chaptersModels: [ChapterModel]
+    private var searchString = ""
 
     // MARK: - Initialization
 
@@ -46,6 +47,7 @@ extension MainPresenter: MainViewOutput {
     }
 
     func filter(by text: String) {
+        searchString = text
         guard !text.isEmpty else {
             view?.setup(state: .normal)
             view?.fill(with: chaptersModels)
@@ -63,6 +65,10 @@ extension MainPresenter: MainViewOutput {
             view?.setup(state: .normal)
             view?.fill(with: filteredChapters)
         }
+    }
+
+    func refresh() {
+        filter(by: searchString)
     }
 
 }

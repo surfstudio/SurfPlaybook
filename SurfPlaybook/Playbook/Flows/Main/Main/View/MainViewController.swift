@@ -42,6 +42,11 @@ final class MainViewController: UIViewController {
         navigationController?.setNavigationBarHidden(isActiveSearch, animated: true)
     }
 
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        output?.refresh()
+    }
+
 }
 
 // MARK: - GreetingViewInput

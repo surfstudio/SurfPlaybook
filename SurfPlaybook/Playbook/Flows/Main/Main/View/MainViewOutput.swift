@@ -10,4 +10,6 @@ protocol MainViewOutput {
     func viewLoaded()
     func showPage(_ model: PageModel)
     func filter(by text: String)
+    /// Метод вызывается после смены пользователем системной темы (light/dark)
+    func refresh()
 }
