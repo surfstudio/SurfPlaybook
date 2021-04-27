@@ -40,7 +40,7 @@ extension PageViewController: PageViewInput {
         configureAppearance(with: page)
     }
 
-    func showPreset(_ preset: OptionSelectorModel, for page: PlaybookPage) {
+    func showPreset(_ preset: StringRepresentable, for page: PlaybookPage) {
         guard let preset = page.presets.first(where: { $0.preset.title == preset.title }) else {
             return
         }

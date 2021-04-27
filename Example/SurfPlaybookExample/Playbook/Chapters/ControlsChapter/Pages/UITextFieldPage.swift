@@ -24,7 +24,7 @@ extension ControlsChapter {
 
 }
 
-private enum UITextFieldFactoryPreset: OptionSelectorModel {
+private enum UITextFieldFactoryPreset: StringRepresentable {
     case email
     case password
 

@@ -8,6 +8,6 @@
 
 protocol PageViewInput: class {
     func setupInitialState(with page: PlaybookPage)
-    func showPreset(_ preset: OptionSelectorModel, for page: PlaybookPage)
+    func showPreset(_ preset: StringRepresentable, for page: PlaybookPage)
     func updateBackgroundAppearance(isColored: Bool)
 }

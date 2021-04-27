@@ -49,7 +49,7 @@ extension OptionSelectorPresenter: OptionSelectorViewOutput {
         view?.setupInitialState(with: config)
     }
 
-    func selectValue(_ value: OptionSelectorModel) {
+    func selectValue(_ value: StringRepresentable) {
         handler?.selectOption(value, input: self)
     }
 

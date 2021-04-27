@@ -11,14 +11,14 @@ struct OptionSelectorConfig {
     // MARK: - Properties
 
     let title: String
-    let values: [OptionSelectorModel]
-    let selectedValue: OptionSelectorModel?
+    let values: [StringRepresentable]
+    let selectedValue: StringRepresentable?
 
     // MARK: - Initialization
 
     init(title: String,
-         values: [OptionSelectorModel],
-         selectedValue: OptionSelectorModel?) {
+         values: [StringRepresentable],
+         selectedValue: StringRepresentable?) {
         self.title = title
         self.values = values
         self.selectedValue = selectedValue

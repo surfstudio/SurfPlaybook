@@ -26,7 +26,7 @@ extension CellsChapter {
 
 }
 
-private enum ListCellFactoryPreset: OptionSelectorModel {
+private enum ListCellFactoryPreset: StringRepresentable {
     case title
     case titleAndArrow
     case full

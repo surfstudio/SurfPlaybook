@@ -21,7 +21,7 @@ final class PagePresenter: PageModuleOutput {
     private let page: PlaybookPage
     private let storage: PlaybookStorageInterface
     private let notificationService: PlaybookNotificationServiceInterface
-    private var selectedPreset: OptionSelectorModel?
+    private var selectedPreset: StringRepresentable?
 
     // MARK: - Initialization
 
@@ -44,7 +44,7 @@ extension PagePresenter: PageModuleInput {
 
 extension PagePresenter: OptionSelectorHandler {
 
-    func selectOption(_ option: OptionSelectorModel, input: OptionSelectorModuleInput) {
+    func selectOption(_ option: StringRepresentable, input: OptionSelectorModuleInput) {
         view?.showPreset(option, for: page)
         selectedPreset = option
         input.closeSelector()

@@ -106,7 +106,7 @@
 		90DE380726285DF7003D3DD5 /* PlaybookFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE380626285DF7003D3DD5 /* PlaybookFlowCoordinator.swift */; };
 		90DE381F26285ED4003D3DD5 /* OptionSelectorConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE381C26285ED4003D3DD5 /* OptionSelectorConfig.swift */; };
 		90DE382026285ED4003D3DD5 /* OptionSelectorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE381D26285ED4003D3DD5 /* OptionSelectorHandler.swift */; };
-		90DE382126285ED4003D3DD5 /* OptionSelectorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE381E26285ED4003D3DD5 /* OptionSelectorModel.swift */; };
+		90DE382126285ED4003D3DD5 /* StringRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE381E26285ED4003D3DD5 /* StringRepresentable.swift */; };
 		90DE382626285EDF003D3DD5 /* OptionSelectorModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE382526285EDF003D3DD5 /* OptionSelectorModuleConfigurator.swift */; };
 		90DE382D26285EE8003D3DD5 /* OptionSelectorModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE382A26285EE8003D3DD5 /* OptionSelectorModuleInput.swift */; };
 		90DE382E26285EE8003D3DD5 /* OptionSelectorModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE382B26285EE8003D3DD5 /* OptionSelectorModuleOutput.swift */; };
@@ -391,7 +391,7 @@
 		90DE380626285DF7003D3DD5 /* PlaybookFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybookFlowCoordinator.swift; sourceTree = "<group>"; };
 		90DE381C26285ED4003D3DD5 /* OptionSelectorConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionSelectorConfig.swift; sourceTree = "<group>"; };
 		90DE381D26285ED4003D3DD5 /* OptionSelectorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionSelectorHandler.swift; sourceTree = "<group>"; };
-		90DE381E26285ED4003D3DD5 /* OptionSelectorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionSelectorModel.swift; sourceTree = "<group>"; };
+		90DE381E26285ED4003D3DD5 /* StringRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringRepresentable.swift; sourceTree = "<group>"; };
 		90DE382526285EDF003D3DD5 /* OptionSelectorModuleConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionSelectorModuleConfigurator.swift; sourceTree = "<group>"; };
 		90DE382A26285EE8003D3DD5 /* OptionSelectorModuleInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionSelectorModuleInput.swift; sourceTree = "<group>"; };
 		90DE382B26285EE8003D3DD5 /* OptionSelectorModuleOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionSelectorModuleOutput.swift; sourceTree = "<group>"; };
@@ -1273,7 +1273,7 @@
 			children = (
 				90DE381C26285ED4003D3DD5 /* OptionSelectorConfig.swift */,
 				90DE381D26285ED4003D3DD5 /* OptionSelectorHandler.swift */,
-				90DE381E26285ED4003D3DD5 /* OptionSelectorModel.swift */,
+				90DE381E26285ED4003D3DD5 /* StringRepresentable.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -2218,7 +2218,7 @@
 				90DE37FD26285DCC003D3DD5 /* UIKitPageViewModel.swift in Sources */,
 				90F3DCCD262DEF0800220B28 /* ChapterTableViewCell.swift in Sources */,
 				90F3DBFF262DB45100220B28 /* UITableViewCell.swift in Sources */,
-				90DE382126285ED4003D3DD5 /* OptionSelectorModel.swift in Sources */,
+				90DE382126285ED4003D3DD5 /* StringRepresentable.swift in Sources */,
 				90DE389026286C3B003D3DD5 /* Playbook.swift in Sources */,
 				90DE38BB26288F21003D3DD5 /* Presentable.swift in Sources */,
 				90DE384F2628644A003D3DD5 /* UIImage.swift in Sources */,

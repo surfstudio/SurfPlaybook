@@ -8,6 +8,6 @@
 
 protocol OptionSelectorViewOutput {
     func viewLoaded()
-    func selectValue(_ value: OptionSelectorModel)
+    func selectValue(_ value: StringRepresentable)
     func closeModule()
 }

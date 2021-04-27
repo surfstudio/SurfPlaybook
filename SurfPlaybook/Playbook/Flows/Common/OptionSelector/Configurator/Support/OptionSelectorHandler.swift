@@ -11,5 +11,5 @@
 protocol OptionSelectorHandler: class {
     /// Пользователь выбрал какой-то вариант из предложенных, необходимо обработать это событие.
     /// Ошибку в случае неудачного запроса рекомендуется показывать с помощью методов input объекта
-    func selectOption(_ option: OptionSelectorModel, input: OptionSelectorModuleInput)
+    func selectOption(_ option: StringRepresentable, input: OptionSelectorModuleInput)
 }

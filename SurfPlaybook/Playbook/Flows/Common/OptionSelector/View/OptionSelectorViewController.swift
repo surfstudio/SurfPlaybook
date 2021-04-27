@@ -32,7 +32,7 @@ final class OptionSelectorViewController: UIViewController {
 
     // MARK: - Private Properties
 
-    private var values: [OptionSelectorModel] = []
+    private var values: [StringRepresentable] = []
 
     // MARK: - UIViewController
 
@@ -171,7 +171,7 @@ private extension OptionSelectorViewController {
 
 private extension OptionSelectorViewController {
 
-    func tryToScroll(to value: OptionSelectorModel?) {
+    func tryToScroll(to value: StringRepresentable?) {
         guard
             let selected = value,
             let index = values.firstIndex(where: { $0.title == selected.title })
