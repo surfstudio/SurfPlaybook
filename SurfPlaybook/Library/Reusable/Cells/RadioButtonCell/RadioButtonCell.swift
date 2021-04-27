@@ -35,7 +35,7 @@ final class RadioButtonCell: UITableViewCell {
         titleLabel.apply(style: .textRegular16Black)
 
         let image = model.isSelected
-            ? Resources.Assets.Icons.radioOn.image
+            ? Resources.Assets.Icons.radioOn.image.mask(with: Colors.Main.active)
             : Resources.Assets.Icons.radioOff.image
         iconImageView.image = image
     }

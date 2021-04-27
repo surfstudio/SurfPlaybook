@@ -29,6 +29,20 @@ final class PageCollectionViewCell: UICollectionViewCell {
         configureShadow()
     }
 
+    override var isHighlighted: Bool {
+        didSet {
+            UIView.animate(withDuration: AnimationTime.tiny, delay: 0, options: .allowUserInteraction) {
+                if self.isHighlighted {
+                    self.contentView.alpha = 0.5
+                    self.contentView.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
+                } else {
+                    self.contentView.alpha = 1
+                    self.contentView.transform = CGAffineTransform.identity
+                }
+            }
+        }
+    }
+
     // MARK: - Methods
 
     func configure(with model: PageModel) {
