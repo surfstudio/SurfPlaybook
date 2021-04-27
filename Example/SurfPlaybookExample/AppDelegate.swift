@@ -45,32 +45,28 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 private extension AppDelegate {
 
     func configurePlaybookColors() {
-        var config = ColorsConfig.shared
+        ColorsConfig.Main.active = Colors.Main.active
+        ColorsConfig.Main.background = Colors.Main.background
+        ColorsConfig.Main.press = Colors.Main.pressedBackground
+        ColorsConfig.Main.coloredBackground = Colors.Main.pressedBackground
+        ColorsConfig.Main.translucent = Colors.Main.pressedBackground.withAlphaComponent(0.5)
+        ColorsConfig.Main.separator = Colors.Main.separator
 
-        config.main.active = Colors.Main.active
-        config.main.background = Colors.Main.background
-        config.main.press = Colors.Main.pressedBackground
-        config.main.coloredBackground = Colors.Main.pressedBackground
-        config.main.translucent = Colors.Main.pressedBackground.withAlphaComponent(0.5)
-        config.main.separator = Colors.Main.separator
+        ColorsConfig.Text.active = Colors.Main.active
+        ColorsConfig.Text.main = Colors.Text.main
+        ColorsConfig.Text.second = Colors.Text.second
 
-        config.text.active = Colors.Main.active
-        config.text.main = Colors.Text.main
-        config.text.second = Colors.Text.second
+        ColorsConfig.NavigationBar.text = Colors.NavigationBar.text
+        ColorsConfig.NavigationBar.tint = Colors.NavigationBar.tint
+        ColorsConfig.NavigationBar.background = Colors.NavigationBar.background
 
-        config.navigationBar.text = Colors.NavigationBar.text
-        config.navigationBar.tint = Colors.NavigationBar.tint
-        config.navigationBar.background = Colors.NavigationBar.background
+        ColorsConfig.TabBar.selectedItemTint = Colors.Main.active
+        ColorsConfig.TabBar.background = Colors.Main.background
 
-        config.tabBar.selectedItemTint = Colors.Main.active
-        config.tabBar.background = Colors.Main.background
-
-        config.searchBar.container = Colors.Main.pressedBackground
-        config.searchBar.text = Colors.TextField.text
-        config.searchBar.placeholder = Colors.TextField.placeholder
-        config.searchBar.tint = Colors.TextField.tint
-
-        ColorsConfig.shared = config
+        ColorsConfig.SearchBar.container = Colors.Main.pressedBackground
+        ColorsConfig.SearchBar.text = Colors.TextField.text
+        ColorsConfig.SearchBar.placeholder = Colors.TextField.placeholder
+        ColorsConfig.SearchBar.tint = Colors.TextField.tint
     }
 
 }
