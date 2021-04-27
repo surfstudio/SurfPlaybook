@@ -88,7 +88,6 @@
 		90C8B3A62625C55600851B00 /* SurfPlaybook.h in Headers */ = {isa = PBXBuildFile; fileRef = 90C8B3982625C55500851B00 /* SurfPlaybook.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		90C8B3FE2625C6B700851B00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C8B3FD2625C6B700851B00 /* AppDelegate.swift */; };
 		90C8B4022625C6B700851B00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C8B4012625C6B700851B00 /* ViewController.swift */; };
-		90C8B4052625C6B700851B00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90C8B4032625C6B700851B00 /* Main.storyboard */; };
 		90C8B4072625C6B800851B00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90C8B4062625C6B800851B00 /* Assets.xcassets */; };
 		90C8B40A2625C6B800851B00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90C8B4082625C6B800851B00 /* LaunchScreen.storyboard */; };
 		90C8B4152625C6B800851B00 /* SurfPlaybookExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C8B4142625C6B800851B00 /* SurfPlaybookExampleTests.swift */; };
@@ -373,7 +372,6 @@
 		90C8B3FB2625C6B700851B00 /* SurfPlaybookExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SurfPlaybookExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90C8B3FD2625C6B700851B00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90C8B4012625C6B700851B00 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		90C8B4042625C6B700851B00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		90C8B4062625C6B800851B00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90C8B4092625C6B800851B00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		90C8B40B2625C6B800851B00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -1086,7 +1084,6 @@
 				90DE376326284E22003D3DD5 /* Resources */,
 				90C8B3FD2625C6B700851B00 /* AppDelegate.swift */,
 				90C8B4012625C6B700851B00 /* ViewController.swift */,
-				90C8B4032625C6B700851B00 /* Main.storyboard */,
 				90C8B4062625C6B800851B00 /* Assets.xcassets */,
 				90C8B4082625C6B800851B00 /* LaunchScreen.storyboard */,
 				90C8B40B2625C6B800851B00 /* Info.plist */,
@@ -2007,7 +2004,6 @@
 				90F3DC72262DD9DC00220B28 /* UIKitPageCell.xib in Resources */,
 				90C8B4072625C6B800851B00 /* Assets.xcassets in Resources */,
 				9028FCA82636DA68003257B5 /* ListTableViewCell.xib in Resources */,
-				90C8B4052625C6B700851B00 /* Main.storyboard in Resources */,
 				90DE378826284F23003D3DD5 /* Localizable.strings in Resources */,
 				9028FCB62636DDB8003257B5 /* TitleTableViewCell.xib in Resources */,
 				58AB015EB4B7ECF339DA2562 /* AuthViewController.xib in Resources */,
@@ -2422,14 +2418,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		90C8B4032625C6B700851B00 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				90C8B4042625C6B700851B00 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		90C8B4082625C6B800851B00 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
