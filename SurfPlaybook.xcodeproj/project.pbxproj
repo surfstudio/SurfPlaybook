@@ -57,6 +57,7 @@
 		9022F3E626382170008839A0 /* ListCellPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9022F3E526382170008839A0 /* ListCellPage.swift */; };
 		9022F41226387ECD008839A0 /* TableViewCellContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9022F41126387ECD008839A0 /* TableViewCellContainer.swift */; };
 		9022F41726387F9E008839A0 /* ViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9022F41626387F9E008839A0 /* ViewContainer.swift */; };
+		9022F4C62638BFE4008839A0 /* StringsConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9022F4C52638BFE4008839A0 /* StringsConfig.swift */; };
 		9028FC9D2636D9AF003257B5 /* ListAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9028FC9C2636D9AF003257B5 /* ListAdapter.swift */; };
 		9028FCA72636DA68003257B5 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9028FCA52636DA68003257B5 /* ListTableViewCell.swift */; };
 		9028FCA82636DA68003257B5 /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9028FCA62636DA68003257B5 /* ListTableViewCell.xib */; };
@@ -337,6 +338,7 @@
 		9022F3E526382170008839A0 /* ListCellPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCellPage.swift; sourceTree = "<group>"; };
 		9022F41126387ECD008839A0 /* TableViewCellContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellContainer.swift; sourceTree = "<group>"; };
 		9022F41626387F9E008839A0 /* ViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewContainer.swift; sourceTree = "<group>"; };
+		9022F4C52638BFE4008839A0 /* StringsConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringsConfig.swift; sourceTree = "<group>"; };
 		9028FC9C2636D9AF003257B5 /* ListAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAdapter.swift; sourceTree = "<group>"; };
 		9028FCA52636DA68003257B5 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		9028FCA62636DA68003257B5 /* ListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
@@ -1005,6 +1007,7 @@
 			isa = PBXGroup;
 			children = (
 				90550A092625FE5700FD86A4 /* Strings.swift */,
+				9022F4C52638BFE4008839A0 /* StringsConfig.swift */,
 				905509F12625FCAE00FD86A4 /* Localizable.strings */,
 			);
 			path = Strings;
@@ -2278,6 +2281,7 @@
 				1D39B94CBE656846D1B569B5 /* FlowsPresenter.swift in Sources */,
 				FDAD464EC2B8F2440B7339CA /* FlowsModuleInput.swift in Sources */,
 				DA39EF818C6B184A8DF79C22 /* FlowsModuleOutput.swift in Sources */,
+				9022F4C62638BFE4008839A0 /* StringsConfig.swift in Sources */,
 				F248E58E6F8B8F644355626B /* FlowsViewController.swift in Sources */,
 				90F3DC1B262DD12400220B28 /* UIKitAdapter.swift in Sources */,
 				90F3DBB0262DAD0F00220B28 /* DesignConstants.swift in Sources */,

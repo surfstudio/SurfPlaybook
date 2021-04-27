@@ -79,9 +79,9 @@ private extension OptionSelectorViewController {
     }
 
     func configureButtons() {
-        cancelButton.setTitle(L10n.Common.Titles.cancel, for: .normal)
+        cancelButton.setTitle(StringsConfig.cancel, for: .normal)
         cancelButton.apply(style: .textSecond)
-        doneButton.setTitle(L10n.Common.Titles.done, for: .normal)
+        doneButton.setTitle(StringsConfig.done, for: .normal)
         doneButton.apply(style: .textActive)
     }
 

@@ -47,7 +47,7 @@ extension FlowsViewController: FlowsViewInput {
 private extension FlowsViewController {
 
     func configureAppearance() {
-        navigationItem.title = L10n.TabBar.Flows.title
+        navigationItem.title = StringsConfig.flowsTabTitle
         tableView.apply(style: .default)
         configureAdapter()
     }

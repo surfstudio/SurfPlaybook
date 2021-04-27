@@ -57,7 +57,7 @@ private extension SettingsViewController {
     }
 
     func configureNavigationBar() {
-        navigationItem.title = L10n.TabBar.Settings.title
+        navigationItem.title = StringsConfig.settingsTabTitle
     }
 
     func configureTableView() {

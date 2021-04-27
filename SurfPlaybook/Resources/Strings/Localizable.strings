@@ -8,9 +8,6 @@
 
 // MARK: - Common
 
-"Common.Titles.cancel" = "Отмена";
-"Common.Titles.done" = "Готово";
-
 "TabBar.Main.title" = "Главная";
 "TabBar.UIKit.title" = "UIKit";
 "TabBar.Flows.title" = "Flows";
@@ -20,3 +17,6 @@
 "Main.EmptySearch.message" = "Ничего не найдено :(";
 
 "Settings.ColoredBackground.name" = "Цветной бэкграунд";
+
+"Common.Titles.cancel" = "Отмена";
+"Common.Titles.done" = "Готово";
