@@ -24,17 +24,17 @@ enum LabelStyleType {
     var style: LabelStyle {
         switch self {
         case .textRegular16Black:
-            return .init(font: FontFamily.SFProText.regular.font(size: 16),
+            return .init(font: UIFont.systemFont(ofSize: 16, weight: .regular),
                          textColor: Colors.Text.main,
                          lineHeight: 20,
                          kern: -0.32)
         case .textRegular13Gray:
-            return .init(font: FontFamily.SFProText.regular.font(size: 13),
+            return .init(font: UIFont.systemFont(ofSize: 13, weight: .regular),
                          textColor: Colors.Text.second,
                          lineHeight: 16,
                          kern: -0.08)
         case .displayHeavy20Black:
-            return .init(font: FontFamily.SFProDisplay.heavy.font(size: 20),
+            return .init(font: UIFont.systemFont(ofSize: 20, weight: .heavy),
                          textColor: Colors.Text.main,
                          lineHeight: 24,
                          kern: 0.38)

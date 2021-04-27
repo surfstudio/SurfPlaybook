@@ -25,14 +25,14 @@ enum CommonButtonStyleType {
     var style: AbstractButtonStyle {
         switch self {
         case .textActive:
-            return CommonButtonStyle(titleFont: FontFamily.SFProText.medium.font(size: 17),
+            return CommonButtonStyle(titleFont: UIFont.systemFont(ofSize: 17, weight: .medium),
                                      titleColor: Colors.Main.active,
                                      highlightedTitleColor: Colors.Main.active.withAlphaComponent(0.5),
                                      backgroundColor: .clear,
                                      highlightedBackgroundColor: .clear,
                                      contentInsets: .init(top: 0, left: 16, bottom: 0, right: 16))
         case .textSecond:
-            return CommonButtonStyle(titleFont: FontFamily.SFProText.regular.font(size: 17),
+            return CommonButtonStyle(titleFont: UIFont.systemFont(ofSize: 17, weight: .regular),
                                      titleColor: Colors.Main.gray,
                                      highlightedTitleColor: Colors.Main.gray.withAlphaComponent(0.5),
                                      backgroundColor: .clear,

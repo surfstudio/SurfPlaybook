@@ -20,7 +20,7 @@ final class TabBarModuleConfigurator {
 
     private enum Constants {
         static let tabImageInsets = UIEdgeInsets.zero
-        static let titleFont: UIFont = FontFamily.SFProText.medium.font(size: 10)
+        static let titleFont = UIFont.systemFont(ofSize: 10, weight: .medium)
     }
 
     // MARK: - Methods

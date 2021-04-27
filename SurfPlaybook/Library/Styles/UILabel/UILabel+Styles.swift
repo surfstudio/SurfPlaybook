@@ -27,35 +27,35 @@ enum LabelStyleType {
     var style: LabelStyle {
         switch self {
         case .textRegular17BlackCenter:
-            return .init(font: FontFamily.SFProText.regular.font(size: 17),
+            return .init(font: UIFont.systemFont(ofSize: 17, weight: .regular),
                          textColor: Colors.Main.textMain,
                          lineHeight: 22,
                          kern: -0.41,
                          alignment: .center)
         case .textRegular16Black:
-            return .init(font: FontFamily.SFProText.regular.font(size: 16),
+            return .init(font: UIFont.systemFont(ofSize: 16, weight: .regular),
                          textColor: Colors.Main.textMain,
                          lineHeight: 20,
                          kern: -0.32)
         case .textRegular14Black:
-            return .init(font: FontFamily.SFProText.regular.font(size: 14),
+            return .init(font: UIFont.systemFont(ofSize: 14, weight: .regular),
                          textColor: Colors.Main.textMain,
                          lineHeight: 18,
                          kern: -0.18)
         case .textRegular14GrayCenter:
-            return .init(font: FontFamily.SFProText.regular.font(size: 14),
+            return .init(font: UIFont.systemFont(ofSize: 14, weight: .regular),
                          textColor: Colors.Main.gray,
                          lineHeight: 18,
                          kern: -0.18,
                          alignment: .center)
         case .displayRegular21BlackCenter:
-            return .init(font: FontFamily.SFProDisplay.regular.font(size: 21),
+            return .init(font: UIFont.systemFont(ofSize: 21, weight: .regular),
                          textColor: Colors.Main.textMain,
                          lineHeight: 28,
                          kern: 0.7,
                          alignment: .center)
         case .displayHeavy24Black:
-            return .init(font: FontFamily.SFProDisplay.heavy.font(size: 24),
+            return .init(font: UIFont.systemFont(ofSize: 24, weight: .heavy),
                          textColor: Colors.Main.textMain,
                          lineHeight: 28,
                          kern: 0.33)

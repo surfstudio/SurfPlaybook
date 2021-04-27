@@ -22,7 +22,7 @@ enum CommonButtonStyleType {
     var style: CommonButtonStyle {
         switch self {
         case .main:
-            return CommonButtonStyle(titleFont: FontFamily.SFProText.medium.font(size: 17),
+            return CommonButtonStyle(titleFont: UIFont.systemFont(ofSize: 17, weight: .medium),
                                      titleColor: Colors.Buttons.text,
                                      highlightedTitleColor: Colors.Buttons.text,
                                      backgroundColor: Colors.Buttons.background,

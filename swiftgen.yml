@@ -9,15 +9,6 @@ xcassets:
           enumName: Resources
           publicAccess: false
 
-fonts:
-  inputs:
-    - SurfPlaybook/Resources/Fonts
-  outputs:
-    - templateName: swift4
-      output: SurfPlaybook/Resources/Fonts/Fonts.swift
-      params:
-        publicAccess: false
-
 strings:
   inputs:
     - SurfPlaybook/Resources/Strings/Localizable.strings
@@ -25,4 +16,4 @@ strings:
     - templateName: structured-swift4
       output: SurfPlaybook/Resources/Strings/Strings.swift
       params:
-        publicAccess: true
+        publicAccess: false

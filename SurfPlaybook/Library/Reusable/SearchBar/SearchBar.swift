@@ -14,7 +14,7 @@ final class SearchBar: UIView {
     // MARK: - Constants
 
     private enum Constants {
-        static let font: UIFont = FontFamily.SFProText.regular.font(size: 17)
+        static let font: UIFont = UIFont.systemFont(ofSize: 17, weight: .regular)
         static let containerCornerRadius: CGFloat = 18
         static let containerRightDefaultOffset: CGFloat = 4
         static let containerRightBigOffset: CGFloat = 96

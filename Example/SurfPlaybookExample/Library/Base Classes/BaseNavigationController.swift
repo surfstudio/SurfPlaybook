@@ -14,7 +14,7 @@ final class BaseNavigationController: UINavigationController {
     // MARK: - Constants
 
     private enum Constants {
-        static let titleFont: FontConvertible.Font = FontFamily.SFProText.semibold.font(size: 17)
+        static let titleFont = UIFont.systemFont(ofSize: 17, weight: .semibold)
     }
 
     // MARK: - UIViewController

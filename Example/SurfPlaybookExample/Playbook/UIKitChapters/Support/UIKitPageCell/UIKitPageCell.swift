@@ -38,7 +38,7 @@ private extension UIKitPageCell {
     func configureAppearance() {
         selectionStyle = .none
         titleLabel.numberOfLines = 0
-        titleLabel.font = FontFamily.SFProText.regular.font(size: 16)
+        titleLabel.font = UIFont.systemFont(ofSize: 16, weight: .regular)
     }
 
 }
