@@ -14,7 +14,7 @@ enum PlaybookSettings: String {
     private var name: String {
         switch self {
         case .coloredBackground:
-            return "Цветной бэкграунд"
+            return L10n.Settings.ColoredBackground.name
         }
     }
 

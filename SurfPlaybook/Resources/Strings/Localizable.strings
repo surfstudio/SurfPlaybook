@@ -8,6 +8,15 @@
 
 // MARK: - Common
 
-// Titles
 "Common.Titles.cancel" = "Отмена";
 "Common.Titles.done" = "Готово";
+
+"TabBar.Main.title" = "Главная";
+"TabBar.UIKit.title" = "UIKit";
+"TabBar.Flows.title" = "Flows";
+"TabBar.Settings.title" = "Настройки";
+
+"Main.SearchBar.placeholder" = "Поиск";
+"Main.EmptySearch.message" = "Ничего не найдено :(";
+
+"Settings.ColoredBackground.name" = "Цветной бэкграунд";

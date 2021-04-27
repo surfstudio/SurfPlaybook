@@ -60,7 +60,7 @@ extension MainPresenter: MainViewOutput {
             }
             .filter { !$0.pages.isEmpty }
         if filteredChapters.isEmpty {
-            view?.setup(state: .empty(text: "Ничего не найдено :("))
+            view?.setup(state: .empty(text: L10n.Main.EmptySearch.message))
         } else {
             view?.setup(state: .normal)
             view?.fill(with: filteredChapters)

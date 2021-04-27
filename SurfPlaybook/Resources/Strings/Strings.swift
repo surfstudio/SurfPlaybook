@@ -19,6 +19,43 @@ internal enum L10n {
       internal static let done = L10n.tr("Localizable", "Common.Titles.done")
     }
   }
+
+  internal enum Main {
+    internal enum EmptySearch {
+      /// Ничего не найдено :(
+      internal static let message = L10n.tr("Localizable", "Main.EmptySearch.message")
+    }
+    internal enum SearchBar {
+      /// Поиск
+      internal static let placeholder = L10n.tr("Localizable", "Main.SearchBar.placeholder")
+    }
+  }
+
+  internal enum Settings {
+    internal enum ColoredBackground {
+      /// Цветной бэкграунд
+      internal static let name = L10n.tr("Localizable", "Settings.ColoredBackground.name")
+    }
+  }
+
+  internal enum TabBar {
+    internal enum Flows {
+      /// Flows
+      internal static let title = L10n.tr("Localizable", "TabBar.Flows.title")
+    }
+    internal enum Main {
+      /// Главная
+      internal static let title = L10n.tr("Localizable", "TabBar.Main.title")
+    }
+    internal enum Settings {
+      /// Настройки
+      internal static let title = L10n.tr("Localizable", "TabBar.Settings.title")
+    }
+    internal enum UIKit {
+      /// UIKit
+      internal static let title = L10n.tr("Localizable", "TabBar.UIKit.title")
+    }
+  }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces

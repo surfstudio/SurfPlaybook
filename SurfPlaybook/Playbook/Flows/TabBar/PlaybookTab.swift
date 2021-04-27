@@ -37,13 +37,13 @@ enum PlaybookTab: Int, CaseIterable {
     var title: String {
         switch self {
         case .main:
-            return "Главная"
+            return L10n.TabBar.Main.title
         case .uiKit:
-            return "UIKit"
+            return L10n.TabBar.UIKit.title
         case .flows:
-            return "Flows"
+            return L10n.TabBar.Flows.title
         case .settings:
-            return "Настройки"
+            return L10n.TabBar.Settings.title
         }
     }
 

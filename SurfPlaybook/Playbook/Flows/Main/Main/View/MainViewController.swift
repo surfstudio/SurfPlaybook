@@ -93,7 +93,7 @@ private extension MainViewController {
     }
 
     func configureNavigationBar() {
-        navigationItem.title = "Главная"
+        navigationItem.title = L10n.TabBar.Main.title
         addRightBarButton(.init(style: .search, selector: #selector(tapOnSearch)))
     }
 
@@ -106,7 +106,7 @@ private extension MainViewController {
     }
 
     func configureSearchBar() {
-        searchBar.placeholder = "Поиск"
+        searchBar.placeholder = L10n.Main.SearchBar.placeholder
         searchBar.alpha = 0
         searchBar.onShouldReturn = { [weak self] in
             self?.closeKeyboard()

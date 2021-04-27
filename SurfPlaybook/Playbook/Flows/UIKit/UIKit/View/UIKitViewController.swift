@@ -53,7 +53,7 @@ private extension UIKitViewController {
     }
 
     func configureNavigationBar() {
-        navigationItem.title = "UIKit"
+        navigationItem.title = L10n.TabBar.UIKit.title
     }
 
     func configureTableView() {
