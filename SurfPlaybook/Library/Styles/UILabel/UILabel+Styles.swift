@@ -28,35 +28,35 @@ enum LabelStyleType {
         switch self {
         case .textRegular17BlackCenter:
             return .init(font: UIFont.systemFont(ofSize: 17, weight: .regular),
-                         textColor: Colors.Main.textMain,
+                         textColor: Colors.Text.main,
                          lineHeight: 22,
                          kern: -0.41,
                          alignment: .center)
         case .textRegular16Black:
             return .init(font: UIFont.systemFont(ofSize: 16, weight: .regular),
-                         textColor: Colors.Main.textMain,
+                         textColor: Colors.Text.main,
                          lineHeight: 20,
                          kern: -0.32)
         case .textRegular14Black:
             return .init(font: UIFont.systemFont(ofSize: 14, weight: .regular),
-                         textColor: Colors.Main.textMain,
+                         textColor: Colors.Text.main,
                          lineHeight: 18,
                          kern: -0.18)
         case .textRegular14GrayCenter:
             return .init(font: UIFont.systemFont(ofSize: 14, weight: .regular),
-                         textColor: Colors.Main.gray,
+                         textColor: Colors.Text.second,
                          lineHeight: 18,
                          kern: -0.18,
                          alignment: .center)
         case .displayRegular21BlackCenter:
             return .init(font: UIFont.systemFont(ofSize: 21, weight: .regular),
-                         textColor: Colors.Main.textMain,
+                         textColor: Colors.Text.main,
                          lineHeight: 28,
                          kern: 0.7,
                          alignment: .center)
         case .displayHeavy24Black:
             return .init(font: UIFont.systemFont(ofSize: 24, weight: .heavy),
-                         textColor: Colors.Main.textMain,
+                         textColor: Colors.Text.main,
                          lineHeight: 28,
                          kern: 0.33)
         }

@@ -48,7 +48,7 @@ extension PageViewController: PageViewInput {
     }
 
     func updateBackgroundAppearance(isColored: Bool) {
-        view.backgroundColor = isColored ? Colors.Main.gray : Colors.Main.background
+        view.backgroundColor = isColored ? Colors.Main.coloredBackground : Colors.Main.background
     }
 
 }

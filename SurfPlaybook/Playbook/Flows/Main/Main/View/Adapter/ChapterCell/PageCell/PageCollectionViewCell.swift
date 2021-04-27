@@ -68,7 +68,7 @@ private extension PageCollectionViewCell {
 
     func configureShadow() {
         containerView.layer.shadowColor = Colors.Main.shadow.cgColor
-        containerView.layer.shadowRadius = 8
+        containerView.layer.shadowRadius = 4
         containerView.layer.shadowOpacity = 1
         containerView.layer.shadowOffset = .init(width: 0, height: 2)
     }

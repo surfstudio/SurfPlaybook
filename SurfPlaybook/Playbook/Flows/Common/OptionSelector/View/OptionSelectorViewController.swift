@@ -61,7 +61,7 @@ extension OptionSelectorViewController: OptionSelectorViewInput {
 private extension OptionSelectorViewController {
 
     func configureAppearance(with title: String) {
-        view.backgroundColor = Colors.Main.transparent
+        view.backgroundColor = Colors.Main.translucent
         configureFakeNavBar(with: title)
         configureButtons()
         configurePickerView()

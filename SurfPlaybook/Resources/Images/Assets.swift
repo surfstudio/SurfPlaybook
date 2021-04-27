@@ -40,7 +40,27 @@ internal enum Resources {
     }
   }
   internal enum Colors {
-    internal static let background = ColorAsset(name: "background")
+    internal enum Main {
+      internal static let active = ColorAsset(name: "Main/active")
+      internal static let background = ColorAsset(name: "Main/background")
+      internal static let coloredBackground = ColorAsset(name: "Main/coloredBackground")
+      internal static let pressedBackground = ColorAsset(name: "Main/pressedBackground")
+      internal static let separator = ColorAsset(name: "Main/separator")
+      internal static let shadow = ColorAsset(name: "Main/shadow")
+      internal static let translucent = ColorAsset(name: "Main/translucent")
+    }
+    internal enum TabBar {
+      internal static let selectedTint = ColorAsset(name: "TabBar/selectedTint")
+      internal static let tint = ColorAsset(name: "TabBar/tint")
+    }
+    internal enum Text {
+      internal static let active = ColorAsset(name: "Text/active")
+      internal static let main = ColorAsset(name: "Text/main")
+      internal static let second = ColorAsset(name: "Text/second")
+    }
+    internal enum TextField {
+      internal static let container = ColorAsset(name: "TextField/container")
+    }
   }
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name

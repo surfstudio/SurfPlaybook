@@ -10,33 +10,36 @@ import UIKit
 
 enum Colors {
     enum Main {
-        static let active = UIColor.green
-        static let gray = UIColor.gray
-        static let transparent = UIColor.black.withAlphaComponent(0.5)
-        static let separator = UIColor.gray
-        static let textMain = UIColor.black
-        static let background = UIColor.white
-        static let press = UIColor.gray
-        static let shadow = UIColor.black.withAlphaComponent(0.1)
+        static let active = Resources.Colors.Main.active.color
+        static let background = Resources.Colors.Main.background.color
+        static let press = Resources.Colors.Main.pressedBackground.color
+        static let coloredBackground = Resources.Colors.Main.coloredBackground.color
+        static let translucent = Resources.Colors.Main.translucent.color.withAlphaComponent(0.3)
+        static let separator = Resources.Colors.Main.separator.color
+        static let shadow = Resources.Colors.Main.shadow.color.withAlphaComponent(0.1)
+    }
+    enum Text {
+        static let active = Resources.Colors.Text.active.color
+        static let main = Resources.Colors.Text.main.color
+        static let second = Resources.Colors.Text.second.color
     }
     enum NavigationBar {
-        public static let text = UIColor.black
-        public static let tint = UIColor.gray
-        public static let background = UIColor.white
+        public static let text = Resources.Colors.Text.main.color
+        public static let tint = Resources.Colors.Main.active.color
+        public static let background = Resources.Colors.Main.background.color
     }
     enum TabBar {
-        public static let itemTint = UIColor.gray
-        public static let selectedItemTint = UIColor.red
-        public static let background = UIColor.white
-        public static let separator = UIColor.black.withAlphaComponent(0.06)
+        public static let itemTint = Resources.Colors.TabBar.tint.color
+        public static let selectedItemTint = Resources.Colors.TabBar.selectedTint.color
+        public static let background = Resources.Colors.Main.background.color
+        public static let separator = Resources.Colors.TabBar.tint.color.withAlphaComponent(0.3)
     }
     enum TextField {
-        public static let background = UIColor.white
-        public static let container = UIColor.lightGray
-        public static let text = UIColor.black
-        public static let placeholder = UIColor.gray
-        public static let button = UIColor.green
-        public static let tint = UIColor.green
-        public static let hint = UIColor.green
+        public static let background = Resources.Colors.Main.background.color
+        public static let container = Resources.Colors.TextField.container.color
+        public static let text = Resources.Colors.Text.main.color
+        public static let placeholder = Resources.Colors.Text.second.color
+        public static let button = Resources.Colors.Main.active.color
+        public static let tint = Resources.Colors.Main.active.color
     }
 }

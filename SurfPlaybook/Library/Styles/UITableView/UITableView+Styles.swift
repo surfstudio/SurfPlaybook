@@ -22,6 +22,7 @@ enum TableViewStyleType {
     func apply(for view: UITableView) {
         switch self {
         case .default:
+            view.backgroundColor = Colors.Main.background
             view.contentInsetAdjustmentBehavior = .never
             view.keyboardDismissMode = .onDrag
             view.separatorStyle = .none
