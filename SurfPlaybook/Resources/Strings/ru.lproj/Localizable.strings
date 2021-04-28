@@ -8,7 +8,7 @@
 
 // MARK: - Common
 
-"TabBar.Main.title" = "Главная";
+"TabBar.Main.title" = "Playbook";
 "TabBar.UIKit.title" = "UIKit";
 "TabBar.Flows.title" = "Flows";
 "TabBar.Settings.title" = "Настройки";

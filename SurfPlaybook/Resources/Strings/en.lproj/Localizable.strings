@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  SurfPlaybook
+
+  Created by Александр Чаусов on 13.04.2021.
+  Copyright © 2021 Surf. All rights reserved.
+*/
+
+// MARK: - Common
+
+"TabBar.Main.title" = "Playbook";
+"TabBar.UIKit.title" = "UIKit";
+"TabBar.Flows.title" = "Flows";
+"TabBar.Settings.title" = "Settings";
+
+"Main.SearchBar.placeholder" = "Search";
+"Main.EmptySearch.message" = "Nothing found :(";
+"Main.EmptyState.message" = "There is nothing here yet :(";
+
+"Settings.ColoredBackground.name" = "Colored background";
+
+"Common.Titles.cancel" = "Cancel";
+"Common.Titles.done" = "Done";

@@ -11,7 +11,7 @@ xcassets:
 
 strings:
   inputs:
-    - SurfPlaybook/Resources/Strings/Localizable.strings
+    - SurfPlaybook/Resources/Strings/ru.lproj/Localizable.strings
   outputs:
     - templateName: structured-swift4
       output: SurfPlaybook/Resources/Strings/Strings.swift

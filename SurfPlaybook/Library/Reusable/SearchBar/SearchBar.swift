@@ -167,7 +167,7 @@ private extension SearchBar {
         clearButton.alpha = 0
 
         cancelButton.apply(style: .textActive)
-        cancelButton.setTitle("Отмена", for: .normal)
+        cancelButton.setTitle(L10n.Common.Titles.cancel, for: .normal)
         cancelButton.contentEdgeInsets = .zero
         cancelButton.alpha = 0
     }

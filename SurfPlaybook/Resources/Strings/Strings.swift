@@ -48,7 +48,7 @@ internal enum L10n {
       internal static let title = L10n.tr("Localizable", "TabBar.Flows.title")
     }
     internal enum Main {
-      /// Главная
+      /// Playbook
       internal static let title = L10n.tr("Localizable", "TabBar.Main.title")
     }
     internal enum Settings {
