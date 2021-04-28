@@ -41,7 +41,7 @@
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B41-0Y-HE4">
-                    <rect key="frame" x="16" y="90" width="288" height="21"/>
+                    <rect key="frame" x="16" y="131.5" width="288" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -62,9 +62,9 @@
                 <constraint firstItem="pgT-zq-eQK" firstAttribute="top" secondItem="afJ-NM-anC" secondAttribute="top" constant="4" id="LWR-SF-4d4"/>
                 <constraint firstItem="R4j-ua-NHR" firstAttribute="top" secondItem="afJ-NM-anC" secondAttribute="top" id="NzS-bF-Ud9"/>
                 <constraint firstItem="afJ-NM-anC" firstAttribute="bottom" secondItem="R4j-ua-NHR" secondAttribute="bottom" id="OKc-Bn-FLV"/>
+                <constraint firstItem="B41-0Y-HE4" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="0.5" id="PUN-UU-rkR"/>
                 <constraint firstItem="pgT-zq-eQK" firstAttribute="leading" secondItem="afJ-NM-anC" secondAttribute="leading" constant="8" id="U2r-5S-JNE"/>
                 <constraint firstItem="R4j-ua-NHR" firstAttribute="leading" secondItem="afJ-NM-anC" secondAttribute="leading" id="fPB-7G-oAg"/>
-                <constraint firstItem="B41-0Y-HE4" firstAttribute="top" secondItem="pgT-zq-eQK" secondAttribute="bottom" constant="50" id="gSX-Q4-av6"/>
                 <constraint firstItem="afJ-NM-anC" firstAttribute="trailing" secondItem="B41-0Y-HE4" secondAttribute="trailing" constant="16" id="hWC-sb-Hzk"/>
                 <constraint firstItem="afJ-NM-anC" firstAttribute="trailing" secondItem="R4j-ua-NHR" secondAttribute="trailing" id="ivO-NV-GUL"/>
             </constraints>

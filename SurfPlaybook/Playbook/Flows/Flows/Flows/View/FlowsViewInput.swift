@@ -6,6 +6,6 @@
 //  Copyright © 2021 Surf. All rights reserved.
 //
 
-protocol FlowsViewInput: class {
+protocol FlowsViewInput: class, ViewStateConfigurable {
     func setupInitialState(flowCoordinators: [PlaybookFlowCoordinator])
 }

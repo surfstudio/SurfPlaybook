@@ -13,6 +13,7 @@ final class FlowsViewController: UIViewController {
     // MARK: - IBOutlets
 
     @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet private weak var emptyStateLabel: UILabel!
 
     // MARK: - Properties
 
@@ -37,7 +38,31 @@ extension FlowsViewController: FlowsViewInput {
 
     func setupInitialState(flowCoordinators: [PlaybookFlowCoordinator]) {
         configureAppearance()
-        adapter?.fill(with: flowCoordinators)
+        if flowCoordinators.isEmpty {
+            setup(state: .empty(text: L10n.Main.EmptyState.message))
+        } else {
+            setup(state: .normal)
+            adapter?.fill(with: flowCoordinators)
+        }
+    }
+
+}
+
+// MARK: - ViewStateConfigurable
+
+extension FlowsViewController: ViewStateConfigurable {
+
+    func setup(state: ViewState) {
+        switch state {
+        case .normal:
+            emptyStateLabel.isHidden = true
+            tableView.isHidden = false
+        case .empty(let text):
+            emptyStateLabel.isHidden = false
+            tableView.isHidden = true
+            emptyStateLabel.text = text
+            emptyStateLabel.apply(style: .textRegular14GrayCenter)
+        }
     }
 
 }
@@ -48,6 +73,7 @@ private extension FlowsViewController {
 
     func configureAppearance() {
         navigationItem.title = StringsConfig.flowsTabTitle
+        view.backgroundColor = Colors.Main.background
         tableView.apply(style: .default)
         configureAdapter()
     }

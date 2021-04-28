@@ -95,6 +95,7 @@
 		90C8B4152625C6B800851B00 /* SurfPlaybookExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C8B4142625C6B800851B00 /* SurfPlaybookExampleTests.swift */; };
 		90C8B4482625EA4200851B00 /* SurfPlaybook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C8B3952625C55500851B00 /* SurfPlaybook.framework */; };
 		90C8B4492625EA4200851B00 /* SurfPlaybook.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 90C8B3952625C55500851B00 /* SurfPlaybook.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		90CAE3442639C72500DC7D77 /* ViewStateConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CAE3432639C72500DC7D77 /* ViewStateConfigurable.swift */; };
 		90DE376926284E5F003D3DD5 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90DE376826284E5F003D3DD5 /* Colors.xcassets */; };
 		90DE378326284EEB003D3DD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90DE378226284EEB003D3DD5 /* Assets.xcassets */; };
 		90DE378826284F23003D3DD5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 90DE378726284F23003D3DD5 /* Localizable.strings */; };
@@ -382,6 +383,7 @@
 		90C8B4102625C6B800851B00 /* SurfPlaybookExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SurfPlaybookExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		90C8B4142625C6B800851B00 /* SurfPlaybookExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfPlaybookExampleTests.swift; sourceTree = "<group>"; };
 		90C8B4162625C6B800851B00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90CAE3432639C72500DC7D77 /* ViewStateConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStateConfigurable.swift; sourceTree = "<group>"; };
 		90DE376826284E5F003D3DD5 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		90DE378226284EEB003D3DD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90DE378726284F23003D3DD5 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
@@ -1370,6 +1372,7 @@
 				90DE38B526288E46003D3DD5 /* Coordinator.swift */,
 				90DE38BA26288F21003D3DD5 /* Presentable.swift */,
 				90DE38BF26288F57003D3DD5 /* Router.swift */,
+				90CAE3432639C72500DC7D77 /* ViewStateConfigurable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -2313,6 +2316,7 @@
 				CEE18E4D33304CC52114A260 /* UIKitModuleConfigurator.swift in Sources */,
 				EDD887EF816508F8BB52E217 /* UIKitPresenter.swift in Sources */,
 				7CD71DF5C372E9CC68F1808A /* UIKitModuleInput.swift in Sources */,
+				90CAE3442639C72500DC7D77 /* ViewStateConfigurable.swift in Sources */,
 				F1FAC808554C56D99A521330 /* UIKitModuleOutput.swift in Sources */,
 				0D0CA1EFCBDB154204797243 /* UIKitViewController.swift in Sources */,
 				78C0FC8C1945DE2D8149FD83 /* UIKitViewInput.swift in Sources */,

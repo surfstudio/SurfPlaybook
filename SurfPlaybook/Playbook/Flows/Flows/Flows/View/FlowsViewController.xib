@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FlowsViewController" customModule="SurfPlaybook" customModuleProvider="target">
             <connections>
+                <outlet property="emptyStateLabel" destination="ONv-L3-dyM" id="0cw-yK-cG6"/>
                 <outlet property="tableView" destination="YoG-3U-UdY" id="BQw-As-DmS"/>
                 <outlet property="view" destination="iN0-l3-epB" id="Q3p-Ee-1CD"/>
             </connections>
@@ -24,13 +25,22 @@
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ONv-L3-dyM">
+                    <rect key="frame" x="16" y="131.5" width="288" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="i1W-4n-ehu"/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="YoG-3U-UdY" firstAttribute="leading" secondItem="i1W-4n-ehu" secondAttribute="leading" id="0pa-jm-NnM"/>
                 <constraint firstItem="i1W-4n-ehu" firstAttribute="trailing" secondItem="YoG-3U-UdY" secondAttribute="trailing" id="4he-XK-kL7"/>
+                <constraint firstItem="ONv-L3-dyM" firstAttribute="leading" secondItem="i1W-4n-ehu" secondAttribute="leading" constant="16" id="AkZ-CQ-GVZ"/>
+                <constraint firstItem="ONv-L3-dyM" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="0.5" id="SGW-IC-bnt"/>
                 <constraint firstItem="i1W-4n-ehu" firstAttribute="bottom" secondItem="YoG-3U-UdY" secondAttribute="bottom" id="SW8-Av-Jht"/>
+                <constraint firstItem="i1W-4n-ehu" firstAttribute="trailing" secondItem="ONv-L3-dyM" secondAttribute="trailing" constant="16" id="SzN-1r-WUK"/>
                 <constraint firstItem="YoG-3U-UdY" firstAttribute="top" secondItem="i1W-4n-ehu" secondAttribute="top" id="i46-8X-MnR"/>
             </constraints>
             <point key="canvasLocation" x="141" y="154"/>

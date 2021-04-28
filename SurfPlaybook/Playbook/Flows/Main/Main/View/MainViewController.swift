@@ -55,14 +55,24 @@ extension MainViewController: MainViewInput {
 
     func setupInitialState(with models: [ChapterModel]) {
         configureAppearance()
-        adapter?.fill(with: models)
+        fill(with: models)
     }
 
     func fill(with models: [ChapterModel]) {
-        adapter?.fill(with: models)
+        if models.isEmpty {
+            setup(state: .empty(text: L10n.Main.EmptyState.message))
+        } else {
+            adapter?.fill(with: models)
+        }
     }
 
-    func setup(state: MainViewInputState) {
+}
+
+// MARK: - ViewStateConfigurable
+
+extension MainViewController: ViewStateConfigurable {
+
+    func setup(state: ViewState) {
         switch state {
         case .normal:
             emptyStateLabel.isHidden = true

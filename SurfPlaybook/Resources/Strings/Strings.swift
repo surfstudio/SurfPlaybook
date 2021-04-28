@@ -25,6 +25,10 @@ internal enum L10n {
       /// Ничего не найдено :(
       internal static let message = L10n.tr("Localizable", "Main.EmptySearch.message")
     }
+    internal enum EmptyState {
+      /// Здесь еще ничего нет :(
+      internal static let message = L10n.tr("Localizable", "Main.EmptyState.message")
+    }
     internal enum SearchBar {
       /// Поиск
       internal static let placeholder = L10n.tr("Localizable", "Main.SearchBar.placeholder")

@@ -13,6 +13,7 @@ final class UIKitViewController: UIViewController {
     // MARK: - IBOutlets
 
     @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet private weak var emptyStateLabel: UILabel!
 
     // MARK: - Properties
 
@@ -37,7 +38,31 @@ extension UIKitViewController: UIKitViewInput {
 
     func setupInitialState(pages: [PlaybookUIKitPage]) {
         configureAppearance()
-        adapter?.update(with: pages)
+        if pages.isEmpty {
+            setup(state: .empty(text: L10n.Main.EmptyState.message))
+        } else {
+            setup(state: .normal)
+            adapter?.update(with: pages)
+        }
+    }
+
+}
+
+// MARK: - ViewStateConfigurable
+
+extension UIKitViewController: ViewStateConfigurable {
+
+    func setup(state: ViewState) {
+        switch state {
+        case .normal:
+            emptyStateLabel.isHidden = true
+            tableView.isHidden = false
+        case .empty(let text):
+            emptyStateLabel.isHidden = false
+            tableView.isHidden = true
+            emptyStateLabel.text = text
+            emptyStateLabel.apply(style: .textRegular14GrayCenter)
+        }
     }
 
 }
@@ -47,6 +72,7 @@ extension UIKitViewController: UIKitViewInput {
 private extension UIKitViewController {
 
     func configureAppearance() {
+        view.backgroundColor = Colors.Main.background
         configureNavigationBar()
         configureTableView()
         configureAdapter()

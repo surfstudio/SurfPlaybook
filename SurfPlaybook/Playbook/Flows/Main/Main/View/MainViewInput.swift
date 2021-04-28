@@ -6,13 +6,7 @@
 //  Copyright © 2021 Surf. All rights reserved.
 //
 
-protocol MainViewInput: class {
+protocol MainViewInput: class, ViewStateConfigurable {
     func setupInitialState(with models: [ChapterModel])
     func fill(with models: [ChapterModel])
-    func setup(state: MainViewInputState)
-}
-
-enum MainViewInputState {
-    case normal
-    case empty(text: String)
 }

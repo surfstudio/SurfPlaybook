@@ -35,7 +35,7 @@ final class ColorsUIKitPageViewModel: NSObject, UIKitPageViewModel, UITableViewD
 
     private weak var tableView: UITableView?
     private let colors: [ColorsData] = [
-        ("белый", UIColor.white, nil),
+        ("белый", UIColor.white, Colors.Text.second),
         ("черный", UIColor.black, UIColor.white),
         ("розовый", UIColor.systemPink, nil)
     ]
