@@ -50,6 +50,7 @@
 		9009084F262F00940075559A /* IconButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9009084E262F00940075559A /* IconButtonStyle.swift */; };
 		90090860262F01990075559A /* AbstractButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90090853262F00E10075559A /* AbstractButtonStyle.swift */; };
 		90090888262F3F140075559A /* UIViewController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90090887262F3F140075559A /* UIViewController+NavigationBar.swift */; };
+		9021F7AE2639D6B40005C135 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9021F7B02639D6B40005C135 /* Localizable.strings */; };
 		9022F3C026381E28008839A0 /* ControlsChapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9022F3BF26381E28008839A0 /* ControlsChapter.swift */; };
 		9022F3C826381ECF008839A0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9022F3C726381ECF008839A0 /* Constants.swift */; };
 		9022F3CE26381F28008839A0 /* UITextFieldPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9022F3CD26381F28008839A0 /* UITextFieldPage.swift */; };
@@ -98,7 +99,6 @@
 		90CAE3582639CBDA00DC7D77 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 90CAE35A2639CBDA00DC7D77 /* Localizable.strings */; };
 		90DE376926284E5F003D3DD5 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90DE376826284E5F003D3DD5 /* Colors.xcassets */; };
 		90DE378326284EEB003D3DD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90DE378226284EEB003D3DD5 /* Assets.xcassets */; };
-		90DE378826284F23003D3DD5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 90DE378726284F23003D3DD5 /* Localizable.strings */; };
 		90DE378D26284F6E003D3DD5 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE378C26284F6E003D3DD5 /* Colors.swift */; };
 		90DE379726284F86003D3DD5 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE379626284F86003D3DD5 /* Assets.swift */; };
 		90DE37A226284F8F003D3DD5 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE37A126284F8F003D3DD5 /* Strings.swift */; };
@@ -333,6 +333,8 @@
 		9009084E262F00940075559A /* IconButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconButtonStyle.swift; sourceTree = "<group>"; };
 		90090853262F00E10075559A /* AbstractButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractButtonStyle.swift; sourceTree = "<group>"; };
 		90090887262F3F140075559A /* UIViewController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+NavigationBar.swift"; sourceTree = "<group>"; };
+		9021F7AF2639D6B40005C135 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9021F7B42639D6B90005C135 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		9022F3BF26381E28008839A0 /* ControlsChapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsChapter.swift; sourceTree = "<group>"; };
 		9022F3C726381ECF008839A0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9022F3CD26381F28008839A0 /* UITextFieldPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldPage.swift; sourceTree = "<group>"; };
@@ -389,7 +391,6 @@
 		90CAE3602639D16E00DC7D77 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		90DE376826284E5F003D3DD5 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		90DE378226284EEB003D3DD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		90DE378726284F23003D3DD5 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		90DE378C26284F6E003D3DD5 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		90DE379626284F86003D3DD5 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		90DE37A126284F8F003D3DD5 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
@@ -1152,7 +1153,7 @@
 			isa = PBXGroup;
 			children = (
 				90DE37A126284F8F003D3DD5 /* Strings.swift */,
-				90DE378726284F23003D3DD5 /* Localizable.strings */,
+				9021F7B02639D6B40005C135 /* Localizable.strings */,
 			);
 			path = Strings;
 			sourceTree = "<group>";
@@ -2025,7 +2026,7 @@
 				90F3DC72262DD9DC00220B28 /* UIKitPageCell.xib in Resources */,
 				90C8B4072625C6B800851B00 /* Assets.xcassets in Resources */,
 				9028FCA82636DA68003257B5 /* ListTableViewCell.xib in Resources */,
-				90DE378826284F23003D3DD5 /* Localizable.strings in Resources */,
+				9021F7AE2639D6B40005C135 /* Localizable.strings in Resources */,
 				9028FCB62636DDB8003257B5 /* TitleTableViewCell.xib in Resources */,
 				58AB015EB4B7ECF339DA2562 /* AuthViewController.xib in Resources */,
 				1F1A6F19A6EFEDE4AA0333B5 /* ListViewController.xib in Resources */,
@@ -2442,6 +2443,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		9021F7B02639D6B40005C135 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9021F7AF2639D6B40005C135 /* ru */,
+				9021F7B42639D6B90005C135 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		90C8B4082625C6B800851B00 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -1,0 +1,35 @@
+/* 
+  Localizable.strings
+  SurfPlaybook
+
+  Created by Александр Чаусов on 15.04.2021.
+  Copyright © 2021 Surf. All rights reserved.
+*/
+
+"Auth.title" = "Login";
+"Auth.Button.title" = "Continue";
+
+"List.title" = "List";
+"List.Item.first" = "1 item";
+"List.Item.second" = "2 item";
+"List.Item.third" = "3 item";
+"List.Item.fourth" = "4 item";
+"List.Item.fifth" = "5 item";
+"List.subtitle" = "description";
+"List.Section.first" = "First section";
+"List.Section.second" = "Second section";
+
+"ListCellPreset.Title.name" = "Title";
+"ListCellPreset.TitleAndArrow.name" = "Title + arrow";
+"ListCellPreset.Full.name" = "Title + subtitle";
+"ListCellPreset.FullAndArrow.name" = "Title + subtitle + arrow";
+"ListCellPreset.Content.title" = "Title";
+"ListCellPreset.Content.subtitle" = "Subtitle";
+
+"TextField.Email.placeholder" = "Email";
+"TextField.Password.placeholder" = "Password";
+
+"ColorsPage.title" = "Colors";
+"ColorsPage.white" = "white";
+"ColorsPage.black" = "black";
+"ColorsPage.pink" = "pink";

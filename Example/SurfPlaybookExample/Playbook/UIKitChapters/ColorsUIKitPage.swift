@@ -16,7 +16,7 @@ final class ColorsUIKitPage: PlaybookUIKitPage {
     }
 
     var name: String {
-        return "Цвета"
+        return L10n.ColorsPage.title
     }
 
     var viewModel: UIKitPageViewModel {
@@ -35,9 +35,9 @@ final class ColorsUIKitPageViewModel: NSObject, UIKitPageViewModel, UITableViewD
 
     private weak var tableView: UITableView?
     private let colors: [ColorsData] = [
-        ("белый", UIColor.white, Colors.Text.second),
-        ("черный", UIColor.black, UIColor.white),
-        ("розовый", UIColor.systemPink, nil)
+        (L10n.ColorsPage.white, UIColor.white, Colors.Text.second),
+        (L10n.ColorsPage.black, UIColor.black, UIColor.white),
+        (L10n.ColorsPage.pink, UIColor.systemPink, nil)
     ]
 
     // MARK: - UIKitPageViewModel

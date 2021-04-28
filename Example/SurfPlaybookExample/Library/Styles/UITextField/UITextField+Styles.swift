@@ -28,11 +28,11 @@ enum UITextFieldStyleType {
 
         switch self {
         case .email:
-            placeholder = "Email"
+            placeholder = L10n.TextField.Email.placeholder
             field.keyboardType = .emailAddress
             field.borderStyle = .roundedRect
         case .password:
-            placeholder = "Пароль"
+            placeholder = L10n.TextField.Password.placeholder
             field.isSecureTextEntry = true
             field.borderStyle = .roundedRect
         }

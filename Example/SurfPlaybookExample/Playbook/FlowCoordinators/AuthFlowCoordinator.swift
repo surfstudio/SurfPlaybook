@@ -21,7 +21,7 @@ final class AuthFlowCoordinator: PlaybookFlowCoordinator {
     }
 
     var name: String {
-        return "Авторизация"
+        return L10n.Auth.title
     }
 
     func start() {

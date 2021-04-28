@@ -21,7 +21,7 @@ final class ListFlowCoordinator: PlaybookFlowCoordinator {
     }
 
     var name: String {
-        return "Список"
+        return L10n.List.title
     }
 
     func start() {

@@ -53,7 +53,7 @@ private extension ListViewController {
     }
 
     func configureNavigationBar() {
-        navigationItem.title = "Список"
+        navigationItem.title = L10n.List.title
     }
 
     func configureTableView() {

@@ -35,13 +35,13 @@ private enum ListCellFactoryPreset: StringRepresentable {
     var title: String {
         switch self {
         case .title:
-            return "Заголовок"
+            return L10n.ListCellPreset.Title.name
         case .titleAndArrow:
-            return "Заголовок со стрелкой"
+            return L10n.ListCellPreset.TitleAndArrow.name
         case .full:
-            return "Полный вид"
+            return L10n.ListCellPreset.Full.name
         case .fullAndArrow:
-            return "Полный вид и стрелка"
+            return L10n.ListCellPreset.FullAndArrow.name
         }
     }
 }
@@ -53,13 +53,21 @@ private final class ListCellFactory {
             let container = TableViewCellContainer<ListTableViewCell>(width: Constants.cellWidth) { (cell, _) in
                 switch preset {
                 case .title:
-                    cell.configure(with: .init(title: "Заголовок", subtitle: nil, showArrow: false))
+                    cell.configure(with: .init(title: L10n.ListCellPreset.Content.title,
+                                               subtitle: nil,
+                                               showArrow: false))
                 case .titleAndArrow:
-                    cell.configure(with: .init(title: "Заголовок", subtitle: nil, showArrow: true))
+                    cell.configure(with: .init(title: L10n.ListCellPreset.Content.title,
+                                               subtitle: nil,
+                                               showArrow: true))
                 case .full:
-                    cell.configure(with: .init(title: "Заголовок", subtitle: "Подзаголовок", showArrow: false))
+                    cell.configure(with: .init(title: L10n.ListCellPreset.Content.title,
+                                               subtitle: L10n.ListCellPreset.Content.subtitle,
+                                               showArrow: false))
                 case .fullAndArrow:
-                    cell.configure(with: .init(title: "Заголовок", subtitle: "Подзаголовок", showArrow: true))
+                    cell.configure(with: .init(title: L10n.ListCellPreset.Content.title,
+                                               subtitle: L10n.ListCellPreset.Content.subtitle,
+                                               showArrow: true))
                 }
             }
             return container

@@ -37,19 +37,19 @@ private extension ListPresenter {
 
     func generateMockData() -> [ListAdapter.ListData] {
         return [
-            ("Первая секция", [
-                .init(title: "Первый item", subtitle: "описание", showArrow: true),
-                .init(title: "Второй item", subtitle: "описание", showArrow: true),
-                .init(title: "Третий item", subtitle: "описание", showArrow: true),
-                .init(title: "Четвертый item", subtitle: nil, showArrow: true),
-                .init(title: "Пятый item", subtitle: nil, showArrow: true)
+            (L10n.List.Section.first, [
+                .init(title: L10n.List.Item.first, subtitle: L10n.List.subtitle, showArrow: true),
+                .init(title: L10n.List.Item.second, subtitle: L10n.List.subtitle, showArrow: true),
+                .init(title: L10n.List.Item.third, subtitle: L10n.List.subtitle, showArrow: true),
+                .init(title: L10n.List.Item.fourth, subtitle: nil, showArrow: true),
+                .init(title: L10n.List.Item.fifth, subtitle: nil, showArrow: true)
             ]),
-            ("Вторая секция", [
-                .init(title: "Первый item", subtitle: nil, showArrow: false),
-                .init(title: "Второй item", subtitle: nil, showArrow: false),
-                .init(title: "Третий item", subtitle: nil, showArrow: false),
-                .init(title: "Четвертый item", subtitle: "Описание", showArrow: false),
-                .init(title: "Пятый item", subtitle: "Описание", showArrow: false)
+            (L10n.List.Section.second, [
+                .init(title: L10n.List.Item.first, subtitle: nil, showArrow: false),
+                .init(title: L10n.List.Item.second, subtitle: nil, showArrow: false),
+                .init(title: L10n.List.Item.third, subtitle: nil, showArrow: false),
+                .init(title: L10n.List.Item.fourth, subtitle: L10n.List.subtitle, showArrow: false),
+                .init(title: L10n.List.Item.fifth, subtitle: L10n.List.subtitle, showArrow: false)
             ])
         ]
     }

@@ -31,9 +31,9 @@ private enum UITextFieldFactoryPreset: StringRepresentable {
     var title: String {
         switch self {
         case .email:
-            return "Email"
+            return L10n.TextField.Email.placeholder
         case .password:
-            return "Пароль"
+            return L10n.TextField.Password.placeholder
         }
     }
 

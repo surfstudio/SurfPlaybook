@@ -44,14 +44,14 @@ extension AuthViewController: AuthViewInput {
 private extension AuthViewController {
 
     func configureAppearance() {
-        navigationItem.title = "Вход"
+        navigationItem.title = L10n.Auth.title
         view.backgroundColor = Colors.Main.background
         addRightBarButton(.init(style: .close, selector: #selector(closeView)))
 
         emailTextField.apply(style: .email)
         passwordTextField.apply(style: .password)
         authButton.apply(style: .main)
-        authButton.setTitle("Войти", for: .normal)
+        authButton.setTitle(L10n.Auth.Button.title, for: .normal)
 
         let gesture = UITapGestureRecognizer(target: self, action: #selector(tapOnView))
         view.addGestureRecognizer(gesture)

@@ -28,7 +28,7 @@ private extension ControlsChapter {
     var commonButton: PlaybookPage {
         return PlaybookPage(name: "CommonButton", description: nil) { () -> UIView in
             let button = CommonButton()
-            button.setTitle("Войти", for: .normal)
+            button.setTitle(L10n.Auth.Button.title, for: .normal)
             button.apply(style: .main)
             let container = ViewContainer(button, width: Constants.width, height: 40)
             return container
