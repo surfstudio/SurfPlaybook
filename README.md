@@ -3,7 +3,7 @@
 iOS framework for Playbook 
 
 <p align="center">
-	<img src="https://i.ibb.co/n8mw9BG/1026.jpg" />
+	<img src="https://i.ibb.co/7NCSPQf/1026.jpg" />
 </p>
 
 ## About
