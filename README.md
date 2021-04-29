@@ -13,7 +13,7 @@ iOS framework for Playbook
 
 ![SurfPlaubookScreenshots](https://i.ibb.co/Dfzw28m/Group-5765.png)
 
-## Intallation
+## Installation
 
 При использовании CocoaPods:
 
