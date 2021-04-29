@@ -2,9 +2,7 @@
 
 iOS framework for Playbook 
 
-<p align="center">
-	<img src="https://i.ibb.co/7NCSPQf/1026.jpg" />
-</p>
+[![SurfPlaybook](https://i.ibb.co/1ZFbqgn/1026.png)](https://github.com/chausovSurfStudio/SurfPlaybook)
 
 ## About
 
