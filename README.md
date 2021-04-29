@@ -75,6 +75,7 @@ func application(_ application: UIApplication,
 }
 ```
 
+
 1. Заполнить playbook необходимыми вам данными
 2. Запустить playbook, передав в качестве параметра `KeyAndVisible`-window, в рамках которого отображается приложение
 
@@ -84,9 +85,8 @@ func application(_ application: UIApplication,
 
 он будет вот тут
 
+Список всех изменений можно посмотреть в этом [файле](./CHANGELOG.md).
+
 ## License
 
-[MIT License][license]
-
-
-[license]:			https://github.com/chausovSurfStudio/SurfPlaybook/blob/main/LICENSE
+[MIT License](./LICENSE)
