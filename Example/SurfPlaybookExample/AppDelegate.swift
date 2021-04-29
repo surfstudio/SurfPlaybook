@@ -49,7 +49,6 @@ private extension AppDelegate {
         ColorsConfig.Main.background = Colors.Main.background
         ColorsConfig.Main.press = Colors.Main.pressedBackground
         ColorsConfig.Main.coloredBackground = Colors.Main.pressedBackground
-        ColorsConfig.Main.translucent = Colors.Main.pressedBackground.withAlphaComponent(0.5)
         ColorsConfig.Main.separator = Colors.Main.separator
 
         ColorsConfig.Text.active = Colors.Main.active

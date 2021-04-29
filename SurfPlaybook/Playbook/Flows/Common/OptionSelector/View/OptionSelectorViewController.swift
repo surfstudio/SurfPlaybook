@@ -22,7 +22,6 @@ final class OptionSelectorViewController: UIViewController {
     @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var cancelButton: CommonButton!
     @IBOutlet private weak var doneButton: CommonButton!
-    @IBOutlet private weak var separatorView: UIView!
     @IBOutlet private weak var pickerView: UIPickerView!
     @IBOutlet private weak var bottomView: UIView!
 
@@ -75,7 +74,6 @@ private extension OptionSelectorViewController {
     func configureFakeNavBar(with title: String) {
         titleLabel.text = title
         titleLabel.apply(style: .textRegular17BlackCenter)
-        separatorView.backgroundColor = Colors.Main.separator
     }
 
     func configureButtons() {
