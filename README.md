@@ -11,7 +11,7 @@ iOS framework for Playbook
 
 ## Screenshots
 
-скриншотики
+![SurfPlaubookScreenshots](https://i.ibb.co/Dfzw28m/Group-5765.png)
 
 ## Intallation
 
