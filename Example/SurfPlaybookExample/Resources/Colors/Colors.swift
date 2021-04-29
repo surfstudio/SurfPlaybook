@@ -24,14 +24,14 @@ enum Colors {
         static let text = Resources.Colors.Buttons.text.color
     }
     enum NavigationBar {
-        public static let text = Resources.Colors.Text.main.color
-        public static let tint = Resources.Colors.Main.active.color
-        public static let background = Resources.Colors.Main.background.color
+        static let text = Resources.Colors.Text.main.color
+        static let tint = Resources.Colors.Main.active.color
+        static let background = Resources.Colors.Main.background.color
     }
     enum TextField {
-        public static let background = Resources.Colors.Main.background.color
-        public static let text = Resources.Colors.Text.main.color
-        public static let placeholder = Resources.Colors.Text.second.color
-        public static let tint = Resources.Colors.Main.active.color
+        static let background = Resources.Colors.Main.background.color
+        static let text = Resources.Colors.Text.main.color
+        static let placeholder = Resources.Colors.Text.second.color
+        static let tint = Resources.Colors.Main.active.color
     }
 }

@@ -6,6 +6,15 @@
 //  Copyright © 2021 Surf. All rights reserved.
 //
 
+/// Используемые тексты внутри playbook-а
+///
+/// На данный момент имеется локализация для русского и английского языков
+///
+/// - Important:
+///     Изменять тексты необходимо перед вызывом
+///     ~~~
+///     Playbook.shared.start(from: window)
+///     ~~~
 public enum StringsConfig {
     public static var mainTabTitle = L10n.TabBar.Main.title
     public static var uiKitTabTitle = L10n.TabBar.UIKit.title

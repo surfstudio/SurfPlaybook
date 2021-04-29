@@ -8,6 +8,10 @@
 
 import UIKit
 
+/// Цветовая палитра плейбука
+///
+/// Цвета берутся из ColorsConfig, необходимо соблюдать жесткое соответствие
+/// между двумя этими палитрами
 enum Colors {
     enum Main {
         static var active = ColorsConfig.Main.active
@@ -24,20 +28,20 @@ enum Colors {
         static let second = ColorsConfig.Text.second
     }
     enum NavigationBar {
-        public static let text = ColorsConfig.NavigationBar.text
-        public static let tint = ColorsConfig.NavigationBar.tint
-        public static let background = ColorsConfig.NavigationBar.background
+        static let text = ColorsConfig.NavigationBar.text
+        static let tint = ColorsConfig.NavigationBar.tint
+        static let background = ColorsConfig.NavigationBar.background
     }
     enum TabBar {
-        public static let itemTint = ColorsConfig.TabBar.itemTint
-        public static let selectedItemTint = ColorsConfig.TabBar.selectedItemTint
-        public static let background = ColorsConfig.TabBar.background
-        public static let separator = ColorsConfig.TabBar.separator
+        static let itemTint = ColorsConfig.TabBar.itemTint
+        static let selectedItemTint = ColorsConfig.TabBar.selectedItemTint
+        static let background = ColorsConfig.TabBar.background
+        static let separator = ColorsConfig.TabBar.separator
     }
     enum SearchBar {
-        public static let container = ColorsConfig.SearchBar.container
-        public static let text = ColorsConfig.SearchBar.text
-        public static let placeholder = ColorsConfig.SearchBar.placeholder
-        public static let tint = ColorsConfig.SearchBar.tint
+        static let container = ColorsConfig.SearchBar.container
+        static let text = ColorsConfig.SearchBar.text
+        static let placeholder = ColorsConfig.SearchBar.placeholder
+        static let tint = ColorsConfig.SearchBar.tint
     }
 }

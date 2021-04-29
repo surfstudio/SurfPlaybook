@@ -10,7 +10,7 @@ import UIKit
 
 extension UITableView {
 
-    // MARK: - Public Methods
+    // MARK: - Methods
 
     func registerNib(_ cellType: UITableViewCell.Type) {
         self.register(UINib(nibName: cellType.className,

@@ -789,6 +789,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		9005C759263AC50F0087EF4D /* Customization */ = {
+			isa = PBXGroup;
+			children = (
+				9022F4CD2638C279008839A0 /* ColorsConfig.swift */,
+				9022F4C52638BFE4008839A0 /* StringsConfig.swift */,
+			);
+			path = Customization;
+			sourceTree = "<group>";
+		};
 		9009083A262EF8DB0075559A /* SearchBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -997,7 +1006,6 @@
 			isa = PBXGroup;
 			children = (
 				90550A042625FE0000FD86A4 /* Colors.swift */,
-				9022F4CD2638C279008839A0 /* ColorsConfig.swift */,
 				905509C62625FA7800FD86A4 /* Colors.xcassets */,
 			);
 			path = Colors;
@@ -1016,7 +1024,6 @@
 			isa = PBXGroup;
 			children = (
 				90550A092625FE5700FD86A4 /* Strings.swift */,
-				9022F4C52638BFE4008839A0 /* StringsConfig.swift */,
 				90CAE35A2639CBDA00DC7D77 /* Localizable.strings */,
 			);
 			path = Strings;
@@ -1222,6 +1229,7 @@
 			isa = PBXGroup;
 			children = (
 				9022F41026387EAC008839A0 /* Containers */,
+				9005C759263AC50F0087EF4D /* Customization */,
 				90DE37FB26285DB8003D3DD5 /* Protocols */,
 				90DE388F26286C3B003D3DD5 /* Playbook.swift */,
 				90DE388726286C12003D3DD5 /* PlaybookChapter.swift */,

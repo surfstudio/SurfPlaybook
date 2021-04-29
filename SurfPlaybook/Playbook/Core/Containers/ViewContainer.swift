@@ -8,6 +8,12 @@
 
 import UIKit
 
+/// Вспомогательный контейнер-view, позвооляет обернуть UI-компонент типа UIView
+/// в таблицу, чтобы показать его в рамках playbook-а.
+///
+/// - Reference:
+///     Причина возникновения и проблема, которую решает контейнер,
+///     а также решение описаны в [источнике](https://osinski.dev/posts/snapshot-testing-self-sizing-table-view-cells/)
 public class ViewContainer<View: UIView>: UIView {
 
     // MARK: - Private Properties

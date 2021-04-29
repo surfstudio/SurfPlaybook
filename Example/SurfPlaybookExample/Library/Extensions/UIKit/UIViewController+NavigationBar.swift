@@ -17,10 +17,10 @@ struct NavigationBarItemModel {
 }
 
 /// Доступные стили для кнопок в навбаре
-public enum NavigationBarItemStyle {
+enum NavigationBarItemStyle {
     case close
 
-    public var image: UIImage {
+    var image: UIImage {
         switch self {
         case .close:
             return Resources.Assets.Icons.cross.image

@@ -42,7 +42,7 @@ extension SearchTextField: UITextFieldDelegate {
         onEndEditing?()
     }
 
-    public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         onShouldReturn?()
         return true
     }

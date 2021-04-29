@@ -22,7 +22,7 @@ final class RadioButtonCell: UITableViewCell {
         configureAppearance()
     }
 
-    override public func setHighlighted(_ highlighted: Bool, animated: Bool) {
+    override func setHighlighted(_ highlighted: Bool, animated: Bool) {
         UIView.animate(withDuration: AnimationTime.default) {
             self.contentView.backgroundColor = highlighted ? Colors.Main.press : Colors.Main.background
         }

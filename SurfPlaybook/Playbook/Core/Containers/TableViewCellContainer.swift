@@ -8,11 +8,21 @@
 
 import UIKit
 
+/// Вспомогательный контейнер-таблица, позвооляет обернуть UI-компонент типа UITableViewCell
+/// в таблицу, чтобы показать его в рамках playbook-а.
+///
+/// - Reference:
+///     Причина возникновения и проблема, которую решает контейнер,
+///     а также решение описаны в [источнике](https://osinski.dev/posts/snapshot-testing-self-sizing-table-view-cells/)
 public class TableViewCellContainer<Cell: UITableViewCell>: UIView, UITableViewDataSource, UITableViewDelegate {
 
     // MARK: - Nested Types
 
+    /// Typealias на замыкание, при определении которого
+    /// вы должны сконфигурировать ячейку необходимыми данными
     public typealias CellConfigurator = (_ cell: Cell, _ tableView: UITableView) -> Void
+    /// Typealias на замыкание, в рамках которого вы должны посчитать и вернуть необходимую высоту ячейку,
+    /// в зависимости от заданной ширины
     public typealias HeightResolver = (_ width: CGFloat) -> (CGFloat)
 
     // MARK: - Private Properties
@@ -29,7 +39,7 @@ public class TableViewCellContainer<Cell: UITableViewCell>: UIView, UITableViewD
     ///   - width: Ширина ячейки
     ///   - configureCell: Замыкание, которое вызывается в методе `tableView:cellForRowAt:`,
     ///     позволяет сконфигурировать контент ячейки.
-    ///   - heightForWidth: Замыкание, которое вызывается в методе `tableView:heightForRowAt:`,
+    ///   - heightResolver: Замыкание, которое вызывается в методе `tableView:heightForRowAt:`,
     ///     позволяет расчитать и вернуть высоту ячейки.
     ///     В случае передачи `nil` используется `UITableView.automaticDimension`.
     ///     По-умолчанию равно `nil`.
