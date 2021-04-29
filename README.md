@@ -2,7 +2,7 @@
 
 [![GitHubActions Build Status](https://github.com/chausovSurfStudio/SurfPlaybook/workflows/CI/badge.svg)](https://github.com/chausovSurfStudio/SurfPlaybook/actions)
 <!-- [![Version](https://img.shields.io/cocoapods/v/SurfPlaybook.svg?style=flat)](https://cocoapods.org/pods/SurfPlaybook) -->
-<!-- [![codebeat badge](https://codebeat.co/badges/ae1cc1f8-72c1-4a84-9400-7e14defc904d)](https://codebeat.co/projects/github-com-chausovsurfstudio-textfieldscatalog-master) -->
+[![codebeat badge](https://codebeat.co/badges/65f41ed1-2cb7-4ef9-a62e-aae29fdbfa2b)](https://codebeat.co/projects/github-com-chausovsurfstudio-surfplaybook-main)
 
 iOS framework for Playbook
 
