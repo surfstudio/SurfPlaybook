@@ -36,9 +36,9 @@ pod 'SurfPlaybook'
 а каждой странице - непосредственно сам UI-компонент
 - общее отображение всех UI-компонентов, поиск по названию, а также детальный просмотр компонента
 - возможность задать набор различных состояний для одного UI-компонента и возможность переключения между ними при его детальном просмотре
-- **PlaybookUIKitPage** - механика для построения полноценного UIKit-а проекта, где вам будет дана возможность заполнить табличные экраны необходимыми именно вам данными,
+- **UIKit Pages** - механика для построения полноценного UIKit-а проекта, где вам будет дана возможность заполнить табличные экраны необходимыми именно вам данными,
 для, например, отображения цветовой палитры приложения, или же для отображения всех доступных стилей кнопок
-- **PlaybookFlowCoordinator** - возможность задать точку входа на любой экран приложения, или же получить возможность подключить тестовый экран-playground
+- **Flow Coordinators** - возможность задать точку входа на любой экран приложения, или же получить возможность подключить тестовый экран-playground
 для тестирования новых UI-компонентов в процессе их разработки
 - возможность кастомизации цветовой палитры и текстов playbook-а
 
@@ -57,33 +57,36 @@ Playbook.shared
 Дальнейшая работа с ним заключается в двух шагах
 
 ```swift
-    func application(_ application: UIApplication,
-                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = UIViewController()
-        window?.makeKeyAndVisible()
+func application(_ application: UIApplication,
+                 didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    window = UIWindow(frame: UIScreen.main.bounds)
+    window?.rootViewController = UIViewController()
+    window?.makeKeyAndVisible()
 
-        // 1
-        Playbook.shared
-            .add(chapter: ControlsChapter().build())
-            .add(uiKitPage: ColorsUIKitPage())
-            .add(flowCoordinator: AuthFlowCoordinator())
+    // 1
+    Playbook.shared
+        .add(chapter: ControlsChapter().build())
+        .add(uiKitPage: ColorsUIKitPage())
+        .add(flowCoordinator: AuthFlowCoordinator())
 
-        // 2
-        Playbook.shared.start(from: self.window)
-        return true
-    }
+    // 2
+    Playbook.shared.start(from: self.window)
+    return true
+}
 ```
 
-1 - набить playbook необходимыми вам данными
-2 - запустить playbook, передав в качестве параметра `KeyAndVisible`-window, в рамках которого отображается приложение
+1. Заполнить playbook необходимыми вам данными
+2. Запустить playbook, передав в качестве параметра `KeyAndVisible`-window, в рамках которого отображается приложение
 
-При необходимости - перед шагом `2` можно изменить цветовую палитру playbook-а и вшитые в него тексты на подходящие именно вам (для этого предусмотрены `ColorsConfig` и `StringsConfig`).
+При необходимости - перед шагом `[2]` можно изменить цветовую палитру playbook-а и вшитые в него тексты на подходящие именно вам (для этого предусмотрены `ColorsConfig` и `StringsConfig`).
 
 ## Changelog
 
 он будет вот тут
 
-## Licence
+## License
 
-лицензия
+[MIT License][license]
+
+
+[license]:			https://github.com/chausovSurfStudio/SurfPlaybook/blob/main/LICENSE
