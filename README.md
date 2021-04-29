@@ -2,7 +2,9 @@
 
 iOS framework for Playbook 
 
-picture
+<p align="center">
+	<img src="https://i.ibb.co/n8mw9BG/1026.jpg" />
+</p>
 
 ## About
 
@@ -74,7 +76,7 @@ func application(_ application: UIApplication,
     return true
 }
 ```
-
+ 
 
 1. Заполнить playbook необходимыми вам данными
 2. Запустить playbook, передав в качестве параметра `KeyAndVisible`-window, в рамках которого отображается приложение
@@ -82,8 +84,6 @@ func application(_ application: UIApplication,
 При необходимости - перед шагом `[2]` можно изменить цветовую палитру playbook-а и вшитые в него тексты на подходящие именно вам (для этого предусмотрены `ColorsConfig` и `StringsConfig`).
 
 ## Changelog
-
-он будет вот тут
 
 Список всех изменений можно посмотреть в этом [файле](./CHANGELOG.md).
 
