@@ -5,6 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "SurfPlaybook",
+    defaultLocalization: "en",
     platforms: [
         .iOS(.v11)
     ],

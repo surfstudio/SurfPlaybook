@@ -6,6 +6,8 @@
 //  Copyright © 2021 Surf. All rights reserved.
 //
 
+import Foundation
+
 enum PlaybookNotificationType {
     /// вызывается такого типа вызывается при смене настройки "цветной бэкграунд"
     case coloredBackgroundIsChanged

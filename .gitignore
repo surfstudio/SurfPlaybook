@@ -18,6 +18,8 @@ DerivedData/
 *.xcuserstate
 *.gcno
 *.xcscmblueprint
+.build/
+.swiftpm/
 
 # CocoaPods
 #

@@ -6,6 +6,8 @@
 //  Copyright © 2021 Surf. All rights reserved.
 //
 
+import Foundation
+
 final class PagePresenter: PageModuleOutput {
 
     // MARK: - PageModuleOutput

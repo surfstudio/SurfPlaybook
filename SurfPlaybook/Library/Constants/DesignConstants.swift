@@ -6,6 +6,8 @@
 //  Copyright © 2021 Surf. All rights reserved.
 //
 
+import Foundation
+
 /// Reusable time intervals for animations
 /// Возможные продолжительности анимации
 enum AnimationTime {
