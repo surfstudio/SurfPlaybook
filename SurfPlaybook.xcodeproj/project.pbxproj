@@ -142,6 +142,7 @@
 		90DE38EA2628978B003D3DD5 /* PlaybookTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE38E92628978B003D3DD5 /* PlaybookTab.swift */; };
 		90DE38EF2628981F003D3DD5 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE38EE2628981F003D3DD5 /* BaseNavigationController.swift */; };
 		90DE38F4262898A6003D3DD5 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE38F3262898A6003D3DD5 /* String.swift */; };
+		90F388D2263C6773005AB9DE /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F388D1263C6773005AB9DE /* Bundle.swift */; };
 		90F3DBA9262DAC4A00220B28 /* RadioButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3DBA7262DAC4A00220B28 /* RadioButtonCell.swift */; };
 		90F3DBAA262DAC4A00220B28 /* RadioButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F3DBA8262DAC4A00220B28 /* RadioButtonCell.xib */; };
 		90F3DBB0262DAD0F00220B28 /* DesignConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3DBAF262DAD0F00220B28 /* DesignConstants.swift */; };
@@ -434,6 +435,7 @@
 		90DE38E92628978B003D3DD5 /* PlaybookTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybookTab.swift; sourceTree = "<group>"; };
 		90DE38EE2628981F003D3DD5 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		90DE38F3262898A6003D3DD5 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		90F388D1263C6773005AB9DE /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
 		90F3DBA7262DAC4A00220B28 /* RadioButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonCell.swift; sourceTree = "<group>"; };
 		90F3DBA8262DAC4A00220B28 /* RadioButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RadioButtonCell.xib; sourceTree = "<group>"; };
 		90F3DBAF262DAD0F00220B28 /* DesignConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignConstants.swift; sourceTree = "<group>"; };
@@ -1204,6 +1206,7 @@
 			children = (
 				90DE37F426285D68003D3DD5 /* UIKit */,
 				90DE38622628689A003D3DD5 /* Array.swift */,
+				90F388D1263C6773005AB9DE /* Bundle.swift */,
 				90DE37EF26285D31003D3DD5 /* NSObject.swift */,
 				90DE38F3262898A6003D3DD5 /* String.swift */,
 			);
@@ -2291,6 +2294,7 @@
 				89B7B9813706DC401591A44B /* FlowsCoordinatorOutput.swift in Sources */,
 				B100B57D9A4297C11DAE8E44 /* MainCoordinator.swift in Sources */,
 				90F3DBBF262DAF5700220B28 /* PlaybookNotificationServiceInterface.swift in Sources */,
+				90F388D2263C6773005AB9DE /* Bundle.swift in Sources */,
 				A3124A87EB5C51F89FF10B22 /* MainCoordinatorOutput.swift in Sources */,
 				5024C2ABC870FDD1AE3D5537 /* SettingsCoordinator.swift in Sources */,
 				5FF8BE9D540FA30F50E4A428 /* SettingsCoordinatorOutput.swift in Sources */,

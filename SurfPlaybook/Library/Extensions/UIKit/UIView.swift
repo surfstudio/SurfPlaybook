@@ -33,7 +33,7 @@ extension UIView {
 
     func loadFromNib<T: UIView>() -> T {
         let selfType = type(of: self)
-        let bundle = Bundle(for: selfType)
+        let bundle = Bundle.shared(for: selfType)
         let nibName = String(describing: selfType)
         let nib = UINib(nibName: nibName, bundle: bundle)
 
@@ -45,7 +45,7 @@ extension UIView {
     }
 
     static func loadFromNib<T: UIView>() -> T {
-        let bundle = Bundle(for: self)
+        let bundle = Bundle.shared(for: self)
         let nibName = String(describing: self)
         let nib = UINib(nibName: nibName, bundle: bundle)
 
