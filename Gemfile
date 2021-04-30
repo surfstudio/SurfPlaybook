@@ -14,6 +14,7 @@ gem 'synx', "~> 0.2.1"
 gem 'xcpretty', "0.3.0"
 gem 'declarative-option', "0.1.0"
 gem 'generamba', github: 'surfstudio/Generamba', branch: 'develop', :ref => '91957270f4bc0092305ce6dbf016be5259720d33'
+gem "jazzy", "0.13.4"
 
 plugins_path = File.join(File.dirname(__FILE__), 'fastlane', 'Pluginfile')
 eval_gemfile(plugins_path) if File.exist?(plugins_path)
