@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SurfPlaybook
 
 @UIApplicationMain
 final class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,8 +22,10 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = UIViewController()
         window?.makeKeyAndVisible()
+
+        Playbook.shared.start(from: window)
+
         return true
     }
 
 }
-

@@ -3,20 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		90F388B0263C57D9005AB9DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F388AF263C57D9005AB9DE /* AppDelegate.swift */; };
-		90F388B4263C57D9005AB9DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F388B3263C57D9005AB9DE /* ViewController.swift */; };
 		90F388B9263C57DA005AB9DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90F388B8263C57DA005AB9DE /* Assets.xcassets */; };
 		90F388BC263C57DA005AB9DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90F388BA263C57DA005AB9DE /* LaunchScreen.storyboard */; };
+		90F388CD263C593B005AB9DE /* SurfPlaybook in Frameworks */ = {isa = PBXBuildFile; productRef = 90F388CC263C593B005AB9DE /* SurfPlaybook */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		90F388AC263C57D9005AB9DE /* SurfPlaybookSPM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SurfPlaybookSPM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F388AF263C57D9005AB9DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		90F388B3263C57D9005AB9DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		90F388B8263C57DA005AB9DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90F388BB263C57DA005AB9DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		90F388BD263C57DA005AB9DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -27,6 +26,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90F388CD263C593B005AB9DE /* SurfPlaybook in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +53,6 @@
 			isa = PBXGroup;
 			children = (
 				90F388AF263C57D9005AB9DE /* AppDelegate.swift */,
-				90F388B3263C57D9005AB9DE /* ViewController.swift */,
 				90F388B8263C57DA005AB9DE /* Assets.xcassets */,
 				90F388BA263C57DA005AB9DE /* LaunchScreen.storyboard */,
 				90F388BD263C57DA005AB9DE /* Info.plist */,
@@ -77,6 +76,9 @@
 			dependencies = (
 			);
 			name = SurfPlaybookSPM;
+			packageProductDependencies = (
+				90F388CC263C593B005AB9DE /* SurfPlaybook */,
+			);
 			productName = SurfPlaybookSPM;
 			productReference = 90F388AC263C57D9005AB9DE /* SurfPlaybookSPM.app */;
 			productType = "com.apple.product-type.application";
@@ -104,6 +106,9 @@
 				Base,
 			);
 			mainGroup = 90F388A3263C57D9005AB9DE;
+			packageReferences = (
+				90F388CB263C593B005AB9DE /* XCRemoteSwiftPackageReference "SurfPlaybook" */,
+			);
 			productRefGroup = 90F388AD263C57D9005AB9DE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -130,7 +135,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90F388B4263C57D9005AB9DE /* ViewController.swift in Sources */,
 				90F388B0263C57D9005AB9DE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,6 +331,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		90F388CB263C593B005AB9DE /* XCRemoteSwiftPackageReference "SurfPlaybook" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/chausovSurfStudio/SurfPlaybook";
+			requirement = {
+				kind = revision;
+				revision = 84f3bf6c60ab04f22e1f94f41d40201a63293ce2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		90F388CC263C593B005AB9DE /* SurfPlaybook */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 90F388CB263C593B005AB9DE /* XCRemoteSwiftPackageReference "SurfPlaybook" */;
+			productName = SurfPlaybook;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 90F388A4263C57D9005AB9DE /* Project object */;
 }

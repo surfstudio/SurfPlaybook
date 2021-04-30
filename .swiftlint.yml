@@ -68,6 +68,8 @@ excluded: # paths to ignore during linting. Takes precedence over `included`.
     - fastlane
     - Pods
     - .bundle
+    - .build
+    - SPM_Example
 
 custom_rules:
     image_name_initialization: # Disable UIImage init from name

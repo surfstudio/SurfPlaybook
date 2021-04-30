@@ -12,7 +12,13 @@ extension UIViewController {
 
     /// Метод для созданния UIViewController из UINib
     static func instantiate<ViewController: UIViewController>(ofType: ViewController.Type) -> ViewController {
-        return .init(nibName: ofType.className, bundle: Bundle(for: ofType))
+        var bundle: Bundle
+        #if SWIFT_PACKAGE
+        bundle = Bundle.module
+        #else
+        bundle = Bundle(for: ofType)
+        #endif
+        return .init(nibName: ofType.className, bundle: bundle)
     }
 
     /// Вызов метода приводит к закрытию клавиатуры,
