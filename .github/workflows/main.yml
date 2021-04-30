@@ -27,9 +27,9 @@ jobs:
     - name: Build
       run: |
         make build
-    - name: Package Build
+    - name: SPM Build
       run: |
-        swift build -Xswiftc "-sdk" -Xswiftc "`xcrun --sdk iphonesimulator --show-sdk-path`" -Xswiftc "-target" -Xswiftc "x86_64-apple-ios12.1-simulator" -Xswiftc "-lswiftUIKit"
+        make spm_build
     - name: Example Build
       run: |
         make example_build

@@ -13,6 +13,9 @@ init:
 build:
 	bundle exec fastlane build clean:true
 
+spm_build:
+	swift build -Xswiftc "-sdk" -Xswiftc "`xcrun --sdk iphonesimulator --show-sdk-path`" -Xswiftc "-target" -Xswiftc "x86_64-apple-ios12.1-simulator" -Xswiftc "-lswiftUIKit"
+	
 example_build:
 	cd Example
 	bundle exec fastlane example_build clean:true
