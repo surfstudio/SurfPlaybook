@@ -46,7 +46,7 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pgT-zq-eQK" customClass="SearchBar" customModule="SurfPlaybook" customModuleProvider="target">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pgT-zq-eQK" customClass="SearchBar" customModule="SurfPlaybook">
                     <rect key="frame" x="8" y="4" width="304" height="36"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
