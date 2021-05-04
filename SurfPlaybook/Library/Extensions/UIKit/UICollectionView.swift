@@ -17,7 +17,7 @@ extension UICollectionView {
     }
 
     func registerNib(_ cellType: UICollectionViewCell.Type) {
-        self.register(UINib(nibName: cellType.className, bundle: Bundle(for: cellType.self)),
+        self.register(UINib(nibName: cellType.className, bundle: Bundle.shared(for: cellType.self)),
                       forCellWithReuseIdentifier: cellType.className)
     }
 

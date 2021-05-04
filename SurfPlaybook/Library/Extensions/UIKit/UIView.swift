@@ -33,7 +33,7 @@ extension UIView {
 
     func loadFromNib<T: UIView>() -> T {
         let selfType = type(of: self)
-        let bundle = Bundle(for: selfType)
+        let bundle = Bundle.shared(for: selfType)
         let nibName = String(describing: selfType)
         let nib = UINib(nibName: nibName, bundle: bundle)
 
@@ -44,19 +44,9 @@ extension UIView {
         return view
     }
 
-    static func loadFromNib<T: UIView>() -> T {
-        let bundle = Bundle(for: self)
-        let nibName = String(describing: self)
-        let nib = UINib(nibName: nibName, bundle: bundle)
+    // MARK: - Private methods
 
-        guard let view = nib.instantiate(withOwner: self, options: nil).first as? T else {
-            return T()
-        }
-
-        return view
-    }
-
-    func stretch(view: UIView) {
+    private func stretch(view: UIView) {
         view.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             view.topAnchor.constraint(equalTo: topAnchor),

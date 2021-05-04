@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SurfPlaybook",
+        "repositoryURL": "https://github.com/chausovSurfStudio/SurfPlaybook",
+        "state": {
+          "branch": null,
+          "revision": "b427fedb4953b110da56298c04420ca3bdd09a55",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
