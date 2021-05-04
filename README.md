@@ -1,9 +1,10 @@
 # SurfPlaybook
 
 [![GitHubActions Build Status](https://github.com/chausovSurfStudio/SurfPlaybook/workflows/CI/badge.svg)](https://github.com/chausovSurfStudio/SurfPlaybook/actions)
-[![codebeat badge](https://codebeat.co/badges/65f41ed1-2cb7-4ef9-a62e-aae29fdbfa2b)](https://codebeat.co/projects/github-com-chausovsurfstudio-surfplaybook-main)
-[![Version](https://img.shields.io/cocoapods/v/SurfPlaybook.svg?style=flat)](https://cocoapods.org/pods/SurfPlaybook)
+[![Codebeat Badge](https://codebeat.co/badges/65f41ed1-2cb7-4ef9-a62e-aae29fdbfa2b)](https://codebeat.co/projects/github-com-chausovsurfstudio-surfplaybook-main)
 [![Documentation](https://github.com/chausovSurfStudio/SurfPlaybook/blob/main/docs/badge.svg)](https://chausovsurfstudio.github.io/SurfPlaybook/)
+[![CocoaPods Version](https://img.shields.io/cocoapods/v/SurfPlaybook.svg?style=flat)](https://cocoapods.org/pods/SurfPlaybook)
+[![SPM Compatible](https://img.shields.io/badge/SPM-compatible-blue.svg)](https://github.com/apple/swift-package-manager)
 
 iOS framework for Playbook
 
@@ -20,11 +21,16 @@ iOS framework for Playbook
 
 ## Installation
 
-При использовании CocoaPods:
+#### CocoaPods:
 
 ```ruby
 pod 'SurfPlaybook'
 ```
+
+#### Swift Package Manager
+
+- В XCode пройдите в `File > Swift Packages > Add Package Dependency`
+- Введите URL репозитория `https://github.com/chausovSurfStudio/SurfPlaybook.git`
 
 ## Features
 
