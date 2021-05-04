@@ -56,11 +56,4 @@ extension UIView {
         ])
     }
 
-    private func getResourcesBundle(for bundle: Bundle) -> Bundle? {
-        let packageName = NSStringFromClass(type(of: self)).components(separatedBy: ".").first ?? ""
-        let bundleName = packageName + "_" + packageName + ".bundle"
-        let resource = bundle.resourcePath ?? ""
-        return Bundle(path: resource + "/" + bundleName)
-    }
-
 }
