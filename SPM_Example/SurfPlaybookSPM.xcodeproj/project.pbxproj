@@ -11,6 +11,8 @@
 		90F388B9263C57DA005AB9DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90F388B8263C57DA005AB9DE /* Assets.xcassets */; };
 		90F388BC263C57DA005AB9DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90F388BA263C57DA005AB9DE /* LaunchScreen.storyboard */; };
 		90F388CD263C593B005AB9DE /* SurfPlaybook in Frameworks */ = {isa = PBXBuildFile; productRef = 90F388CC263C593B005AB9DE /* SurfPlaybook */; };
+		90F42CF42641871A00C681B8 /* TestChapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F42CF32641871A00C681B8 /* TestChapter.swift */; };
+		90F42CF82641883D00C681B8 /* TestUIKitPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F42CF72641883D00C681B8 /* TestUIKitPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		90F388B8263C57DA005AB9DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90F388BB263C57DA005AB9DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		90F388BD263C57DA005AB9DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90F42CF32641871A00C681B8 /* TestChapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestChapter.swift; sourceTree = "<group>"; };
+		90F42CF72641883D00C681B8 /* TestUIKitPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUIKitPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,12 +56,38 @@
 		90F388AE263C57D9005AB9DE /* SurfPlaybookSPM */ = {
 			isa = PBXGroup;
 			children = (
+				90F42CF1264186FB00C681B8 /* Playbook */,
 				90F388AF263C57D9005AB9DE /* AppDelegate.swift */,
 				90F388B8263C57DA005AB9DE /* Assets.xcassets */,
 				90F388BA263C57DA005AB9DE /* LaunchScreen.storyboard */,
 				90F388BD263C57DA005AB9DE /* Info.plist */,
 			);
 			path = SurfPlaybookSPM;
+			sourceTree = "<group>";
+		};
+		90F42CF1264186FB00C681B8 /* Playbook */ = {
+			isa = PBXGroup;
+			children = (
+				90F42CF22641870300C681B8 /* Chapters */,
+				90F42CF62641882C00C681B8 /* UIKitPages */,
+			);
+			path = Playbook;
+			sourceTree = "<group>";
+		};
+		90F42CF22641870300C681B8 /* Chapters */ = {
+			isa = PBXGroup;
+			children = (
+				90F42CF32641871A00C681B8 /* TestChapter.swift */,
+			);
+			path = Chapters;
+			sourceTree = "<group>";
+		};
+		90F42CF62641882C00C681B8 /* UIKitPages */ = {
+			isa = PBXGroup;
+			children = (
+				90F42CF72641883D00C681B8 /* TestUIKitPage.swift */,
+			);
+			path = UIKitPages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +166,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				90F388B0263C57D9005AB9DE /* AppDelegate.swift in Sources */,
+				90F42CF42641871A00C681B8 /* TestChapter.swift in Sources */,
+				90F42CF82641883D00C681B8 /* TestUIKitPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,7 +370,7 @@
 			repositoryURL = "https://github.com/chausovSurfStudio/SurfPlaybook";
 			requirement = {
 				kind = revision;
-				revision = ff2a67586179ddec9e756472833bcf8e2a6e0593;
+				revision = 15a94b6976f57bee52759ffc621f32ab9f5e1a9f;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

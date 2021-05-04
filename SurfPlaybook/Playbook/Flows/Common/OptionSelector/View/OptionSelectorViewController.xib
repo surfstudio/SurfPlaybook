@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OptionSelectorViewController" customModule="SurfPlaybook" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OptionSelectorViewController" customModule="SurfPlaybook">
             <connections>
                 <outlet property="bottomView" destination="bO1-xW-efC" id="Hqp-GQ-bmD"/>
                 <outlet property="cancelButton" destination="UGh-uO-9aC" id="TCx-aL-Q9k"/>
@@ -37,7 +37,7 @@
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R91-iI-wDK" customClass="CommonButton" customModule="SurfPlaybook" customModuleProvider="target">
+                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R91-iI-wDK" customClass="CommonButton" customModule="SurfPlaybook">
                                     <rect key="frame" x="266" y="2" width="54" height="42"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="42" id="Uyd-wo-lmt"/>
@@ -49,7 +49,7 @@
                                         <action selector="selectValue:" destination="-1" eventType="touchUpInside" id="vyE-b7-xLm"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UGh-uO-9aC" customClass="CommonButton" customModule="SurfPlaybook" customModuleProvider="target">
+                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UGh-uO-9aC" customClass="CommonButton" customModule="SurfPlaybook">
                                     <rect key="frame" x="0.0" y="2" width="90" height="42"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="42" id="Ws7-oQ-Utn"/>

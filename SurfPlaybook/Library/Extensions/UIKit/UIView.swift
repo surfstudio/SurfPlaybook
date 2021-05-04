@@ -34,25 +34,6 @@ extension UIView {
     func loadFromNib<T: UIView>() -> T {
         let selfType = type(of: self)
         let bundle = Bundle.shared(for: selfType)
-
-
-//        var bundle: Bundle
-//        #if SWIFT_PACKAGE
-//        if Bundle.module.path(forResource: self.className, ofType: "nib") != nil {
-//            bundle = Bundle.module
-//        } else {
-//            bundle = Bundle(for: type(of: self))
-//        }
-//
-//        // helper for TextFieldCatalog package use in different package with xibs
-//        if bundle.path(forResource: self.className, ofType: "nib") == nil,
-//           let resourceBundle = getResourcesBundle(for: bundle) {
-//            bundle = resourceBundle
-//        }
-//        #else
-//        bundle = Bundle(for: type(of: self))
-//        #endif
-
         let nibName = String(describing: selfType)
         let nib = UINib(nibName: nibName, bundle: bundle)
 
@@ -63,19 +44,9 @@ extension UIView {
         return view
     }
 
-//    static func loadFromNib<T: UIView>() -> T {
-//        let bundle = Bundle.shared(for: self)
-//        let nibName = String(describing: self)
-//        let nib = UINib(nibName: nibName, bundle: bundle)
-//
-//        guard let view = nib.instantiate(withOwner: self, options: nil).first as? T else {
-//            return T()
-//        }
-//
-//        return view
-//    }
+    // MARK: - Private methods
 
-    func stretch(view: UIView) {
+    private func stretch(view: UIView) {
         view.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             view.topAnchor.constraint(equalTo: topAnchor),
@@ -84,8 +55,6 @@ extension UIView {
             view.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])
     }
-
-    // MARK: - Private methods
 
     private func getResourcesBundle(for bundle: Bundle) -> Bundle? {
         let packageName = NSStringFromClass(type(of: self)).components(separatedBy: ".").first ?? ""

@@ -23,7 +23,10 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = UIViewController()
         window?.makeKeyAndVisible()
 
-        Playbook.shared.start(from: window)
+        Playbook.shared
+            .add(chapter: TestChapter().build())
+            .add(uiKitPage: TestUIKitPage())
+            .start(from: window)
 
         return true
     }
