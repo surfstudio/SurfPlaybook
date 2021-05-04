@@ -23,6 +23,8 @@ iOS framework for Playbook
 
 #### CocoaPods:
 
+Добавьте в свой Podfile следующую строку, затем запустите `pod install`
+
 ```ruby
 pod 'SurfPlaybook'
 ```
