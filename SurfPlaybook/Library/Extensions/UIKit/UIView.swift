@@ -33,23 +33,25 @@ extension UIView {
 
     func loadFromNib<T: UIView>() -> T {
         let selfType = type(of: self)
+        let bundle = Bundle.shared(for: selfType)
 
-        var bundle: Bundle
-        #if SWIFT_PACKAGE
-        if Bundle.module.path(forResource: self.className, ofType: "nib") != nil {
-            bundle = Bundle.module
-        } else {
-            bundle = Bundle(for: type(of: self))
-        }
 
-        // helper for TextFieldCatalog package use in different package with xibs
-        if bundle.path(forResource: self.className, ofType: "nib") == nil,
-           let resourceBundle = getResourcesBundle(for: bundle) {
-            bundle = resourceBundle
-        }
-        #else
-        bundle = Bundle(for: type(of: self))
-        #endif
+//        var bundle: Bundle
+//        #if SWIFT_PACKAGE
+//        if Bundle.module.path(forResource: self.className, ofType: "nib") != nil {
+//            bundle = Bundle.module
+//        } else {
+//            bundle = Bundle(for: type(of: self))
+//        }
+//
+//        // helper for TextFieldCatalog package use in different package with xibs
+//        if bundle.path(forResource: self.className, ofType: "nib") == nil,
+//           let resourceBundle = getResourcesBundle(for: bundle) {
+//            bundle = resourceBundle
+//        }
+//        #else
+//        bundle = Bundle(for: type(of: self))
+//        #endif
 
         let nibName = String(describing: selfType)
         let nib = UINib(nibName: nibName, bundle: bundle)
