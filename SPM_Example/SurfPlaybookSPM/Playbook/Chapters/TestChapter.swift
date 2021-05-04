@@ -27,7 +27,8 @@ private extension TestChapter {
         return PlaybookPage(name: "UILabel", description: nil) { () -> UIView in
             let label = UILabel()
             label.text = "Test"
-            return UILabel()
+            let container = ViewContainer(label, width: nil, height: nil)
+            return container
         }
     }
 

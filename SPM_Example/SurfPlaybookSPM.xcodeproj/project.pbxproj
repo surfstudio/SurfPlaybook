@@ -370,7 +370,7 @@
 			repositoryURL = "https://github.com/chausovSurfStudio/SurfPlaybook";
 			requirement = {
 				kind = revision;
-				revision = 15a94b6976f57bee52759ffc621f32ab9f5e1a9f;
+				revision = b427fedb4953b110da56298c04420ca3bdd09a55;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
