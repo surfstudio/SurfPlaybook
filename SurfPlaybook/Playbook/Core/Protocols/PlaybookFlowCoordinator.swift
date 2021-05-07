@@ -27,9 +27,11 @@ public protocol PlaybookFlowCoordinator {
     var id: String { get }
     /// Название координатора, будет отображено на UI
     var name: String { get }
-    /// Метод для старта работы координатора.
-    ///
-    /// При вызове данного метода - класс, реализующий данный протокол,
-    /// должен запустить логику, которая приведет к показу экрана/flow приложения
-    func start()
+
+    var type: FlowCoordinatorType { get }
+}
+
+public enum FlowCoordinatorType {
+    case coordinator(startBlock: () -> Void)
+    case node(coordinators: [PlaybookFlowCoordinator])
 }

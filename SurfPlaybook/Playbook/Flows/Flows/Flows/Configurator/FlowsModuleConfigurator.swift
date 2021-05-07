@@ -10,9 +10,9 @@ import UIKit
 
 final class FlowsModuleConfigurator {
 
-    func configure() -> (UIViewController, FlowsModuleOutput) {
+    func configure(coordinators: [PlaybookFlowCoordinator]) -> (UIViewController, FlowsModuleOutput) {
         let view = UIViewController.instantiate(ofType: FlowsViewController.self)
-        let presenter = FlowsPresenter()
+        let presenter = FlowsPresenter(coordinators: coordinators)
 
         presenter.view = view
         view.output = presenter

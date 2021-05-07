@@ -10,6 +10,8 @@ final class FlowsPresenter: FlowsModuleOutput {
 
     // MARK: - FlowsModuleOutput
 
+    var onFlowsShow: Closure<[PlaybookFlowCoordinator]>?
+
     // MARK: - Properties
 
     weak var view: FlowsViewInput?
@@ -20,8 +22,8 @@ final class FlowsPresenter: FlowsModuleOutput {
 
     // MARK: - Initialization
 
-    init() {
-        self.flowCoordinators = Playbook.shared.flowCoordinators
+    init(coordinators: [PlaybookFlowCoordinator]) {
+        self.flowCoordinators = coordinators
     }
 
 }
@@ -43,7 +45,12 @@ extension FlowsPresenter: FlowsViewOutput {
         guard let coordinator = flowCoordinators.first(where: { $0.id == id }) else {
             return
         }
-        coordinator.start()
+        switch coordinator.type {
+        case .coordinator(let startBlock):
+            startBlock()
+        case .node(let coordinators):
+            onFlowsShow?(coordinators)
+        }
     }
 
 }

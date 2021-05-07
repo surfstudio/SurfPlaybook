@@ -24,9 +24,11 @@ final class ListFlowCoordinator: PlaybookFlowCoordinator {
         return L10n.List.title
     }
 
-    func start() {
-        let (view, _) = ListModuleConfigurator().configure()
-        router.push(view)
+    var type: FlowCoordinatorType {
+        return .coordinator { [weak self] in
+            let (view, _) = ListModuleConfigurator().configure()
+            self?.router.push(view)
+        }
     }
 
 }

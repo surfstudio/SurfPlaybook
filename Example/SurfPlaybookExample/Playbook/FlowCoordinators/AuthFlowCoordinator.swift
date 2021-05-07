@@ -24,12 +24,14 @@ final class AuthFlowCoordinator: PlaybookFlowCoordinator {
         return L10n.Auth.title
     }
 
-    func start() {
-        let (view, output) = AuthModuleConfigurator().configure()
-        output.onClose = { [weak self] in
-            self?.router.dismissModule()
+    var type: FlowCoordinatorType {
+        return .coordinator { [weak self] in
+            let (view, output) = AuthModuleConfigurator().configure()
+            output.onClose = { [weak self] in
+                self?.router.dismissModule()
+            }
+            self?.router.present(view)
         }
-        router.present(view)
     }
 
 }
