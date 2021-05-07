@@ -10,7 +10,7 @@ final class FlowsPresenter: FlowsModuleOutput {
 
     // MARK: - FlowsModuleOutput
 
-    var onFlowsShow: Closure<[PlaybookFlowCoordinator]>?
+    var onFlowsShow: Closure<(title: String, coordinators: [PlaybookFlowCoordinator])>?
 
     // MARK: - Properties
 
@@ -18,12 +18,14 @@ final class FlowsPresenter: FlowsModuleOutput {
 
     // MARK: - Private Properties
 
+    private let title: String?
     private let flowCoordinators: [PlaybookFlowCoordinator]
 
     // MARK: - Initialization
 
-    init(coordinators: [PlaybookFlowCoordinator]) {
+    init(title: String?, coordinators: [PlaybookFlowCoordinator]) {
         self.flowCoordinators = coordinators
+        self.title = title
     }
 
 }
@@ -38,7 +40,8 @@ extension FlowsPresenter: FlowsModuleInput {
 extension FlowsPresenter: FlowsViewOutput {
 
     func viewLoaded() {
-        view?.setupInitialState(flowCoordinators: flowCoordinators)
+        view?.setupInitialState(title: title,
+                                flowCoordinators: flowCoordinators)
     }
 
     func selectFlowCoordinator(id: String) {
@@ -49,7 +52,7 @@ extension FlowsPresenter: FlowsViewOutput {
         case .coordinator(let startBlock):
             startBlock()
         case .node(let coordinators):
-            onFlowsShow?(coordinators)
+            onFlowsShow?((coordinator.name, coordinators))
         }
     }
 

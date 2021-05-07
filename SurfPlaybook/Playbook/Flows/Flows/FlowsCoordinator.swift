@@ -23,7 +23,8 @@ final class FlowsCoordinator: BaseCoordinator, FlowsCoordinatorOutput {
     // MARK: - Coordinator
 
     override func start(with deepLinkOption: DeepLinkOption?) {
-        showFlows(coordinators: Playbook.shared.flowCoordinators,
+        showFlows(title: nil,
+                  coordinators: Playbook.shared.flowCoordinators,
                   asRoot: true)
     }
 
@@ -33,10 +34,14 @@ final class FlowsCoordinator: BaseCoordinator, FlowsCoordinatorOutput {
 
 private extension FlowsCoordinator {
 
-    func showFlows(coordinators: [PlaybookFlowCoordinator], asRoot: Bool) {
-        let (view, output) = FlowsModuleConfigurator().configure(coordinators: coordinators)
-        output.onFlowsShow = { [weak self] coordinators in
-            self?.showFlows(coordinators: coordinators, asRoot: false)
+    func showFlows(title: String?,
+                   coordinators: [PlaybookFlowCoordinator],
+                   asRoot: Bool) {
+        let (view, output) = FlowsModuleConfigurator().configure(title: title, coordinators: coordinators)
+        output.onFlowsShow = { [weak self] payload in
+            self?.showFlows(title: payload.title,
+                            coordinators: payload.coordinators,
+                            asRoot: false)
         }
         if asRoot {
             router.setNavigationControllerRootModule(view, animated: false, hideBar: false)
