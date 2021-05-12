@@ -36,8 +36,8 @@ final class FlowsViewController: UIViewController {
 
 extension FlowsViewController: FlowsViewInput {
 
-    func setupInitialState(flowCoordinators: [PlaybookFlowCoordinator]) {
-        configureAppearance()
+    func setupInitialState(title: String?, flowCoordinators: [PlaybookFlowCoordinator]) {
+        configureAppearance(title: title)
         if flowCoordinators.isEmpty {
             setup(state: .empty(text: L10n.Main.EmptyState.message))
         } else {
@@ -71,8 +71,8 @@ extension FlowsViewController: ViewStateConfigurable {
 
 private extension FlowsViewController {
 
-    func configureAppearance() {
-        navigationItem.title = StringsConfig.flowsTabTitle
+    func configureAppearance(title: String?) {
+        navigationItem.title = title ?? StringsConfig.flowsTabTitle
         view.backgroundColor = Colors.Main.background
         tableView.apply(style: .default)
         configureAdapter()
