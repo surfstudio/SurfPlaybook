@@ -7,5 +7,5 @@
 //
 
 protocol FlowsViewInput: class, ViewStateConfigurable {
-    func setupInitialState(flowCoordinators: [PlaybookFlowCoordinator])
+    func setupInitialState(title: String?, flowCoordinators: [PlaybookFlowCoordinator])
 }

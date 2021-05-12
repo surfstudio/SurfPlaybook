@@ -7,4 +7,5 @@
 //
 
 protocol FlowsModuleOutput: class {
+    var onFlowsShow: Closure<(title: String, coordinators: [PlaybookFlowCoordinator])>? { get set }
 }
