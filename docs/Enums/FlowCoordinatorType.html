@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>StringRepresentable Protocol Reference</title>
+    <title>FlowCoordinatorType Enumeration Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,8 +10,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/swift/Protocol/StringRepresentable" class="dashAnchor"></a>
-    <a title="StringRepresentable Protocol Reference"></a>
+    <a name="//apple_ref/swift/Enum/FlowCoordinatorType" class="dashAnchor"></a>
+    <a title="FlowCoordinatorType Enumeration Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">SurfPlaybook 1.2.0 Docs</a> (59% documented)</p>
@@ -21,7 +21,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">SurfPlaybook Reference</a>
         <img id="carat" src="../img/carat.png" />
-        StringRepresentable Protocol Reference
+        FlowCoordinatorType Enumeration Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -103,15 +103,22 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>StringRepresentable</h1>
+            <h1>FlowCoordinatorType</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">StringRepresentable</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">FlowCoordinatorType</span></code></pre>
 
                 </div>
               </div>
-            <p>Абстрактный протокол для всех возможных вариантов выбора внутри модуля OptionSelector.
-Обязательное условие - объект должен иметь строковое представление, которое будет отображаться в UI.</p>
+            <p>Тип flow-координатора</p>
+
+<p>Структуру flow-координаторов можно представить как дерево,
+где узлы имеют тип <code>node</code> (с обязательным параметром в виде массива
+вложенных в него координаторов, среди которых могут быть также и другие узлы),
+а &ldquo;листья&rdquo; - тип <code>coordinator</code> (с обязательным параметром в виде замыкания,
+вызов которого запускает flow).
+Такой подход позволяет задать вложенную структуру на табе flow-координаторов,
+группирую их по смыслу.</p>
 
           </section>
           <section class="section task-group-section">
@@ -120,9 +127,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12SurfPlaybook19StringRepresentableP5titleSSvp"></a>
-                    <a name="//apple_ref/swift/Property/title" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12SurfPlaybook19StringRepresentableP5titleSSvp">title</a>
+                    <a name="/s:12SurfPlaybook19FlowCoordinatorTypeO11coordinatoryACyyc_tcACmF"></a>
+                    <a name="//apple_ref/swift/Element/coordinator(startBlock:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SurfPlaybook19FlowCoordinatorTypeO11coordinatoryACyyc_tcACmF">coordinator(startBlock:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -130,14 +137,42 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Тип конечного координатора, startBlock - замыкание,
+вызов которого должен запустить соответствующий flow</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">title</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">coordinator</span><span class="p">(</span><span class="nv">startBlock</span><span class="p">:</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SurfPlaybook19FlowCoordinatorTypeO4nodeyACSayAA0bcD0_pG_tcACmF"></a>
+                    <a name="//apple_ref/swift/Element/node(coordinators:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SurfPlaybook19FlowCoordinatorTypeO4nodeyACSayAA0bcD0_pG_tcACmF">node(coordinators:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Тип узла для координаторов, обязательный параметр - вложенные в него координаторы</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">node</span><span class="p">(</span><span class="nv">coordinators</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Protocols/PlaybookFlowCoordinator.html">PlaybookFlowCoordinator</a></span><span class="p">])</span></code></pre>
 
                         </div>
                       </div>
