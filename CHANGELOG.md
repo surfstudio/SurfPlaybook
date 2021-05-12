@@ -1,8 +1,14 @@
 # Changelog
 
+## 1.2.0
+
+- Появилась возможность в третьем табе с flow-координаторами реализовать вложенную структуру экранов [#4](https://github.com/chausovSurfStudio/SurfPlaybook/pull/4)
+
+> Для корректной миграции обратите внимание на документацию к протоколу `PlaybookFlowCoordinator`
+
 ## 1.1.0
 
-- Добавлена поддержка SPM
+- Добавлена поддержка SPM [#2](https://github.com/chausovSurfStudio/SurfPlaybook/pull/2)
 
 ## 1.0.0
 
