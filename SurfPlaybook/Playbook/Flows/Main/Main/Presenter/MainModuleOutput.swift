@@ -8,4 +8,5 @@
 
 protocol MainModuleOutput: class {
     var onPageShow: Closure<PlaybookPage>? { get set }
+    var onChapterShow: Closure<ChapterModel>? { get set }
 }

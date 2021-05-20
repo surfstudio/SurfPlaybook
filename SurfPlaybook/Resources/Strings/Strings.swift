@@ -33,6 +33,10 @@ internal enum L10n {
       /// Поиск
       internal static let placeholder = L10n.tr("Localizable", "Main.SearchBar.placeholder")
     }
+    internal enum ShowAll {
+      /// Все
+      internal static let title = L10n.tr("Localizable", "Main.ShowAll.title")
+    }
   }
 
   internal enum Settings {

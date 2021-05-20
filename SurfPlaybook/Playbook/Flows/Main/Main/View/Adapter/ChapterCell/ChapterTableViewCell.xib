@@ -19,7 +19,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ozh-Ri-N00">
-                        <rect key="frame" x="16" y="16" width="288" height="21"/>
+                        <rect key="frame" x="16" y="16" width="234" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -37,26 +37,44 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                     </collectionView>
+                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehZ-pn-jBd" customClass="CommonButton" customModule="SurfPlaybook">
+                        <rect key="frame" x="266" y="7.5" width="54" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="abF-5g-P7E"/>
+                        </constraints>
+                        <state key="normal" title="Button">
+                            <color key="titleColor" systemColor="linkColor"/>
+                        </state>
+                        <connections>
+                            <action selector="openChapter:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="vO2-cV-bro"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="ozh-Ri-N00" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="28t-O6-rHg"/>
                     <constraint firstAttribute="bottom" secondItem="CWd-dg-dim" secondAttribute="bottom" priority="999" constant="8" id="6cL-9i-nWK"/>
                     <constraint firstItem="CWd-dg-dim" firstAttribute="top" secondItem="ozh-Ri-N00" secondAttribute="bottom" constant="8" id="7Us-ml-d19"/>
+                    <constraint firstItem="ehZ-pn-jBd" firstAttribute="leading" secondItem="ozh-Ri-N00" secondAttribute="trailing" constant="16" id="8Ho-ko-VON"/>
                     <constraint firstItem="CWd-dg-dim" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="9Sv-5d-3V9"/>
+                    <constraint firstItem="ehZ-pn-jBd" firstAttribute="centerY" secondItem="ozh-Ri-N00" secondAttribute="centerY" constant="3" id="PNe-gV-FnR"/>
+                    <constraint firstAttribute="trailing" secondItem="ehZ-pn-jBd" secondAttribute="trailing" id="VII-BE-u0H"/>
                     <constraint firstAttribute="trailing" secondItem="CWd-dg-dim" secondAttribute="trailing" id="VuH-bH-tqG"/>
                     <constraint firstItem="ozh-Ri-N00" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="a1H-GW-96z"/>
-                    <constraint firstAttribute="trailing" secondItem="ozh-Ri-N00" secondAttribute="trailing" constant="16" id="aUi-cR-ek7"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="collectionView" destination="CWd-dg-dim" id="waC-R7-h5i"/>
+                <outlet property="showChapterButton" destination="ehZ-pn-jBd" id="eGr-PM-4xr"/>
                 <outlet property="titleLabel" destination="ozh-Ri-N00" id="xUy-Qm-OJE"/>
             </connections>
             <point key="canvasLocation" x="140.625" y="222.88732394366198"/>
         </tableViewCell>
     </objects>
     <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

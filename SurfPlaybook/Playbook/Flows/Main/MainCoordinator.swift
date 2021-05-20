@@ -37,6 +37,9 @@ private extension MainCoordinator {
         output.onPageShow = { [weak self] page in
             self?.showPlaybookPage(page)
         }
+        output.onChapterShow = { [weak self] chapter in
+            self?.showPlaybookChapter(chapter)
+        }
         router.setNavigationControllerRootModule(view, animated: false, hideBar: false)
     }
 
@@ -54,6 +57,11 @@ private extension MainCoordinator {
             self?.router.dismissModule()
         }
         router.present(view)
+    }
+
+    func showPlaybookChapter(_ model: ChapterModel) {
+        let (view, _) = ChapterModuleConfigurator().configure()
+        router.push(view)
     }
 
 }
