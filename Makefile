@@ -27,12 +27,12 @@ coordinator:
 	bundle exec generamba gen $(modName) surf_mvp_coordinator
 
 screen:
-	bundle exec generamba gen $(modName) surf_mvp_coordinatable_module --module_path 'Example/SurfPlaybookExample/Flows/$(flowName)'
-	# bundle exec generamba gen $(modName) surf_mvp_coordinatable_module --module_path 'SurfPlaybook/Playbook/Flows/$(flowName)'
+	# bundle exec generamba gen $(modName) surf_mvp_coordinatable_module --module_path 'Example/SurfPlaybookExample/Flows/$(flowName)'
+	bundle exec generamba gen $(modName) surf_mvp_coordinatable_module --module_path 'SurfPlaybook/Playbook/Flows/$(flowName)'
 
 alert:
-	bundle exec generamba gen $(modName) surf_mvp_coordinatable_alert --module_path 'Example/SurfPlaybookExample/Flows/$(flowName)'
-	# bundle exec generamba gen $(modName) surf_mvp_coordinatable_alert --module_path 'SurfPlaybook/Playbook/Flows/$(flowName)'
+	# bundle exec generamba gen $(modName) surf_mvp_coordinatable_alert --module_path 'Example/SurfPlaybookExample/Flows/$(flowName)'
+	bundle exec generamba gen $(modName) surf_mvp_coordinatable_alert --module_path 'SurfPlaybook/Playbook/Flows/$(flowName)'
 
 doc:
 	bundle exec jazzy --clean --build-tool-arguments -scheme,SurfPlaybook,-workspace,SurfPlaybook.xcworkspace,-sdk,iphonesimulator --output "docs"
