@@ -11,7 +11,7 @@ import UIKit
 final class ChapterModuleConfigurator {
 
     func configure() -> (UIViewController, ChapterModuleOutput) {
-        let view = ChapterViewController()
+        let view = UIViewController.instantiate(ofType: ChapterViewController.self)
         let presenter = ChapterPresenter()
 
         presenter.view = view
