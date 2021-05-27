@@ -6,6 +6,6 @@
 //  Copyright © 2021 Surf. All rights reserved.
 //
 
-protocol ChapterViewInput: class {
+protocol ChapterViewInput: AnyObject {
     func setupInitialState(with chapter: ChapterModel)
 }

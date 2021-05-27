@@ -6,6 +6,6 @@
 //  Copyright © 2021 Surf. All rights reserved.
 //
 
-protocol UIKitViewInput: class, ViewStateConfigurable {
+protocol UIKitViewInput: AnyObject, ViewStateConfigurable {
     func setupInitialState(pages: [PlaybookUIKitPage])
 }

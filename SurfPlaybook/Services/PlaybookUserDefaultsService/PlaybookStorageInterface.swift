@@ -6,6 +6,6 @@
 //  Copyright © 2021 Surf. All rights reserved.
 //
 
-protocol PlaybookStorageInterface: class {
+protocol PlaybookStorageInterface: AnyObject {
     var isColoredBackground: Bool { get set }
 }

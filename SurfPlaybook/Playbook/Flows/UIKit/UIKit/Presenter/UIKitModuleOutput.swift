@@ -6,6 +6,6 @@
 //  Copyright © 2021 Surf. All rights reserved.
 //
 
-protocol UIKitModuleOutput: class {
+protocol UIKitModuleOutput: AnyObject {
     var onPageOpen: Closure<PlaybookUIKitPage>? { get set }
 }

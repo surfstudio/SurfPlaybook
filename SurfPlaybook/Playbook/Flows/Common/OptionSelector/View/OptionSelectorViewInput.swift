@@ -6,6 +6,6 @@
 //  Copyright © 2021 Surf. All rights reserved.
 //
 
-protocol OptionSelectorViewInput: class {
+protocol OptionSelectorViewInput: AnyObject {
     func setupInitialState(with config: OptionSelectorConfig)
 }

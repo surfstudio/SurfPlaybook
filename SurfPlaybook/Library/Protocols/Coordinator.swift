@@ -9,7 +9,7 @@
 import Foundation
 
 /// Базовый протокол для всех координаторов приложения
-protocol Coordinator: class {
+protocol Coordinator: AnyObject {
     /// Уведомляет координатора, что он должен начать свою работу
     func start()
     /// Уведомляет координатора, что он может начать свою работу,

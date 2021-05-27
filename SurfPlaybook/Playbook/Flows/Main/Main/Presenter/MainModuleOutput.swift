@@ -6,7 +6,7 @@
 //  Copyright © 2021 Surf. All rights reserved.
 //
 
-protocol MainModuleOutput: class {
+protocol MainModuleOutput: AnyObject {
     var onPageShow: Closure<PlaybookPage>? { get set }
     var onChapterShow: Closure<ChapterModel>? { get set }
 }

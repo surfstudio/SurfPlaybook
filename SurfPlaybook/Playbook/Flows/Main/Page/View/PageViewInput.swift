@@ -6,7 +6,7 @@
 //  Copyright © 2021 Surf. All rights reserved.
 //
 
-protocol PageViewInput: class {
+protocol PageViewInput: AnyObject {
     func setupInitialState(with page: PlaybookPage)
     func showPreset(_ preset: StringRepresentable, for page: PlaybookPage)
     func updateBackgroundAppearance(isColored: Bool)

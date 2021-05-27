@@ -6,6 +6,6 @@
 //  Copyright © 2021 Surf. All rights reserved.
 //
 
-protocol OptionSelectorModuleInput: class {
+protocol OptionSelectorModuleInput: AnyObject {
     func closeSelector()
 }
