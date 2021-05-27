@@ -6,6 +6,6 @@
 //  Copyright © 2021 Surf. All rights reserved.
 //
 
-protocol UIKitPageViewInput: class {
+protocol UIKitPageViewInput: AnyObject {
     func setupInitialState(page: PlaybookUIKitPage)
 }

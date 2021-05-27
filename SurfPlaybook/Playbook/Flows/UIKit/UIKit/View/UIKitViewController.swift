@@ -39,7 +39,7 @@ extension UIKitViewController: UIKitViewInput {
     func setupInitialState(pages: [PlaybookUIKitPage]) {
         configureAppearance()
         if pages.isEmpty {
-            setup(state: .empty(text: L10n.Main.EmptyState.message))
+            setup(state: .empty(text: StringsConfig.emptyStateMessage))
         } else {
             setup(state: .normal)
             adapter?.update(with: pages)

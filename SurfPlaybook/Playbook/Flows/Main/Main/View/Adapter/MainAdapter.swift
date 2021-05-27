@@ -18,6 +18,7 @@ final class MainAdapter: NSObject {
     // MARK: - Properties
 
     var onPageSelect: Closure<PageModel>?
+    var onChapterSelect: Closure<ChapterModel>?
 
     // MARK: - Initialization
 
@@ -56,6 +57,9 @@ extension MainAdapter: UITableViewDataSource {
         cell.configure(with: model)
         cell.onPageSelect = { [weak self] page in
             self?.onPageSelect?(page)
+        }
+        cell.onChapterSelect = { [weak self] in
+            self?.onChapterSelect?(model)
         }
         return cell
     }

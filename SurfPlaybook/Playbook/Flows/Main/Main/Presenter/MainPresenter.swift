@@ -11,6 +11,7 @@ final class MainPresenter: MainModuleOutput {
     // MARK: - MainModuleOutput
 
     var onPageShow: Closure<PlaybookPage>?
+    var onChapterShow: Closure<ChapterModel>?
 
     // MARK: - Properties
 
@@ -44,6 +45,13 @@ extension MainPresenter: MainViewOutput {
 
     func showPage(_ model: PageModel) {
         onPageShow?(model.playbookPage)
+    }
+
+    func showChapter(_ model: ChapterModel) {
+        guard let chapter = chaptersModels.first(where: { $0.name == model.name }) else {
+            return
+        }
+        onChapterShow?(chapter)
     }
 
     func filter(by text: String) {

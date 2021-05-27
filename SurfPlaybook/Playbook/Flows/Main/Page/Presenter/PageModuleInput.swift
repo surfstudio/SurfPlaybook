@@ -6,5 +6,5 @@
 //  Copyright © 2021 Surf. All rights reserved.
 //
 
-protocol PageModuleInput: class {
+protocol PageModuleInput: AnyObject {
 }

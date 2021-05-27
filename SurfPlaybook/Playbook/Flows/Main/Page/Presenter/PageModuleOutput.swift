@@ -6,6 +6,6 @@
 //  Copyright © 2021 Surf. All rights reserved.
 //
 
-protocol PageModuleOutput: class {
+protocol PageModuleOutput: AnyObject {
     var onPresetsOpen: Closure<OptionSelectorConfig>? { get set }
 }

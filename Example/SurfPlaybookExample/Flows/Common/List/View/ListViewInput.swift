@@ -6,6 +6,6 @@
 //  Copyright © 2021 Surf. All rights reserved.
 //
 
-protocol ListViewInput: class {
+protocol ListViewInput: AnyObject {
     func setupInitialState(with data: [ListAdapter.ListData])
 }

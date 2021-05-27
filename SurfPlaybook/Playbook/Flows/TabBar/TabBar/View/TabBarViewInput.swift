@@ -6,6 +6,6 @@
 //  Copyright © 2021 Surf. All rights reserved.
 //
 
-protocol TabBarViewInput: class {
+protocol TabBarViewInput: AnyObject {
     func selectTab(_ tab: PlaybookTab)
 }

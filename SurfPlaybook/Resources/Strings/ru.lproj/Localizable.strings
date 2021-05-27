@@ -16,6 +16,7 @@
 "Main.SearchBar.placeholder" = "Поиск";
 "Main.EmptySearch.message" = "Ничего не найдено :(";
 "Main.EmptyState.message" = "Здесь еще ничего нет :(";
+"Main.ShowAll.title" = "Все";
 
 "Settings.ColoredBackground.name" = "Цветной бэкграунд";
 

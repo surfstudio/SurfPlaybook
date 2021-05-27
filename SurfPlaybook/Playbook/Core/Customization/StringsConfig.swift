@@ -23,6 +23,8 @@ public enum StringsConfig {
 
     public static var searchBarPlaceholder = L10n.Main.SearchBar.placeholder
     public static var emptySearchMessage = L10n.Main.EmptySearch.message
+    public static var emptyStateMessage = L10n.Main.EmptyState.message
+    public static var showAllTitle = L10n.Main.ShowAll.title
 
     public static var coloredBackgroundName = L10n.Settings.ColoredBackground.name
 

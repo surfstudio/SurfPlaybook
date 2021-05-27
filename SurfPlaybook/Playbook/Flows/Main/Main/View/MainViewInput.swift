@@ -6,7 +6,7 @@
 //  Copyright © 2021 Surf. All rights reserved.
 //
 
-protocol MainViewInput: class, ViewStateConfigurable {
+protocol MainViewInput: AnyObject, ViewStateConfigurable {
     func setupInitialState(with models: [ChapterModel])
     func fill(with models: [ChapterModel])
 }

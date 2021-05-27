@@ -6,7 +6,7 @@
 //  Copyright © 2021 Surf. All rights reserved.
 //
 
-protocol TabBarModuleOutput: class {
+protocol TabBarModuleOutput: AnyObject {
     var onMainFlowSelect: TabSelectClosure? { get set }
     var onUIKitFlowSelect: TabSelectClosure? { get set }
     var onFlowsFlowSelect: TabSelectClosure? { get set }
