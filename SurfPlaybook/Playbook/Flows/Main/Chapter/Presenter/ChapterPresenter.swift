@@ -10,6 +10,8 @@ final class ChapterPresenter: ChapterModuleOutput {
 
     // MARK: - ChapterModuleOutput
 
+    var onPageShow: Closure<PlaybookPage>?
+
     // MARK: - Properties
 
     weak var view: ChapterViewInput?
@@ -37,6 +39,10 @@ extension ChapterPresenter: ChapterViewOutput {
 
     func viewLoaded() {
         view?.setupInitialState(with: chapter)
+    }
+
+    func showPage(_ model: PageModel) {
+        onPageShow?(model.playbookPage)
     }
 
 }

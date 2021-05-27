@@ -60,6 +60,9 @@ private extension ChapterViewController {
 
     func configureAdapter() {
         adapter = ChapterAdapter(collectionView: collectionView)
+        adapter?.onPageSelect = { [weak self] page in
+            self?.output?.showPage(page)
+        }
     }
 
 }

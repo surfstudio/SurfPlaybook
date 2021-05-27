@@ -43,6 +43,14 @@ private extension MainCoordinator {
         router.setNavigationControllerRootModule(view, animated: false, hideBar: false)
     }
 
+    func showPlaybookChapter(_ chapter: ChapterModel) {
+        let (view, output) = ChapterModuleConfigurator().configure(chapter: chapter)
+        output.onPageShow = { [weak self] page in
+            self?.showPlaybookPage(page)
+        }
+        router.push(view)
+    }
+
     func showPlaybookPage(_ page: PlaybookPage) {
         let (view, output, input) = PageModuleConfigurator().configure(with: page)
         output.onPresetsOpen = { [weak self, weak input] config in
@@ -57,11 +65,6 @@ private extension MainCoordinator {
             self?.router.dismissModule()
         }
         router.present(view)
-    }
-
-    func showPlaybookChapter(_ chapter: ChapterModel) {
-        let (view, _) = ChapterModuleConfigurator().configure(chapter: chapter)
-        router.push(view)
     }
 
 }

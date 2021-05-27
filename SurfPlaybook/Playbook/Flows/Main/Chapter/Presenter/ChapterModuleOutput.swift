@@ -7,4 +7,5 @@
 //
 
 protocol ChapterModuleOutput: class {
+    var onPageShow: Closure<PlaybookPage>? { get set }
 }
