@@ -59,8 +59,8 @@ private extension MainCoordinator {
         router.present(view)
     }
 
-    func showPlaybookChapter(_ model: ChapterModel) {
-        let (view, _) = ChapterModuleConfigurator().configure()
+    func showPlaybookChapter(_ chapter: ChapterModel) {
+        let (view, _) = ChapterModuleConfigurator().configure(chapter: chapter)
         router.push(view)
     }
 

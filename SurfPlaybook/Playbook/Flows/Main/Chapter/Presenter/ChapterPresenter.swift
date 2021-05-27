@@ -14,6 +14,16 @@ final class ChapterPresenter: ChapterModuleOutput {
 
     weak var view: ChapterViewInput?
 
+    // MARK: - Private Properties
+
+    private let chapter: ChapterModel
+
+    // MARK: - Initialization
+
+    init(chapter: ChapterModel) {
+        self.chapter = chapter
+    }
+
 }
 
 // MARK: - ChapterModuleInput
@@ -26,7 +36,7 @@ extension ChapterPresenter: ChapterModuleInput {
 extension ChapterPresenter: ChapterViewOutput {
 
     func viewLoaded() {
-        view?.setupInitialState()
+        view?.setupInitialState(with: chapter)
     }
 
 }

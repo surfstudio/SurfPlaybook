@@ -48,6 +48,7 @@
 		87A98871C1AED1D915A4903C /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD850BE3FCC7764BD1A2FB5 /* TabBarCoordinator.swift */; };
 		89B7B9813706DC401591A44B /* FlowsCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B09A4FCC75EDE050789E467 /* FlowsCoordinatorOutput.swift */; };
 		8CB5F55CA26F7051233EE675 /* UIKitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72118F3CFDAB7E3B36E0C746 /* UIKitViewController.xib */; };
+		90036EA1265FEF5900B315BA /* ChapterAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90036EA0265FEF5900B315BA /* ChapterAdapter.swift */; };
 		9009083C262EF8F30075559A /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9009083B262EF8F30075559A /* SearchBar.swift */; };
 		90090844262EF8FB0075559A /* SearchBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90090843262EF8FB0075559A /* SearchBar.xib */; };
 		9009084A262EF9AC0075559A /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90090849262EF9AC0075559A /* SearchTextField.swift */; };
@@ -340,6 +341,7 @@
 		7E1C3827D8C9AB6DF9042487 /* Pods_SurfPlaybookExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SurfPlaybookExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A83D42FB73C46FF751152BF /* Pods-SurfPlaybookTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfPlaybookTests.release.xcconfig"; path = "Target Support Files/Pods-SurfPlaybookTests/Pods-SurfPlaybookTests.release.xcconfig"; sourceTree = "<group>"; };
 		8E21E94407AB048F4588B3FD /* MainCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		90036EA0265FEF5900B315BA /* ChapterAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterAdapter.swift; sourceTree = "<group>"; };
 		9009083B262EF8F30075559A /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		90090843262EF8FB0075559A /* SearchBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchBar.xib; sourceTree = "<group>"; };
 		90090849262EF9AC0075559A /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
@@ -756,6 +758,7 @@
 		697EF5DD532C1B93B3411C6B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				90BF077226568338004FC080 /* Adapter */,
 				60E63A61082240A7D13F3DAA /* ChapterViewController.swift */,
 				DE94EDF8CF57F23748B03FCB /* ChapterViewController.xib */,
 				0C5846B78A1DB27924801209 /* ChapterViewInput.swift */,
@@ -1093,6 +1096,14 @@
 				23C5181C49971B240FB2F33F /* TabBarViewOutput.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		90BF077226568338004FC080 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				90036EA0265FEF5900B315BA /* ChapterAdapter.swift */,
+			);
+			path = Adapter;
 			sourceTree = "<group>";
 		};
 		90C8B38B2625C55500851B00 = {
@@ -2407,6 +2418,7 @@
 				999117355B83ADA07531CF5D /* UIKitPageViewOutput.swift in Sources */,
 				2401B856420F980A03BF37EB /* PageModuleConfigurator.swift in Sources */,
 				C60FBA26574297963262D110 /* PagePresenter.swift in Sources */,
+				90036EA1265FEF5900B315BA /* ChapterAdapter.swift in Sources */,
 				28744AF4964D6A3923892642 /* PageModuleInput.swift in Sources */,
 				ED5F6AC4E8551B1A5FA2711C /* PageModuleOutput.swift in Sources */,
 				F4578E9572F2E39E7DDA930A /* PageViewController.swift in Sources */,
