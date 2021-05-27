@@ -76,7 +76,7 @@ extension ChapterAdapter: UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int {
-        return pages.count * 5
+        return pages.count
     }
 
     func collectionView(_ collectionView: UICollectionView,
@@ -84,7 +84,7 @@ extension ChapterAdapter: UICollectionViewDataSource {
         guard let cell = collectionView.dequeueReusableCell(PageCollectionViewCell.self, indexPath: indexPath) else {
             return UICollectionViewCell()
         }
-        let page = pages[indexPath.row % pages.count]
+        let page = pages[indexPath.row]
         cell.configure(with: page)
         return cell
     }
