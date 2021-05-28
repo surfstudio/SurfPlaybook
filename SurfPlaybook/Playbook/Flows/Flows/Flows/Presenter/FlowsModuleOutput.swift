@@ -6,6 +6,6 @@
 //  Copyright © 2021 Surf. All rights reserved.
 //
 
-protocol FlowsModuleOutput: class {
+protocol FlowsModuleOutput: AnyObject {
     var onFlowsShow: Closure<(title: String, coordinators: [PlaybookFlowCoordinator])>? { get set }
 }

@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.1
+
+- Отдельный экран для отображения всех компонентов из одной главы [#6](https://github.com/chausovSurfStudio/SurfPlaybook/pull/6)
+
 ## 1.2.0
 
 - Появилась возможность в третьем табе с flow-координаторами реализовать вложенную структуру экранов [#4](https://github.com/chausovSurfStudio/SurfPlaybook/pull/4)

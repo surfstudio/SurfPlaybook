@@ -6,6 +6,6 @@
 //  Copyright © 2021 Surf. All rights reserved.
 //
 
-protocol OptionSelectorModuleOutput: class {
+protocol OptionSelectorModuleOutput: AnyObject {
     var onClose: EmptyClosure? { get set }
 }

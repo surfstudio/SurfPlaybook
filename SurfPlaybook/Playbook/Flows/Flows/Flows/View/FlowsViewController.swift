@@ -39,7 +39,7 @@ extension FlowsViewController: FlowsViewInput {
     func setupInitialState(title: String?, flowCoordinators: [PlaybookFlowCoordinator]) {
         configureAppearance(title: title)
         if flowCoordinators.isEmpty {
-            setup(state: .empty(text: L10n.Main.EmptyState.message))
+            setup(state: .empty(text: StringsConfig.emptyStateMessage))
         } else {
             setup(state: .normal)
             adapter?.fill(with: flowCoordinators)

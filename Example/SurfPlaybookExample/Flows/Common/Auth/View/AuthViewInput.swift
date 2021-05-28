@@ -6,7 +6,7 @@
 //  Copyright © 2021 Surf. All rights reserved.
 //
 
-protocol AuthViewInput: class {
+protocol AuthViewInput: AnyObject {
     /// Method for setup initial state of view
     func setupInitialState()
 }

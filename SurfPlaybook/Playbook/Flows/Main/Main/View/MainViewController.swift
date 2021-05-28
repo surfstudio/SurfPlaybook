@@ -60,7 +60,7 @@ extension MainViewController: MainViewInput {
 
     func fill(with models: [ChapterModel]) {
         if models.isEmpty {
-            setup(state: .empty(text: L10n.Main.EmptyState.message))
+            setup(state: .empty(text: StringsConfig.emptyStateMessage))
         } else {
             adapter?.fill(with: models)
         }
@@ -112,6 +112,9 @@ private extension MainViewController {
         adapter?.onPageSelect = { [weak self] page in
             self?.closeKeyboard()
             self?.output?.showPage(page)
+        }
+        adapter?.onChapterSelect = { [weak self] chapter in
+            self?.output?.showChapter(chapter)
         }
     }
 

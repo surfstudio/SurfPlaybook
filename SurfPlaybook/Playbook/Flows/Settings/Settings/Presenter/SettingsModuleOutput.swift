@@ -6,5 +6,5 @@
 //  Copyright © 2021 Surf. All rights reserved.
 //
 
-protocol SettingsModuleOutput: class {
+protocol SettingsModuleOutput: AnyObject {
 }

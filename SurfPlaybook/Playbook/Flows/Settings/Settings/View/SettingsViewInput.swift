@@ -6,7 +6,7 @@
 //  Copyright © 2021 Surf. All rights reserved.
 //
 
-protocol SettingsViewInput: class {
+protocol SettingsViewInput: AnyObject {
     func setupInitialState(blocks: [SettingsBlock])
     func updateSetting(for block: SettingsBlock)
 }

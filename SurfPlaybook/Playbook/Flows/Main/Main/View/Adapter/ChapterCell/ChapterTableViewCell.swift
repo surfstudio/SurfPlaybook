@@ -21,11 +21,13 @@ final class ChapterTableViewCell: UITableViewCell {
     // MARK: - IBOutlets
 
     @IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet private weak var showChapterButton: CommonButton!
     @IBOutlet private weak var collectionView: UICollectionView!
 
     // MARK: - Properties
 
     var onPageSelect: Closure<PageModel>?
+    var onChapterSelect: EmptyClosure?
 
     // MARK: - Private Properties
 
@@ -56,8 +58,19 @@ private extension ChapterTableViewCell {
     func configureAppearance() {
         selectionStyle = .none
         contentView.backgroundColor = Colors.Main.background
+        ocnfigureButton()
         configureCollectionView()
         configureCollectionViewLayout()
+    }
+
+    func ocnfigureButton() {
+        let arrowImage = Resources.Assets.Icons.rightArrow.image.mask(with: Colors.Text.active)
+        showChapterButton.semanticContentAttribute = .forceRightToLeft
+        showChapterButton.setTitle(StringsConfig.showAllTitle, for: .normal)
+        showChapterButton.setImage(arrowImage, for: .normal)
+        showChapterButton.setImage(arrowImage.mask(with: 0.5), for: .highlighted)
+        showChapterButton.apply(style: .textActive)
+        showChapterButton.imageEdgeInsets = .init(top: 2, left: 0, bottom: 0, right: 0)
     }
 
     func configureCollectionView() {
@@ -111,6 +124,16 @@ extension ChapterTableViewCell: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView,
                         didSelectItemAt indexPath: IndexPath) {
         onPageSelect?(pages[indexPath.row])
+    }
+
+}
+
+// MARK: - Actions
+
+private extension ChapterTableViewCell {
+
+    @IBAction func openChapter(_ sender: Any) {
+        onChapterSelect?()
     }
 
 }

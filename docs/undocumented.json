@@ -177,21 +177,35 @@
     },
     {
       "file": "/Users/chausov/Documents/SurfProjects/github/playbook/SurfPlaybook/Playbook/Core/Customization/StringsConfig.swift",
+      "line": 26,
+      "symbol": "StringsConfig.emptyStateMessage",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/chausov/Documents/SurfProjects/github/playbook/SurfPlaybook/Playbook/Core/Customization/StringsConfig.swift",
       "line": 27,
-      "symbol": "StringsConfig.coloredBackgroundName",
+      "symbol": "StringsConfig.showAllTitle",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chausov/Documents/SurfProjects/github/playbook/SurfPlaybook/Playbook/Core/Customization/StringsConfig.swift",
       "line": 29,
+      "symbol": "StringsConfig.coloredBackgroundName",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/chausov/Documents/SurfProjects/github/playbook/SurfPlaybook/Playbook/Core/Customization/StringsConfig.swift",
+      "line": 31,
       "symbol": "StringsConfig.cancel",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chausov/Documents/SurfProjects/github/playbook/SurfPlaybook/Playbook/Core/Customization/StringsConfig.swift",
-      "line": 30,
+      "line": 32,
       "symbol": "StringsConfig.done",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"

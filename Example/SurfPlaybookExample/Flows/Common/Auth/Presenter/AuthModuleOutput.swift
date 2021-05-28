@@ -6,6 +6,6 @@
 //  Copyright © 2021 Surf. All rights reserved.
 //
 
-protocol AuthModuleOutput: class {
+protocol AuthModuleOutput: AnyObject {
     var onClose: EmptyClosure? { get set }
 }
