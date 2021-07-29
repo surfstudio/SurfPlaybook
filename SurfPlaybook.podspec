@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
   spec.platform       = :ios, "11.0"
   spec.swift_version  = '5.0'
 
-  spec.source       = { :git => "https://github.com/surfstudio/SurfPlaybook", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/surfstudio/SurfPlaybook.git", :tag => "#{spec.version}" }
   spec.source_files = "SurfPlaybook/**/*.{swift,strings}"
   spec.resources    = "SurfPlaybook/**/*.{xib,xcassets}"
 end
