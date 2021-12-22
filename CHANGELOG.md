@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.2
+
+- Интерфейс не изменился, новые фичи не добавились - просто проверка работоспособности либы и работы CI после переезда и правок в readme [#8](https://github.com/surfstudio/SurfPlaybook/pull/8)
+
 ## 1.2.1
 
 - Отдельный экран для отображения всех компонентов из одной главы [#6](https://github.com/chausovSurfStudio/SurfPlaybook/pull/6)
