@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "SurfPlaybook"
-  spec.version      = "1.2.2"
+  spec.version      = "1.3.0"
   spec.summary      = "iOS framework for Playbook"
   spec.homepage     = "https://github.com/surfstudio/SurfPlaybook"
   spec.license      = { :type => "MIT", :file => "LICENSE" }

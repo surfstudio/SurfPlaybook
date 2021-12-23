@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.3.0
+
+- Добавлена адаптация под iOS 15 [#11](https://github.com/surfstudio/SurfPlaybook/pull/11)
+
+> закрыт issue [Black background of navigationBar in iOS 15](https://github.com/surfstudio/SurfPlaybook/issues/10)
+
 ## 1.2.2
 
 - Интерфейс не изменился, новые фичи не добавились - просто проверка работоспособности либы и работы CI после переезда и правок в readme [#8](https://github.com/surfstudio/SurfPlaybook/pull/8)
