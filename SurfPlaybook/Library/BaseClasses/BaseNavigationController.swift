@@ -32,17 +32,32 @@ final class BaseNavigationController: UINavigationController {
 private extension BaseNavigationController {
 
     func configureAppearance() {
-        navigationBar.barTintColor = Colors.NavigationBar.background
-        navigationBar.tintColor = Colors.NavigationBar.tint
-        navigationBar.titleTextAttributes = [.foregroundColor: Colors.NavigationBar.text,
-                                             .font: Constants.titleFont]
-        navigationBar.shadowImage = UIImage()
-        navigationBar.setBackgroundImage(UIImage(), for: .default)
-        navigationBar.barStyle = .default
-        navigationBar.isTranslucent = false
+        if #available(iOS 13.0, *) {
+            let appearance = UINavigationBarAppearance()
+            appearance.configureWithOpaqueBackground()
+            appearance.backgroundColor = Colors.NavigationBar.background
+            appearance.titleTextAttributes = [.foregroundColor: Colors.NavigationBar.text,
+                                              .font: Constants.titleFont]
+            appearance.shadowColor = .clear
 
-        navigationBar.backIndicatorImage = Resources.Assets.Icons.backArrow.image
-        navigationBar.backIndicatorTransitionMaskImage = Resources.Assets.Icons.backArrow.image
+            let backImage = Resources.Assets.Icons.backArrow.image
+            appearance.setBackIndicatorImage(backImage, transitionMaskImage: backImage)
+
+            navigationBar.standardAppearance = appearance
+            navigationBar.scrollEdgeAppearance = appearance
+        } else {
+            navigationBar.barTintColor = Colors.NavigationBar.background
+            navigationBar.titleTextAttributes = [.foregroundColor: Colors.NavigationBar.text,
+                                                 .font: Constants.titleFont]
+            navigationBar.shadowImage = UIImage()
+            navigationBar.setBackgroundImage(UIImage(), for: .default)
+            navigationBar.barStyle = .default
+            navigationBar.isTranslucent = false
+
+            navigationBar.backIndicatorImage = Resources.Assets.Icons.backArrow.image
+            navigationBar.backIndicatorTransitionMaskImage = Resources.Assets.Icons.backArrow.image
+        }
+        navigationBar.tintColor = Colors.NavigationBar.tint
     }
 
 }

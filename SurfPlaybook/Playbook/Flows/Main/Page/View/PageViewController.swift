@@ -76,7 +76,7 @@ private extension PageViewController {
         self.view.addSubview(contentView)
 
         NSLayoutConstraint.activate([
-            contentView.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 50),
+            contentView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 50),
             contentView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor)
         ])
     }
