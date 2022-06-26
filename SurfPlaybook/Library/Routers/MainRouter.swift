@@ -18,22 +18,23 @@ final class MainRouter: Router {
     }
 
     private var navigationController: UINavigationController? {
-        if let tabBar = UIApplication.shared.keyWindow?.rootViewController as? UITabBarController {
+        if let tabBar = UIApplication.rootView as? UITabBarController {
             return tabBar.selectedViewController as? UINavigationController
         }
-        return UIApplication.shared.keyWindow?.rootViewController as? UINavigationController
-    }
 
-    private var topNavigationController: UINavigationController? {
-        return topViewController?.navigationController
+        return UIApplication.rootView as? UINavigationController
     }
 
     private var tabBarController: UITabBarController? {
-        return UIApplication.shared.keyWindow?.rootViewController as? UITabBarController
+        return UIApplication.rootView as? UITabBarController
     }
 
     private var topViewController: UIViewController? {
         return UIApplication.topViewController()
+    }
+
+    private var topNavigationController: UINavigationController? {
+        return topViewController?.navigationController
     }
 
     // MARK: - Router
