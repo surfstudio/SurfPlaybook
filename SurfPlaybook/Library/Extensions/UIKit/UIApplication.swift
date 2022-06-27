@@ -13,20 +13,19 @@ extension UIApplication {
     // MARK: - Static Properties
 
     static var rootView: UIViewController? {
-        if #available(iOS 13.0, *) {
-            return firstKeyWindow?.rootViewController
-        } else {
-            return UIApplication.shared.keyWindow?.rootViewController
-        }
+        return firstKeyWindow?.rootViewController
     }
 
-    @available(iOS 13.0, *)
     static var firstKeyWindow: UIWindow? {
-        return UIApplication
-            .shared
-            .connectedScenes
-            .flatMap { ($0 as? UIWindowScene)?.windows ?? [] }
-            .first { $0.isKeyWindow }
+        if #available(iOS 13.0, *) {
+            return UIApplication
+                .shared
+                .connectedScenes
+                .flatMap { ($0 as? UIWindowScene)?.windows ?? [] }
+                .first { $0.isKeyWindow }
+        } else {
+            return UIApplication.shared.keyWindow
+        }
     }
 
     // MARK: - Static Methods
