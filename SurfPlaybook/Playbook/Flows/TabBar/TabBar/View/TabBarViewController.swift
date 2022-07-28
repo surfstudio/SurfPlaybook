@@ -108,6 +108,9 @@ private extension TabBarViewController {
             appearance.stackedLayoutAppearance.normal.titleTextAttributes = normalTitleAttributes
             appearance.stackedLayoutAppearance.selected.titleTextAttributes = selectedTitleAttributes
             tabBar.standardAppearance = appearance
+            if #available(iOS 15, *) {
+                tabBar.scrollEdgeAppearance = appearance
+            }
         } else {
             tabBar.backgroundImage = backgroundImage
             tabBar.shadowImage = shadowImage
