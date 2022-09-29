@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.1
+
+- Правки адаптации под iOS 15, убраны deprecated вызовы нативных библиотек [#12](https://github.com/surfstudio/SurfPlaybook/pull/12)
+
 ## 1.3.0
 
 - Добавлена адаптация под iOS 15 [#11](https://github.com/surfstudio/SurfPlaybook/pull/11)
