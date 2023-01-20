@@ -14,7 +14,7 @@ import UIKit
 /// - Reference:
 ///     Причина возникновения и проблема, которую решает контейнер,
 ///     а также решение описаны в [источнике](https://osinski.dev/posts/snapshot-testing-self-sizing-table-view-cells/)
-public class TableViewCellContainer<Cell: UITableViewCell>: UIView, UITableViewDataSource, UITableViewDelegate {
+public class TableViewCellContainer<Cell: UITableViewCell & CellConfigurable>: UIView, UITableViewDataSource, UITableViewDelegate {
 
     // MARK: - Nested Types
 
@@ -54,7 +54,7 @@ public class TableViewCellContainer<Cell: UITableViewCell>: UIView, UITableViewD
         tableView.tableFooterView = UIView()
         tableView.dataSource = self
         tableView.delegate = self
-        tableView.registerNib(Cell.self)
+        tableView.registerNib(Cell.self, bundle: Cell.bundle() ?? Bundle.shared(for: Cell.self))
 
         translatesAutoresizingMaskIntoConstraints = false
         addSubview(tableView)
