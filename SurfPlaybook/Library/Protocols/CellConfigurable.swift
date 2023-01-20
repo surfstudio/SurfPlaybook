@@ -8,6 +8,16 @@
 
 import Foundation
 
+/// В случае, если ячейка находится в SPM-пакете,
+/// необходимо подписать ее под протокол и указать Bundle.module
 public protocol CellConfigurable {
     static func bundle() -> Bundle?
+}
+
+public extension CellConfigurable {
+
+    static func bundle() -> Bundle? {
+        return nil
+    }
+
 }
