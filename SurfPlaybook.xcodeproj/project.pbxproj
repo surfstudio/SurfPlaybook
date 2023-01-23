@@ -1303,6 +1303,7 @@
 		90DE37FB26285DB8003D3DD5 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				3C26FC7F297A9E690016D179 /* CellConfigurable.swift */,
 				90DE380626285DF7003D3DD5 /* PlaybookFlowCoordinator.swift */,
 				90DE380126285DE7003D3DD5 /* PlaybookUIKitPage.swift */,
 				90DE37FC26285DCC003D3DD5 /* UIKitPageViewModel.swift */,
@@ -1447,7 +1448,6 @@
 				90DE38BA26288F21003D3DD5 /* Presentable.swift */,
 				90DE38BF26288F57003D3DD5 /* Router.swift */,
 				90CAE3432639C72500DC7D77 /* ViewStateConfigurable.swift */,
-				3C26FC7F297A9E690016D179 /* CellConfigurable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
