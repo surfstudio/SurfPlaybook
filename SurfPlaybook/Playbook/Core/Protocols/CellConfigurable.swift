@@ -6,7 +6,7 @@
 //  Copyright © 2023 Surf. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 /// В случае, если ячейка находится в SPM-пакете,
 /// необходимо подписать ее под протокол и указать Bundle.module
@@ -14,9 +14,9 @@ public protocol CellConfigurable {
     static func bundle() -> Bundle?
 }
 
-public extension CellConfigurable {
+extension UITableViewCell: CellConfigurable {
 
-    static func bundle() -> Bundle? {
+    public static func bundle() -> Bundle? {
         return nil
     }
 
