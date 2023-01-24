@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.4.0
+
+- Поправлен код для TableViewCellContainer, теперь можно работать с отображением ячеек из SPM-пакетов [#12](https://github.com/surfstudio/SurfPlaybook/pull/13)
+
 ## 1.3.1
 
 - Правки адаптации под iOS 15, убраны deprecated вызовы нативных библиотек [#12](https://github.com/surfstudio/SurfPlaybook/pull/12)
