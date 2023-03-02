@@ -75,3 +75,5 @@ private final class ListCellFactory {
     }
 
 }
+
+extension ListTableViewCell: PlaybookCellConfigurable {}

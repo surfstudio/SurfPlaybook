@@ -35,3 +35,5 @@ private extension CellsChapter {
     }
 
 }
+
+extension TitleTableViewCell: PlaybookCellConfigurable {}

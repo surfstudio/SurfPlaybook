@@ -25,7 +25,7 @@
 		2CDEA8264584E5BBBAB85632 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78A812F1F935ED653461167 /* ListViewController.swift */; };
 		2CE875C0ACA7F0CC7D9028AC /* AuthModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D02728BEF3D5590BA37F167 /* AuthModuleOutput.swift */; };
 		34A950A08DBA87764925E08D /* AuthViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA22B3A94A8E58687D080E7 /* AuthViewInput.swift */; };
-		3C26FC80297A9E690016D179 /* CellConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C26FC7F297A9E690016D179 /* CellConfigurable.swift */; };
+		3C26FC80297A9E690016D179 /* PlaybookCellConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C26FC7F297A9E690016D179 /* PlaybookCellConfigurable.swift */; };
 		401408F72C380D923BBA48E7 /* SettingsViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5B1DAA5702C6729CD8B2EB /* SettingsViewOutput.swift */; };
 		411726BF8647871F2C8A181B /* PageViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2748A19BB0865493E50BA3AB /* PageViewInput.swift */; };
 		465CEE9A396C2B2EA8104243 /* ChapterModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD01A9D285AED508B893E26E /* ChapterModuleConfigurator.swift */; };
@@ -39,7 +39,6 @@
 		5DC6FCC2C5D36FFD55221393 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A298E82A12DE72AFF1934264 /* MainPresenter.swift */; };
 		5FC119DAAE05A9A198BF1224 /* ListModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B323CCC217C991A573CBFC /* ListModuleConfigurator.swift */; };
 		5FF8BE9D540FA30F50E4A428 /* SettingsCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AA8CD10DE18F1BA5AE5C1E /* SettingsCoordinatorOutput.swift */; };
-		62ADAE05769FB2628DDAFE05 /* Pods_SurfPlaybook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 307314F97EFCB60C3CD16848 /* Pods_SurfPlaybook.framework */; };
 		640C0AEB5DB3581775216399 /* SettingsModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB7110238C2000942BD3D05 /* SettingsModuleConfigurator.swift */; };
 		65D89AB731B15EEA1318BA39 /* TabBarModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83341D881ED3F494E99C18D /* TabBarModuleInput.swift */; };
 		6B84EACD1E796B8AD3A5A1F7 /* UIKitViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7379B961B001E682B19D2417 /* UIKitViewOutput.swift */; };
@@ -208,7 +207,6 @@
 		BEFD0C06AAE7B2AA9A57F92A /* UIKitPageModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443D7016DA00F1F0F46E9A8E /* UIKitPageModuleConfigurator.swift */; };
 		C24EA422F76226B72CE28EBF /* UIKitCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1269B3E6F1E0E8046620C664 /* UIKitCoordinatorOutput.swift */; };
 		C2807FC1A3A4556206898C2A /* FlowsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 147832FEC741A136D7707F15 /* FlowsViewController.xib */; };
-		C5BFD267266BD532A427275C /* Pods_SurfPlaybookExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83D5EE07A263B0B1EDA8DF0E /* Pods_SurfPlaybookExample.framework */; };
 		C60FBA26574297963262D110 /* PagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53879FE48BFED98DD87726C4 /* PagePresenter.swift */; };
 		C72706581D7A7DD90747E8CE /* TabBarModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A6D02EDA848F65C849A1A8 /* TabBarModuleConfigurator.swift */; };
 		CEE18E4D33304CC52114A260 /* UIKitModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7037AC3765B97E37D55539D3 /* UIKitModuleConfigurator.swift */; };
@@ -308,7 +306,7 @@
 		35A6D02EDA848F65C849A1A8 /* TabBarModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarModuleConfigurator.swift; sourceTree = "<group>"; };
 		36E90A4883C676E1BB348F22 /* ChapterViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ChapterViewOutput.swift; sourceTree = "<group>"; };
 		39D69A2918862769602DC2EB /* PageModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PageModuleOutput.swift; sourceTree = "<group>"; };
-		3C26FC7F297A9E690016D179 /* CellConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellConfigurable.swift; sourceTree = "<group>"; };
+		3C26FC7F297A9E690016D179 /* PlaybookCellConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybookCellConfigurable.swift; sourceTree = "<group>"; };
 		3C4E9B0F83D1D0AC66496851 /* UIKitModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIKitModuleInput.swift; sourceTree = "<group>"; };
 		3D7511F78DF69182DA212D85 /* AuthViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		3EB0B9FA579566A13722D4B8 /* FlowsViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlowsViewOutput.swift; sourceTree = "<group>"; };
@@ -536,7 +534,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62ADAE05769FB2628DDAFE05 /* Pods_SurfPlaybook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,7 +551,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				90C8B4482625EA4200851B00 /* SurfPlaybook.framework in Frameworks */,
-				C5BFD267266BD532A427275C /* Pods_SurfPlaybookExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1303,7 +1299,7 @@
 		90DE37FB26285DB8003D3DD5 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				3C26FC7F297A9E690016D179 /* CellConfigurable.swift */,
+				3C26FC7F297A9E690016D179 /* PlaybookCellConfigurable.swift */,
 				90DE380626285DF7003D3DD5 /* PlaybookFlowCoordinator.swift */,
 				90DE380126285DE7003D3DD5 /* PlaybookUIKitPage.swift */,
 				90DE37FC26285DCC003D3DD5 /* UIKitPageViewModel.swift */,
@@ -2426,7 +2422,7 @@
 				2401B856420F980A03BF37EB /* PageModuleConfigurator.swift in Sources */,
 				C60FBA26574297963262D110 /* PagePresenter.swift in Sources */,
 				90036EA1265FEF5900B315BA /* ChapterAdapter.swift in Sources */,
-				3C26FC80297A9E690016D179 /* CellConfigurable.swift in Sources */,
+				3C26FC80297A9E690016D179 /* PlaybookCellConfigurable.swift in Sources */,
 				28744AF4964D6A3923892642 /* PageModuleInput.swift in Sources */,
 				ED5F6AC4E8551B1A5FA2711C /* PageModuleOutput.swift in Sources */,
 				F4578E9572F2E39E7DDA930A /* PageViewController.swift in Sources */,
