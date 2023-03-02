@@ -10,13 +10,13 @@ import UIKit
 
 /// В случае, если ячейка находится в SPM-пакете,
 /// необходимо подписать ее под протокол и указать Bundle.module
-public protocol CellConfigurable {
-    static func bundle() -> Bundle?
+public protocol PlaybookCellConfigurable {
+    static func cellBundle() -> Bundle?
 }
 
-extension UITableViewCell: CellConfigurable {
+extension UITableViewCell: PlaybookCellConfigurable {
 
-    public static func bundle() -> Bundle? {
+    public static func cellBundle() -> Bundle? {
         return nil
     }
 

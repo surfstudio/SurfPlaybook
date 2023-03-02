@@ -39,9 +39,11 @@
 		5DC6FCC2C5D36FFD55221393 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A298E82A12DE72AFF1934264 /* MainPresenter.swift */; };
 		5FC119DAAE05A9A198BF1224 /* ListModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B323CCC217C991A573CBFC /* ListModuleConfigurator.swift */; };
 		5FF8BE9D540FA30F50E4A428 /* SettingsCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AA8CD10DE18F1BA5AE5C1E /* SettingsCoordinatorOutput.swift */; };
+		62ADAE05769FB2628DDAFE05 /* Pods_SurfPlaybook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 307314F97EFCB60C3CD16848 /* Pods_SurfPlaybook.framework */; };
 		640C0AEB5DB3581775216399 /* SettingsModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB7110238C2000942BD3D05 /* SettingsModuleConfigurator.swift */; };
 		65D89AB731B15EEA1318BA39 /* TabBarModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83341D881ED3F494E99C18D /* TabBarModuleInput.swift */; };
 		6B84EACD1E796B8AD3A5A1F7 /* UIKitViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7379B961B001E682B19D2417 /* UIKitViewOutput.swift */; };
+		713693A26B1D14884081F6ED /* Pods_SurfPlaybookTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 548197E36C935591BFB83B3E /* Pods_SurfPlaybookTests.framework */; };
 		71C9AB03605848DD54C689B5 /* PageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57323B320E0F6F36AB8B775D /* PageViewController.xib */; };
 		78C0FC8C1945DE2D8149FD83 /* UIKitViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F10AB6125FCDE59573B3A11 /* UIKitViewInput.swift */; };
 		7A61FFF46E32419DF6C19503 /* ListModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8061B62309A817D8CC5861E /* ListModuleInput.swift */; };
@@ -188,28 +190,25 @@
 		90F3DCCE262DEF0800220B28 /* ChapterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F3DCCC262DEF0800220B28 /* ChapterTableViewCell.xib */; };
 		90F3DCD3262DF31500220B28 /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3DCD2262DF31500220B28 /* UICollectionView.swift */; };
 		90F3DCDB262DF54C00220B28 /* MainAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3DCDA262DF54C00220B28 /* MainAdapter.swift */; };
-		93578423C0F9E6B45DF34472 /* Pods_SurfPlaybookTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17A9FF310115EC4E63B82CA2 /* Pods_SurfPlaybookTests.framework */; };
 		9412B99DC369767C29EF570A /* ChapterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCF6A6B16BA9514DC5938C1 /* ChapterPresenter.swift */; };
 		955FF9D933DC02A8408F3A67 /* ChapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E63A61082240A7D13F3DAA /* ChapterViewController.swift */; };
-		959D6F1F6AC03D990EF54A89 /* Pods_SurfPlaybookExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E1C3827D8C9AB6DF9042487 /* Pods_SurfPlaybookExampleTests.framework */; };
 		997063C6027BA770196E29BF /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4C45498CCE35BA3E4CE456 /* TabBarViewController.swift */; };
 		999117355B83ADA07531CF5D /* UIKitPageViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22888AD081D0FAC6B6E8137E /* UIKitPageViewOutput.swift */; };
 		9B8ED3E24BE12A6AF338B201 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AC98D605FB125DAEC92F9A /* MainViewController.swift */; };
 		9E6264B7E566023973766BC6 /* FlowsModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C1D6A32605CA48D732C2B8 /* FlowsModuleConfigurator.swift */; };
 		9F1F700192769D6FAAF25AC2 /* ChapterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE94EDF8CF57F23748B03FCB /* ChapterViewController.xib */; };
-		A0342EA67275D6E42DAF0D48 /* Pods_SurfPlaybook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E49CE830032A6C005B119B /* Pods_SurfPlaybook.framework */; };
 		A265E2CBCB5810207133A038 /* AuthViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C95E2589FB8A3B840E0BF97 /* AuthViewOutput.swift */; };
 		A3124A87EB5C51F89FF10B22 /* MainCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EA7D2C848914D73AA5C01A /* MainCoordinatorOutput.swift */; };
 		AEBFE69398EE260AD5D6FBC3 /* FlowsViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F0F35A2DF42AA653381DF2 /* FlowsViewInput.swift */; };
 		AF327B2F1070F1E2C58E0124 /* ListViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DA3F23E11D24E744AE3D8B /* ListViewInput.swift */; };
 		AF3BABAD94BDA4035C6AA292 /* AuthPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E057BFD05ACC09ECF056974 /* AuthPresenter.swift */; };
 		B100B57D9A4297C11DAE8E44 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E21E94407AB048F4588B3FD /* MainCoordinator.swift */; };
-		B77C7F879C24B65721D0380F /* Pods_SurfPlaybookExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA400EF9624EB1AF748BF6FF /* Pods_SurfPlaybookExample.framework */; };
 		BBA88C798F060062D88E430F /* MainModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB3D2177E67E8E60C0169E8 /* MainModuleConfigurator.swift */; };
 		BCE2B41BF677F3FD8E29BEC6 /* FlowsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8712EC469DEFBDADC3AFB20 /* FlowsCoordinator.swift */; };
 		BEFD0C06AAE7B2AA9A57F92A /* UIKitPageModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443D7016DA00F1F0F46E9A8E /* UIKitPageModuleConfigurator.swift */; };
 		C24EA422F76226B72CE28EBF /* UIKitCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1269B3E6F1E0E8046620C664 /* UIKitCoordinatorOutput.swift */; };
 		C2807FC1A3A4556206898C2A /* FlowsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 147832FEC741A136D7707F15 /* FlowsViewController.xib */; };
+		C5BFD267266BD532A427275C /* Pods_SurfPlaybookExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83D5EE07A263B0B1EDA8DF0E /* Pods_SurfPlaybookExample.framework */; };
 		C60FBA26574297963262D110 /* PagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53879FE48BFED98DD87726C4 /* PagePresenter.swift */; };
 		C72706581D7A7DD90747E8CE /* TabBarModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A6D02EDA848F65C849A1A8 /* TabBarModuleConfigurator.swift */; };
 		CEE18E4D33304CC52114A260 /* UIKitModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7037AC3765B97E37D55539D3 /* UIKitModuleConfigurator.swift */; };
@@ -223,6 +222,7 @@
 		DC5EAC240A563DBBD43E2FB7 /* TabBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EC341F0E6DCB99D511CD9D /* TabBarPresenter.swift */; };
 		E098CA8846D0696767AD9A90 /* MainModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21ACEEDD94E93DEB325A6E3 /* MainModuleInput.swift */; };
 		E2C4E467F519084B35E5A458 /* UIKitPageViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5031B883011E51F2D94E445D /* UIKitPageViewInput.swift */; };
+		E577BB06836773D5C4936B69 /* Pods_SurfPlaybookExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 774B05E858B53C9BC614A59C /* Pods_SurfPlaybookExampleTests.framework */; };
 		E967DB1F0E6D5DCC5B596277 /* TabBarViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C5181C49971B240FB2F33F /* TabBarViewOutput.swift */; };
 		ED085D22957ACE412E10D7C4 /* AuthModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3264128DC28DFCC023F3350B /* AuthModuleInput.swift */; };
 		ED5F6AC4E8551B1A5FA2711C /* PageModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D69A2918862769602DC2EB /* PageModuleOutput.swift */; };
@@ -288,7 +288,6 @@
 		1269B3E6F1E0E8046620C664 /* UIKitCoordinatorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIKitCoordinatorOutput.swift; sourceTree = "<group>"; };
 		12B323CCC217C991A573CBFC /* ListModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListModuleConfigurator.swift; sourceTree = "<group>"; };
 		147832FEC741A136D7707F15 /* FlowsViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = FlowsViewController.xib; sourceTree = "<group>"; };
-		17A9FF310115EC4E63B82CA2 /* Pods_SurfPlaybookTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SurfPlaybookTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E057BFD05ACC09ECF056974 /* AuthPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthPresenter.swift; sourceTree = "<group>"; };
 		1F6577F8323DDEEFC3EEF0BA /* Pods-SurfPlaybookExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfPlaybookExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-SurfPlaybookExampleTests/Pods-SurfPlaybookExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1FB3D2177E67E8E60C0169E8 /* MainModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainModuleConfigurator.swift; sourceTree = "<group>"; };
@@ -303,6 +302,7 @@
 		2C8179F5709D1A022B385B1C /* UIKitPageModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIKitPageModuleOutput.swift; sourceTree = "<group>"; };
 		2E11EF2B937F45DBD891A583 /* ChapterModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ChapterModuleOutput.swift; sourceTree = "<group>"; };
 		2EB7110238C2000942BD3D05 /* SettingsModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsModuleConfigurator.swift; sourceTree = "<group>"; };
+		307314F97EFCB60C3CD16848 /* Pods_SurfPlaybook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SurfPlaybook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3264128DC28DFCC023F3350B /* AuthModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthModuleInput.swift; sourceTree = "<group>"; };
 		33BD57C277A6FC9653035D8A /* UIKitViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIKitViewController.swift; sourceTree = "<group>"; };
 		35A6D02EDA848F65C849A1A8 /* TabBarModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarModuleConfigurator.swift; sourceTree = "<group>"; };
@@ -324,6 +324,7 @@
 		516CF54FC3E7CE545951B722 /* ListViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListViewOutput.swift; sourceTree = "<group>"; };
 		52AC98D605FB125DAEC92F9A /* MainViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		53879FE48BFED98DD87726C4 /* PagePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PagePresenter.swift; sourceTree = "<group>"; };
+		548197E36C935591BFB83B3E /* Pods_SurfPlaybookTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SurfPlaybookTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57323B320E0F6F36AB8B775D /* PageViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PageViewController.xib; sourceTree = "<group>"; };
 		58F0F35A2DF42AA653381DF2 /* FlowsViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlowsViewInput.swift; sourceTree = "<group>"; };
 		5CABA18E205ED54F931E9E66 /* PageViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
@@ -339,8 +340,9 @@
 		72118F3CFDAB7E3B36E0C746 /* UIKitViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = UIKitViewController.xib; sourceTree = "<group>"; };
 		72FF1D5473D7B0698639D1FF /* Pods-SurfPlaybookTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfPlaybookTests.debug.xcconfig"; path = "Target Support Files/Pods-SurfPlaybookTests/Pods-SurfPlaybookTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7379B961B001E682B19D2417 /* UIKitViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIKitViewOutput.swift; sourceTree = "<group>"; };
+		774B05E858B53C9BC614A59C /* Pods_SurfPlaybookExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SurfPlaybookExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B0E6453EA00F00222B7424E /* PageViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PageViewOutput.swift; sourceTree = "<group>"; };
-		7E1C3827D8C9AB6DF9042487 /* Pods_SurfPlaybookExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SurfPlaybookExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83D5EE07A263B0B1EDA8DF0E /* Pods_SurfPlaybookExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SurfPlaybookExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A83D42FB73C46FF751152BF /* Pods-SurfPlaybookTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfPlaybookTests.release.xcconfig"; path = "Target Support Files/Pods-SurfPlaybookTests/Pods-SurfPlaybookTests.release.xcconfig"; sourceTree = "<group>"; };
 		8E21E94407AB048F4588B3FD /* MainCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		90036EA0265FEF5900B315BA /* ChapterAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterAdapter.swift; sourceTree = "<group>"; };
@@ -504,14 +506,12 @@
 		B15E03553E65B4C229FA27E6 /* SettingsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		B8712EC469DEFBDADC3AFB20 /* FlowsCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlowsCoordinator.swift; sourceTree = "<group>"; };
 		B962A68A169668586197369F /* FlowsModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlowsModuleOutput.swift; sourceTree = "<group>"; };
-		BA400EF9624EB1AF748BF6FF /* Pods_SurfPlaybookExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SurfPlaybookExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB57B4CC77551B75B0726C80 /* AuthModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthModuleConfigurator.swift; sourceTree = "<group>"; };
 		BD01A9D285AED508B893E26E /* ChapterModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ChapterModuleConfigurator.swift; sourceTree = "<group>"; };
 		C10F0A8DFA3DF445FB39782E /* ChapterModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ChapterModuleInput.swift; sourceTree = "<group>"; };
 		C83341D881ED3F494E99C18D /* TabBarModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarModuleInput.swift; sourceTree = "<group>"; };
 		CC59CF316071B9FA15D726A5 /* MainModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainModuleOutput.swift; sourceTree = "<group>"; };
 		D179BBB1B51D8593020ACD64 /* SettingsModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsModuleInput.swift; sourceTree = "<group>"; };
-		D1E49CE830032A6C005B119B /* Pods_SurfPlaybook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SurfPlaybook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D21ACEEDD94E93DEB325A6E3 /* MainModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainModuleInput.swift; sourceTree = "<group>"; };
 		D4753B38BEA02907D28E6B39 /* FlowsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlowsViewController.swift; sourceTree = "<group>"; };
 		D9F55F8F65B17F435DA0FED8 /* Pods-SurfPlaybookExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfPlaybookExample.debug.xcconfig"; path = "Target Support Files/Pods-SurfPlaybookExample/Pods-SurfPlaybookExample.debug.xcconfig"; sourceTree = "<group>"; };
@@ -536,7 +536,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0342EA67275D6E42DAF0D48 /* Pods_SurfPlaybook.framework in Frameworks */,
+				62ADAE05769FB2628DDAFE05 /* Pods_SurfPlaybook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,7 +545,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				90C8B39F2625C55600851B00 /* SurfPlaybook.framework in Frameworks */,
-				93578423C0F9E6B45DF34472 /* Pods_SurfPlaybookTests.framework in Frameworks */,
+				713693A26B1D14884081F6ED /* Pods_SurfPlaybookTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,7 +554,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				90C8B4482625EA4200851B00 /* SurfPlaybook.framework in Frameworks */,
-				B77C7F879C24B65721D0380F /* Pods_SurfPlaybookExample.framework in Frameworks */,
+				C5BFD267266BD532A427275C /* Pods_SurfPlaybookExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,7 +562,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				959D6F1F6AC03D990EF54A89 /* Pods_SurfPlaybookExampleTests.framework in Frameworks */,
+				E577BB06836773D5C4936B69 /* Pods_SurfPlaybookExampleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1199,10 +1199,10 @@
 		90C8B4472625EA4200851B00 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D1E49CE830032A6C005B119B /* Pods_SurfPlaybook.framework */,
-				BA400EF9624EB1AF748BF6FF /* Pods_SurfPlaybookExample.framework */,
-				7E1C3827D8C9AB6DF9042487 /* Pods_SurfPlaybookExampleTests.framework */,
-				17A9FF310115EC4E63B82CA2 /* Pods_SurfPlaybookTests.framework */,
+				307314F97EFCB60C3CD16848 /* Pods_SurfPlaybook.framework */,
+				83D5EE07A263B0B1EDA8DF0E /* Pods_SurfPlaybookExample.framework */,
+				774B05E858B53C9BC614A59C /* Pods_SurfPlaybookExampleTests.framework */,
+				548197E36C935591BFB83B3E /* Pods_SurfPlaybookTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
