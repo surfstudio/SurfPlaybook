@@ -1,8 +1,12 @@
 # Changelog
 
+## 1.5.0
+
+- `CellConfigurable` протокол переименован на `PlaybookCellConfigurable`, чтобы исключить конфликт имен с протоколом из `RDDM` [#14](https://github.com/surfstudio/SurfPlaybook/pull/14)
+
 ## 1.4.0
 
-- Поправлен код для TableViewCellContainer, теперь можно работать с отображением ячеек из SPM-пакетов [#12](https://github.com/surfstudio/SurfPlaybook/pull/13)
+- Поправлен код для TableViewCellContainer, теперь можно работать с отображением ячеек из SPM-пакетов [#13](https://github.com/surfstudio/SurfPlaybook/pull/13)
 
 ## 1.3.1
 

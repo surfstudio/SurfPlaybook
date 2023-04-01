@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>PlaybookFlowCoordinator Protocol Reference</title>
+    <title>PlaybookCellConfigurable Protocol Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -13,8 +13,8 @@
     <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
-    <a name="//apple_ref/swift/Protocol/PlaybookFlowCoordinator" class="dashAnchor"></a>
-    <a title="PlaybookFlowCoordinator Protocol Reference"></a>
+    <a name="//apple_ref/swift/Protocol/PlaybookCellConfigurable" class="dashAnchor"></a>
+    <a title="PlaybookCellConfigurable Protocol Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">SurfPlaybook 1.5.0 Docs</a> (57% documented)</p>
@@ -29,7 +29,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">SurfPlaybook Reference</a>
         <img id="carat" src="../img/carat.png" alt=""/>
-        PlaybookFlowCoordinator Protocol Reference
+        PlaybookCellConfigurable Protocol Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -114,27 +114,16 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>PlaybookFlowCoordinator</h1>
+            <h1>PlaybookCellConfigurable</h1>
               <div class="declaration">
                 <div class="language">
                   
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">PlaybookFlowCoordinator</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">PlaybookCellConfigurable</span> <span class="p">:</span> <span class="kt">UITableViewCell</span></code></pre>
 
                 </div>
               </div>
-            <p>В плейбуке присутствует возможность показа какого либо экрана приложения,
-либо запуска целого flow приложения.
-Данный протокол предназначен для объектов, способных это сделать.</p>
-
-<p>По сути, объект, реализующий данный протокол, может вести в любое место разрабатываемого приложения,
-для которого реализуется playbook. Внутри вы не ограничены в рамках выбора архитектуры.</p>
-
-<p>Изначально преследовалась следующая цель - дать возможность задания точки входа
-на любой экран разрабатываемого приложения, для которого реализуется playbook.
-Что поможет при отладке/разработке новых экранов.
-Также данный механизм может быть применен для реализации встроенных в playbook экранов playground-ов,
-на которых разработчики могли бы тестировать, например, верстку новых UI-компонентов,
-без интеграции их в разрабатываемое приложение.</p>
+            <p>В случае, если ячейка находится в SPM-пакете,
+необходимо подписать ее под протокол и указать Bundle.module</p>
 
           </section>
           <section class="section task-group-section">
@@ -143,79 +132,32 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12SurfPlaybook0B15FlowCoordinatorP2idSSvp"></a>
-                    <a name="//apple_ref/swift/Property/id" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12SurfPlaybook0B15FlowCoordinatorP2idSSvp">id</a>
+                    <a name="/s:12SurfPlaybook0B16CellConfigurableP10cellBundleSo8NSBundleCSgyFZ"></a>
+                    <a name="//apple_ref/swift/Method/cellBundle()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SurfPlaybook0B16CellConfigurableP10cellBundleSo8NSBundleCSgyFZ">cellBundle()</a>
                     </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Идентификатор абстрактного координатора,
-должен быть уникальным для всех подобных объектов внутри playbook-а.</p>
+                        <p>Undocumented</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        <p>Undocumented</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:12SurfPlaybook0B15FlowCoordinatorP4nameSSvp"></a>
-                    <a name="//apple_ref/swift/Property/name" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12SurfPlaybook0B15FlowCoordinatorP4nameSSvp">name</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Название координатора, будет отображено на UI</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:12SurfPlaybook0B15FlowCoordinatorP4typeAA0cD4TypeOvp"></a>
-                    <a name="//apple_ref/swift/Property/type" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12SurfPlaybook0B15FlowCoordinatorP4typeAA0cD4TypeOvp">type</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Тип координатора, подробнее объяснение смотреть в <code><a href="../Enums/FlowCoordinatorType.html">FlowCoordinatorType</a></code></p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">type</span><span class="p">:</span> <span class="kt"><a href="../Enums/FlowCoordinatorType.html">FlowCoordinatorType</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">cellBundle</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bundle</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>

@@ -23,189 +23,189 @@
     },
     {
       "file": "/Users/chausov/Documents/SurfProjects/github/trash/SurfPlaybook/SurfPlaybook/Playbook/Core/Customization/ColorsConfig.swift",
-      "line": 21,
+      "line": 22,
       "symbol": "ColorsConfig.Main",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chausov/Documents/SurfProjects/github/trash/SurfPlaybook/SurfPlaybook/Playbook/Core/Customization/ColorsConfig.swift",
-      "line": 37,
+      "line": 38,
       "symbol": "ColorsConfig.Text",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chausov/Documents/SurfProjects/github/trash/SurfPlaybook/SurfPlaybook/Playbook/Core/Customization/ColorsConfig.swift",
-      "line": 46,
+      "line": 47,
       "symbol": "ColorsConfig.NavigationBar",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chausov/Documents/SurfProjects/github/trash/SurfPlaybook/SurfPlaybook/Playbook/Core/Customization/ColorsConfig.swift",
-      "line": 47,
+      "line": 48,
       "symbol": "ColorsConfig.NavigationBar.text",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chausov/Documents/SurfProjects/github/trash/SurfPlaybook/SurfPlaybook/Playbook/Core/Customization/ColorsConfig.swift",
-      "line": 48,
+      "line": 49,
       "symbol": "ColorsConfig.NavigationBar.tint",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chausov/Documents/SurfProjects/github/trash/SurfPlaybook/SurfPlaybook/Playbook/Core/Customization/ColorsConfig.swift",
-      "line": 49,
+      "line": 50,
       "symbol": "ColorsConfig.NavigationBar.background",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chausov/Documents/SurfProjects/github/trash/SurfPlaybook/SurfPlaybook/Playbook/Core/Customization/ColorsConfig.swift",
-      "line": 51,
+      "line": 52,
       "symbol": "ColorsConfig.TabBar",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chausov/Documents/SurfProjects/github/trash/SurfPlaybook/SurfPlaybook/Playbook/Core/Customization/ColorsConfig.swift",
-      "line": 52,
+      "line": 53,
       "symbol": "ColorsConfig.TabBar.itemTint",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chausov/Documents/SurfProjects/github/trash/SurfPlaybook/SurfPlaybook/Playbook/Core/Customization/ColorsConfig.swift",
-      "line": 53,
+      "line": 54,
       "symbol": "ColorsConfig.TabBar.selectedItemTint",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chausov/Documents/SurfProjects/github/trash/SurfPlaybook/SurfPlaybook/Playbook/Core/Customization/ColorsConfig.swift",
-      "line": 54,
+      "line": 55,
       "symbol": "ColorsConfig.TabBar.background",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chausov/Documents/SurfProjects/github/trash/SurfPlaybook/SurfPlaybook/Playbook/Core/Customization/ColorsConfig.swift",
-      "line": 55,
+      "line": 56,
       "symbol": "ColorsConfig.TabBar.separator",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chausov/Documents/SurfProjects/github/trash/SurfPlaybook/SurfPlaybook/Playbook/Core/Customization/ColorsConfig.swift",
-      "line": 57,
+      "line": 58,
       "symbol": "ColorsConfig.SearchBar",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chausov/Documents/SurfProjects/github/trash/SurfPlaybook/SurfPlaybook/Playbook/Core/Customization/ColorsConfig.swift",
-      "line": 58,
+      "line": 59,
       "symbol": "ColorsConfig.SearchBar.container",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chausov/Documents/SurfProjects/github/trash/SurfPlaybook/SurfPlaybook/Playbook/Core/Customization/ColorsConfig.swift",
-      "line": 59,
+      "line": 60,
       "symbol": "ColorsConfig.SearchBar.text",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chausov/Documents/SurfProjects/github/trash/SurfPlaybook/SurfPlaybook/Playbook/Core/Customization/ColorsConfig.swift",
-      "line": 60,
+      "line": 61,
       "symbol": "ColorsConfig.SearchBar.placeholder",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chausov/Documents/SurfProjects/github/trash/SurfPlaybook/SurfPlaybook/Playbook/Core/Customization/ColorsConfig.swift",
-      "line": 61,
+      "line": 62,
       "symbol": "ColorsConfig.SearchBar.tint",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chausov/Documents/SurfProjects/github/trash/SurfPlaybook/SurfPlaybook/Playbook/Core/Customization/StringsConfig.swift",
-      "line": 19,
+      "line": 20,
       "symbol": "StringsConfig.mainTabTitle",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chausov/Documents/SurfProjects/github/trash/SurfPlaybook/SurfPlaybook/Playbook/Core/Customization/StringsConfig.swift",
-      "line": 20,
+      "line": 21,
       "symbol": "StringsConfig.uiKitTabTitle",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chausov/Documents/SurfProjects/github/trash/SurfPlaybook/SurfPlaybook/Playbook/Core/Customization/StringsConfig.swift",
-      "line": 21,
+      "line": 22,
       "symbol": "StringsConfig.flowsTabTitle",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chausov/Documents/SurfProjects/github/trash/SurfPlaybook/SurfPlaybook/Playbook/Core/Customization/StringsConfig.swift",
-      "line": 22,
+      "line": 23,
       "symbol": "StringsConfig.settingsTabTitle",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chausov/Documents/SurfProjects/github/trash/SurfPlaybook/SurfPlaybook/Playbook/Core/Customization/StringsConfig.swift",
-      "line": 24,
+      "line": 25,
       "symbol": "StringsConfig.searchBarPlaceholder",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chausov/Documents/SurfProjects/github/trash/SurfPlaybook/SurfPlaybook/Playbook/Core/Customization/StringsConfig.swift",
-      "line": 25,
+      "line": 26,
       "symbol": "StringsConfig.emptySearchMessage",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chausov/Documents/SurfProjects/github/trash/SurfPlaybook/SurfPlaybook/Playbook/Core/Customization/StringsConfig.swift",
-      "line": 26,
+      "line": 27,
       "symbol": "StringsConfig.emptyStateMessage",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chausov/Documents/SurfProjects/github/trash/SurfPlaybook/SurfPlaybook/Playbook/Core/Customization/StringsConfig.swift",
-      "line": 27,
+      "line": 28,
       "symbol": "StringsConfig.showAllTitle",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chausov/Documents/SurfProjects/github/trash/SurfPlaybook/SurfPlaybook/Playbook/Core/Customization/StringsConfig.swift",
-      "line": 29,
+      "line": 30,
       "symbol": "StringsConfig.coloredBackgroundName",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chausov/Documents/SurfProjects/github/trash/SurfPlaybook/SurfPlaybook/Playbook/Core/Customization/StringsConfig.swift",
-      "line": 31,
+      "line": 32,
       "symbol": "StringsConfig.cancel",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/chausov/Documents/SurfProjects/github/trash/SurfPlaybook/SurfPlaybook/Playbook/Core/Customization/StringsConfig.swift",
-      "line": 32,
+      "line": 33,
       "symbol": "StringsConfig.done",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
@@ -215,6 +215,20 @@
       "line": 43,
       "symbol": "PlaybookChapter.add(page:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/chausov/Documents/SurfProjects/github/trash/SurfPlaybook/SurfPlaybook/Playbook/Core/Protocols/PlaybookCellConfigurable.swift",
+      "line": 14,
+      "symbol": "PlaybookCellConfigurable.cellBundle()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/chausov/Documents/SurfProjects/github/trash/SurfPlaybook/SurfPlaybook/Playbook/Core/Protocols/PlaybookCellConfigurable.swift",
+      "line": 19,
+      "symbol": "PlaybookCellConfigurable.cellBundle()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
