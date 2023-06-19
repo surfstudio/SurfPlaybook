@@ -1,13 +1,14 @@
 # SurfPlaybook
 
 [![GitHubActions Build Status](https://github.com/surfstudio/SurfPlaybook/workflows/CI/badge.svg)](https://github.com/surfstudio/SurfPlaybook/actions)
-[![Documentation](https://github.com/surfstudio/SurfPlaybook/blob/main/docs/badge.svg)](https://surfstudio.github.io/SurfPlaybook/)
 [![CocoaPods Version](https://img.shields.io/cocoapods/v/SurfPlaybook.svg?style=flat)](https://cocoapods.org/pods/SurfPlaybook)
 [![SPM Compatible](https://img.shields.io/badge/SPM-compatible-blue.svg)](https://github.com/apple/swift-package-manager)
 
 iOS framework for Playbook
 
 [![SurfPlaybook](https://i.ibb.co/DY0GQ1F/1026.png)](https://github.com/surfstudio/SurfPlaybook)
+
+![Документация](https://surfstudio.github.io/SurfPlaybook/)
 
 ## About
 
