@@ -1,19 +1,25 @@
-whitelist_rules:
+only_rules:
     - attributes
     - class_delegate_protocol
     - closing_brace
-    - closure_end_indentation
     - closure_parameter_position
     - closure_spacing
     - collection_alignment
     - colon
     - comma
+    - comment_spacing
+    - computed_accessors_order
     - conditional_returns_on_newline
-    - control_statement
     - convenience_type
+    - contains_over_filter_count
+    - contains_over_first_not_nil
+    - contains_over_range_nil_comparison
+    - control_statement
     - custom_rules
     - cyclomatic_complexity
+    - discouraged_direct_init
     - duplicate_imports
+    - empty_collection_literal
     - empty_count
     - empty_parameters
     - empty_parentheses_with_trailing_closure
@@ -21,13 +27,14 @@ whitelist_rules:
     - explicit_init
     - file_length
     - first_where
+    - for_where
     - force_cast
     - force_try
     - force_unwrapping
     - function_parameter_count
+    - identical_operands
     - implicit_getter
     - implicitly_unwrapped_optional
-    - inert_defer
     - last_where
     - leading_whitespace
     - legacy_cggeometry_functions
@@ -38,27 +45,42 @@ whitelist_rules:
     - line_length
     - literal_expression_end_indentation
     - mark
+    - multiline_arguments
+    - no_space_in_method_call
     - opening_brace
     - operator_usage_whitespace
+    - operator_whitespace
+    - prefer_zero_over_explicit_init
+    - protocol_property_accessors_order
+    - reduce_boolean
     - redundant_discardable_let
-    - redundant_optional_initialization
     - redundant_nil_coalescing
+    - redundant_optional_initialization
+    - redundant_string_enum_value
+    - redundant_type_annotation
     - redundant_void_return
     - return_arrow_whitespace
     - shorthand_operator
     - statement_position
+    - superfluous_else
+    - switch_case_alignment
     - syntactic_sugar
     - todo
-    - toggle_bool
     - trailing_comma
     - trailing_newline
     - trailing_semicolon
     - trailing_whitespace
+    - toggle_bool
+    - unneeded_break_in_switch
     - unused_import
     - unused_optional_binding
     - unused_setter_value
+    - vertical_parameter_alignment
+    - vertical_parameter_alignment_on_call
     - vertical_whitespace
+    - void_function_in_ternary
     - void_return
+    - yoda_condition
 
 disabled_rules: # rule identifiers to exclude from running
 
@@ -66,10 +88,13 @@ opt_in_rules: # some rules are only opt-in
 
 excluded: # paths to ignore during linting. Takes precedence over `included`.
     - fastlane
-    - Pods
     - .bundle
+    - .swiftpm
     - .build
-    - SPM_Example
+    - buildData
+    - UnitTests
+    - Modules/App/Playbook/Documentation
+    - Modules/App/Example/Documentation
 
 custom_rules:
     image_name_initialization: # Disable UIImage init from name
@@ -84,13 +109,6 @@ custom_rules:
         name: "Realm can be used only in services"
         regex: "Realm"
         message: "Realm can be used only in serivces"
-        severity: error
-
-    view_protocol_error:
-        included: ".*ViewOutput.swift|.*ViewInput.swift"
-        name: "Property in view protocol"
-        regex: " var "
-        message: "View protocol should contains only methods"
         severity: error
 
     router_protocol_error:
@@ -147,10 +165,15 @@ custom_rules:
     swiftgen_colors:
         name: "SwiftGen Colors"
         regex: '(UIColor(\.init)?|#colorLiteral)\(((red|displayP3Red):.+?,green:.+?,blue:.+?,alpha:.+?)|(white:.+?,alpha:.+?)|(hue:.+?,saturation:.+?,brightness:.+?,alpha:.+?)\)'
-        message: "Use Colors.<color> instead"
+        message: "Use ColorName.<color> instead"
         severity: error
 
-line_length: 145
+    big_conditional_returns_on_newline:
+        name: "Conditional Returns on Newline"
+        message: "Conditional statements should always return on the next line"
+        regex: '(guard|if)[^\n]{40,}return'
+
+line_length: 120
 
 file_length:
     warning: 600

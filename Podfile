@@ -4,7 +4,6 @@ inhibit_all_warnings!
 
 def utils
     pod 'SwiftGen', '6.6.2'
-    pod 'SwiftLint', '0.50.3'
 end
 
 target 'SurfPlaybook' do

@@ -2164,7 +2164,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "Pods/SwiftLint/swiftlint\n";
+			shellScript = "support/swiftlint.sh {SRCROOT}\n";
 		};
 		905509972625F0C200FD86A4 /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
