@@ -9,6 +9,8 @@
 # If you want to automatically update fastlane if a new version is available:
 # update_fastlane
 
+workspace = "SurfPlaybook.xcworkspace"
+
 pod_bundle_id = "ru.surfstudio.playbook.SurfPlaybook"
 pod_scheme = "SurfPlaybook"
 pod_target = "SurfPlaybook"
@@ -36,6 +38,7 @@ platform :ios do
   "
   lane :build do |options|
     xcodebuild(
+      workspace: workspace,
       scheme: pod_scheme,
       configuration: "Debug",
       clean: options[:clean],
@@ -48,6 +51,7 @@ platform :ios do
 
   lane :example_build do |options|
     xcodebuild(
+      workspace: workspace,
       scheme: example_scheme,
       configuration: "Debug",
       clean: options[:clean],
