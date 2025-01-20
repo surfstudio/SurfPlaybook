@@ -8,7 +8,7 @@ iOS framework for Playbook
 
 [![SurfPlaybook](https://i.ibb.co/DY0GQ1F/1026.png)](https://github.com/surfstudio/SurfPlaybook)
 
-![Документация](https://surfstudio.github.io/SurfPlaybook/)
+![Документация](https://surfstudio.github.io/SurfPlaybook/documentation/surfplaybook)
 
 ## About
 
