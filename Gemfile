@@ -8,7 +8,7 @@ git_source(:github) do |repo_name|
 end if Gem::Version.new(Bundler::VERSION) < Gem::Version.new('2')
 
 gem "fastlane", "2.220.0"
-gem 'cocoapods', "1.11.3"
+gem 'cocoapods', "1.16.2"
 gem 'xcpretty', "0.3.0"
 gem 'generamba'
 
