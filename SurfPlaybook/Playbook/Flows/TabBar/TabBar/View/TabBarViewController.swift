@@ -22,7 +22,7 @@ final class TabBarViewController: UITabBarController {
 
     // MARK: - Private Properties
 
-    private var isSelectableStackEmpty: Bool = true
+    private var isSelectableStackEmpty = true
 
     // MARK: - UIViewController
 
@@ -59,7 +59,8 @@ extension TabBarViewController: TabBarViewInput {
 
 extension TabBarViewController: UITabBarControllerDelegate {
 
-    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+    func tabBarController(_ tabBarController: UITabBarController,
+                          shouldSelect viewController: UIViewController) -> Bool {
         let navigationController = viewController as? UINavigationController
         var isStackEmpty = true
         if let isEmpty = navigationController?.viewControllers.isEmpty, !isEmpty {

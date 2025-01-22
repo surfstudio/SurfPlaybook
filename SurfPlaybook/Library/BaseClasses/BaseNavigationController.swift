@@ -66,7 +66,9 @@ private extension BaseNavigationController {
 
 extension BaseNavigationController: UINavigationControllerDelegate {
 
-    func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
+    func navigationController(_ navigationController: UINavigationController,
+                              willShow viewController: UIViewController,
+                              animated: Bool) {
         // убираем слово "назад" из кнопки со стрелкой
         if #available(iOS 14.0, *) {
             // настраиваем имя экрана в списке, который открывается по лонгтапу по стрелке навбара
