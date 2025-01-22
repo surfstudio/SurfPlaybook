@@ -14,7 +14,7 @@ build:
 	bundle exec fastlane build clean:true
 
 spm_build:
-	swift build -Xswiftc "-sdk" -Xswiftc "`xcrun --sdk iphonesimulator --show-sdk-path`" -Xswiftc "-target" -Xswiftc "x86_64-apple-ios18.0-simulator" -Xswiftc "-lswiftUIKit"
+	bundle exec fastlane spm_build clean:true
 	
 example_build:
 	cd Example
