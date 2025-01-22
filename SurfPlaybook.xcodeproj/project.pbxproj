@@ -2183,7 +2183,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+			shellScript = "support/swiftlint.sh {SRCROOT}\n";
 		};
 		905509F62625FD5700FD86A4 /* SwiftGen */ = {
 			isa = PBXShellScriptBuildPhase;
