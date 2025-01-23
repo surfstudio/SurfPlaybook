@@ -26,7 +26,7 @@ final class TableCellsChapter {
 private extension TableCellsChapter {
 
     var titleCell: PlaybookPage {
-        return PlaybookPage(name: "TitleTableViewCell", description: nil) { () -> UIView in
+        return PlaybookPage(name: "TitleTableViewCell", description: nil) { _ in
             let container = TableViewCellContainer<TitleTableViewCell>(width: Constants.cellWidth) { (cell, _) in
                 cell.configure(with: L10n.ListCellPreset.Content.title)
             }

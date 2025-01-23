@@ -44,7 +44,7 @@ extension PageViewController: PageViewInput {
         guard let preset = page.presets.first(where: { $0.preset.title == preset.title }) else {
             return
         }
-        configureContent(contentView: preset.config())
+        configureContent(contentView: preset.config(self))
     }
 
     func updateBackgroundAppearance(isColored: Bool) {
@@ -59,7 +59,7 @@ private extension PageViewController {
 
     func configureAppearance(with page: PlaybookPage) {
         configureNavigationBar(with: page)
-        configureContent(contentView: page.config())
+        configureContent(contentView: page.config(self))
         configureGesture()
     }
 
