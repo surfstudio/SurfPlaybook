@@ -69,8 +69,19 @@ public class CollectionViewCellContainer<Cell: PlaybookCollectionCell>: UIView, 
             collectionView.registerNib(Cell.self, bundle: Cell.cellBundle() ?? Bundle.shared(for: Cell.self))
         }
 
-        frame = .init(x: .zero, y: .zero, width: UIScreen.main.bounds.width, height: containerHeight)
+        translatesAutoresizingMaskIntoConstraints = false
         addSubview(collectionView)
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
+
+        NSLayoutConstraint.activate([
+            collectionView.topAnchor.constraint(equalTo: topAnchor),
+            collectionView.bottomAnchor.constraint(equalTo: bottomAnchor),
+            collectionView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            collectionView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            collectionView.heightAnchor.constraint(equalToConstant: containerHeight),
+            widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width),
+            heightAnchor.constraint(greaterThanOrEqualToConstant: 1.0)
+        ])
     }
 
     required init?(coder aDecoder: NSCoder) {
