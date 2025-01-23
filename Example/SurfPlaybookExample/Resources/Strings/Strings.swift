@@ -32,6 +32,18 @@ internal enum L10n {
     /// белый
     internal static let white = L10n.tr("Localizable", "ColorsPage.white", fallback: "белый")
   }
+  internal enum DishCellPreset {
+    internal enum Small {
+      /// Обычная ячейка блюда
+      internal static let `default` = L10n.tr("Localizable", "DishCellPreset.Small.default", fallback: "Обычная ячейка блюда")
+      /// Акцентная ячейка новинки
+      internal static let new = L10n.tr("Localizable", "DishCellPreset.Small.new", fallback: "Акцентная ячейка новинки")
+      internal enum Title {
+        /// Новинка
+        internal static let new = L10n.tr("Localizable", "DishCellPreset.Small.Title.new", fallback: "Новинка")
+      }
+    }
+  }
   internal enum List {
     /// описание
     internal static let subtitle = L10n.tr("Localizable", "List.subtitle", fallback: "описание")

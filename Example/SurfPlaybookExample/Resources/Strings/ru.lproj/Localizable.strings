@@ -19,6 +19,10 @@
 "List.Section.first" = "Первая секция";
 "List.Section.second" = "Вторая секция";
 
+"DishCellPreset.Small.default" = "Обычная ячейка блюда";
+"DishCellPreset.Small.new" = "Акцентная ячейка новинки";
+"DishCellPreset.Small.Title.new" = "Новинка";
+
 "ListCellPreset.Title.name" = "Заголовок";
 "ListCellPreset.TitleAndArrow.name" = "Заголовок со стрелкой";
 "ListCellPreset.Full.name" = "Полный вид";
