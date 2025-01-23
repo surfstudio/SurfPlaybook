@@ -26,7 +26,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 
         Playbook.shared
             .add(chapter: ControlsChapter().build())
-            .add(chapter: CellsChapter().build())
+            .add(chapter: TableCellsChapter().build())
         Playbook.shared
             .add(uiKitPage: ColorsUIKitPage())
         Playbook.shared

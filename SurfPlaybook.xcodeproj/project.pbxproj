@@ -18,7 +18,7 @@
 		9022F3C026381E28008839A0 /* ControlsChapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9022F3BF26381E28008839A0 /* ControlsChapter.swift */; };
 		9022F3C826381ECF008839A0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9022F3C726381ECF008839A0 /* Constants.swift */; };
 		9022F3CE26381F28008839A0 /* UITextFieldPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9022F3CD26381F28008839A0 /* UITextFieldPage.swift */; };
-		9022F3DD263820B7008839A0 /* CellsChapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9022F3DC263820B7008839A0 /* CellsChapter.swift */; };
+		9022F3DD263820B7008839A0 /* TableCellsChapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9022F3DC263820B7008839A0 /* TableCellsChapter.swift */; };
 		9022F3E626382170008839A0 /* ListCellPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9022F3E526382170008839A0 /* ListCellPage.swift */; };
 		9028FC9D2636D9AF003257B5 /* ListAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9028FC9C2636D9AF003257B5 /* ListAdapter.swift */; };
 		9028FCA72636DA68003257B5 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9028FCA52636DA68003257B5 /* ListTableViewCell.swift */; };
@@ -116,7 +116,7 @@
 		9022F3BF26381E28008839A0 /* ControlsChapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsChapter.swift; sourceTree = "<group>"; };
 		9022F3C726381ECF008839A0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9022F3CD26381F28008839A0 /* UITextFieldPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldPage.swift; sourceTree = "<group>"; };
-		9022F3DC263820B7008839A0 /* CellsChapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellsChapter.swift; sourceTree = "<group>"; };
+		9022F3DC263820B7008839A0 /* TableCellsChapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellsChapter.swift; sourceTree = "<group>"; };
 		9022F3E526382170008839A0 /* ListCellPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCellPage.swift; sourceTree = "<group>"; };
 		9028FC9C2636D9AF003257B5 /* ListAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAdapter.swift; sourceTree = "<group>"; };
 		9028FCA52636DA68003257B5 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
@@ -255,13 +255,13 @@
 			path = Pages;
 			sourceTree = "<group>";
 		};
-		9022F3DB26382095008839A0 /* CellsChapter */ = {
+		9022F3DB26382095008839A0 /* TableCellsChapter */ = {
 			isa = PBXGroup;
 			children = (
 				9022F3E426382166008839A0 /* Pages */,
-				9022F3DC263820B7008839A0 /* CellsChapter.swift */,
+				9022F3DC263820B7008839A0 /* TableCellsChapter.swift */,
 			);
-			path = CellsChapter;
+			path = TableCellsChapter;
 			sourceTree = "<group>";
 		};
 		9022F3E426382166008839A0 /* Pages */ = {
@@ -321,7 +321,7 @@
 		903600BB263177C200265BB1 /* Chapters */ = {
 			isa = PBXGroup;
 			children = (
-				9022F3DB26382095008839A0 /* CellsChapter */,
+				9022F3DB26382095008839A0 /* TableCellsChapter */,
 				9022F3BE26381DEB008839A0 /* ControlsChapter */,
 			);
 			path = Chapters;
@@ -903,7 +903,7 @@
 				90F3DC67262DD99E00220B28 /* NSObject.swift in Sources */,
 				903601382631C24F00265BB1 /* CommonButtonStyle.swift in Sources */,
 				90DE37A226284F8F003D3DD5 /* Strings.swift in Sources */,
-				9022F3DD263820B7008839A0 /* CellsChapter.swift in Sources */,
+				9022F3DD263820B7008839A0 /* TableCellsChapter.swift in Sources */,
 				90C8B3FE2625C6B700851B00 /* AppDelegate.swift in Sources */,
 				F951A6EFAF09E0F93D91C9A4 /* AuthModuleConfigurator.swift in Sources */,
 				AF3BABAD94BDA4035C6AA292 /* AuthPresenter.swift in Sources */,
