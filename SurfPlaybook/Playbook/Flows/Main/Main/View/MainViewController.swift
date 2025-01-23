@@ -114,6 +114,8 @@ private extension MainViewController {
             self?.output?.showPage(page)
         }
         adapter?.onChapterSelect = { [weak self] chapter in
+            self?.closeKeyboard()
+            self?.closeSearch()
             self?.output?.showChapter(chapter)
         }
     }
