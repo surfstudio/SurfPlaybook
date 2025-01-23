@@ -44,8 +44,8 @@ private enum DishCellFactoryPreset: StringRepresentable, CaseIterable {
 @available(iOS 13.0, *)
 private enum DishCellFactory {
 
-    static func generate(for preset: DishCellFactoryPreset) -> (() -> UIView) {
-        return { () -> UIView in
+    static func generate(for preset: DishCellFactoryPreset) -> ((UIViewController?) -> UIView) {
+        return { _ in
             let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.45),
                                                   heightDimension: .estimated(224))
             return CollectionViewCellContainer<DishCell>(

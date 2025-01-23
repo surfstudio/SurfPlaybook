@@ -14,12 +14,12 @@ extension TableCellsChapter {
     var listCell: PlaybookPage {
         var page = PlaybookPage(name: "ListTableViewCell",
                                 description: nil,
-                                config: ListCellFactory().generate(for: .title))
+                                config: ListCellFactory.generate(for: .title))
         page.presets = [
-            (ListCellFactoryPreset.title, ListCellFactory().generate(for: .title)),
-            (ListCellFactoryPreset.titleAndArrow, ListCellFactory().generate(for: .titleAndArrow)),
-            (ListCellFactoryPreset.full, ListCellFactory().generate(for: .full)),
-            (ListCellFactoryPreset.fullAndArrow, ListCellFactory().generate(for: .fullAndArrow))
+            (ListCellFactoryPreset.title, ListCellFactory.generate(for: .title)),
+            (ListCellFactoryPreset.titleAndArrow, ListCellFactory.generate(for: .titleAndArrow)),
+            (ListCellFactoryPreset.full, ListCellFactory.generate(for: .full)),
+            (ListCellFactoryPreset.fullAndArrow, ListCellFactory.generate(for: .fullAndArrow))
         ]
         return page
     }
@@ -46,10 +46,10 @@ private enum ListCellFactoryPreset: StringRepresentable {
     }
 }
 
-private final class ListCellFactory {
+private enum ListCellFactory {
 
-    func generate(for preset: ListCellFactoryPreset) -> (() -> UIView) {
-        return { () -> UIView in
+    static func generate(for preset: ListCellFactoryPreset) -> ((UIViewController?) -> UIView) {
+        return { _ in
             let container = TableViewCellContainer<ListTableViewCell>(width: Constants.cellWidth) { (cell, _) in
                 switch preset {
                 case .title:

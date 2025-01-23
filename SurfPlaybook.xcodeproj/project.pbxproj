@@ -10,6 +10,16 @@
 		018D47932D422C670016EC16 /* CollectionCellsChapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018D47922D422C600016EC16 /* CollectionCellsChapter.swift */; };
 		018D47952D422D830016EC16 /* DishCellPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018D47942D422D7E0016EC16 /* DishCellPage.swift */; };
 		018D47992D4236EE0016EC16 /* DishCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018D47982D4236EA0016EC16 /* DishCell.swift */; };
+		018D479E2D4266100016EC16 /* OTPField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018D479D2D42660C0016EC16 /* OTPField.swift */; };
+		018D47A02D4267620016EC16 /* Shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018D479F2D4267600016EC16 /* Shake.swift */; };
+		018D47A22D4267F50016EC16 /* TextFieldState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018D47A12D4267EF0016EC16 /* TextFieldState.swift */; };
+		018D47A42D4268BC0016EC16 /* InputFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018D47A32D4268B50016EC16 /* InputFormatter.swift */; };
+		018D47A62D4268CD0016EC16 /* TextFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018D47A52D4268C90016EC16 /* TextFormatter.swift */; };
+		018D47A82D426A180016EC16 /* OTPFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018D47A72D426A100016EC16 /* OTPFieldStyle.swift */; };
+		018D47AA2D426A730016EC16 /* RoundedOTPFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018D47A92D426A6B0016EC16 /* RoundedOTPFieldStyle.swift */; };
+		018D47AC2D426D280016EC16 /* OTPFieldPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018D47AB2D426D230016EC16 /* OTPFieldPage.swift */; };
+		018D47AE2D4272BE0016EC16 /* UIViewController+SUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018D47AD2D4272B00016EC16 /* UIViewController+SUI.swift */; };
+		018D47B22D42731E0016EC16 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018D47B12D42731B0016EC16 /* UIView.swift */; };
 		1F1A6F19A6EFEDE4AA0333B5 /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A45FD040B3282178E3DD55BC /* ListViewController.xib */; };
 		2CDEA8264584E5BBBAB85632 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78A812F1F935ED653461167 /* ListViewController.swift */; };
 		2CE875C0ACA7F0CC7D9028AC /* AuthModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D02728BEF3D5590BA37F167 /* AuthModuleOutput.swift */; };
@@ -104,6 +114,16 @@
 		018D47922D422C600016EC16 /* CollectionCellsChapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCellsChapter.swift; sourceTree = "<group>"; };
 		018D47942D422D7E0016EC16 /* DishCellPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCellPage.swift; sourceTree = "<group>"; };
 		018D47982D4236EA0016EC16 /* DishCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCell.swift; sourceTree = "<group>"; };
+		018D479D2D42660C0016EC16 /* OTPField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPField.swift; sourceTree = "<group>"; };
+		018D479F2D4267600016EC16 /* Shake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shake.swift; sourceTree = "<group>"; };
+		018D47A12D4267EF0016EC16 /* TextFieldState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldState.swift; sourceTree = "<group>"; };
+		018D47A32D4268B50016EC16 /* InputFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputFormatter.swift; sourceTree = "<group>"; };
+		018D47A52D4268C90016EC16 /* TextFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFormatter.swift; sourceTree = "<group>"; };
+		018D47A72D426A100016EC16 /* OTPFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPFieldStyle.swift; sourceTree = "<group>"; };
+		018D47A92D426A6B0016EC16 /* RoundedOTPFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedOTPFieldStyle.swift; sourceTree = "<group>"; };
+		018D47AB2D426D230016EC16 /* OTPFieldPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPFieldPage.swift; sourceTree = "<group>"; };
+		018D47AD2D4272B00016EC16 /* UIViewController+SUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+SUI.swift"; sourceTree = "<group>"; };
+		018D47B12D42731B0016EC16 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		10AD570C280E9A19977DEE2C /* AuthViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = AuthViewController.xib; sourceTree = "<group>"; };
 		12B323CCC217C991A573CBFC /* ListModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListModuleConfigurator.swift; sourceTree = "<group>"; };
 		18774BA9C8C44B77E2F4C395 /* Pods-SurfPlaybookExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfPlaybookExampleTests.release.xcconfig"; path = "Target Support Files/Pods-SurfPlaybookExampleTests/Pods-SurfPlaybookExampleTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -235,6 +255,20 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		018D479C2D4265EC0016EC16 /* OTPField */ = {
+			isa = PBXGroup;
+			children = (
+				018D47A92D426A6B0016EC16 /* RoundedOTPFieldStyle.swift */,
+				018D47A72D426A100016EC16 /* OTPFieldStyle.swift */,
+				018D47A52D4268C90016EC16 /* TextFormatter.swift */,
+				018D47A32D4268B50016EC16 /* InputFormatter.swift */,
+				018D47A12D4267EF0016EC16 /* TextFieldState.swift */,
+				018D479F2D4267600016EC16 /* Shake.swift */,
+				018D479D2D42660C0016EC16 /* OTPField.swift */,
+			);
+			path = OTPField;
+			sourceTree = "<group>";
+		};
 		09FD591E11361B9D6F4D46FC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -289,6 +323,7 @@
 		9022F3CC26381F15008839A0 /* Pages */ = {
 			isa = PBXGroup;
 			children = (
+				018D47AB2D426D230016EC16 /* OTPFieldPage.swift */,
 				9022F3CD26381F28008839A0 /* UITextFieldPage.swift */,
 			);
 			path = Pages;
@@ -370,6 +405,7 @@
 		903600C72631796B00265BB1 /* Reusable */ = {
 			isa = PBXGroup;
 			children = (
+				018D479C2D4265EC0016EC16 /* OTPField */,
 				903601292631C1D300265BB1 /* CommonButton */,
 			);
 			path = Reusable;
@@ -590,6 +626,8 @@
 		90F3DC58262DD96400220B28 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				018D47B12D42731B0016EC16 /* UIView.swift */,
+				018D47AD2D4272B00016EC16 /* UIViewController+SUI.swift */,
 				90F3DCB3262DE3A200220B28 /* UIApplication.swift */,
 				9036012F2631C21900265BB1 /* UIImage.swift */,
 				90F3DC59262DD97300220B28 /* UITableView.swift */,
@@ -918,10 +956,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				018D47B22D42731E0016EC16 /* UIView.swift in Sources */,
 				9028FCB52636DDB8003257B5 /* TitleTableViewCell.swift in Sources */,
 				903600F72631A96200265BB1 /* BaseNavigationController.swift in Sources */,
 				90F3DCB4262DE3A200220B28 /* UIApplication.swift in Sources */,
+				018D47A22D4267F50016EC16 /* TextFieldState.swift in Sources */,
 				9022F3C026381E28008839A0 /* ControlsChapter.swift in Sources */,
+				018D47A42D4268BC0016EC16 /* InputFormatter.swift in Sources */,
 				90F3DCA7262DE37000220B28 /* Presentable.swift in Sources */,
 				9022F3CE26381F28008839A0 /* UITextFieldPage.swift in Sources */,
 				90F3DC62262DD97C00220B28 /* UITableViewCell.swift in Sources */,
@@ -931,7 +972,9 @@
 				90F3DCA1262DE34600220B28 /* MainRouter.swift in Sources */,
 				903600FF2631A98200265BB1 /* String.swift in Sources */,
 				018D47992D4236EE0016EC16 /* DishCell.swift in Sources */,
+				018D47A62D4268CD0016EC16 /* TextFormatter.swift in Sources */,
 				90DE378D26284F6E003D3DD5 /* Colors.swift in Sources */,
+				018D479E2D4266100016EC16 /* OTPField.swift in Sources */,
 				9022F3E626382170008839A0 /* ListCellPage.swift in Sources */,
 				90F3DC2C262DD42400220B28 /* ColorsUIKitPage.swift in Sources */,
 				90F3DCAF262DE37800220B28 /* Router.swift in Sources */,
@@ -946,6 +989,7 @@
 				903601382631C24F00265BB1 /* CommonButtonStyle.swift in Sources */,
 				90DE37A226284F8F003D3DD5 /* Strings.swift in Sources */,
 				9022F3DD263820B7008839A0 /* TableCellsChapter.swift in Sources */,
+				018D47A82D426A180016EC16 /* OTPFieldStyle.swift in Sources */,
 				90C8B3FE2625C6B700851B00 /* AppDelegate.swift in Sources */,
 				F951A6EFAF09E0F93D91C9A4 /* AuthModuleConfigurator.swift in Sources */,
 				AF3BABAD94BDA4035C6AA292 /* AuthPresenter.swift in Sources */,
@@ -959,6 +1003,7 @@
 				9028FCC72636DF90003257B5 /* StringAttributes.swift in Sources */,
 				9028FCAD2636DCEE003257B5 /* ListTableViewCellModel.swift in Sources */,
 				903601462631C2A900265BB1 /* UITextField+Styles.swift in Sources */,
+				018D47AE2D4272BE0016EC16 /* UIViewController+SUI.swift in Sources */,
 				903601302631C21900265BB1 /* UIImage.swift in Sources */,
 				A265E2CBCB5810207133A038 /* AuthViewOutput.swift in Sources */,
 				018D47952D422D830016EC16 /* DishCellPage.swift in Sources */,
@@ -968,10 +1013,13 @@
 				7A61FFF46E32419DF6C19503 /* ListModuleInput.swift in Sources */,
 				F477B8F5D283BEEFFDF25471 /* ListModuleOutput.swift in Sources */,
 				905165D52636EA05002371F3 /* ListFlowCoordinator.swift in Sources */,
+				018D47AC2D426D280016EC16 /* OTPFieldPage.swift in Sources */,
 				2CDEA8264584E5BBBAB85632 /* ListViewController.swift in Sources */,
 				9022F3C826381ECF008839A0 /* Constants.swift in Sources */,
+				018D47A02D4267620016EC16 /* Shake.swift in Sources */,
 				018D47932D422C670016EC16 /* CollectionCellsChapter.swift in Sources */,
 				AF327B2F1070F1E2C58E0124 /* ListViewInput.swift in Sources */,
+				018D47AA2D426A730016EC16 /* RoundedOTPFieldStyle.swift in Sources */,
 				F1D633C89567F0D8E0ABEC3F /* ListViewOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

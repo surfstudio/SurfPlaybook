@@ -14,10 +14,10 @@ extension ControlsChapter {
     var textField: PlaybookPage {
         var page = PlaybookPage(name: "UITextField",
                                 description: nil,
-                                config: UITextFieldFactory().generate(for: .email))
+                                config: UITextFieldFactory.generate(for: .email))
         page.presets = [
-            (UITextFieldFactoryPreset.email, UITextFieldFactory().generate(for: .email)),
-            (UITextFieldFactoryPreset.password, UITextFieldFactory().generate(for: .password))
+            (UITextFieldFactoryPreset.email, UITextFieldFactory.generate(for: .email)),
+            (UITextFieldFactoryPreset.password, UITextFieldFactory.generate(for: .password))
         ]
         return page
     }
@@ -47,10 +47,10 @@ private enum UITextFieldFactoryPreset: StringRepresentable {
     }
 }
 
-private final class UITextFieldFactory {
+private enum UITextFieldFactory {
 
-    func generate(for preset: UITextFieldFactoryPreset) -> (() -> UIView) {
-        return { () -> UIView in
+    static func generate(for preset: UITextFieldFactoryPreset) -> ((UIViewController?) -> UIView) {
+        return { _ in
             let textField = UITextField()
             textField.apply(style: preset.style)
             let container = ViewContainer(textField, width: Constants.width, height: 40)

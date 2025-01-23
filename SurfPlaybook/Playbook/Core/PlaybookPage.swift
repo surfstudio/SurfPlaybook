@@ -33,9 +33,9 @@ public struct PlaybookPage {
 
     let name: String
     let description: String?
-    let config: (() -> UIView)
+    let config: ((UIViewController?) -> UIView)
     var snapshot: UIImage? {
-        let view = config()
+        let view = config(UIApplication.rootView)
         view.layoutIfNeeded()
         return view.snapshot()
     }
@@ -50,7 +50,7 @@ public struct PlaybookPage {
     ///     это просто `название состояния`
     /// - config - замыкание, при вызове которого строится нужное состояние UI-компонента
     ///     и возвращается UIView, его содержащее
-    public var presets: [(preset: StringRepresentable, config: (() -> UIView))] = []
+    public var presets: [(preset: StringRepresentable, config: ((UIViewController?) -> UIView))] = []
 
     // MARK: - Public Initialization
 
@@ -64,7 +64,7 @@ public struct PlaybookPage {
     ///         и возвращаться UIView, его содержащее
     public init(name: String,
                 description: String?,
-                config: @escaping (() -> UIView)) {
+                config: @escaping ((UIViewController?) -> UIView)) {
         self.name = name
         self.description = description
         self.config = config
