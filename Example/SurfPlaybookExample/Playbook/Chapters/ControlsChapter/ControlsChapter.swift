@@ -19,7 +19,8 @@ final class ControlsChapter {
 
         if #available(iOS 15, *) {
             chapter
-                .add(page: otpField)
+                .add(page: horizontalPinView)
+                .add(page: verticalPinView)
         }
 
         return chapter
