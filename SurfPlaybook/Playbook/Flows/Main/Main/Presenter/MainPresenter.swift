@@ -64,7 +64,7 @@ extension MainPresenter: MainViewOutput {
 
         let filteredChapters = chaptersModels
             .map { ChapterModel(name: $0.name,
-                                pages: $0.pages.filter { $0.name.containsCaseInsensitive(string: text) })
+                                pages: $0.pages.filter { $0.isContain(text: text) })
             }
             .filter { !$0.pages.isEmpty }
         if filteredChapters.isEmpty {

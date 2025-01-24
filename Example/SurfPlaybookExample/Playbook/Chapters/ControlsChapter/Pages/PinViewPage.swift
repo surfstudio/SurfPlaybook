@@ -13,8 +13,8 @@ import SwiftUI
 extension ControlsChapter {
 
     var horizontalPinView: PlaybookPage {
-        var page = PlaybookPage(name: "Horizontal Pins",
-                                description: nil,
+        var page = PlaybookPage(name: "SUI Horizontal Pins",
+                                description: "Горизонтальные анимированные пины",
                                 config: HPinViewFactory.generate(for: .four))
 
         page.presets = PinViewFactoryPreset.allCases.map { preset in
@@ -25,8 +25,8 @@ extension ControlsChapter {
     }
 
     var verticalPinView: PlaybookPage {
-        var page = PlaybookPage(name: "Vertical Pins",
-                                description: nil,
+        var page = PlaybookPage(name: "SUI Vertical Pins",
+                                description: "Вертикальные анимированные пины",
                                 config: VPinViewFactory.generate(for: .four))
 
         page.presets = PinViewFactoryPreset.allCases.map { preset in
