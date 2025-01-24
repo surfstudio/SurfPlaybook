@@ -48,7 +48,7 @@ private enum ListCellFactoryPreset: StringRepresentable {
 
 private enum ListCellFactory {
 
-    static func generate(for preset: ListCellFactoryPreset) -> ((UIViewController?) -> UIView) {
+    static func generate(for preset: ListCellFactoryPreset) -> PlaybookContainerProvider {
         return { _ in
             let container = TableViewCellContainer<ListTableViewCell>(width: Constants.cellWidth) { (cell, _) in
                 switch preset {

@@ -49,7 +49,7 @@ private enum UITextFieldFactoryPreset: StringRepresentable {
 
 private enum UITextFieldFactory {
 
-    static func generate(for preset: UITextFieldFactoryPreset) -> ((UIViewController?) -> UIView) {
+    static func generate(for preset: UITextFieldFactoryPreset) -> PlaybookContainerProvider {
         return { _ in
             let textField = UITextField()
             textField.apply(style: preset.style)
