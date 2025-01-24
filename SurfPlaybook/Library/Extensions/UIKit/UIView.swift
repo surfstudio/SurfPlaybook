@@ -12,13 +12,9 @@ import SwiftUI
 extension UIView {
 
     func snapshot() -> UIImage {
-        self.bounds = CGRect(origin: .zero, size: self.intrinsicContentSize)
-        self.backgroundColor = .clear
-
-        let renderer = UIGraphicsImageRenderer(size: self.intrinsicContentSize)
-
-        return renderer.image { _ in
-            self.drawHierarchy(in: self.bounds, afterScreenUpdates: true)
+        let renderer = UIGraphicsImageRenderer(bounds: bounds)
+        return renderer.image { rendererContext in
+            layer.render(in: rendererContext.cgContext)
         }
     }
 
@@ -55,16 +51,6 @@ extension UIView {
             view.trailingAnchor.constraint(equalTo: trailingAnchor),
             view.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])
-    }
-
-}
-
-@available(iOS 13.0, *)
-extension View {
-
-    func snapshot() -> UIImage {
-        let controller = UIHostingController(rootView: self)
-        return controller.view.snapshot()
     }
 
 }

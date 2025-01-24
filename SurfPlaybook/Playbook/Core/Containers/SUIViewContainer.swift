@@ -89,7 +89,11 @@ public class SUIViewContainer<View: SwiftUI.View>: UIView, PlaybookContainer {
     }
 
     public func makeSnapshot() -> UIImage? {
-        return viewFactory().snapshot()
+        if #available(iOS 16, *) {
+            ImageRenderer(content: viewFactory().padding(12)).uiImage
+        } else {
+            loadView().snapshot()
+        }
     }
 
 }
