@@ -33,6 +33,7 @@ public class TableViewCellContainer<Cell: PlaybookTableCell>: UIView, TableAdapt
 
     private let tableView = PlaybookTableView()
     private let configureCell: CellConfigurator
+    private let width: CGFloat
     private let heightResolver: ((CGFloat) -> CGFloat)?
 
     // MARK: - Initialization
@@ -54,6 +55,7 @@ public class TableViewCellContainer<Cell: PlaybookTableCell>: UIView, TableAdapt
                 heightResolver: HeightResolver? = nil) {
         self.configureCell = configureCell
         self.heightResolver = heightResolver
+        self.width = width
         super.init(frame: .zero)
 
         tableView.backgroundColor = Colors.Main.background
@@ -69,19 +71,6 @@ public class TableViewCellContainer<Cell: PlaybookTableCell>: UIView, TableAdapt
         case .nib:
             tableView.registerNib(Cell.self, bundle: Cell.cellBundle() ?? Bundle.shared(for: Cell.self))
         }
-
-        translatesAutoresizingMaskIntoConstraints = false
-        addSubview(tableView)
-        tableView.translatesAutoresizingMaskIntoConstraints = false
-
-        NSLayoutConstraint.activate([
-            tableView.topAnchor.constraint(equalTo: topAnchor),
-            tableView.bottomAnchor.constraint(equalTo: bottomAnchor),
-            tableView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            tableView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            widthAnchor.constraint(equalToConstant: width),
-            heightAnchor.constraint(greaterThanOrEqualToConstant: 1.0)
-        ])
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -106,6 +95,29 @@ public class TableViewCellContainer<Cell: PlaybookTableCell>: UIView, TableAdapt
 
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return heightResolver?(frame.width) ?? UITableView.automaticDimension
+    }
+
+}
+
+// MARK: - PlaybookContainer
+
+extension TableViewCellContainer: PlaybookContainer {
+
+    public func loadView() -> UIView {
+        translatesAutoresizingMaskIntoConstraints = false
+        addSubview(tableView)
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+
+        NSLayoutConstraint.activate([
+            tableView.topAnchor.constraint(equalTo: topAnchor),
+            tableView.bottomAnchor.constraint(equalTo: bottomAnchor),
+            tableView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            tableView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            widthAnchor.constraint(equalToConstant: width),
+            heightAnchor.constraint(greaterThanOrEqualToConstant: 1.0)
+        ])
+
+        return self
     }
 
 }

@@ -54,7 +54,7 @@ private enum PinViewFactoryPreset: UInt, StringRepresentable, CaseIterable {
 @available(iOS 15, *)
 private enum HPinViewFactory {
 
-    static func generate(for preset: PinViewFactoryPreset) -> (UIViewController?) -> UIView {
+    static func generate(for preset: PinViewFactoryPreset) -> PlaybookContainerProvider {
         return { controller in
             let container = SUIViewContainer(parent: controller,
                                              width: Constants.cellWidth) {
@@ -71,7 +71,7 @@ private enum HPinViewFactory {
 @available(iOS 15, *)
 private enum VPinViewFactory {
 
-    static func generate(for preset: PinViewFactoryPreset) -> (UIViewController?) -> UIView {
+    static func generate(for preset: PinViewFactoryPreset) -> PlaybookContainerProvider {
         return { controller in
             let container = SUIViewContainer(parent: controller,
                                              width: Constants.cellWidth) {

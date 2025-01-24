@@ -11,15 +11,15 @@ import SwiftUI
 
 extension UIView {
 
-    func snapshot() -> UIImage? {
-        UIGraphicsBeginImageContextWithOptions(self.bounds.size, true, UIScreen.main.scale)
-        guard let context = UIGraphicsGetCurrentContext() else {
-            return nil
+    func snapshot() -> UIImage {
+        self.bounds = CGRect(origin: .zero, size: self.intrinsicContentSize)
+        self.backgroundColor = .clear
+
+        let renderer = UIGraphicsImageRenderer(size: self.intrinsicContentSize)
+
+        return renderer.image { _ in
+            self.drawHierarchy(in: self.bounds, afterScreenUpdates: true)
         }
-        self.layer.render(in: context)
-        let img = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        return img
     }
 
 }
@@ -64,17 +64,7 @@ extension View {
 
     func snapshot() -> UIImage {
         let controller = UIHostingController(rootView: self)
-        let view = controller.view
-
-        let targetSize = controller.view.intrinsicContentSize
-        view?.bounds = CGRect(origin: .zero, size: targetSize)
-        view?.backgroundColor = .clear
-
-        let renderer = UIGraphicsImageRenderer(size: targetSize)
-
-        return renderer.image { _ in
-            view?.drawHierarchy(in: controller.view.bounds, afterScreenUpdates: true)
-        }
+        return controller.view.snapshot()
     }
 
 }

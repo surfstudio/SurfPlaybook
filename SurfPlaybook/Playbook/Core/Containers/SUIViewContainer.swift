@@ -15,11 +15,15 @@ import SwiftUI
 ///     Причина возникновения и проблема, которую решает контейнер,
 ///     а также решение описаны в [источнике](https://osinski.dev/posts/snapshot-testing-self-sizing-table-view-cells/)
 @available(iOS 13.0, *)
-public class SUIViewContainer<View: SwiftUI.View>: UIView {
+public class SUIViewContainer<View: SwiftUI.View>: UIView, PlaybookContainer {
 
     // MARK: - Private Properties
 
+    private weak var parent: UIViewController?
+
     private let viewFactory: () -> View
+    private let width: CGFloat?
+    private let height: CGFloat?
 
     // MARK: - Initialization
 
@@ -37,13 +41,24 @@ public class SUIViewContainer<View: SwiftUI.View>: UIView {
                 height: CGFloat? = nil,
                 _ viewFactory: @escaping () -> View) {
         self.viewFactory = viewFactory
+        self.parent = parent
+        self.width = width
+        self.height = height
         super.init(frame: .zero)
         backgroundColor = Colors.Main.background
+    }
 
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+    // MARK: - Container
+
+    public func loadView() -> UIView {
         guard
             let contentView = parent?.hostSwiftUIView(view: viewFactory()).view
         else {
-            return
+            return self
         }
 
         translatesAutoresizingMaskIntoConstraints = false
@@ -69,10 +84,12 @@ public class SUIViewContainer<View: SwiftUI.View>: UIView {
                 contentView.heightAnchor.constraint(equalToConstant: height)
             ])
         }
+
+        return self
     }
 
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+    public func makeSnapshot() -> UIImage? {
+        return viewFactory().snapshot()
     }
 
 }

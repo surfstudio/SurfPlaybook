@@ -14,8 +14,6 @@
 		018D479E2D4266100016EC16 /* PinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018D479D2D42660C0016EC16 /* PinView.swift */; };
 		018D47A02D4267620016EC16 /* Shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018D479F2D4267600016EC16 /* Shake.swift */; };
 		018D47AC2D426D280016EC16 /* PinViewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018D47AB2D426D230016EC16 /* PinViewPage.swift */; };
-		018D47AE2D4272BE0016EC16 /* UIViewController+SUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018D47AD2D4272B00016EC16 /* UIViewController+SUI.swift */; };
-		018D47B22D42731E0016EC16 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018D47B12D42731B0016EC16 /* UIView.swift */; };
 		1F1A6F19A6EFEDE4AA0333B5 /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A45FD040B3282178E3DD55BC /* ListViewController.xib */; };
 		2CDEA8264584E5BBBAB85632 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78A812F1F935ED653461167 /* ListViewController.swift */; };
 		2CE875C0ACA7F0CC7D9028AC /* AuthModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D02728BEF3D5590BA37F167 /* AuthModuleOutput.swift */; };
@@ -114,8 +112,6 @@
 		018D479D2D42660C0016EC16 /* PinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinView.swift; sourceTree = "<group>"; };
 		018D479F2D4267600016EC16 /* Shake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shake.swift; sourceTree = "<group>"; };
 		018D47AB2D426D230016EC16 /* PinViewPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinViewPage.swift; sourceTree = "<group>"; };
-		018D47AD2D4272B00016EC16 /* UIViewController+SUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+SUI.swift"; sourceTree = "<group>"; };
-		018D47B12D42731B0016EC16 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		10AD570C280E9A19977DEE2C /* AuthViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = AuthViewController.xib; sourceTree = "<group>"; };
 		12B323CCC217C991A573CBFC /* ListModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListModuleConfigurator.swift; sourceTree = "<group>"; };
 		18774BA9C8C44B77E2F4C395 /* Pods-SurfPlaybookExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfPlaybookExampleTests.release.xcconfig"; path = "Target Support Files/Pods-SurfPlaybookExampleTests/Pods-SurfPlaybookExampleTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -630,8 +626,6 @@
 		90F3DC58262DD96400220B28 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				018D47B12D42731B0016EC16 /* UIView.swift */,
-				018D47AD2D4272B00016EC16 /* UIViewController+SUI.swift */,
 				90F3DCB3262DE3A200220B28 /* UIApplication.swift */,
 				9036012F2631C21900265BB1 /* UIImage.swift */,
 				90F3DC59262DD97300220B28 /* UITableView.swift */,
@@ -960,7 +954,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				018D47B22D42731E0016EC16 /* UIView.swift in Sources */,
 				9028FCB52636DDB8003257B5 /* TitleTableViewCell.swift in Sources */,
 				903600F72631A96200265BB1 /* BaseNavigationController.swift in Sources */,
 				90F3DCB4262DE3A200220B28 /* UIApplication.swift in Sources */,
@@ -1003,7 +996,6 @@
 				9028FCC72636DF90003257B5 /* StringAttributes.swift in Sources */,
 				9028FCAD2636DCEE003257B5 /* ListTableViewCellModel.swift in Sources */,
 				903601462631C2A900265BB1 /* UITextField+Styles.swift in Sources */,
-				018D47AE2D4272BE0016EC16 /* UIViewController+SUI.swift in Sources */,
 				903601302631C21900265BB1 /* UIImage.swift in Sources */,
 				A265E2CBCB5810207133A038 /* AuthViewOutput.swift in Sources */,
 				01769C972D4384E3009B59BA /* Binding+Bool.swift in Sources */,
