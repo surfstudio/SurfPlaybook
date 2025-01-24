@@ -13,7 +13,7 @@ extension ControlsChapter {
 
     var textField: PlaybookPage {
         var page = PlaybookPage(name: "UITextField",
-                                description: nil,
+                                description: "Поле ввода текста",
                                 config: UITextFieldFactory.generate(for: .email))
         page.presets = [
             (UITextFieldFactoryPreset.email, UITextFieldFactory.generate(for: .email)),
