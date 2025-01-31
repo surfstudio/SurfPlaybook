@@ -61,6 +61,8 @@ public class SUIViewContainer<View: SwiftUI.View>: UIView, PlaybookContainer {
             return self
         }
 
+        contentView.backgroundColor = .clear
+
         translatesAutoresizingMaskIntoConstraints = false
         contentView.translatesAutoresizingMaskIntoConstraints = false
 
