@@ -40,6 +40,14 @@ public struct PlaybookPage {
         return config(nil).makeSnapshot()
     }
 
+    /// Предпочтительная конфигурация.
+    /// При наличии вариантов конфигурации предпочтение отдаётся первой конфигурации.
+    /// Это сделано для того, чтобы в частном случае можно было в `config` записать
+    /// эксклюзивную конфигурацию для snapshot, с дополнительным фоном или отключенными анимациями.
+    var preferredConfig: PlaybookContainerProvider {
+        presets.first?.config ?? config
+    }
+
     // MARK: - Public Properties
 
     /// Массив, содержащий различные варианты конфигурации UI-компонента.
