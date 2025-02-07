@@ -9,7 +9,7 @@
 import SurfPlaybook
 import UIKit
 
-extension CellsChapter {
+extension TableCellsChapter {
 
     var listCell: PlaybookPage {
         var page = PlaybookPage(name: "ListTableViewCell",

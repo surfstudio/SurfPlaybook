@@ -8,6 +8,8 @@
 
 import UIKit
 
+typealias TableAdapter = UITableViewDataSource & UITableViewDelegate
+
 public typealias PlaybookTableCell = UITableViewCell & PlaybookCellConfigurable
 
 /// Вспомогательный контейнер-таблица, позвооляет обернуть UI-компонент типа UITableViewCell
@@ -16,7 +18,7 @@ public typealias PlaybookTableCell = UITableViewCell & PlaybookCellConfigurable
 /// - Reference:
 ///     Причина возникновения и проблема, которую решает контейнер,
 ///     а также решение описаны в [источнике](https://osinski.dev/posts/snapshot-testing-self-sizing-table-view-cells/)
-public class TableViewCellContainer<Cell: PlaybookTableCell>: UIView, UITableViewDataSource, UITableViewDelegate {
+public class TableViewCellContainer<Cell: PlaybookTableCell>: UIView, TableAdapter {
 
     // MARK: - Nested Types
 
@@ -30,7 +32,7 @@ public class TableViewCellContainer<Cell: PlaybookTableCell>: UIView, UITableVie
     // MARK: - Private Properties
 
     private let tableView = PlaybookTableView()
-    private let configureCell: (Cell, UITableView) -> Void
+    private let configureCell: CellConfigurator
     private let heightResolver: ((CGFloat) -> CGFloat)?
 
     // MARK: - Initialization
@@ -39,13 +41,17 @@ public class TableViewCellContainer<Cell: PlaybookTableCell>: UIView, UITableVie
     ///
     /// - Parameters:
     ///   - width: Ширина ячейки
+    ///   - registerType: Тип регистрации ячейки `CellRegisterType`
     ///   - configureCell: Замыкание, которое вызывается в методе `tableView:cellForRowAt:`,
     ///     позволяет сконфигурировать контент ячейки.
     ///   - heightResolver: Замыкание, которое вызывается в методе `tableView:heightForRowAt:`,
     ///     позволяет расчитать и вернуть высоту ячейки.
     ///     В случае передачи `nil` используется `UITableView.automaticDimension`.
     ///     По-умолчанию равно `nil`.
-    public init(width: CGFloat, configureCell: @escaping CellConfigurator, heightResolver: HeightResolver? = nil) {
+    public init(width: CGFloat,
+                registerType: CellRegisterType = .nib,
+                configureCell: @escaping CellConfigurator,
+                heightResolver: HeightResolver? = nil) {
         self.configureCell = configureCell
         self.heightResolver = heightResolver
         super.init(frame: .zero)
@@ -56,7 +62,13 @@ public class TableViewCellContainer<Cell: PlaybookTableCell>: UIView, UITableVie
         tableView.tableFooterView = UIView()
         tableView.dataSource = self
         tableView.delegate = self
-        tableView.registerNib(Cell.self, bundle: Cell.cellBundle() ?? Bundle.shared(for: Cell.self))
+
+        switch registerType {
+        case .class:
+            tableView.register(Cell.self, forCellReuseIdentifier: Cell.identifier())
+        case .nib:
+            tableView.registerNib(Cell.self, bundle: Cell.cellBundle() ?? Bundle.shared(for: Cell.self))
+        }
 
         translatesAutoresizingMaskIntoConstraints = false
         addSubview(tableView)

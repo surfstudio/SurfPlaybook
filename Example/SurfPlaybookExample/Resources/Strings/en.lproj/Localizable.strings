@@ -19,6 +19,10 @@
 "List.Section.first" = "First section";
 "List.Section.second" = "Second section";
 
+"DishCellPreset.Small.default" = "Simple dish cell";
+"DishCellPreset.Small.new" = "Accent cell of new dish";
+"DishCellPreset.Small.Title.new" = "New";
+
 "ListCellPreset.Title.name" = "Title";
 "ListCellPreset.TitleAndArrow.name" = "Title + arrow";
 "ListCellPreset.Full.name" = "Title + subtitle";

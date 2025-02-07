@@ -1,5 +1,5 @@
 //
-//  CellsChapter.swift
+//  TableCellsChapter.swift
 //  SurfPlaybookExample
 //
 //  Created by Александр Чаусов on 27.04.2021.
@@ -9,10 +9,10 @@
 import SurfPlaybook
 import UIKit
 
-final class CellsChapter {
+final class TableCellsChapter {
 
     func build() -> PlaybookChapter {
-        let chapter = PlaybookChapter(name: "Cells", pages: [])
+        let chapter = PlaybookChapter(name: "TableCells", pages: [])
         chapter
             .add(page: listCell)
             .add(page: titleCell)
@@ -23,7 +23,7 @@ final class CellsChapter {
 
 // MARK: - Pages
 
-private extension CellsChapter {
+private extension TableCellsChapter {
 
     var titleCell: PlaybookPage {
         return PlaybookPage(name: "TitleTableViewCell", description: nil) { () -> UIView in
