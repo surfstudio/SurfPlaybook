@@ -48,9 +48,6 @@ buildData
 .bundle/
 Gemfile.lock
 
-# Generamba
-Templates/
-
 # JSCPD
 report/
 node_modules/

@@ -1,0 +1,20 @@
+//
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import UIKit
+
+public final class {{ module_info.name }}ModuleTestConfigurator {
+
+    // MARK: - Initializer
+
+    public init() {}
+
+    // MARK: - Public methods
+
+    public func configure() -> (UIViewController, [AnyObject]) {
+        let (view, output) = {{ module_info.name }}ModuleConfigurator().configure()
+        return (view, [output])
+    }
+
+}

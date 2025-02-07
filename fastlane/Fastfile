@@ -9,13 +9,17 @@
 # If you want to automatically update fastlane if a new version is available:
 # update_fastlane
 
+workspace = "SurfPlaybook.xcworkspace"
+
 pod_bundle_id = "ru.surfstudio.playbook.SurfPlaybook"
 pod_scheme = "SurfPlaybook"
 pod_target = "SurfPlaybook"
 
 example_bundle_id = "ru.surfstudio.playbook.SurfPlaybookExample"
 example_scheme = "SurfPlaybookExample"
-example_target = "SurfPlaybookExample"
+
+spm_workspace = "SurfPlaybookSPM.xcworkspace"
+spm_example_scheme = "SurfPlaybookSPM"
 
 derived_data_path = "./buildData"
 
@@ -36,6 +40,7 @@ platform :ios do
   "
   lane :build do |options|
     xcodebuild(
+      workspace: workspace,
       scheme: pod_scheme,
       configuration: "Debug",
       clean: options[:clean],
@@ -46,8 +51,24 @@ platform :ios do
     )
   end
 
+  lane :spm_build do |options|
+    Dir.chdir("../SPM_Example") do
+      xcodebuild(
+        workspace: spm_workspace,
+        scheme: spm_example_scheme,
+        configuration: "Debug",
+        clean: options[:clean],
+        build: true,
+        destination: "generic/platform=iOS\" CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY=\"",
+        xcargs: "-sdk iphonesimulator ONLY_ACTIVE_ARCH=NO build-for-testing",
+        derivedDataPath: derived_data_path
+      )
+    end
+  end
+
   lane :example_build do |options|
     xcodebuild(
+      workspace: workspace,
       scheme: example_scheme,
       configuration: "Debug",
       clean: options[:clean],

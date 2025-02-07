@@ -1,0 +1,52 @@
+name: Deploy DocC
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: macOS-latest
+
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+
+      - name: Init
+        run: |
+          make init
+
+      - name: Build DocC
+        run: |
+          xcodebuild docbuild -skipMacroValidation -scheme SurfPlaybook \
+            -derivedDataPath docc \
+            -destination 'generic/platform=iOS' \
+            CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO;
+
+          $(xcrun --find docc) process-archive \
+            transform-for-static-hosting ./docc/Build/Products/Debug-iphoneos/SurfPlaybook.doccarchive \
+            --hosting-base-path SurfPlaybook \
+            --output-path docs;
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: 'docs'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1

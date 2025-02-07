@@ -27,6 +27,14 @@ Parameters:
   - clean: Pass **true** if you need to clean project before build
   
 
+### ios spm_build
+
+```sh
+[bundle exec] fastlane ios spm_build
+```
+
+
+
 ### ios example_build
 
 ```sh

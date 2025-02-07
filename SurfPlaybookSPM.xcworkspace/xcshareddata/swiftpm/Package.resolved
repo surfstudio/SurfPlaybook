@@ -1,0 +1,14 @@
+{
+  "originHash" : "14f66bb12d1e446df78a4c2633990bad3a587dfc72a400bca82fb99468881a25",
+  "pins" : [
+    {
+      "identity" : "surfplaybook",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/chausovSurfStudio/SurfPlaybook",
+      "state" : {
+        "revision" : "b427fedb4953b110da56298c04420ca3bdd09a55"
+      }
+    }
+  ],
+  "version" : 3
+}

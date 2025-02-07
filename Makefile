@@ -4,8 +4,8 @@ init:
   		echo "bundler gem is not installed!";\
   		-sudo gem install bundler -v "1.17.3";\
 	fi
-	-bundle update
-	-bundle install --path .bundle
+	-bundle config set path .bundle
+	-bundle install
 	-bundle exec pod repo update
 	-bundle exec pod install
 	-bundle exec generamba template install
@@ -14,7 +14,7 @@ build:
 	bundle exec fastlane build clean:true
 
 spm_build:
-	swift build -Xswiftc "-sdk" -Xswiftc "`xcrun --sdk iphonesimulator --show-sdk-path`" -Xswiftc "-target" -Xswiftc "x86_64-apple-ios12.1-simulator" -Xswiftc "-lswiftUIKit"
+	bundle exec fastlane spm_build clean:true
 	
 example_build:
 	cd Example
@@ -33,9 +33,6 @@ screen:
 alert:
 	# bundle exec generamba gen $(modName) surf_mvp_coordinatable_alert --module_path 'Example/SurfPlaybookExample/Flows/$(flowName)'
 	bundle exec generamba gen $(modName) surf_mvp_coordinatable_alert --module_path 'SurfPlaybook/Playbook/Flows/$(flowName)'
-
-doc:
-	bundle exec jazzy --clean --build-tool-arguments -scheme,SurfPlaybook,-workspace,SurfPlaybook.xcworkspace,-sdk,iphonesimulator --output "docs"
 
 # COLORS
 GREEN  := $(shell tput -Txterm setaf 2)

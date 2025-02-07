@@ -191,6 +191,7 @@
 		90F3DCDB262DF54C00220B28 /* MainAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3DCDA262DF54C00220B28 /* MainAdapter.swift */; };
 		9412B99DC369767C29EF570A /* ChapterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCF6A6B16BA9514DC5938C1 /* ChapterPresenter.swift */; };
 		955FF9D933DC02A8408F3A67 /* ChapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E63A61082240A7D13F3DAA /* ChapterViewController.swift */; };
+		96DCA230E4BD9C699A23200B /* Pods_SurfPlaybook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 307314F97EFCB60C3CD16848 /* Pods_SurfPlaybook.framework */; };
 		997063C6027BA770196E29BF /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4C45498CCE35BA3E4CE456 /* TabBarViewController.swift */; };
 		999117355B83ADA07531CF5D /* UIKitPageViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22888AD081D0FAC6B6E8137E /* UIKitPageViewOutput.swift */; };
 		9B8ED3E24BE12A6AF338B201 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AC98D605FB125DAEC92F9A /* MainViewController.swift */; };
@@ -209,6 +210,7 @@
 		C2807FC1A3A4556206898C2A /* FlowsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 147832FEC741A136D7707F15 /* FlowsViewController.xib */; };
 		C60FBA26574297963262D110 /* PagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53879FE48BFED98DD87726C4 /* PagePresenter.swift */; };
 		C72706581D7A7DD90747E8CE /* TabBarModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A6D02EDA848F65C849A1A8 /* TabBarModuleConfigurator.swift */; };
+		CDF407753E13F427EFCE3FFE /* Pods_SurfPlaybookExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83D5EE07A263B0B1EDA8DF0E /* Pods_SurfPlaybookExample.framework */; };
 		CEE18E4D33304CC52114A260 /* UIKitModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7037AC3765B97E37D55539D3 /* UIKitModuleConfigurator.swift */; };
 		D2B24A3381EC318C03185783 /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B3539D957EBC54828EC2A9 /* ListPresenter.swift */; };
 		D51F39CE6ACE4D756CC4B84B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15E03553E65B4C229FA27E6 /* SettingsViewController.swift */; };
@@ -534,6 +536,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96DCA230E4BD9C699A23200B /* Pods_SurfPlaybook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,6 +554,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				90C8B4482625EA4200851B00 /* SurfPlaybook.framework in Frameworks */,
+				CDF407753E13F427EFCE3FFE /* Pods_SurfPlaybookExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2160,7 +2164,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+			shellScript = "support/swiftlint.sh {SRCROOT}\n";
 		};
 		905509972625F0C200FD86A4 /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2179,7 +2183,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+			shellScript = "support/swiftlint.sh {SRCROOT}\n";
 		};
 		905509F62625FD5700FD86A4 /* SwiftGen */ = {
 			isa = PBXShellScriptBuildPhase;
