@@ -59,7 +59,7 @@ private extension PageViewController {
 
     func configureAppearance(with page: PlaybookPage) {
         configureNavigationBar(with: page)
-        configureContent(contentView: page.config(self).loadView())
+        configureContent(contentView: page.preferredConfig(self).loadView())
         configureGesture()
     }
 
