@@ -17,16 +17,15 @@ extension UICollectionView {
     }
 
     func registerNib(_ cellType: UICollectionViewCell.Type) {
-        registerNib(cellType,
-                    bundle: Bundle.shared(for: cellType.self)
-        )
+        registerNib(
+            cellType,
+            bundle: Bundle.shared(for: cellType.self))
     }
 
     func registerNib(_ cellType: UICollectionViewCell.Type, bundle: Bundle) {
         self.register(UINib(nibName: cellType.className,
                             bundle: bundle),
-                      forCellWithReuseIdentifier: cellType.className
-        )
+                      forCellWithReuseIdentifier: cellType.className)
     }
 
 }

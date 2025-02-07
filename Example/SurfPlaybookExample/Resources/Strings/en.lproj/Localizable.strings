@@ -21,7 +21,7 @@
 
 "DishCellPreset.Small.default" = "Simple dish cell";
 "DishCellPreset.Small.new" = "Accent cell of new dish";
-"DishCellPreset.Small.Title.new" = "Новинка";
+"DishCellPreset.Small.Title.new" = "New";
 
 "ListCellPreset.Title.name" = "Title";
 "ListCellPreset.TitleAndArrow.name" = "Title + arrow";

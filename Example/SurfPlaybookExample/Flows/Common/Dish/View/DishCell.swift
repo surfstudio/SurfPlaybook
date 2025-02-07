@@ -27,13 +27,11 @@ public final class DishCell: UICollectionViewCell {
     private let infoLabel = UILabel()
     private let groupView = UIView()
 
-    // TODO: - добавить вьюшки
-
     // MARK: - Init
 
     public override init(frame: CGRect) {
         super.init(frame: frame)
-        customInit()
+        configureAppearance()
     }
 
     @available(*, unavailable)
@@ -57,7 +55,7 @@ public final class DishCell: UICollectionViewCell {
 
 private extension DishCell {
 
-    func customInit() {
+    func configureAppearance() {
         setupViews()
         setupStyle()
     }

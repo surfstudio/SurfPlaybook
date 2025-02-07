@@ -58,7 +58,7 @@ public class CollectionViewCellContainer<Cell: PlaybookCollectionCell>: UIView, 
         self.configureCell = configureCell
         super.init(frame: .zero)
 
-        collectionView.backgroundColor = .white
+        collectionView.backgroundColor = .clear
         collectionView.delegate = self
         collectionView.dataSource = self
 

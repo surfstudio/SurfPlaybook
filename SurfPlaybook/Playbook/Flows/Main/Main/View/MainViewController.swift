@@ -111,6 +111,7 @@ private extension MainViewController {
         adapter = MainAdapter(tableView: tableView)
         adapter?.onPageSelect = { [weak self] page in
             self?.closeKeyboard()
+            self?.closeSearch()
             self?.output?.showPage(page)
         }
         adapter?.onChapterSelect = { [weak self] chapter in

@@ -360,9 +360,9 @@
 		903600BB263177C200265BB1 /* Chapters */ = {
 			isa = PBXGroup;
 			children = (
+				9022F3BE26381DEB008839A0 /* ControlsChapter */,
 				018D47902D422C4C0016EC16 /* CollectionCellsChapter */,
 				9022F3DB26382095008839A0 /* TableCellsChapter */,
-				9022F3BE26381DEB008839A0 /* ControlsChapter */,
 			);
 			path = Chapters;
 			sourceTree = "<group>";
