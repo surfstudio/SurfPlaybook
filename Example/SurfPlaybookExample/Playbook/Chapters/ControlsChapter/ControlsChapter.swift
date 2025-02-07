@@ -16,6 +16,13 @@ final class ControlsChapter {
         chapter
             .add(page: textField)
             .add(page: commonButton)
+
+        if #available(iOS 15, *) {
+            chapter
+                .add(page: horizontalPinView)
+                .add(page: verticalPinView)
+        }
+
         return chapter
     }
 
@@ -26,7 +33,7 @@ final class ControlsChapter {
 private extension ControlsChapter {
 
     var commonButton: PlaybookPage {
-        return PlaybookPage(name: "CommonButton", description: nil) { () -> UIView in
+        return PlaybookPage(name: "CommonButton", description: nil) { _ in
             let button = CommonButton()
             button.setTitle(L10n.Auth.Button.title, for: .normal)
             button.apply(style: .main)

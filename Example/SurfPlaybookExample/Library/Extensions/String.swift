@@ -6,7 +6,14 @@
 //  Copyright © 2021 Surf. All rights reserved.
 //
 
+import Foundation
+
 extension String {
+
+    /// Возвращает все цифры из вызываемой строки
+    var digits: String {
+        return components(separatedBy: CharacterSet.decimalDigits.inverted).joined()
+    }
 
     /// Возвращает строку, либо nil, если она пуста
     func normalized() -> String? {
