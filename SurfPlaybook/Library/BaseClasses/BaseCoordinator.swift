@@ -41,11 +41,8 @@ class BaseCoordinator: Coordinator {
             return
         }
 
-        for (index, element) in childCoordinators.enumerated() {
-            if element === coordinator {
-                childCoordinators.remove(at: index)
-                break
-            }
+        if let index = childCoordinators.firstIndex(where: { $0 === coordinator }) {
+            childCoordinators.remove(at: index)
         }
     }
 
@@ -60,12 +57,7 @@ class BaseCoordinator: Coordinator {
 private extension BaseCoordinator {
 
     func haveDependency(_ coordinator: Coordinator) -> Bool {
-        for element in childCoordinators {
-            if element === coordinator {
-                return true
-            }
-        }
-        return false
+        return childCoordinators.contains(where: { $0 === coordinator })
     }
 
 }

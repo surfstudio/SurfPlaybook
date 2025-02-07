@@ -57,8 +57,7 @@ final class PageCollectionViewCell: UICollectionViewCell {
 
         if
             image.size.width > snapshotImageView.bounds.size.width
-                || image.size.height > snapshotImageView.bounds.size.height
-        {
+                || image.size.height > snapshotImageView.bounds.size.height {
             snapshotImageView.contentMode = .scaleAspectFit
         } else {
             snapshotImageView.contentMode = .center

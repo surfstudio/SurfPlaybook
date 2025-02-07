@@ -18,13 +18,13 @@ extension UIApplication {
 
     static var firstKeyWindow: UIWindow? {
         if #available(iOS 13.0, *) {
-            return UIApplication
+            UIApplication
                 .shared
                 .connectedScenes
                 .flatMap { ($0 as? UIWindowScene)?.windows ?? [] }
                 .first { $0.isKeyWindow }
         } else {
-            return UIApplication.shared.keyWindow
+            UIApplication.shared.keyWindow
         }
     }
 
@@ -38,7 +38,7 @@ extension UIApplication {
     /// найденные navigation/tabBar-контроллеры или же модалка.
     /// Если же ничего из вышеперечисленного не нашлось - то возвращается UIViewController,
     /// поданый на вход
-    static func topViewController(_ controller: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController? {
+    static func topViewController(_ controller: UIViewController? = UIApplication.rootView) -> UIViewController? {
         if let navigationController = controller as? UINavigationController {
             return topViewController(navigationController.visibleViewController)
         }

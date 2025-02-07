@@ -9,7 +9,7 @@
 import Foundation
 
 enum PlaybookSettings: String {
-    case coloredBackground = "coloredBackground"
+    case coloredBackground
 
     private var name: String {
         switch self {

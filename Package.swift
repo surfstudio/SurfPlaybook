@@ -7,7 +7,7 @@ let package = Package(
     name: "SurfPlaybook",
     defaultLocalization: "en",
     platforms: [
-        .iOS(.v11)
+        .iOS(.v12)
     ],
     products: [
         .library(

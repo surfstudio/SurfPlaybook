@@ -7,7 +7,7 @@ Pod::Spec.new do |spec|
 
   spec.author       = { "Surf" => "chausov@surfstudio.ru" }
 
-  spec.platform       = :ios, "11.0"
+  spec.platform       = :ios, "12.0"
   spec.swift_version  = '5.0'
 
   spec.source       = { :git => "https://github.com/surfstudio/SurfPlaybook.git", :tag => "#{spec.version}" }

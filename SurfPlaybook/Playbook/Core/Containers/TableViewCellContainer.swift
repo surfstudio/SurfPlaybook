@@ -8,13 +8,15 @@
 
 import UIKit
 
+public typealias PlaybookTableCell = UITableViewCell & PlaybookCellConfigurable
+
 /// Вспомогательный контейнер-таблица, позвооляет обернуть UI-компонент типа UITableViewCell
 /// в таблицу, чтобы показать его в рамках playbook-а.
 ///
 /// - Reference:
 ///     Причина возникновения и проблема, которую решает контейнер,
 ///     а также решение описаны в [источнике](https://osinski.dev/posts/snapshot-testing-self-sizing-table-view-cells/)
-public class TableViewCellContainer<Cell: UITableViewCell & PlaybookCellConfigurable>: UIView, UITableViewDataSource, UITableViewDelegate {
+public class TableViewCellContainer<Cell: PlaybookTableCell>: UIView, UITableViewDataSource, UITableViewDelegate {
 
     // MARK: - Nested Types
 

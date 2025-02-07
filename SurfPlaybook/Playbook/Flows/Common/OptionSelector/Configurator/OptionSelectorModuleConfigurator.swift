@@ -16,7 +16,7 @@ typealias OptionSelectorModuleComponents = (
 final class OptionSelectorModuleConfigurator {
 
     func configure(with config: OptionSelectorConfig,
-                          handler: OptionSelectorHandler?) -> OptionSelectorModuleComponents {
+                   handler: OptionSelectorHandler?) -> OptionSelectorModuleComponents {
         let view = UIViewController.instantiate(ofType: OptionSelectorViewController.self)
         let presenter = OptionSelectorPresenter(with: config, handler: handler)
 
