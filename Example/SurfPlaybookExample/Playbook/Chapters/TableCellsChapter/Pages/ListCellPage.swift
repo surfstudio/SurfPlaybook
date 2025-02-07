@@ -13,7 +13,7 @@ extension TableCellsChapter {
 
     var listCell: PlaybookPage {
         var page = PlaybookPage(name: "ListTableViewCell",
-                                description: nil,
+                                description: "Ячейка списка с заголовком, подзаголовком и стрелкой",
                                 config: ListCellFactory.generate(for: .title))
         page.presets = [
             (ListCellFactoryPreset.title, ListCellFactory.generate(for: .title)),
