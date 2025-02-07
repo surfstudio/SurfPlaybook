@@ -4,8 +4,8 @@ init:
   		echo "bundler gem is not installed!";\
   		-sudo gem install bundler -v "1.17.3";\
 	fi
-	-bundle update
-	-bundle install --path .bundle
+	-bundle config set path .bundle
+	-bundle install
 	-bundle exec pod repo update
 	-bundle exec pod install
 	-bundle exec generamba template install

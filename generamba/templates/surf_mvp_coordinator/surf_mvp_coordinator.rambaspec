@@ -1,0 +1,12 @@
+# Template information section
+name: "surf_mvp_coordinator"
+summary: "Template for creating coordinator."
+author: "Alexander Chausov"
+version: "1.0.0"
+license: "MIT"
+
+# The declarations for code files
+
+code_files:
+- {name: Coordinator.swift, path: Code/coordinator.swift.liquid}
+- {name: CoordinatorOutput.swift, path: Code/coordinator_output.swift.liquid}

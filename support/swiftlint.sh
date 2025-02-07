@@ -10,7 +10,7 @@ fi
 # Go to the root dir
 cd $1
 
-LINT="tools/swiftlint-v0_54_0"
+LINT="tools/swiftlint_v0_58_2"
 LINT_CONFIG=".swiftlint.yml"
 DIR_TO_LINT="SurfPlaybook/"
 
