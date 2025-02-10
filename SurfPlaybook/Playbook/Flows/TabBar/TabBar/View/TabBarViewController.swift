@@ -67,6 +67,21 @@ extension TabBarViewController: UITabBarControllerDelegate {
             isStackEmpty = navigationController?.visibleViewController == navigationController?.viewControllers[0]
         }
         isSelectableStackEmpty = isStackEmpty
+
+        // Отключаем новомодную [анимацию](https://medium.com/@adityaramadhan.biz/new-tabbar-transition-animation-in-ios-18-and-xcode-16-ea4b2c4d84d4)
+        guard let fromView = selectedViewController?.view,
+              let toView = viewController.view else {
+            return false
+        }
+
+        if fromView != toView {
+            UIView.transition(from: fromView,
+                              to: toView,
+                              duration: 0,
+                              options: [.transitionCrossDissolve],
+                              completion: nil)
+        }
+
         return true
     }
 
