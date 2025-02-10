@@ -27,6 +27,6 @@ podfile_path: Podfile
 
 ### Templates
 templates:
-- {name: surf_mvp_coordinatable_module, local: 'generamba/templates/surf_mvp_coordinatable_module'}
-- {name: surf_mvp_coordinatable_alert, local: 'generamba/templates/surf_mvp_coordinatable_alert'}
-- {name: surf_mvp_coordinator, local: 'generamba/templates/surf_mvp_coordinator'}
+- {name: surf_mvp_coordinatable_module}
+- {name: surf_mvp_coordinatable_alert}
+- {name: surf_mvp_coordinator}

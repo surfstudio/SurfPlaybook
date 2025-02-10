@@ -8,7 +8,6 @@ init:
 	-bundle install
 	-bundle exec pod repo update
 	-bundle exec pod install
-	-bundle exec generamba template install
 
 build:
 	bundle exec fastlane build clean:true

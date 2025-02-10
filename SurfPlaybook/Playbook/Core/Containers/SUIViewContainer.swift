@@ -61,6 +61,8 @@ extension SUIViewContainer: PlaybookContainer {
             return self
         }
 
+        contentView.backgroundColor = .clear
+
         translatesAutoresizingMaskIntoConstraints = false
         contentView.translatesAutoresizingMaskIntoConstraints = false
 
