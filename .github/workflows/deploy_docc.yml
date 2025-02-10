@@ -19,8 +19,10 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-
-    runs-on: macOS-latest
+    
+    # используем не последний, так как в актуальной версии сломаны пути 
+    # и process-archive не может найти в derivedData архив с документацией 
+    runs-on: macOS-14
 
     steps:
       - name: Checkout 🛎️
