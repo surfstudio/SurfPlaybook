@@ -19,7 +19,9 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-
+    
+    # используем не последний, так как в актуальной версии сломаны пути 
+    # и process-archive не может найти в derivedData архив с документацией 
     runs-on: macOS-latest
 
     steps:
@@ -32,13 +34,19 @@ jobs:
 
       - name: Build DocC
         run: |
-          xcodebuild docbuild -skipMacroValidation -scheme SurfPlaybook \
+          xcodebuild docbuild -skipMacroValidation \
+            -workspace SurfPlaybook.xcworkspace \
+            -scheme SurfPlaybook \
             -derivedDataPath docc \
             -destination 'generic/platform=iOS' \
             CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO;
 
+          DOCC_ARCHIVE_PATH=$(find docc -type d -name '*.doccarchive')
+
+          echo $DOCC_ARCHIVE_PATH
+
           $(xcrun --find docc) process-archive \
-            transform-for-static-hosting ./docc/Build/Products/Debug-iphoneos/SurfPlaybook.doccarchive \
+            transform-for-static-hosting $DOCC_ARCHIVE_PATH \
             --hosting-base-path SurfPlaybook \
             --output-path docs;
 
@@ -49,4 +57,4 @@ jobs:
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v3
+        uses: actions/deploy-pages@v4
