@@ -9,13 +9,17 @@ import UIKit
 
 public typealias PlaybookContainerProvider = (UIViewController?) -> PlaybookContainer
 
-/// Контейнер для обертки вьюшек разных типов
+/// Вспомогательный контейнер, который позволяет
+///  - настроить вьюшку для показа на деталке страницы `PageViewController`
+///  - подготовить снимок для отображения в карточках на главном `MainViewController`
+///  - подготовить снимок для отображения в карточках на экране главы `ChapterViewController`
 public protocol PlaybookContainer where Self: UIView {
 
-    /// Загружает и размещает вьюшку
+    /// Настраивает и размещает вьюшку внутри контейнера
     @discardableResult
     func loadView() -> UIView
     /// Делает снимок вьюшки для отображения превьюшек
+    /// - Note: Перед снимком вызывает `loadView`
     func makeSnapshot() -> UIImage?
 
 }

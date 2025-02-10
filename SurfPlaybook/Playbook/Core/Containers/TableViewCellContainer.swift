@@ -12,12 +12,11 @@ typealias TableAdapter = UITableViewDataSource & UITableViewDelegate
 
 public typealias PlaybookTableCell = UITableViewCell & PlaybookCellConfigurable
 
-/// Вспомогательный контейнер-таблица, позвооляет обернуть UI-компонент типа UITableViewCell
-/// в таблицу, чтобы показать его в рамках playbook-а.
+/// Реализация `PlaybookContainer`, для компонентов типа `UITableViewCell`.
 ///
-/// - Reference:
-///     Причина возникновения и проблема, которую решает контейнер,
-///     а также решение описаны в [источнике](https://osinski.dev/posts/snapshot-testing-self-sizing-table-view-cells/)
+/// - Note: Причина возникновения и проблема, которую решает контейнер,
+/// а также решение описаны в
+/// [источнике](https://osinski.dev/posts/snapshot-testing-self-sizing-table-view-cells/)
 public class TableViewCellContainer<Cell: PlaybookTableCell>: UIView, TableAdapter {
 
     // MARK: - Nested Types

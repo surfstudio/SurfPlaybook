@@ -9,7 +9,7 @@
 import SwiftUI
 
 @available(iOS 13.0, *)
-public extension Binding where Value == Bool {
+extension Binding where Value == Bool {
     init(binding: Binding<(some Any)?>) {
         self.init(
             get: {
@@ -26,7 +26,7 @@ public extension Binding where Value == Bool {
 }
 
 @available(iOS 13.0, *)
-public extension Binding {
+extension Binding {
     /// Трансформирует binding с опциональным значением в `Binding<Bool>`.
     func mapToBool<Wrapped>() -> Binding<Bool> where Value == Wrapped? {
         Binding<Bool>(binding: self)
@@ -34,7 +34,7 @@ public extension Binding {
 }
 
 @available(iOS 13.0, *)
-public extension Binding where Value: Equatable {
+extension Binding where Value: Equatable {
 
     /// Создает binding, который `true` при равенстве значения с переданным.
     /// - parameter value: Значение, с которым сравнивается текущее `wrappedValue`.

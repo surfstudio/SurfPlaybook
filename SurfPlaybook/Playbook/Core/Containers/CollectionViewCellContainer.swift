@@ -11,12 +11,7 @@ typealias CollectionAdapter = UICollectionViewDelegate & UICollectionViewDataSou
 
 public typealias PlaybookCollectionCell = UICollectionViewCell & PlaybookCellConfigurable
 
-/// Вспомогательный контейнер-коллекция, позвооляет обернуть UI-компонент типа UICollectionViewCell
-/// в таблицу, чтобы показать его в рамках playbook-а.
-///
-/// - Reference:
-///     Причина возникновения и проблема, которую решает контейнер,
-///     а также решение описаны в [источнике](https://osinski.dev/posts/snapshot-testing-self-sizing-table-view-cells/)
+/// Реализация `PlaybookContainer`, для компонентов типа `UICollectionViewCell`.
 @available(iOS 13.0, *)
 public class CollectionViewCellContainer<Cell: PlaybookCollectionCell>: UIView, CollectionAdapter {
 

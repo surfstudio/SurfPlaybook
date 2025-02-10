@@ -8,14 +8,9 @@
 import UIKit
 import SwiftUI
 
-/// Вспомогательный контейнер-view, позвооляет обернуть SwiftUI-компонент типа View
-/// в таблицу, чтобы показать его в рамках playbook-а.
-///
-/// - Reference:
-///     Причина возникновения и проблема, которую решает контейнер,
-///     а также решение описаны в [источнике](https://osinski.dev/posts/snapshot-testing-self-sizing-table-view-cells/)
+/// Реализация `PlaybookContainer`, для компонентов типа `SwiftUI.View`.
 @available(iOS 13.0, *)
-public class SUIViewContainer<View: SwiftUI.View>: UIView, PlaybookContainer {
+public class SUIViewContainer<View: SwiftUI.View>: UIView {
 
     // MARK: - Private Properties
 
@@ -45,14 +40,19 @@ public class SUIViewContainer<View: SwiftUI.View>: UIView, PlaybookContainer {
         self.width = width
         self.height = height
         super.init(frame: .zero)
-        backgroundColor = Colors.Main.background
+        backgroundColor = .clear
     }
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
-    // MARK: - Container
+}
+
+// MARK: - PlaybookContainer
+
+@available(iOS 13.0, *)
+extension SUIViewContainer: PlaybookContainer {
 
     public func loadView() -> UIView {
         guard
