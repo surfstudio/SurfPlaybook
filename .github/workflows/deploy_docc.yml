@@ -32,7 +32,7 @@ jobs:
 
       - name: Build DocC
         run: |
-          xcodebuild docbuild -skipMacroValidation -scheme SurfPlaybook \
+          xcodebuild docbuild -skipMacroValidation -workspace SurfPlaybook.xcworkspace -scheme SurfPlaybook \
             -derivedDataPath docc \
             -destination 'generic/platform=iOS' \
             CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO;
