@@ -29,6 +29,18 @@ struct PageModel {
     let image: UIImage?
     let playbookPage: PlaybookPage
 
+    var fullDescription: [String?] {
+        let presetsDescription: [String] = playbookPage.presets.map { $0.preset.title }
+        return [name, playbookPage.description] + presetsDescription
+    }
+
+    func isContain(text: String) -> Bool {
+        return fullDescription
+            .compactMap { $0 }
+            .joined(separator: " ")
+            .containsCaseInsensitive(string: text)
+    }
+
     init(from page: PlaybookPage) {
         self.name = page.name
         self.image = page.snapshot
