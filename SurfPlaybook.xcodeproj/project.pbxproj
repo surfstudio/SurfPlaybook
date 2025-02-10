@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01769C972D4384E3009B59BA /* Binding+Bool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01769C962D4384DD009B59BA /* Binding+Bool.swift */; };
 		018D47932D422C670016EC16 /* CollectionCellsChapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018D47922D422C600016EC16 /* CollectionCellsChapter.swift */; };
 		018D47952D422D830016EC16 /* DishCellPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018D47942D422D7E0016EC16 /* DishCellPage.swift */; };
 		018D47992D4236EE0016EC16 /* DishCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018D47982D4236EA0016EC16 /* DishCell.swift */; };
+		018D479E2D4266100016EC16 /* PinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018D479D2D42660C0016EC16 /* PinView.swift */; };
+		018D47A02D4267620016EC16 /* Shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018D479F2D4267600016EC16 /* Shake.swift */; };
+		018D47AC2D426D280016EC16 /* PinViewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018D47AB2D426D230016EC16 /* PinViewPage.swift */; };
 		1F1A6F19A6EFEDE4AA0333B5 /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A45FD040B3282178E3DD55BC /* ListViewController.xib */; };
 		2CDEA8264584E5BBBAB85632 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78A812F1F935ED653461167 /* ListViewController.swift */; };
 		2CE875C0ACA7F0CC7D9028AC /* AuthModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D02728BEF3D5590BA37F167 /* AuthModuleOutput.swift */; };
@@ -101,9 +105,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		01769C962D4384DD009B59BA /* Binding+Bool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding+Bool.swift"; sourceTree = "<group>"; };
 		018D47922D422C600016EC16 /* CollectionCellsChapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCellsChapter.swift; sourceTree = "<group>"; };
 		018D47942D422D7E0016EC16 /* DishCellPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCellPage.swift; sourceTree = "<group>"; };
 		018D47982D4236EA0016EC16 /* DishCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCell.swift; sourceTree = "<group>"; };
+		018D479D2D42660C0016EC16 /* PinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinView.swift; sourceTree = "<group>"; };
+		018D479F2D4267600016EC16 /* Shake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shake.swift; sourceTree = "<group>"; };
+		018D47AB2D426D230016EC16 /* PinViewPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinViewPage.swift; sourceTree = "<group>"; };
 		10AD570C280E9A19977DEE2C /* AuthViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = AuthViewController.xib; sourceTree = "<group>"; };
 		12B323CCC217C991A573CBFC /* ListModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListModuleConfigurator.swift; sourceTree = "<group>"; };
 		18774BA9C8C44B77E2F4C395 /* Pods-SurfPlaybookExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfPlaybookExampleTests.release.xcconfig"; path = "Target Support Files/Pods-SurfPlaybookExampleTests/Pods-SurfPlaybookExampleTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -202,6 +210,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01769C952D4384D7009B59BA /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				01769C962D4384DD009B59BA /* Binding+Bool.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		01769C982D438578009B59BA /* Modificators */ = {
+			isa = PBXGroup;
+			children = (
+				018D479F2D4267600016EC16 /* Shake.swift */,
+			);
+			path = Modificators;
+			sourceTree = "<group>";
+		};
 		018D47902D422C4C0016EC16 /* CollectionCellsChapter */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,6 +257,14 @@
 				018D47982D4236EA0016EC16 /* DishCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		018D479C2D4265EC0016EC16 /* PinView */ = {
+			isa = PBXGroup;
+			children = (
+				018D479D2D42660C0016EC16 /* PinView.swift */,
+			);
+			path = PinView;
 			sourceTree = "<group>";
 		};
 		09FD591E11361B9D6F4D46FC /* Pods */ = {
@@ -289,6 +321,7 @@
 		9022F3CC26381F15008839A0 /* Pages */ = {
 			isa = PBXGroup;
 			children = (
+				018D47AB2D426D230016EC16 /* PinViewPage.swift */,
 				9022F3CD26381F28008839A0 /* UITextFieldPage.swift */,
 			);
 			path = Pages;
@@ -370,6 +403,8 @@
 		903600C72631796B00265BB1 /* Reusable */ = {
 			isa = PBXGroup;
 			children = (
+				01769C982D438578009B59BA /* Modificators */,
+				018D479C2D4265EC0016EC16 /* PinView */,
 				903601292631C1D300265BB1 /* CommonButton */,
 			);
 			path = Reusable;
@@ -580,6 +615,7 @@
 		90F3DC57262DD95900220B28 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				01769C952D4384D7009B59BA /* SwiftUI */,
 				90F3DC58262DD96400220B28 /* UIKit */,
 				90F3DC66262DD99E00220B28 /* NSObject.swift */,
 				903600FE2631A98200265BB1 /* String.swift */,
@@ -932,6 +968,7 @@
 				903600FF2631A98200265BB1 /* String.swift in Sources */,
 				018D47992D4236EE0016EC16 /* DishCell.swift in Sources */,
 				90DE378D26284F6E003D3DD5 /* Colors.swift in Sources */,
+				018D479E2D4266100016EC16 /* PinView.swift in Sources */,
 				9022F3E626382170008839A0 /* ListCellPage.swift in Sources */,
 				90F3DC2C262DD42400220B28 /* ColorsUIKitPage.swift in Sources */,
 				90F3DCAF262DE37800220B28 /* Router.swift in Sources */,
@@ -961,6 +998,7 @@
 				903601462631C2A900265BB1 /* UITextField+Styles.swift in Sources */,
 				903601302631C21900265BB1 /* UIImage.swift in Sources */,
 				A265E2CBCB5810207133A038 /* AuthViewOutput.swift in Sources */,
+				01769C972D4384E3009B59BA /* Binding+Bool.swift in Sources */,
 				018D47952D422D830016EC16 /* DishCellPage.swift in Sources */,
 				903601192631ACB800265BB1 /* AuthFlowCoordinator.swift in Sources */,
 				5FC119DAAE05A9A198BF1224 /* ListModuleConfigurator.swift in Sources */,
@@ -968,8 +1006,10 @@
 				7A61FFF46E32419DF6C19503 /* ListModuleInput.swift in Sources */,
 				F477B8F5D283BEEFFDF25471 /* ListModuleOutput.swift in Sources */,
 				905165D52636EA05002371F3 /* ListFlowCoordinator.swift in Sources */,
+				018D47AC2D426D280016EC16 /* PinViewPage.swift in Sources */,
 				2CDEA8264584E5BBBAB85632 /* ListViewController.swift in Sources */,
 				9022F3C826381ECF008839A0 /* Constants.swift in Sources */,
+				018D47A02D4267620016EC16 /* Shake.swift in Sources */,
 				018D47932D422C670016EC16 /* CollectionCellsChapter.swift in Sources */,
 				AF327B2F1070F1E2C58E0124 /* ListViewInput.swift in Sources */,
 				F1D633C89567F0D8E0ABEC3F /* ListViewOutput.swift in Sources */,

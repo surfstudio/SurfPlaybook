@@ -11,12 +11,7 @@ typealias CollectionAdapter = UICollectionViewDelegate & UICollectionViewDataSou
 
 public typealias PlaybookCollectionCell = UICollectionViewCell & PlaybookCellConfigurable
 
-/// Вспомогательный контейнер-коллекция, позвооляет обернуть UI-компонент типа UICollectionViewCell
-/// в таблицу, чтобы показать его в рамках playbook-а.
-///
-/// - Reference:
-///     Причина возникновения и проблема, которую решает контейнер,
-///     а также решение описаны в [источнике](https://osinski.dev/posts/snapshot-testing-self-sizing-table-view-cells/)
+/// Реализация `PlaybookContainer`, для компонентов типа `UICollectionViewCell`.
 @available(iOS 13.0, *)
 public class CollectionViewCellContainer<Cell: PlaybookCollectionCell>: UIView, CollectionAdapter {
 
@@ -68,20 +63,6 @@ public class CollectionViewCellContainer<Cell: PlaybookCollectionCell>: UIView, 
         case .nib:
             collectionView.registerNib(Cell.self, bundle: Cell.cellBundle() ?? Bundle.shared(for: Cell.self))
         }
-
-        translatesAutoresizingMaskIntoConstraints = false
-        addSubview(collectionView)
-        collectionView.translatesAutoresizingMaskIntoConstraints = false
-
-        NSLayoutConstraint.activate([
-            collectionView.topAnchor.constraint(equalTo: topAnchor),
-            collectionView.bottomAnchor.constraint(equalTo: bottomAnchor),
-            collectionView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            collectionView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            collectionView.heightAnchor.constraint(equalToConstant: containerHeight),
-            widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width),
-            heightAnchor.constraint(greaterThanOrEqualToConstant: 1.0)
-        ])
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -103,6 +84,30 @@ public class CollectionViewCellContainer<Cell: PlaybookCollectionCell>: UIView, 
         return cell
     }
 
+}
+
+// MARK: - PlaybookContainer
+
+@available(iOS 13.0, *)
+extension CollectionViewCellContainer: PlaybookContainer {
+
+    public func loadView() -> UIView {
+        translatesAutoresizingMaskIntoConstraints = false
+        addSubview(collectionView)
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
+
+        NSLayoutConstraint.activate([
+            collectionView.topAnchor.constraint(equalTo: topAnchor),
+            collectionView.bottomAnchor.constraint(equalTo: bottomAnchor),
+            collectionView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            collectionView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            collectionView.heightAnchor.constraint(equalToConstant: containerHeight),
+            widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width),
+            heightAnchor.constraint(greaterThanOrEqualToConstant: 1.0)
+        ])
+
+        return self
+    }
 }
 
 // MARK: - UICollectionViewCompositionalLayoutDelegate

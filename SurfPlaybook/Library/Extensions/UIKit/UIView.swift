@@ -7,18 +7,15 @@
 //
 
 import UIKit
+import SwiftUI
 
 extension UIView {
 
-    func snapshot() -> UIImage? {
-        UIGraphicsBeginImageContextWithOptions(self.bounds.size, true, UIScreen.main.scale)
-        guard let context = UIGraphicsGetCurrentContext() else {
-            return nil
+    func snapshot() -> UIImage {
+        let renderer = UIGraphicsImageRenderer(bounds: bounds)
+        return renderer.image { rendererContext in
+            layer.render(in: rendererContext.cgContext)
         }
-        self.layer.render(in: context)
-        let img = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        return img
     }
 
 }

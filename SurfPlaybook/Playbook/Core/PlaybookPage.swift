@@ -33,11 +33,11 @@ public struct PlaybookPage {
 
     let name: String
     let description: String?
-    let config: (() -> UIView)
+    // она же будет уметь делать snapshot
+    // и при необходимости просить контроллер
+    let config: PlaybookContainerProvider
     var snapshot: UIImage? {
-        let view = config()
-        view.layoutIfNeeded()
-        return view.snapshot()
+        return config(nil).makeSnapshot()
     }
 
     // MARK: - Public Properties
@@ -50,7 +50,7 @@ public struct PlaybookPage {
     ///     это просто `название состояния`
     /// - config - замыкание, при вызове которого строится нужное состояние UI-компонента
     ///     и возвращается UIView, его содержащее
-    public var presets: [(preset: StringRepresentable, config: (() -> UIView))] = []
+    public var presets: [(preset: StringRepresentable, config: PlaybookContainerProvider)] = []
 
     // MARK: - Public Initialization
 
@@ -64,7 +64,7 @@ public struct PlaybookPage {
     ///         и возвращаться UIView, его содержащее
     public init(name: String,
                 description: String?,
-                config: @escaping (() -> UIView)) {
+                config: @escaping PlaybookContainerProvider) {
         self.name = name
         self.description = description
         self.config = config

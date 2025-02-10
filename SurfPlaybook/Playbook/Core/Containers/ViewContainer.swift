@@ -8,17 +8,14 @@
 
 import UIKit
 
-/// Вспомогательный контейнер-view, позвооляет обернуть UI-компонент типа UIView
-/// в таблицу, чтобы показать его в рамках playbook-а.
-///
-/// - Reference:
-///     Причина возникновения и проблема, которую решает контейнер,
-///     а также решение описаны в [источнике](https://osinski.dev/posts/snapshot-testing-self-sizing-table-view-cells/)
+/// Реализация `PlaybookContainer`, для компонентов типа `UIView`.
 public class ViewContainer<View: UIView>: UIView {
 
     // MARK: - Private Properties
 
     private let view: View
+    private let width: CGFloat?
+    private let height: CGFloat?
 
     // MARK: - Initialization
 
@@ -32,9 +29,23 @@ public class ViewContainer<View: UIView>: UIView {
     ///     при передаче nil - view будет растягиваться под размер собственного контента.
     public init(_ view: View, width: CGFloat?, height: CGFloat?) {
         self.view = view
+        self.width = width
+        self.height = height
         super.init(frame: .zero)
         backgroundColor = Colors.Main.background
+    }
 
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+}
+
+// MARK: - PlaybookContainer
+
+extension ViewContainer: PlaybookContainer {
+
+    public func loadView() -> UIView {
         translatesAutoresizingMaskIntoConstraints = false
         view.translatesAutoresizingMaskIntoConstraints = false
 
@@ -58,10 +69,8 @@ public class ViewContainer<View: UIView>: UIView {
                 view.heightAnchor.constraint(equalToConstant: height)
             ])
         }
-    }
 
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        return self
     }
 
 }
