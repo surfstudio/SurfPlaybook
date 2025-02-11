@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.6.0
+
+- настроена автоматическая публикация docc документации при пуше в main
+- **добавлен** `CollectionViewCellContainer` для добавления в Playbook ячеек `UICollectionViewCell` 
+- **добавлен** `SUIViewContainer` для добавления в Playbook вьюшек на `SwiftUI`
+- изменено безымянное замыкание конфигурации на `PlaybookContainerProvider`
+- создан базовый протокол для контейнеров `PlaybookContainer`
+- **новая фича** расширенный поиск по страницам и пресетам компонентов
+- обновлен механизм снимков для превью
+- исправлены замечания линтера, варнинги компилятора
+
 ## 1.5.0
 
 - `CellConfigurable` протокол переименован на `PlaybookCellConfigurable`, чтобы исключить конфликт имен с протоколом из `RDDM` [#14](https://github.com/surfstudio/SurfPlaybook/pull/14)
