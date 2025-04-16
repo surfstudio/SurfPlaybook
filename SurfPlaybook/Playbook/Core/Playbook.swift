@@ -81,4 +81,14 @@ public final class Playbook {
         return self
     }
 
+    /// Очищает все страницы и координаторы
+    /// - Note: Применимо, если вы встраиваете Playbook прямо в приложение.
+    ///  Например, в Debug экран.
+    public func clear() {
+        chapters.removeAll()
+        uiKitPages.removeAll()
+        flowCoordinators.removeAll()
+        coordinator.removeAllDependencies()
+    }
+
 }
