@@ -37,7 +37,7 @@ public struct PlaybookPage {
     // и при необходимости просить контроллер
     let config: PlaybookContainerProvider
     var snapshot: UIImage? {
-        return config(nil).makeSnapshot()
+        return PlaybookSnapshotsCache.shared.get(page: self)
     }
 
     /// Предпочтительная конфигурация.

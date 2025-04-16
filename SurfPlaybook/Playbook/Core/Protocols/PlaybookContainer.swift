@@ -5,6 +5,7 @@
 //  Created by Nikita Korobeinikov on 24.01.2025.
 //
 
+import Foundation
 import UIKit
 
 public typealias PlaybookContainerProvider = (UIViewController?) -> PlaybookContainer
@@ -20,7 +21,7 @@ public protocol PlaybookContainer where Self: UIView {
     func loadView() -> UIView
     /// Делает снимок вьюшки для отображения превьюшек
     /// - Note: Перед снимком вызывает `loadView`
-    func makeSnapshot() -> UIImage?
+    func makeSnapshot(with completion: @escaping (UIImage?) -> Void)
 
 }
 
@@ -28,9 +29,11 @@ public protocol PlaybookContainer where Self: UIView {
 
 public extension PlaybookContainer {
 
-    func makeSnapshot() -> UIImage? {
-        loadView().layoutIfNeeded()
-        return snapshot()
+    func makeSnapshot(with completion: @escaping (UIImage?) -> Void) {
+        DispatchQueue.main.async { [completion] in
+            self.loadView().layoutIfNeeded()
+            completion(self.snapshot())
+        }
     }
 
 }

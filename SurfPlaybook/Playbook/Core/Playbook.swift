@@ -53,6 +53,7 @@ public final class Playbook {
     /// Каждой главе будет соответствовать карусель на главном экране со страницами из этой главы.
     @discardableResult
     public func add(chapter: PlaybookChapter) -> Playbook {
+        PlaybookSnapshotsCache.shared.add(pages: chapter.pages)
         chapters.append(chapter)
         return self
     }

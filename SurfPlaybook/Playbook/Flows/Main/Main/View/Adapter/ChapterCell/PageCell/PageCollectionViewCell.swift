@@ -17,6 +17,10 @@ final class PageCollectionViewCell: UICollectionViewCell {
     @IBOutlet private weak var snapshotImageView: UIImageView!
     @IBOutlet private weak var includePresetsImageView: UIImageView!
 
+    // MARK: - Private Properties
+
+    private var model: PageModel?
+
     // MARK: - UICollectionView
 
     override func awakeFromNib() {
@@ -27,6 +31,10 @@ final class PageCollectionViewCell: UICollectionViewCell {
     override func draw(_ rect: CGRect) {
         super.draw(rect)
         configureShadow()
+    }
+
+    deinit {
+        NotificationCenter.default.removeObserver(self)
     }
 
     override var isHighlighted: Bool {
@@ -50,19 +58,16 @@ final class PageCollectionViewCell: UICollectionViewCell {
         titleLabel.apply(style: .textRegular14Black)
         includePresetsImageView.isHidden = model.playbookPage.presets.count <= 1
 
-        guard let image = model.playbookPage.snapshot else {
-            snapshotImageView.image = nil
-            return
-        }
+        self.model = model
 
-        if
-            image.size.width > snapshotImageView.bounds.size.width
-                || image.size.height > snapshotImageView.bounds.size.height {
-            snapshotImageView.contentMode = .scaleAspectFit
-        } else {
-            snapshotImageView.contentMode = .center
-        }
-        snapshotImageView.image = image
+        NotificationCenter.default.removeObserver(self)
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(tryUpdateImage),
+            name: PlaybookSnapshotsCache.didUpdateNotification,
+            object: nil
+        )
+        tryUpdateImage()
     }
 
 }
@@ -90,6 +95,27 @@ private extension PageCollectionViewCell {
         containerView.layer.shadowRadius = 4
         containerView.layer.shadowOpacity = 1
         containerView.layer.shadowOffset = .init(width: 0, height: 2)
+    }
+
+    func setImage(_ image: UIImage?) {
+        guard let image else {
+            snapshotImageView.image = nil
+            return
+        }
+
+        if
+            image.size.width > snapshotImageView.bounds.size.width
+                || image.size.height > snapshotImageView.bounds.size.height {
+            snapshotImageView.contentMode = .scaleAspectFit
+        } else {
+            snapshotImageView.contentMode = .center
+        }
+        snapshotImageView.image = image
+    }
+
+    @objc
+    func tryUpdateImage() {
+        setImage(model?.playbookPage.snapshot)
     }
 
 }
