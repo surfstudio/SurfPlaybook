@@ -53,6 +53,7 @@ public final class Playbook {
     /// Каждой главе будет соответствовать карусель на главном экране со страницами из этой главы.
     @discardableResult
     public func add(chapter: PlaybookChapter) -> Playbook {
+        PlaybookSnapshotsCache.shared.add(pages: chapter.pages)
         chapters.append(chapter)
         return self
     }
@@ -79,6 +80,16 @@ public final class Playbook {
     public func add(flowCoordinator: PlaybookFlowCoordinator) -> Playbook {
         flowCoordinators.append(flowCoordinator)
         return self
+    }
+
+    /// Очищает все страницы и координаторы
+    /// - Note: Применимо, если вы встраиваете Playbook прямо в приложение.
+    ///  Например, в Debug экран.
+    public func clear() {
+        chapters.removeAll()
+        uiKitPages.removeAll()
+        flowCoordinators.removeAll()
+        coordinator.removeAllDependencies()
     }
 
 }

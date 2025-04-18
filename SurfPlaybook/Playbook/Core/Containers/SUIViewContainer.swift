@@ -90,6 +90,12 @@ extension SUIViewContainer: PlaybookContainer {
         return self
     }
 
+    public func makeSnapshot(with completion: @escaping (UIImage?) -> Void) {
+        DispatchQueue.main.async { [completion] in
+            completion(self.makeSnapshot())
+        }
+    }
+
     public func makeSnapshot() -> UIImage? {
         if #available(iOS 16, *) {
             ImageRenderer(content: viewFactory().padding(12)).uiImage
